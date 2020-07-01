@@ -29,5 +29,4 @@
         android:layout_margin="16dp"
         app:srcCompat="@drawable/add"
         app:backgroundTint="@color/ship_fabColor"/>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

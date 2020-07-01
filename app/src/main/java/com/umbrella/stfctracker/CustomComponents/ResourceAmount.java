@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
+import com.umbrella.stfctracker.DataTypes.ValueIndicator;
 import com.umbrella.stfctracker.R;
 
 import java.text.DecimalFormat;
@@ -90,21 +91,7 @@ public class ResourceAmount extends RelativeLayout {
 
     public void setValue(long val) {
         this.value = val;
-
-        DecimalFormat df = new DecimalFormat("#.#", new DecimalFormatSymbols(Locale.ITALIAN));
-
-        String text = "";
-        if (val < 10_000) {
-            text = String.valueOf(val);
-        } else if (val < 1_000_000) {
-            text = df.format((double)val / 1_000) + getResources().getString(R.string.short_thousand);
-        } else if (val < 1_000_000_000) {
-            text = df.format((double)val / 1_000_000) + getResources().getString(R.string.short_million);
-        } else {
-            text = df.format((double)val / 1_000_000_000) + getResources().getString(R.string.short_billion);
-        }
-
-        amount.setText(text.replace(",", "."));
+        amount.setText(new ValueIndicator().setValueWithIndicator(val));
     }
 
     public void setNeeded(boolean needed) {

@@ -115,7 +115,7 @@
                             android:layout_marginBottom="5dp"
                             style="@style/defaultText"
                             android:textSize="13sp"
-                            tools:text="Updates the adapter and I don't know what."/>
+                            tools:text="Displays the research info."/>
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/popoverResearch_bonusLayout"

@@ -20,7 +20,6 @@ public class CumulativeBonus {
     }
 
     private CumulativeBonus() {
-
     }
 
     public void init(@NonNull Map<String, Integer> map) {
@@ -154,7 +153,7 @@ public class CumulativeBonus {
     @NonNull
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder("");
+        StringBuilder builder = new StringBuilder();
         map.forEach((key, val) -> builder.append(key).append(" -> ").append(val).append("\n"));
         return builder.toString();
     }

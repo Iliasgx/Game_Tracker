@@ -46,4 +46,11 @@
     <color name="colorOrange">#FFA200</color>
     <color name="notBuild">#934135</color>
     <color name="ship_fabColor">#701FBF</color>
+    <color name="shipScrapRewardItem_background">#0F1F19</color>
+    <color name="shipScrapRewardItem_greenInner">#255335</color>
+    <color name="shipScrapRewardItem_greenBorder">#58C67A</color>
+    <color name="shipScrapRewardItem_blueInner">#3388BE</color>
+    <color name="shipScrapRewardItem_blueBorder">#559FE3</color>
+    <color name="shipScrapRewardItem_greyInner">#343538</color>
+    <color name="shipScrapRewardItem_greyBorder">#7C8B90</color>
 </resources>
