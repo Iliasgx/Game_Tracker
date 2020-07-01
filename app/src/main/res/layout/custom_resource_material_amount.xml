@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customResourceMaterialAmount_layout"
+    android:layout_width="@dimen/resource_materialAmount_width"
+    android:layout_height="@dimen/resource_materialAmount_height"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/customResourceMaterial_resourceCardview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:cardBackgroundColor="@color/resourceMaterial_backgroundEdge"
+        app:cardCornerRadius="2dp">
+
+        <FrameLayout
+            android:id="@+id/customResourceMaterial_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.7dp"
+            android:background="@color/resourceMaterial_background">
+
+            <ImageView
+                android:id="@+id/customResourceMaterialAmount_ResourceImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ore"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/customResourceMaterialAmount_SecondLayout"
+        android:layout_width="@dimen/resource_materialAmount_width"
+        android:layout_height="@dimen/resource_materialAmount_height"
+        android:layout_alignBottom="@id/customResourceMaterial_resourceCardview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="35dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="2dp"
+        tools:background="@color/resource_background">
+
+        <TextView
+            android:id="@+id/customResourceMaterialAmount_ResourceAmount"
+            style="@style/defaultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            tools:text="180" />
+
+        <TextView
+            android:id="@+id/customResourceMaterialAmount_ResourceAmountType"
+            style="@style/defaultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/customResourceMaterialAmount_ResourceAmount"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/resourceMaterial_typeColor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="R" />
+
+        <ImageView
+            android:id="@+id/customResourceMaterial_star1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/customResourceMaterialAmount_ResourceAmount"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/star"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/customResourceMaterial_star2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/customResourceMaterialAmount_ResourceAmount"
+            android:layout_toEndOf="@id/customResourceMaterial_star1"
+            app:srcCompat="@drawable/star"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/customResourceMaterial_star3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/customResourceMaterialAmount_ResourceAmount"
+            android:layout_toEndOf="@id/customResourceMaterial_star2"
+            app:srcCompat="@drawable/star"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/customResourceMaterial_star4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/customResourceMaterialAmount_ResourceAmount"
+            android:layout_toEndOf="@id/customResourceMaterial_star3"
+            app:srcCompat="@drawable/star"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listBuildingItem_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/groupList_backgroundColor"
+    app:cardCornerRadius="4dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listBuildingItem_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/listBuildingItem_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/listBuildingItem_level"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/listBuildingItem_upgradeCardview"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/interstate_extra_light"
+            android:textColor="@color/textColor_white"
+            android:textSize="24sp"
+            tools:text="Drydocks" />
+
+        <TextView
+            tools:visibility="visible"
+            android:id="@+id/listBuildingItem_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/listBuildingItem_upgradeCardview"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/interstate_extra_light"
+            android:textColor="@color/textColor_white"
+            android:textSize="16sp"
+            android:text="@string/currentLevel"
+            tools:text="Level 26" />
+
+        <ImageView
+            android:id="@+id/listBuildingItem_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/go_arrow"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/listBuildingItem_upgradeCardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginVertical="15dp"
+            app:cardBackgroundColor="@color/upgrade_button_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/listBuildingItem_upgradeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="@string/upgrade"
+                android:textAllCaps="true"
+                android:fontFamily="@font/interstate_extra_light"
+                android:textColor="@color/textColor_white"
+                android:textSize="18sp"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

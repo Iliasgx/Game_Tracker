@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/popover_research_lightBackgroundSide"
+                android:centerColor="@color/popover_research_lightBackgroundMiddle"
+                android:endColor="@color/popover_research_lightBackgroundSide"
+                android:angle="90"/>
+        </shape>
+    </item>
+</selector>

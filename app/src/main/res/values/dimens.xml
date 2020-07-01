@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="resource_materialAmount_width">85dp</dimen>
+    <dimen name="resource_materialAmount_height">30dp</dimen>
+
+    <dimen name="resource_amount_width">75dp</dimen>
+    <dimen name="resource_amount_height">35dp</dimen>
+
+    <dimen name="research_item_width">0dp</dimen>
+    <dimen name="research_item_height">120dp</dimen>
+    <dimen name="research_item_horMargin">5dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

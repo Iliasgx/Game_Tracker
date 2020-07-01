@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.umbrella.stfctracker.ui.HomeFragment"
+        android:label="@string/title_progress"
+        tools:layout="@layout/frag_home">
+        <action
+            android:id="@+id/homeToStarbase"
+            app:destination="@id/starbaseFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out">
+            <argument
+                android:name="hasChanged"
+                android:defaultValue="false" />
+            <argument android:name="groupId" />
+            <argument
+                android:name="group"
+                android:defaultValue="NONE" />
+            <argument
+                android:name="hasChanges"
+                android:defaultValue="false" />
+            <argument
+                android:name="fromDialog"
+                android:defaultValue="false" />
+        </action>
+        <action
+            android:id="@+id/homeToResearch"
+            app:destination="@id/researchFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/homeToOfficers"
+            app:destination="@id/officerFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/homeToShips"
+            app:destination="@id/shipFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/unknownFragment"
+        android:name="com.umbrella.stfctracker.ui.UnknownFragment"
+        android:label="UnknownFragment"
+        tools:layout="@layout/frag_library"/>
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="com.umbrella.stfctracker.ui.OverviewFragment"
+        android:label="@string/title_overview"
+        tools:layout="@layout/frag_overview"/>
+    <fragment
+        android:id="@+id/starbaseFragment"
+        android:name="com.umbrella.stfctracker.ui.StarbaseFragment"
+        android:label="@string/title_buildings"
+        tools:layout="@layout/frag_starbase">
+        <action
+            android:id="@+id/starbaseToBuildingLevels"
+            app:destination="@id/buildingLevelFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/starbaseToBuildingDialog"
+            app:destination="@id/buildingDialog"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit">
+            <argument
+                android:name="accesLevel"
+                android:defaultValue="-1" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/researchFragment"
+        android:name="com.umbrella.stfctracker.ui.ResearchFragment"
+        android:label="@string/title_research"
+        tools:layout="@layout/frag_research_group">
+        <action
+            android:id="@+id/researchToTree"
+            app:destination="@id/researchTreeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/officerFragment"
+        android:name="com.umbrella.stfctracker.ui.OfficerFragment"
+        android:label="OfficerFragment" >
+        <action
+            android:id="@+id/officerToOfficerDialog"
+            app:destination="@id/officerDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipFragment"
+        android:name="com.umbrella.stfctracker.ui.ShipFragment"
+        android:label="ShipFragment" >
+        <action
+            android:id="@+id/shipToShipDialog"
+            app:destination="@id/shipDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/researchTreeFragment"
+        android:name="com.umbrella.stfctracker.ui.ResearchTreeFragment"
+        tools:layout="@layout/frag_research_tree">
+        <action
+            android:id="@+id/researchTreeToResearchDialog"
+            app:destination="@id/researchDialog"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+        <argument
+            android:name="tree"
+            app:argType="com.umbrella.stfctracker.DataTypes.Enums.Tree" />
+    </fragment>
+    <fragment
+        android:id="@+id/buildingLevelFragment"
+        android:name="com.umbrella.stfctracker.ui.BuildingLevelFragment"
+        tools:layout="@layout/frag_level_overview">
+        <action
+            android:id="@+id/buildingLevelsToBuildingDialog"
+            app:destination="@id/buildingDialog"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+        <argument
+            android:name="building"
+            app:argType="com.umbrella.stfctracker.Database.Entities.Building" />
+    </fragment>
+    <dialog
+        android:id="@+id/buildingDialog"
+        android:name="com.umbrella.stfctracker.ui.Dialogs.BuildingDialog"
+        android:label="BuildingDialog"
+        tools:layout="@layout/popover_buildings">
+        <argument
+            android:name="building"
+            app:argType="com.umbrella.stfctracker.Database.Entities.Building" />
+        <argument
+            android:name="accesLevel"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/researchDialog"
+        android:name="com.umbrella.stfctracker.ui.Dialogs.ResearchDialog"
+        android:label="ResearchDialog"
+        tools:layout="@layout/popover_research">
+        <argument
+            android:name="research"
+            app:argType="com.umbrella.stfctracker.Database.Entities.Research" />
+    </dialog>
+    <dialog
+        android:id="@+id/officerDialog"
+        android:name="com.umbrella.stfctracker.ui.Dialogs.OfficerDialog"
+        android:label="OfficerDialog" >
+        <argument
+            android:name="officerId"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/shipDialog"
+        android:name="com.umbrella.stfctracker.ui.Dialogs.ShipDialog"
+        android:label="ShipDialog" >
+        <argument
+            android:name="shipId"
+            app:argType="long" />
+    </dialog>
+    <action
+        android:id="@+id/globalHome"
+        app:destination="@id/homeFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/mobile_navigation" />
+    <action
+        android:id="@+id/globalOverview"
+        app:destination="@id/overviewFragment"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@android:anim/slide_out_right"
+        app:popExitAnim="@android:anim/slide_in_left"
+        app:popUpTo="@id/overviewFragment" />
+    <action
+        android:id="@+id/globalUnknown"
+        app:destination="@id/unknownFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/unknownFragment" />
+</navigation>

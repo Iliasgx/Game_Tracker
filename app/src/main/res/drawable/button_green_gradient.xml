@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/button_green_backgroundSide"
+                android:centerColor="@color/button_green_backgroundMiddle"
+                android:endColor="@color/button_green_backgroundSide"
+                />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragOverview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fragOverview_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/research_tree_background"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/fragOverview_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:background="@color/research_treeGroups_backgroundOverColor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ScrollView
+        android:id="@+id/fragOverview_scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:nestedScrollingEnabled="false">
+
+        <RelativeLayout
+            android:id="@+id/fragOverview_innerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/fragOverview_titleCompletion"
+                android:layout_alignStart="@id/fragOverView_percentageLayout"
+                android:layout_alignEnd="@id/fragOverView_percentageLayout"
+                android:layout_alignBottom="@id/fragOverView_percentageLayout"
+                app:cardBackgroundColor="@color/button_blue_backgroundMiddle"
+                app:cardCornerRadius="10dp"
+                android:alpha="0.3"/>
+
+            <TextView
+                android:id="@+id/fragOverview_titleCompletion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                style="@style/defaultText"
+                android:textSize="22sp"
+                android:textColor="@color/button_lightBlue_backgroundSide"
+                android:text="@string/overview_titleLevelOfCompletion"/>
+
+            <View
+                android:id="@+id/fragOverview_titleCompletionUnderline"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/fragOverview_titleCompletion"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="120dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/button_lightBlue_backgroundSide"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fragOverView_percentageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragOverview_titleCompletionUnderline"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/fragOverview_researchPercentage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/fragOverview_totalPercentage"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    style="@style/defaultText"
+                    android:textSize="30sp"
+                    android:text="@string/zero_percentage_placeholder"
+                    android:tag="0"
+                    android:textColor="@color/button_lightBlue_backgroundSide" />
+
+                <TextView
+                    android:id="@+id/fragOverview_totalPercentage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/fragOverview_researchPercentage"
+                    app:layout_constraintEnd_toStartOf="@id/fragOverview_buildingsPercentage"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    style="@style/defaultText"
+                    android:textSize="34sp"
+                    android:text="@string/zero_percentage_placeholder"
+                    android:textColor="@color/button_lightBlue_backgroundSide"/>
+
+                <TextView
+                    android:id="@+id/fragOverview_buildingsPercentage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/fragOverview_totalPercentage"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    style="@style/defaultText"
+                    android:textSize="30sp"
+                    android:text="@string/zero_percentage_placeholder"
+                    android:tag="0"
+                    android:textColor="@color/button_lightBlue_backgroundSide"/>
+
+                <TextView
+                    android:id="@+id/fragOverview_researchPercentageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/fragOverview_researchPercentage"
+                    app:layout_constraintStart_toStartOf="@id/fragOverview_researchPercentage"
+                    app:layout_constraintEnd_toEndOf="@id/fragOverview_researchPercentage"
+                    android:text="@string/overview_titleResearch"
+                    style="@style/defaultText" />
+
+                <TextView
+                    android:id="@+id/fragOverview_totalPercentageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/fragOverview_totalPercentage"
+                    app:layout_constraintStart_toStartOf="@id/fragOverview_totalPercentage"
+                    app:layout_constraintEnd_toEndOf="@id/fragOverview_totalPercentage"
+                    android:paddingBottom="10dp"
+                    android:text="@string/overview_titleOverall"
+                    style="@style/defaultText" />
+
+                <TextView
+                    android:id="@+id/fragOverview_buildingsPercentageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/fragOverview_buildingsPercentage"
+                    app:layout_constraintStart_toStartOf="@id/fragOverview_buildingsPercentage"
+                    app:layout_constraintEnd_toEndOf="@id/fragOverview_buildingsPercentage"
+                    android:text="@string/overview_titleBuildings"
+                    style="@style/defaultText" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/fragOverview_titleTime"
+                android:layout_alignStart="@id/fragOverview_timeUpgradeLayout"
+                android:layout_alignEnd="@id/fragOverview_timeUpgradeLayout"
+                android:layout_alignBottom="@id/fragOverview_timeUpgradeLayout"
+                app:cardBackgroundColor="@color/button_blue_backgroundMiddle"
+                app:cardCornerRadius="10dp"
+                android:alpha="0.3"/>
+
+            <TextView
+                android:id="@+id/fragOverview_titleTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragOverView_percentageLayout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:gravity="center_horizontal"
+                style="@style/defaultText"
+                android:textSize="22sp"
+                android:textColor="@color/textColor_yellow"
+                android:text="@string/overview_titleUpgradeTimes"/>
+
+            <View
+                android:id="@+id/fragOverview_titleTimeUnderline"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/fragOverview_titleTime"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="140dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/textColor_yellow"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fragOverview_timeUpgradeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragOverview_titleTime"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/fragOverview_timeResearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/fragOverview_timeBuilding"
+                    android:gravity="center_horizontal"
+                    style="@style/defaultText"
+                    android:textSize="22sp"
+                    android:textColor="@color/textColor_yellow"
+                    android:text="@string/time_placeholder"
+                    tools:text="3h 12m"/>
+
+                <TextView
+                    android:id="@+id/fragOverview_timeBuilding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/fragOverview_timeResearch"
+                    android:gravity="center_horizontal"
+                    style="@style/defaultText"
+                    android:textSize="22sp"
+                    android:textColor="@color/textColor_yellow"
+                    android:text="@string/time_placeholder"
+                    tools:text="2y 1d"/>
+
+                <TextView
+                    android:id="@+id/fragOverview_timeResearchTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/fragOverview_timeResearch"
+                    app:layout_constraintStart_toStartOf="@id/fragOverview_timeResearch"
+                    app:layout_constraintEnd_toEndOf="@id/fragOverview_timeResearch"
+                    android:text="@string/overview_titleResearch"
+                    style="@style/defaultText" />
+
+                <TextView
+                    android:id="@+id/fragOverview_timeBuildingTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/fragOverview_timeBuilding"
+                    app:layout_constraintStart_toStartOf="@id/fragOverview_timeBuilding"
+                    app:layout_constraintEnd_toEndOf="@id/fragOverview_timeBuilding"
+                    android:text="@string/title_buildings"
+                    style="@style/defaultText" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragOverview_backgroundCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/fragOverview_timeUpgradeLayout"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragOverview_backgroundCardViewInner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/button_blue_backgroundMiddle"
+                    app:cardCornerRadius="10dp"
+                    android:alpha="0.3"
+                    app:cardElevation="0dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/fragOverview_costLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/fragOverview_backgroundCardView"
+                    android:layout_alignEnd="@id/fragOverview_backgroundCardView"
+                    android:layout_alignTop="@id/fragOverview_backgroundCardView"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/fragOverview_titleCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:paddingTop="5dp"
+                        android:gravity="center_horizontal"
+                        style="@style/defaultText"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorOrange"
+                        android:text="@string/overview_titleCosts"/>
+
+                    <View
+                        android:id="@+id/fragOverview_titleCostUnderline"
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/fragOverview_titleCost"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="110dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorOrange"/>
+
+                    <LinearLayout
+                        android:id="@+id/fragOverview_costSplitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/fragOverview_titleCostUnderline"
+                        android:baselineAligned="false">
+
+                        <RelativeLayout
+                            android:id="@+id/fragOverview_costResearch"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/fragOverview_costResearchTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center_horizontal"
+                                android:text="@string/overview_titleResearch"
+                                style="@style/defaultText" />
+
+                            <ImageView
+                                android:id="@+id/fragOverview_costResearch_ResourceA_img"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_below="@id/fragOverview_costResearchTitle"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/parsteel"
+                                tools:ignore="ContentDescription"/>
+
+                            <TextView
+                                android:id="@+id/fragOverview_costResearch_ResourceA_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/fragOverview_costResearch_ResourceA_img"
+                                android:layout_toEndOf="@id/fragOverview_costResearch_ResourceA_img"
+                                android:layout_alignBottom="@id/fragOverview_costResearch_ResourceA_img"
+                                android:gravity="center_vertical"
+                                style="@style/defaultText"
+                                android:textSize="17sp"
+                                android:text="@string/zero_placeholder"
+                                tools:text="60.000.000.000.000"/>
+
+                            <ImageView
+                                android:id="@+id/fragOverview_costResearch_ResourceB_img"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_below="@id/fragOverview_costResearch_ResourceA_img"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/tritanium"
+                                tools:ignore="ContentDescription"/>
+
+                            <TextView
+                                android:id="@+id/fragOverview_costResearch_ResourceB_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/fragOverview_costResearch_ResourceB_img"
+                                android:layout_toEndOf="@id/fragOverview_costResearch_ResourceB_img"
+                                android:layout_alignBottom="@id/fragOverview_costResearch_ResourceB_img"
+                                android:gravity="center_vertical"
+                                style="@style/defaultText"
+                                android:textSize="17sp"
+                                android:text="@string/zero_placeholder"
+                                tools:text="60.000.000.000"/>
+
+                            <ImageView
+                                android:id="@+id/fragOverview_costResearch_ResourceC_img"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_below="@id/fragOverview_costResearch_ResourceB_img"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/dilithium"
+                                tools:ignore="ContentDescription"/>
+
+                            <TextView
+                                android:id="@+id/fragOverview_costResearch_ResourceC_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/fragOverview_costResearch_ResourceC_img"
+                                android:layout_toEndOf="@id/fragOverview_costResearch_ResourceC_img"
+                                android:layout_alignBottom="@id/fragOverview_costResearch_ResourceC_img"
+                                android:gravity="center_vertical"
+                                style="@style/defaultText"
+                                android:textSize="17sp"
+                                android:text="@string/zero_placeholder"
+                                tools:text="60.000.000"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/fragOverview_costBuildings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/fragOverview_costBuildingTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center_horizontal"
+                                android:text="@string/overview_titleBuildings"
+                                style="@style/defaultText" />
+
+                            <ImageView
+                                android:id="@+id/fragOverview_costBuilding_ResourceA_img"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_below="@id/fragOverview_costBuildingTitle"
+                                android:layout_alignStart="@id/fragOverview_costBuildingTitle"
+                                android:src="@drawable/parsteel"
+                                tools:ignore="ContentDescription"/>
+
+                            <TextView
+                                android:id="@+id/fragOverview_costBuilding_ResourceA_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/fragOverview_costBuilding_ResourceA_img"
+                                android:layout_toEndOf="@id/fragOverview_costBuilding_ResourceA_img"
+                                android:layout_alignBottom="@id/fragOverview_costBuilding_ResourceA_img"
+                                android:gravity="center_vertical"
+                                style="@style/defaultText"
+                                android:textSize="17sp"
+                                android:text="@string/zero_placeholder"
+                                tools:text="60.000.000.000.000"/>
+
+                            <ImageView
+                                android:id="@+id/fragOverview_costBuilding_ResourceB_img"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_below="@id/fragOverview_costBuilding_ResourceA_img"
+                                android:layout_alignStart="@id/fragOverview_costBuildingTitle"
+                                android:src="@drawable/tritanium"
+                                tools:ignore="ContentDescription"/>
+
+                            <TextView
+                                android:id="@+id/fragOverview_costBuilding_ResourceB_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/fragOverview_costBuilding_ResourceB_img"
+                                android:layout_toEndOf="@id/fragOverview_costBuilding_ResourceB_img"
+                                android:layout_alignBottom="@id/fragOverview_costBuilding_ResourceB_img"
+                                android:gravity="center_vertical"
+                                style="@style/defaultText"
+                                android:textSize="17sp"
+                                android:text="@string/zero_placeholder"
+                                tools:text="60.000.000.000"/>
+
+                            <ImageView
+                                android:id="@+id/fragOverview_costBuilding_ResourceC_img"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_below="@id/fragOverview_costBuilding_ResourceB_img"
+                                android:layout_alignStart="@id/fragOverview_costBuildingTitle"
+                                android:src="@drawable/dilithium"
+                                tools:ignore="ContentDescription"/>
+
+                            <TextView
+                                android:id="@+id/fragOverview_costBuilding_ResourceC_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/fragOverview_costBuilding_ResourceC_img"
+                                android:layout_toEndOf="@id/fragOverview_costBuilding_ResourceC_img"
+                                android:layout_alignBottom="@id/fragOverview_costBuilding_ResourceC_img"
+                                android:gravity="center_vertical"
+                                style="@style/defaultText"
+                                android:textSize="17sp"
+                                android:text="@string/zero_placeholder"
+                                tools:text="60.000.000"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <com.umbrella.stfctracker.CustomComponents.FillGridView
+                        android:id="@+id/fragOverview_materialGrid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fragOverview_costSplitter"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:numColumns="3"
+                        android:horizontalSpacing="5dp"
+                        android:verticalSpacing="10dp"
+                        android:listSelector="@android:color/transparent"
+                        android:choiceMode="none"
+                        android:scrollbars="none"
+                        android:gravity="center_horizontal"
+                        tools:listitem="@layout/list_custom_resource_item"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

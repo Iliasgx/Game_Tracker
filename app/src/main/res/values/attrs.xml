@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="currentLevel" format="integer"/>
+    <attr name="maxLevel" format="integer"/>
+
+    <declare-styleable name="CustomProgressbar">
+        <attr name="currentLevel"/>
+        <attr name="maxLevel"/>
+    </declare-styleable>
+
+    <declare-styleable name="ResearchItem">
+        <attr name="canUpgrade" format="boolean"/>
+        <attr name="isLocked" format="boolean"/>
+        <attr name="image" format="reference"/>
+        <attr name="name" format="string"/>
+        <attr name="currentLevel"/>
+        <attr name="maxLevel"/>
+    </declare-styleable>
+
+    <declare-styleable name="ResourceAmount">
+        <attr name="amount" format="string"/>
+        <attr name="resourceType" format="enum">
+            <enum name="parsteel" value="0"/>
+            <enum name="tritanium" value="1"/>
+            <enum name="dilithium" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ResourceMaterialAmount">
+        <attr name="value" format="integer"/>
+        <attr name="rarity" format="enum">
+            <enum name="common" value="0"/>
+            <enum name="uncommon" value="1"/>
+            <enum name="rare" value="2"/>
+        </attr>
+        <attr name="materialType" format="enum">
+            <enum name="gas" value="0"/>
+            <enum name="ore" value="1"/>
+            <enum name="crystal" value="2"/>
+        </attr>
+        <attr name="stars" format="enum">
+            <enum name="one" value="0"/>
+            <enum name="two" value="1"/>
+            <enum name="three" value="2"/>
+            <enum name="four" value="3"/>
+        </attr>
+        <attr name="backgroundVisible" format="boolean"/>
+    </declare-styleable>
+</resources>

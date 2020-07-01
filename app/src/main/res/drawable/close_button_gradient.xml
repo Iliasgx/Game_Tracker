@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/cross_return_background"
+                android:centerColor="@color/cross_return_backgroundLight"
+                android:endColor="@color/cross_return_background"
+                android:type="radial"
+                android:gradientRadius="100%"
+                />
+        </shape>
+    </item>
+</selector>

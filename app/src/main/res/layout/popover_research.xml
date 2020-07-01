@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popoverResearch_baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/popoverResearch_cardViewPopOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/popover_research_border">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/popoverResearch_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/roundable_dark"
+            app:cardBackgroundColor="@color/popover_background">
+
+            <RelativeLayout
+                android:id="@+id/popoverResearch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/popoverResearch_titleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/popover_background_gradient">
+
+                    <TextView
+                        android:id="@+id/popoverResearch_titleName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/popoverResearch_closeButton"
+                        style="@style/defaultText"
+                        android:textSize="22sp"
+                        tools:text="4 Interceptor Armor Piercing" />
+
+                    <ImageButton
+                        android:id="@+id/popoverResearch_closeButton"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginVertical="7dp"
+                        android:backgroundTint="@color/cross_return_background"
+                        android:background="@drawable/closebutton_roundedmaterial"
+                        app:srcCompat="@drawable/close"
+                        tools:ignore="ContentDescription"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/popoverResearch_leftCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/popoverResearch_titleLayout"
+                    android:layout_alignBottom="@id/popoverResearch_rightCardView"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:foreground="@drawable/roundable_dark">
+
+                    <RelativeLayout
+                        android:id="@+id/popoverResearch_layoutLeftCardView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:padding="5dp"
+                        android:background="@drawable/popover_background_gradient">
+
+                        <ImageView
+                            android:id="@+id/popoverResearch_img"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            app:srcCompat="@drawable/officer_cadet_kirk"
+                            android:scaleType="fitXY"
+                            tools:ignore="ContentDescription"/>
+
+                        <com.umbrella.stfctracker.CustomComponents.CustomProgressbar
+                            android:id="@+id/popoverResearch_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@id/popoverResearch_img"
+                            android:layout_alignEnd="@id/popoverResearch_img"
+                            android:layout_below="@id/popoverResearch_img"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/popoverResearch_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignEnd="@id/popoverResearch_img"
+                            android:layout_below="@id/popoverResearch_level"
+                            android:layout_above="@id/popoverResearch_bonusLayout"
+                            android:layout_marginBottom="5dp"
+                            style="@style/defaultText"
+                            android:textSize="13sp"
+                            tools:text="Updates the adapter and I don't know what."/>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/popoverResearch_bonusLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignEnd="@id/popoverResearch_img"
+                            android:background="@color/resource_background"
+                            android:paddingVertical="2dp"
+                            android:paddingHorizontal="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/popoverResearch_bonus"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/popoverResearch_arrowUp"
+                                style="@style/defaultText"
+                                android:textSize="14sp"
+                                android:text="@string/bonus"/>
+
+                            <ImageView
+                                android:id="@+id/popoverResearch_arrowUp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/popoverResearch_bonusValue"
+                                android:scaleType="fitXY"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/arrow_upgrade"
+                                tools:ignore="ContentDescription"
+                                tools:visibility="visible"/>
+
+                            <TextView
+                                android:id="@+id/popoverResearch_bonusValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                style="@style/defaultText"
+                                android:textSize="14sp"
+                                tools:text="105%"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/popoverResearch_rightCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/popoverResearch_titleLayout"
+                    android:layout_toEndOf="@id/popoverResearch_leftCardView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:foreground="@drawable/roundable_dark">
+
+                    <RelativeLayout
+                        android:id="@+id/popoverResearch_layoutRightCardView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:padding="10dp"
+                        android:background="@drawable/popover_background_gradient">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/popoverResearch_resourceLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true">
+
+                            <ImageView
+                                android:id="@+id/popoverResearch_emptyMaterialD"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/resource_materialAmount_height"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/popoverResearch_emptyMaterialC"
+                                android:layout_marginEnd="5dp"
+                                android:alpha="0.6"
+                                android:background="@color/popover_background"
+                                android:foreground="@drawable/empty_backgroundborder"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/empty_background"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:id="@+id/popoverResearch_emptyMaterialC"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/resource_materialAmount_height"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/popoverResearch_emptyMaterialD"
+                                android:alpha="0.6"
+                                android:background="@color/popover_background"
+                                android:foreground="@drawable/empty_backgroundborder"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/empty_background"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:id="@+id/popoverResearch_emptyMaterialB"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/resource_materialAmount_height"
+                                app:layout_constraintStart_toStartOf="@id/popoverResearch_emptyMaterialD"
+                                app:layout_constraintTop_toBottomOf="@id/popoverResearch_emptyMaterialD"
+                                app:layout_constraintEnd_toEndOf="@id/popoverResearch_emptyMaterialD"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.6"
+                                android:background="@color/popover_background"
+                                android:foreground="@drawable/empty_backgroundborder"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/empty_background"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:id="@+id/popoverResearch_emptyMaterialA"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/resource_materialAmount_height"
+                                app:layout_constraintEnd_toEndOf="@id/popoverResearch_emptyMaterialC"
+                                app:layout_constraintTop_toBottomOf="@id/popoverResearch_emptyMaterialC"
+                                app:layout_constraintStart_toStartOf="@id/popoverResearch_emptyMaterialC"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.6"
+                                android:background="@color/popover_background"
+                                android:foreground="@drawable/empty_backgroundborder"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/empty_background"
+                                tools:ignore="ContentDescription" />
+
+                            <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                                android:id="@+id/popoverResearch_MaterialD"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:backgroundVisible="true"
+                                app:layout_constraintStart_toStartOf="@id/popoverResearch_emptyMaterialD"
+                                app:layout_constraintEnd_toEndOf="@id/popoverResearch_emptyMaterialD"
+                                app:layout_constraintTop_toTopOf="@id/popoverResearch_emptyMaterialD"
+                                app:layout_constraintBottom_toBottomOf="@id/popoverResearch_emptyMaterialD"
+                                tools:visibility="invisible"/>
+
+                            <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                                android:id="@+id/popoverResearch_MaterialC"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:backgroundVisible="true"
+                                app:layout_constraintStart_toStartOf="@id/popoverResearch_emptyMaterialC"
+                                app:layout_constraintEnd_toEndOf="@id/popoverResearch_emptyMaterialC"
+                                app:layout_constraintTop_toTopOf="@id/popoverResearch_emptyMaterialC"
+                                app:layout_constraintBottom_toBottomOf="@id/popoverResearch_emptyMaterialC"/>
+
+                            <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                                android:id="@+id/popoverResearch_MaterialB"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:backgroundVisible="true"
+                                app:layout_constraintStart_toStartOf="@id/popoverResearch_emptyMaterialB"
+                                app:layout_constraintEnd_toEndOf="@id/popoverResearch_emptyMaterialB"
+                                app:layout_constraintTop_toTopOf="@id/popoverResearch_emptyMaterialB"
+                                app:layout_constraintBottom_toBottomOf="@id/popoverResearch_emptyMaterialB"/>
+
+                            <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                                android:id="@+id/popoverResearch_MaterialA"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:backgroundVisible="true"
+                                app:layout_constraintStart_toStartOf="@id/popoverResearch_emptyMaterialA"
+                                app:layout_constraintEnd_toEndOf="@id/popoverResearch_emptyMaterialA"
+                                app:layout_constraintTop_toTopOf="@id/popoverResearch_emptyMaterialA"
+                                app:layout_constraintBottom_toBottomOf="@id/popoverResearch_emptyMaterialA"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                            android:id="@+id/popoverResearch_AmountA"
+                            android:layout_width="@dimen/resource_amount_width"
+                            android:layout_height="@dimen/resource_amount_height"
+                            android:layout_below="@id/popoverResearch_resourceLayout"
+                            android:layout_alignStart="@id/popoverResearch_resourceLayout"
+                            android:layout_marginStart="-3dp"
+                            android:layout_marginTop="5dp" />
+
+                        <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                            android:id="@+id/popoverResearch_AmountB"
+                            android:layout_width="@dimen/resource_amount_width"
+                            android:layout_height="@dimen/resource_amount_height"
+                            android:layout_below="@id/popoverResearch_resourceLayout"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="-3dp"
+                            android:layout_marginTop="5dp" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/popoverResearch_upgradeLayout"
+                            android:layout_width="@dimen/resource_amount_width"
+                            android:layout_height="@dimen/resource_amount_height"
+                            android:layout_below="@id/popoverResearch_AmountA"
+                            android:layout_alignStart="@id/popoverResearch_resourceLayout"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:foreground="@drawable/roundable"
+                            android:soundEffectsEnabled="false">
+
+                            <FrameLayout
+                                android:id="@+id/popoverResearch_upgradeFrame"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/button_ripple" />
+
+                            <TextView
+                                android:id="@+id/popoverResearch_upgradeText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/popoverResearch_upgradeTime"
+                                app:layout_constraintStart_toStartOf="@id/popoverResearch_upgradeLayout"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginVertical="5dp"
+                                android:text="@string/start"
+                                style="@style/defaultText"
+                                android:textAllCaps="true"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/popoverResearch_upgradeTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@id/popoverResearch_upgradeLayout"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginVertical="5dp"
+                                style="@style/defaultText"
+                                android:textSize="20sp"
+                                tools:text="19m 14s" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/popoverResearch_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popoverResearch_cardViewPopOver"
+        android:layout_alignStart="@id/popoverResearch_cardViewPopOver"
+        android:layout_marginHorizontal="10dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/arrow_previous"
+        style="@style/defaultText"
+        android:text="@string/previous"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/popoverResearch_currentLevelOnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popoverResearch_cardViewPopOver"
+        android:layout_alignBottom="@id/popoverResearch_previous"
+        android:layout_toEndOf="@id/popoverResearch_previous"
+        android:layout_toStartOf="@id/popoverResearch_next"
+        android:gravity="center"
+        style="@style/defaultText"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_green_light"
+        tools:text="Level 12"/>
+
+    <Button
+        android:id="@+id/popoverResearch_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popoverResearch_cardViewPopOver"
+        android:layout_alignEnd="@id/popoverResearch_cardViewPopOver"
+        android:layout_marginHorizontal="10dp"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/arrow_next"
+        style="@style/defaultText"
+        android:text="@string/next"
+        android:textAllCaps="false"/>
+
+    <!-- Layout holder for InformationLabel -->
+    <FrameLayout
+        android:id="@+id/popoverResearch_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/popoverResearch_currentLevelOnChange"
+        android:elevation="3dp"
+        tools:ignore="UselessLeaf"/>
+
+</RelativeLayout>

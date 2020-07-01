@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popoverBuildings_CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="30dp"
+    app:cardBackgroundColor="@color/popover_research_lightBackgroundMiddle">
+
+    <RelativeLayout
+        android:id="@+id/popoverBuildings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/popoverBuildings_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center_horizontal"
+            style="@style/defaultText"
+            android:textSize="18sp"
+            android:textColor="@color/textColor_yellow"
+            tools:text="Operations" />
+
+        <View
+            android:id="@+id/popoverBuildings_titleDivider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/popoverBuildings_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/backButtonColor"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/popoverBuildings_conLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popoverBuildings_titleDivider"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/popoverBuildings_level"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/popoverBuildings_levelValue"
+                style="@style/defaultText"
+                android:textSize="26sp"
+                android:text="@string/level"/>
+
+            <TextView
+                android:id="@+id/popoverBuildings_levelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/popoverBuildings_levelMark"
+                style="@style/defaultText"
+                android:textSize="26sp"
+                tools:text="26"/>
+
+            <TextView
+                android:id="@+id/popoverBuildings_levelMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/popoverBuildings_levelMaxValue"
+                style="@style/defaultText"
+                android:textColor="@color/textColor_grey"
+                android:text="/"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/popoverBuildings_levelMaxValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/defaultText"
+                android:textColor="@color/textColor_grey"
+                android:textSize="26sp"
+                tools:text="50"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ListView
+            android:id="@+id/popoverBuildings_listView"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@id/popoverBuildings_conLayout"
+            android:divider="@android:drawable/divider_horizontal_dark"
+            android:background="@color/popover_background"
+            android:dividerHeight="2dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"
+            android:clickable="false"
+            tools:listitem="@layout/list_building_bonus_item" />
+
+        <RelativeLayout
+            android:id="@+id/popoverBuildings_materialLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/popoverBuildings_listView"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popoverBuildings_materialLayoutConstraints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/popoverBuildings_emptyMaterialA"
+                    android:layout_width="@dimen/resource_materialAmount_width"
+                    android:layout_height="@dimen/resource_materialAmount_height"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/popoverBuildings_emptyMaterialB"
+                    android:layout_marginHorizontal="5dp"
+                    android:alpha="0.6"
+                    android:background="@color/popover_background"
+                    android:foreground="@drawable/empty_backgroundborder"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/empty_background"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/popoverBuildings_emptyMaterialB"
+                    android:layout_width="@dimen/resource_materialAmount_width"
+                    android:layout_height="@dimen/resource_materialAmount_height"
+                    app:layout_constraintStart_toEndOf="@id/popoverBuildings_emptyMaterialA"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:alpha="0.6"
+                    android:background="@color/popover_background"
+                    android:foreground="@drawable/empty_backgroundborder"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/empty_background"
+                    tools:ignore="ContentDescription" />
+
+                <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                    android:id="@+id/popoverBuildings_materialA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:backgroundVisible="true"
+                    app:layout_constraintStart_toStartOf="@id/popoverBuildings_emptyMaterialA"
+                    app:layout_constraintEnd_toEndOf="@id/popoverBuildings_emptyMaterialA"
+                    app:layout_constraintTop_toTopOf="@id/popoverBuildings_emptyMaterialA"
+                    app:layout_constraintBottom_toBottomOf="@id/popoverBuildings_emptyMaterialA"/>
+
+                <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                    android:id="@+id/popoverBuildings_materialB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:backgroundVisible="true"
+                    app:layout_constraintStart_toStartOf="@id/popoverBuildings_emptyMaterialB"
+                    app:layout_constraintEnd_toEndOf="@id/popoverBuildings_emptyMaterialB"
+                    app:layout_constraintTop_toTopOf="@id/popoverBuildings_emptyMaterialB"
+                    app:layout_constraintBottom_toBottomOf="@id/popoverBuildings_emptyMaterialB"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/popoverBuildings_linearLayoutAmounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/popoverBuildings_materialLayout"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                android:id="@+id/popoverBuildings_amountA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2.5dp"/>
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                android:id="@+id/popoverBuildings_amountB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2.5dp"/>
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                android:id="@+id/popoverBuildings_amountC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2.5dp"/>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/popoverBuildings_upgradeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popoverBuildings_linearLayoutAmounts"
+            android:layout_margin="10dp"
+            android:foreground="@drawable/roundable"
+            android:soundEffectsEnabled="false">
+
+            <FrameLayout
+                android:id="@+id/popoverBuildings_upgradeFrame"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_ripple"/>
+
+            <TextView
+                android:id="@+id/popoverBuildings_upgradeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/popoverBuildings_upgradeTime"
+                app:layout_constraintStart_toStartOf="@id/popoverBuildings_upgradeLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="5dp"
+                android:text="@string/upgrade"
+                style="@style/defaultText"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/popoverBuildings_upgradeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/popoverBuildings_upgradeLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginVertical="5dp"
+                style="@style/defaultText"
+                android:textSize="20sp"
+                tools:text="19m 14s" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

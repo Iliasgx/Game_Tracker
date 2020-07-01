@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragStarbase_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <RelativeLayout
+        android:id="@+id/fragStarbase_returnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/resourceMaterial_background"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/fragStarbase_returnButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_sublist"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            tools:ignore="contentDescription"/>
+
+        <View
+            android:id="@+id/fragStarbase_mark"
+            android:layout_width="0.5dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/fragStarbase_returnButton"
+            android:layout_alignTop="@id/fragStarbase_returnButton"
+            android:layout_alignBottom="@id/fragStarbase_returnButton"
+            android:layout_marginVertical="5dp"
+            android:background="@color/backButtonColor"
+            android:layout_marginHorizontal="2dp"/>
+
+        <TextView
+            android:id="@+id/fragStarbase_sublistTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fragStarbase_returnButton"
+            android:layout_alignBottom="@id/fragStarbase_returnButton"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/fragStarbase_mark"
+            android:layout_marginHorizontal="10dp"
+            style="@style/defaultText"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            tools:text="Parsteel Buildings"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragStarbase_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:scrollbars="none"
+        android:layout_below="@id/fragStarbase_returnLayout"
+        android:paddingVertical="5dp"
+        tools:itemCount="8"
+        tools:listitem="@layout/list_building_item" />
+</RelativeLayout>

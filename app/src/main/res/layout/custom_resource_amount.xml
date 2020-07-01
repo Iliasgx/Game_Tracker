@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customProgressbar_layout"
+    android:layout_width="@dimen/resource_amount_width"
+    android:layout_height="@dimen/resource_amount_height"
+    android:orientation="vertical"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <FrameLayout
+        android:id="@+id/customResourceAmount_Background"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="12dp"
+        android:background="@color/resource_background" />
+
+    <TextView
+        android:id="@+id/customResourceAmount_ResourceAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/customResourceAmount_Background"
+        android:layout_alignEnd="@id/customResourceAmount_Background"
+        android:layout_alignBottom="@id/customResourceAmount_Background"
+        android:layout_toEndOf="@id/customResourceAmount_ResourceImg"
+        android:layout_marginStart="-10dp"
+        android:gravity="center"
+        style="@style/defaultText"
+        android:textSize="19sp"
+        tools:text="2.3M" />
+
+    <ImageView
+        android:id="@+id/customResourceAmount_ResourceImg"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/parsteel"
+        tools:ignore="ContentDescription" />
+</merge>

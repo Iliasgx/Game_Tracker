@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_shipItem_frame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp">
+    
+    <com.umbrella.stfctracker.CustomComponents.ShipItem
+        android:id="@+id/list_shipItem_shipItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/list_shipItem_buildFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_shipItem_shipItem"
+        android:layout_alignStart="@id/list_shipItem_shipItem"
+        android:layout_alignEnd="@id/list_shipItem_shipItem"
+        android:layout_marginTop="-4.5dp"
+        android:foreground="@drawable/round_edges_blue"
+        app:cardCornerRadius="9dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/list_shipItem_upgradeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:soundEffectsEnabled="false"
+            android:background="@color/notBuild">
+
+            <FrameLayout
+                android:id="@+id/list_shipItem_upgradeFrame"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="2dp"
+                android:background="@color/borderBlue"
+                tools:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/list_shipItem_upgradeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/list_shipItem_upgradeTime"
+                app:layout_constraintStart_toStartOf="@id/list_shipItem_upgradeLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:text="@string/build"
+                style="@style/defaultText"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/list_shipItem_upgradeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/list_shipItem_upgradeLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginVertical="5dp"
+                style="@style/defaultText"
+                tools:text="19m 14s"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

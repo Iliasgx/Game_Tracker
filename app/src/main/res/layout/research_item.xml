@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/researchItem_frame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/researchItem_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="@color/researchItem_borderColor"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="10dp"
+        tools:layout_width="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/researchItem_cardview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="@color/researchItem_background"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:id="@+id/researchItem_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/researchItem_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/researchItem_name"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/officer_cadet_kirk"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/researchItem_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/researchItem_level"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="1dp"
+                    android:lines="2"
+                    style="@style/defaultText"
+                    android:textAlignment="center"
+                    tools:text="Reinforced bulkheads" />
+
+                <TextView
+                    android:id="@+id/researchItem_maxed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    style="@style/defaultText"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:text="@string/maxed"
+                    android:visibility="invisible" />
+
+                <com.umbrella.stfctracker.CustomComponents.CustomProgressbar
+                    android:id="@+id/researchItem_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_alignTop="@id/researchItem_maxed"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="2dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/researchItem_arrowUp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@id/researchItem_cardview"
+        android:layout_alignParentTop="true"
+        android:elevation="2dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/arrow_upgrade"
+        tools:ignore="ContentDescription" />
+
+    <FrameLayout
+        android:id="@+id/researchItem_lockedFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/researchItem_cardview"
+        android:layout_alignEnd="@id/researchItem_cardview"
+        android:layout_alignBottom="@id/researchItem_cardview"
+        android:layout_alignTop="@id/researchItem_cardview"
+        android:elevation="2dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/researchItem_lockedBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/resourceMaterial_background"
+            android:layout_margin="3dp"
+            android:alpha="0.6"/>
+
+        <ImageView
+            android:id="@+id/researchItem_lockedIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/lock"
+            android:scaleType="center"
+            android:elevation="3dp"
+            android:alpha="0.9"
+            tools:ignore="ContentDescription"/>
+    </FrameLayout>
+</merge>

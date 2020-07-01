@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/itemsGroup">
+        <item
+            android:id="@+id/nav_unknown"
+            android:icon="@drawable/library"
+            android:title="@string/title_library" />
+
+        <item
+            android:id="@+id/nav_starbase"
+            android:icon="@drawable/home"
+            android:title="@string/title_progress" />
+
+        <item
+            android:id="@+id/nav_overview"
+            android:icon="@drawable/overview"
+            android:title="@string/title_overview" />
+    </group>
+</menu>
