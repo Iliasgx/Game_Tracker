@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogShipUpgrade_cardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/dialog_lightBackgroundMiddle"
+    app:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:id="@+id/dialogShipUpgrade_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogShipUpgrade_shipName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/dialogShipUpgrade_costCardView_layout"
+            android:layout_alignEnd="@id/dialogShipUpgrade_costCardView_layout"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            style="@style/defaultText"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            tools:text="USS Horizon"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialogShipUpgrade_costCardView_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialogShipUpgrade_shipName"
+            android:layout_alignParentStart="true"
+            android:background="@color/dialog_background"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/dialogShipUpgrade_emptyMaterialD"
+                android:layout_width="@dimen/resource_materialAmount_width"
+                android:layout_height="@dimen/resource_materialAmount_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/dialogShipUpgrade_emptyMaterialC"
+                app:layout_constraintBottom_toTopOf="@id/dialogShipUpgrade_emptyMaterialB"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:layout_margin="5dp"
+                android:alpha="0.6"
+                android:background="@color/dialog_background"
+                android:foreground="@drawable/empty_backgroundborder"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/empty_background"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/dialogShipUpgrade_emptyMaterialC"
+                android:layout_width="@dimen/resource_materialAmount_width"
+                android:layout_height="@dimen/resource_materialAmount_height"
+                app:layout_constraintStart_toEndOf="@id/dialogShipUpgrade_emptyMaterialD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/dialogShipUpgrade_emptyMaterialA"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:layout_margin="5dp"
+                android:alpha="0.6"
+                android:background="@color/dialog_background"
+                android:foreground="@drawable/empty_backgroundborder"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/empty_background"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/dialogShipUpgrade_emptyMaterialB"
+                android:layout_width="@dimen/resource_materialAmount_width"
+                android:layout_height="@dimen/resource_materialAmount_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_emptyMaterialD"
+                app:layout_constraintEnd_toStartOf="@id/dialogShipUpgrade_emptyMaterialA"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:layout_margin="5dp"
+                android:alpha="0.6"
+                android:background="@color/dialog_background"
+                android:foreground="@drawable/empty_backgroundborder"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/empty_background"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/dialogShipUpgrade_emptyMaterialA"
+                android:layout_width="@dimen/resource_materialAmount_width"
+                android:layout_height="@dimen/resource_materialAmount_height"
+                app:layout_constraintStart_toEndOf="@id/dialogShipUpgrade_emptyMaterialB"
+                app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_emptyMaterialC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:layout_margin="5dp"
+                android:alpha="0.6"
+                android:background="@color/dialog_background"
+                android:foreground="@drawable/empty_backgroundborder"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/empty_background"
+                tools:ignore="ContentDescription" />
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                android:id="@+id/dialogShipUpgrade_MaterialD"
+                android:layout_width="@dimen/resource_materialAmount_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/dialogShipUpgrade_emptyMaterialD"
+                app:layout_constraintTop_toTopOf="@id/dialogShipUpgrade_emptyMaterialD"
+                app:layout_constraintEnd_toEndOf="@id/dialogShipUpgrade_emptyMaterialD"
+                app:layout_constraintBottom_toBottomOf="@id/dialogShipUpgrade_emptyMaterialD"
+                app:backgroundVisible="true"/>
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                android:id="@+id/dialogShipUpgrade_MaterialC"
+                android:layout_width="@dimen/resource_materialAmount_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/dialogShipUpgrade_emptyMaterialC"
+                app:layout_constraintTop_toTopOf="@id/dialogShipUpgrade_emptyMaterialC"
+                app:layout_constraintEnd_toEndOf="@id/dialogShipUpgrade_emptyMaterialC"
+                app:layout_constraintBottom_toBottomOf="@id/dialogShipUpgrade_emptyMaterialC"
+                app:backgroundVisible="true"/>
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                android:id="@+id/dialogShipUpgrade_MaterialB"
+                android:layout_width="@dimen/resource_materialAmount_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/dialogShipUpgrade_emptyMaterialB"
+                app:layout_constraintTop_toTopOf="@id/dialogShipUpgrade_emptyMaterialB"
+                app:layout_constraintEnd_toEndOf="@id/dialogShipUpgrade_emptyMaterialB"
+                app:layout_constraintBottom_toBottomOf="@id/dialogShipUpgrade_emptyMaterialB"
+                app:backgroundVisible="true"/>
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+                android:id="@+id/dialogShipUpgrade_MaterialA"
+                android:layout_width="@dimen/resource_materialAmount_width"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/dialogShipUpgrade_emptyMaterialA"
+                app:layout_constraintTop_toTopOf="@id/dialogShipUpgrade_emptyMaterialA"
+                app:layout_constraintEnd_toEndOf="@id/dialogShipUpgrade_emptyMaterialA"
+                app:layout_constraintBottom_toBottomOf="@id/dialogShipUpgrade_emptyMaterialA"
+                app:backgroundVisible="true"/>
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                android:id="@+id/dialogShipUpgrade_AmountA"
+                android:layout_width="@dimen/resource_amount_width"
+                android:layout_height="@dimen/resource_amount_height"
+                app:layout_constraintStart_toStartOf="@id/dialogShipUpgrade_emptyMaterialB"
+                app:layout_constraintEnd_toEndOf="@id/dialogShipUpgrade_emptyMaterialB"
+                app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_emptyMaterialB"
+                android:layout_marginTop="5dp" />
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                android:id="@+id/dialogShipUpgrade_AmountB"
+                android:layout_width="@dimen/resource_amount_width"
+                android:layout_height="@dimen/resource_amount_height"
+                app:layout_constraintStart_toStartOf="@id/dialogShipUpgrade_emptyMaterialA"
+                app:layout_constraintEnd_toEndOf="@id/dialogShipUpgrade_emptyMaterialA"
+                app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_emptyMaterialA"
+                android:layout_marginTop="5dp" />
+
+            <com.umbrella.stfctracker.CustomComponents.CustomButton
+                android:id="@+id/dialogShipUpgrade_tierUp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_AmountA"
+                android:layout_marginTop="10dp"
+                app:title="@string/build"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -66,4 +66,5 @@
     <string name="rewardItem_amount">x%1$s</string>
     <string name="scrapShipButtonText">Scrap ship</string>
     <string name="scrapShip_subtitle">[ %1$d ] %1$s</string>
+    <string name="tierUp">Tier up</string>
 </resources>
