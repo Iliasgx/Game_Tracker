@@ -1,18 +1,14 @@
 package com.umbrella.stfctracker.CustomComponents;
 
-import android.app.Application;
 import android.content.Context;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.util.AttributeSet;
-import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 
-import com.umbrella.stfctracker.DataTypes.ValueIndicator;
+import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.databinding.CustomScrapRewardItemBinding;
 
@@ -35,12 +31,17 @@ public class RewardItem extends RelativeLayout {
     private Rarity rarity = Rarity.NONE;
     private Stars stars = Stars.NONE;
 
-    private Context app;
-
     public RewardItem(Context context) {
         super(context);
-        app = context.getApplicationContext();
         init(context);
+    }
+
+    public void fromDatabase(String name, int amount, Reward reward, Rarity rarity, Stars stars) {
+        this.name = name;
+        this.amount = amount;
+        this.reward = reward;
+        this.rarity = rarity;
+        this.stars = stars;
     }
 
     private void init(Context context) {
@@ -80,7 +81,7 @@ public class RewardItem extends RelativeLayout {
 
     public void setAmount(int amount) {
         this.amount = amount;
-        value.setText(app.getString(R.string.rewardItem_amount, new ValueIndicator().setValueWithIndicator((long)amount)));
+        value.setText(getResources().getString(R.string.rewardItem_amount, new ValueIndicator().setValueWithIndicator(amount)));
     }
 
     public void setReward(Reward reward) {
@@ -88,17 +89,17 @@ public class RewardItem extends RelativeLayout {
         // TODO: set drawables
         Drawable dr = null;
         switch (reward) {
-            case PARSTEEL: dr = app.getDrawable(R.drawable.parsteel);
+            case PARSTEEL: dr = getResources().getDrawable(R.drawable.parsteel, null);
                 break;
-            case TRITANIUM: dr = app.getDrawable(R.drawable.tritanium);
+            case TRITANIUM: dr = getResources().getDrawable(R.drawable.tritanium, null);
                 break;
-            case DILITHIUM: dr = app.getDrawable(R.drawable.dilithium);
+            case DILITHIUM: dr = getResources().getDrawable(R.drawable.dilithium, null);
                 break;
-            case GAS: dr = app.getDrawable(R.drawable.gas);
+            case GAS: dr = getResources().getDrawable(R.drawable.gas, null);
                 break;
-            case ORE: dr = app.getDrawable(R.drawable.ore);
+            case ORE: dr = getResources().getDrawable(R.drawable.ore, null);
                 break;
-            case CRYSTAL: dr = app.getDrawable(R.drawable.crystal);
+            case CRYSTAL: dr = getResources().getDrawable(R.drawable.crystal, null);
                 break;
             case XP:
                 break;
@@ -124,16 +125,16 @@ public class RewardItem extends RelativeLayout {
         switch (rarity) {
             case NONE:
             case COMMON:
-                borderColor = app.getColor(R.color.shipScrapRewardItem_greyBorder);
-                innerColor = app.getColor(R.color.shipScrapRewardItem_greyInner);
+                borderColor = getResources().getColor(R.color.shipScrapRewardItem_greyBorder, null);
+                innerColor = getResources().getColor(R.color.shipScrapRewardItem_greyInner, null);
                 break;
             case UNCOMMON:
-                borderColor = app.getColor(R.color.shipScrapRewardItem_greenBorder);
-                innerColor = app.getColor(R.color.shipScrapRewardItem_greenInner);
+                borderColor = getResources().getColor(R.color.shipScrapRewardItem_greenBorder, null);
+                innerColor = getResources().getColor(R.color.shipScrapRewardItem_greenInner, null);
                 break;
             case RARE:
-                borderColor = app.getColor(R.color.shipScrapRewardItem_blueBorder);
-                innerColor = app.getColor(R.color.shipScrapRewardItem_blueInner);
+                borderColor = getResources().getColor(R.color.shipScrapRewardItem_blueBorder, null);
+                innerColor = getResources().getColor(R.color.shipScrapRewardItem_blueInner, null);
                 break;
         }
 

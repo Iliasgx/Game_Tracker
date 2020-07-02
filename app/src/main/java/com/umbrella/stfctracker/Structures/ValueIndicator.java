@@ -1,8 +1,4 @@
-package com.umbrella.stfctracker.DataTypes;
-
-import android.app.Application;
-
-import com.umbrella.stfctracker.R;
+package com.umbrella.stfctracker.Structures;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;

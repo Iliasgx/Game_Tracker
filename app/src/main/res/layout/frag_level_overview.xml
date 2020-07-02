@@ -11,7 +11,7 @@
         android:id="@+id/fragLevelOverview_gridView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/popover_background"
+        android:background="@color/dialog_background"
         android:choiceMode="none"
         android:gravity="center"
         android:listSelector="@android:color/transparent"

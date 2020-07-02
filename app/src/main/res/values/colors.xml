@@ -35,10 +35,10 @@
     <color name="research_treeGroups_backgroundOverColor">#1A1A1A</color>
     <color name="groupList_backgroundColor">#494A68</color>
     <color name="upgrade_button_background">#236C8E</color>
-    <color name="popover_research_border">#DBEDEF</color>
-    <color name="popover_background">#214B5B</color>
-    <color name="popover_research_lightBackgroundSide">#235667</color>
-    <color name="popover_research_lightBackgroundMiddle">#31596C</color>
+    <color name="dialog_research_border">#DBEDEF</color>
+    <color name="dialog_background">#214B5B</color>
+    <color name="dialog_lightBackgroundSide">#235667</color>
+    <color name="dialog_lightBackgroundMiddle">#31596C</color>
     <color name="empty_backgroundBorder">#1F3845</color>
     <color name="buttonLevel_light">#6590A1</color>
     <color name="buttonLevel_dark">#182F37</color>
@@ -53,4 +53,7 @@
     <color name="shipScrapRewardItem_blueBorder">#559FE3</color>
     <color name="shipScrapRewardItem_greyInner">#343538</color>
     <color name="shipScrapRewardItem_greyBorder">#7C8B90</color>
+    <color name="shipScrapColor_middle">#922B19</color>
+    <color name="shipScrapColor_side">#D75533</color>
+    <color name="shipScrapBorderColor">#994332</color>
 </resources>

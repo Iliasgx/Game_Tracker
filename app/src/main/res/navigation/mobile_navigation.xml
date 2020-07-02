@@ -133,7 +133,7 @@
         android:id="@+id/buildingDialog"
         android:name="com.umbrella.stfctracker.ui.Dialogs.BuildingDialog"
         android:label="BuildingDialog"
-        tools:layout="@layout/popover_buildings">
+        tools:layout="@layout/dialog_buildings">
         <argument
             android:name="building"
             app:argType="com.umbrella.stfctracker.Database.Entities.Building" />
@@ -145,7 +145,7 @@
         android:id="@+id/researchDialog"
         android:name="com.umbrella.stfctracker.ui.Dialogs.ResearchDialog"
         android:label="ResearchDialog"
-        tools:layout="@layout/popover_research">
+        tools:layout="@layout/dialog_research">
         <argument
             android:name="research"
             app:argType="com.umbrella.stfctracker.Database.Entities.Research" />

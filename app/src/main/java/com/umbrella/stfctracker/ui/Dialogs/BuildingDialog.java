@@ -2,7 +2,6 @@ package com.umbrella.stfctracker.ui.Dialogs;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +25,7 @@ import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.Structures.TimeDisplay;
-import com.umbrella.stfctracker.databinding.PopoverBuildingsBinding;
+import com.umbrella.stfctracker.databinding.DialogBuildingsBinding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,7 +33,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class BuildingDialog extends DialogFragment {
-    private PopoverBuildingsBinding binding;
+    private DialogBuildingsBinding binding;
 
     private CumulativeBonus cumulativeBonus = CumulativeBonus.getInstance();
 
@@ -54,7 +53,7 @@ public class BuildingDialog extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = PopoverBuildingsBinding.inflate(inflater, container, false);
+        binding = DialogBuildingsBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -83,11 +82,11 @@ public class BuildingDialog extends DialogFragment {
     }
 
     private void fillBaseData(Building building) {
-        binding.popoverBuildingsName.setText(building.getName());
-        binding.popoverBuildingsLevelMaxValue.setText(String.valueOf(building.getLevels().size()));
+        binding.dialogBuildingsName.setText(building.getName());
+        binding.dialogBuildingsLevelMaxValue.setText(String.valueOf(building.getLevels().size()));
 
-        binding.popoverBuildingsUpgradeLayout.setOnClickListener(listener -> {
-            binding.popoverBuildingsUpgradeLayout.setClickable(false);
+        binding.dialogBuildingsUpgradeLayout.setOnClickListener(listener -> {
+            binding.dialogBuildingsUpgradeLayout.setClickable(false);
             DatabaseClient.dbWriteExecutor.execute(() -> {
                 building.setUnlockedLevel(nextLevel.getLevel());
                 DatabaseClient.getInstance(requireContext()).daoBuilding().levelUp(building);
@@ -110,22 +109,22 @@ public class BuildingDialog extends DialogFragment {
     private void setUpObserver() {
         observeBuilding.observe(getViewLifecycleOwner(), building -> {
             //Get all views of @{ResourceMaterialAmount, ResourceAmount}
-            LinkedList<ResourceMaterialAmount> rma = new LinkedList<>(Arrays.asList(binding.popoverBuildingsMaterialA, binding.popoverBuildingsMaterialB));
-            LinkedList<ResourceAmount> ra = new LinkedList<>(Arrays.asList(binding.popoverBuildingsAmountA, binding.popoverBuildingsAmountB, binding.popoverBuildingsAmountC));
+            LinkedList<ResourceMaterialAmount> rma = new LinkedList<>(Arrays.asList(binding.dialogBuildingsMaterialA, binding.dialogBuildingsMaterialB));
+            LinkedList<ResourceAmount> ra = new LinkedList<>(Arrays.asList(binding.dialogBuildingsAmountA, binding.dialogBuildingsAmountB, binding.dialogBuildingsAmountC));
 
             //boolean isLastOne = (building.getUnlockedLevel() == building.getLevels().size());
             boolean isLastOne = (level.getLevel() == building.getLevels().size());
 
-            binding.popoverBuildingsUpgradeLayout.setClickable(isUpgradeable);
-            binding.popoverBuildingsUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogBuildingsUpgradeLayout.setClickable(isUpgradeable);
+            binding.dialogBuildingsUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
 
-            binding.popoverBuildingsUpgradeLayout.setClickable(isUpgradeable);
-            binding.popoverBuildingsUpgradeLayout.setVisibility(isLastOne | isSpecAccess ? View.GONE : View.VISIBLE);
-            binding.popoverBuildingsUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogBuildingsUpgradeLayout.setClickable(isUpgradeable);
+            binding.dialogBuildingsUpgradeLayout.setVisibility(isLastOne | isSpecAccess ? View.GONE : View.VISIBLE);
+            binding.dialogBuildingsUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
 
-            binding.popoverBuildingsLevelValue.setText(String.valueOf(level != null ? level.getLevel() : 0));
+            binding.dialogBuildingsLevelValue.setText(String.valueOf(level != null ? level.getLevel() : 0));
 
-            binding.popoverBuildingsUpgradeTime.setText((nextLevel == null) ? "" : new TimeDisplay(requireContext())
+            binding.dialogBuildingsUpgradeTime.setText((nextLevel == null) ? "" : new TimeDisplay(requireContext())
                     .getTime( cumulativeBonus.applyBonus(nextLevel.getUpgradeTime(), cumulativeBonus.getBuildSpeedBonus())));
 
             //Get all materials/resources of the level.
@@ -160,7 +159,7 @@ public class BuildingDialog extends DialogFragment {
                     InformationLabel label = new InformationLabel(requireContext());
                     label.setValue(item.getValue());
                     label.setLocation(view, -15, -10);
-                    binding.popoverBuildingsCardView.addView(label);
+                    binding.dialogBuildingsCardView.addView(label);
                 });
             });
 
@@ -184,7 +183,7 @@ public class BuildingDialog extends DialogFragment {
             );
 
             BonusListInfo.BonusAdapter bonusAdapter = new BonusListInfo.BonusAdapter(requireContext(), bonusItems);
-            binding.popoverBuildingsListView.setAdapter(bonusAdapter);
+            binding.dialogBuildingsListView.setAdapter(bonusAdapter);
         });
     }
 

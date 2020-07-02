@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogShipScrap_layoutCardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/dialog_lightBackgroundMiddle"
+    app:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:id="@+id/dialogShipScrap_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dialogShipScrap_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            style="@style/defaultText"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:text="@string/scrapRewardTitle"/>
+
+        <TextView
+            android:id="@+id/dialogShipScrap_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialogShipScrap_title"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            style="@style/defaultText"
+            android:textColor="@color/textColor_yellow"
+            android:textSize="14sp"
+            tools:text="[ 28 ] USS Horizon"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dialogShipScrap_rewardRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/dialogShipScrap_subtitle"
+            android:paddingHorizontal="10dp"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:background="@color/dialog_background"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:listitem="@layout/custom_scrap_reward_item"
+            tools:itemCount="10"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dialogShipScrap_actionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialogShipScrap_rewardRecyclerView"
+            android:layout_margin="10dp">
+
+            <com.umbrella.stfctracker.CustomComponents.CustomButton
+                android:id="@+id/dialogShipScrap_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/dialogShipScrap_scrap"
+                android:layout_marginEnd="5dp"
+                app:title="@string/cancel"
+                app:showTime="false"
+                app:allTextSize="15sp"/>
+
+            <com.umbrella.stfctracker.CustomComponents.CustomButton
+                android:id="@+id/dialogShipScrap_scrap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dialogShipScrap_cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="5dp"
+                app:allTextSize="15sp"
+                app:title="@string/scrapShipButtonText"
+                app:borderDrawable="@drawable/round_edge_light_red"
+                app:frameDrawable="@drawable/button_ripple_red"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

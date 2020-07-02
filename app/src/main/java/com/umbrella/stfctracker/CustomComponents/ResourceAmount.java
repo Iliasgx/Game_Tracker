@@ -9,12 +9,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
-import com.umbrella.stfctracker.DataTypes.ValueIndicator;
+import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.R;
-
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.util.Locale;
 
 public class ResourceAmount extends RelativeLayout {
     private ImageView resource;

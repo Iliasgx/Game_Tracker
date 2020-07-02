@@ -16,7 +16,7 @@
             android:id="@+id/customInformationLabel_stud"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:background="@color/popover_background"
+            android:background="@color/dialog_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp"
             app:cardCornerRadius="6dp"
-            app:cardBackgroundColor="@color/popover_background"
+            app:cardBackgroundColor="@color/dialog_background"
             app:contentPadding="3dp"
             app:cardElevation="0dp">
 

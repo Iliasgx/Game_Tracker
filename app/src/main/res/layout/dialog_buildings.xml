@@ -3,20 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/popoverBuildings_CardView"
+    android:id="@+id/dialogBuildings_CardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="30dp"
-    app:cardBackgroundColor="@color/popover_research_lightBackgroundMiddle">
+    app:cardBackgroundColor="@color/dialog_lightBackgroundMiddle">
 
     <RelativeLayout
-        android:id="@+id/popoverBuildings_layout"
+        android:id="@+id/dialogBuildings_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="5dp">
 
         <TextView
-            android:id="@+id/popoverBuildings_name"
+            android:id="@+id/dialogBuildings_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -31,52 +31,52 @@
             tools:text="Operations" />
 
         <View
-            android:id="@+id/popoverBuildings_titleDivider"
+            android:id="@+id/dialogBuildings_titleDivider"
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_below="@id/popoverBuildings_name"
+            android:layout_below="@id/dialogBuildings_name"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginHorizontal="20dp"
             android:background="@color/backButtonColor"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/popoverBuildings_conLayout"
+            android:id="@+id/dialogBuildings_conLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/popoverBuildings_titleDivider"
+            android:layout_below="@id/dialogBuildings_titleDivider"
             android:layout_margin="10dp">
 
             <TextView
-                android:id="@+id/popoverBuildings_level"
+                android:id="@+id/dialogBuildings_level"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/popoverBuildings_levelValue"
+                app:layout_constraintEnd_toStartOf="@id/dialogBuildings_levelValue"
                 style="@style/defaultText"
                 android:textSize="26sp"
                 android:text="@string/level"/>
 
             <TextView
-                android:id="@+id/popoverBuildings_levelValue"
+                android:id="@+id/dialogBuildings_levelValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/popoverBuildings_levelMark"
+                app:layout_constraintEnd_toStartOf="@id/dialogBuildings_levelMark"
                 style="@style/defaultText"
                 android:textSize="26sp"
                 tools:text="26"/>
 
             <TextView
-                android:id="@+id/popoverBuildings_levelMark"
+                android:id="@+id/dialogBuildings_levelMark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/popoverBuildings_levelMaxValue"
+                app:layout_constraintEnd_toStartOf="@id/dialogBuildings_levelMaxValue"
                 style="@style/defaultText"
                 android:textColor="@color/textColor_grey"
                 android:text="/"
@@ -84,7 +84,7 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:id="@+id/popoverBuildings_levelMaxValue"
+                android:id="@+id/dialogBuildings_levelMaxValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -97,12 +97,12 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ListView
-            android:id="@+id/popoverBuildings_listView"
+            android:id="@+id/dialogBuildings_listView"
             android:layout_width="match_parent"
             android:layout_height="130dp"
-            android:layout_below="@id/popoverBuildings_conLayout"
+            android:layout_below="@id/dialogBuildings_conLayout"
             android:divider="@android:drawable/divider_horizontal_dark"
-            android:background="@color/popover_background"
+            android:background="@color/dialog_background"
             android:dividerHeight="2dp"
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
@@ -112,110 +112,110 @@
             tools:listitem="@layout/list_building_bonus_item" />
 
         <RelativeLayout
-            android:id="@+id/popoverBuildings_materialLayout"
+            android:id="@+id/dialogBuildings_materialLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_below="@id/popoverBuildings_listView"
+            android:layout_below="@id/dialogBuildings_listView"
             android:layout_marginTop="10dp"
             android:gravity="center_horizontal">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/popoverBuildings_materialLayoutConstraints"
+                android:id="@+id/dialogBuildings_materialLayoutConstraints"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true">
 
                 <ImageView
-                    android:id="@+id/popoverBuildings_emptyMaterialA"
+                    android:id="@+id/dialogBuildings_emptyMaterialA"
                     android:layout_width="@dimen/resource_materialAmount_width"
                     android:layout_height="@dimen/resource_materialAmount_height"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/popoverBuildings_emptyMaterialB"
+                    app:layout_constraintEnd_toStartOf="@id/dialogBuildings_emptyMaterialB"
                     android:layout_marginHorizontal="5dp"
                     android:alpha="0.6"
-                    android:background="@color/popover_background"
+                    android:background="@color/dialog_background"
                     android:foreground="@drawable/empty_backgroundborder"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/empty_background"
                     tools:ignore="ContentDescription" />
 
                 <ImageView
-                    android:id="@+id/popoverBuildings_emptyMaterialB"
+                    android:id="@+id/dialogBuildings_emptyMaterialB"
                     android:layout_width="@dimen/resource_materialAmount_width"
                     android:layout_height="@dimen/resource_materialAmount_height"
-                    app:layout_constraintStart_toEndOf="@id/popoverBuildings_emptyMaterialA"
+                    app:layout_constraintStart_toEndOf="@id/dialogBuildings_emptyMaterialA"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginHorizontal="5dp"
                     android:alpha="0.6"
-                    android:background="@color/popover_background"
+                    android:background="@color/dialog_background"
                     android:foreground="@drawable/empty_backgroundborder"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/empty_background"
                     tools:ignore="ContentDescription" />
 
                 <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
-                    android:id="@+id/popoverBuildings_materialA"
+                    android:id="@+id/dialogBuildings_materialA"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     app:backgroundVisible="true"
-                    app:layout_constraintStart_toStartOf="@id/popoverBuildings_emptyMaterialA"
-                    app:layout_constraintEnd_toEndOf="@id/popoverBuildings_emptyMaterialA"
-                    app:layout_constraintTop_toTopOf="@id/popoverBuildings_emptyMaterialA"
-                    app:layout_constraintBottom_toBottomOf="@id/popoverBuildings_emptyMaterialA"/>
+                    app:layout_constraintStart_toStartOf="@id/dialogBuildings_emptyMaterialA"
+                    app:layout_constraintEnd_toEndOf="@id/dialogBuildings_emptyMaterialA"
+                    app:layout_constraintTop_toTopOf="@id/dialogBuildings_emptyMaterialA"
+                    app:layout_constraintBottom_toBottomOf="@id/dialogBuildings_emptyMaterialA"/>
 
                 <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
-                    android:id="@+id/popoverBuildings_materialB"
+                    android:id="@+id/dialogBuildings_materialB"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     app:backgroundVisible="true"
-                    app:layout_constraintStart_toStartOf="@id/popoverBuildings_emptyMaterialB"
-                    app:layout_constraintEnd_toEndOf="@id/popoverBuildings_emptyMaterialB"
-                    app:layout_constraintTop_toTopOf="@id/popoverBuildings_emptyMaterialB"
-                    app:layout_constraintBottom_toBottomOf="@id/popoverBuildings_emptyMaterialB"/>
+                    app:layout_constraintStart_toStartOf="@id/dialogBuildings_emptyMaterialB"
+                    app:layout_constraintEnd_toEndOf="@id/dialogBuildings_emptyMaterialB"
+                    app:layout_constraintTop_toTopOf="@id/dialogBuildings_emptyMaterialB"
+                    app:layout_constraintBottom_toBottomOf="@id/dialogBuildings_emptyMaterialB"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </RelativeLayout>
 
         <LinearLayout
-            android:id="@+id/popoverBuildings_linearLayoutAmounts"
+            android:id="@+id/dialogBuildings_linearLayoutAmounts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_below="@id/popoverBuildings_materialLayout"
+            android:layout_below="@id/dialogBuildings_materialLayout"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp">
 
             <com.umbrella.stfctracker.CustomComponents.ResourceAmount
-                android:id="@+id/popoverBuildings_amountA"
+                android:id="@+id/dialogBuildings_amountA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="2.5dp"/>
 
             <com.umbrella.stfctracker.CustomComponents.ResourceAmount
-                android:id="@+id/popoverBuildings_amountB"
+                android:id="@+id/dialogBuildings_amountB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="2.5dp"/>
 
             <com.umbrella.stfctracker.CustomComponents.ResourceAmount
-                android:id="@+id/popoverBuildings_amountC"
+                android:id="@+id/dialogBuildings_amountC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="2.5dp"/>
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/popoverBuildings_upgradeLayout"
+            android:id="@+id/dialogBuildings_upgradeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/popoverBuildings_linearLayoutAmounts"
+            android:layout_below="@id/dialogBuildings_linearLayoutAmounts"
             android:layout_margin="10dp"
-            android:foreground="@drawable/roundable"
+            android:foreground="@drawable/round_edge"
             android:soundEffectsEnabled="false">
 
             <FrameLayout
-                android:id="@+id/popoverBuildings_upgradeFrame"
+                android:id="@+id/dialogBuildings_upgradeFrame"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -226,12 +226,12 @@
                 android:background="@drawable/button_ripple"/>
 
             <TextView
-                android:id="@+id/popoverBuildings_upgradeText"
+                android:id="@+id/dialogBuildings_upgradeText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/popoverBuildings_upgradeTime"
-                app:layout_constraintStart_toStartOf="@id/popoverBuildings_upgradeLayout"
+                app:layout_constraintEnd_toStartOf="@id/dialogBuildings_upgradeTime"
+                app:layout_constraintStart_toStartOf="@id/dialogBuildings_upgradeLayout"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginVertical="5dp"
@@ -241,11 +241,11 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/popoverBuildings_upgradeTime"
+                android:id="@+id/dialogBuildings_upgradeTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/popoverBuildings_upgradeLayout"
+                app:layout_constraintEnd_toEndOf="@id/dialogBuildings_upgradeLayout"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginEnd="10dp"
                 android:layout_marginVertical="5dp"

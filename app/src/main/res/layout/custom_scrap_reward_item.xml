@@ -17,7 +17,7 @@
         android:lines="2"
         android:gravity="bottom|center_horizontal"
         style="@style/defaultText"
-        android:textSize="14sp"
+        android:textSize="13sp"
         tools:text="Survey parts"/>
 
     <androidx.cardview.widget.CardView
@@ -120,10 +120,11 @@
                 android:layout_below="@id/scrapRewardItem_border"
                 android:layout_alignStart="@id/scrapRewardItem_border"
                 android:layout_alignEnd="@id/scrapRewardItem_border"
-                android:layout_marginBottom="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="1dp"
                 android:gravity="center"
                 style="@style/defaultText"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 tools:text="x13"/>
         </RelativeLayout>
 

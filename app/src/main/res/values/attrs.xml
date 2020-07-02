@@ -46,4 +46,14 @@
         </attr>
         <attr name="backgroundVisible" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="CustomButton">
+        <attr name="borderDrawable" format="reference"/>
+        <attr name="frameDrawable" format="reference"/>
+        <attr name="title" format="string"/>
+        <attr name="time" format="integer"/>
+        <attr name="showTime" format="boolean"/>
+        <attr name="usable" format="boolean"/>
+        <attr name="allTextSize" format="dimension"/>
+    </declare-styleable>
 </resources>

@@ -34,14 +34,14 @@ public class CustomProgressbar extends RelativeLayout {
             arr.recycle();
         }
 
-        initComponent();
+        initComponents();
 
         setProgress(progress);
         setMax(max);
 
     }
 
-    private void initComponent() {
+    private void initComponents() {
         progressBar = requireViewById(R.id.customProgressbar_progressbar);
         value = requireViewById(R.id.customProgressbar_value);
     }

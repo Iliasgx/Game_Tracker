@@ -1,13 +1,11 @@
 package com.umbrella.stfctracker.ui.Dialogs;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 
-import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
@@ -25,14 +23,14 @@ import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.Structures.TimeDisplay;
-import com.umbrella.stfctracker.databinding.PopoverResearchBinding;
+import com.umbrella.stfctracker.databinding.DialogResearchBinding;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Objects;
 
 public class ResearchDialog extends DialogFragment {
-    private PopoverResearchBinding binding;
+    private DialogResearchBinding binding;
 
     private CumulativeBonus cumulativeBonus = CumulativeBonus.getInstance();
 
@@ -66,7 +64,7 @@ public class ResearchDialog extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = PopoverResearchBinding.inflate(inflater, container, false);
+        binding = DialogResearchBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -90,19 +88,19 @@ public class ResearchDialog extends DialogFragment {
     }
 
     private void fillBaseData(Research research) {
-        binding.popoverResearchTitleName.setText(research.getName());
-        binding.popoverResearchImg.setImageDrawable(DataFunctions.decodeDrawable(getResources(), research.getImage()));
-        binding.popoverResearchInfo.setText(research.getDescription());
+        binding.dialogResearchTitleName.setText(research.getName());
+        binding.dialogResearchImg.setImageDrawable(DataFunctions.decodeDrawable(getResources(), research.getImage()));
+        binding.dialogResearchInfo.setText(research.getDescription());
 
-        binding.popoverResearchCloseButton.setOnClickListener(listener -> dismiss());
-        binding.popoverResearchPrevious.setOnClickListener(onPrevious ->
+        binding.dialogResearchCloseButton.setOnClickListener(listener -> dismiss());
+        binding.dialogResearchPrevious.setOnClickListener(onPrevious ->
             observableLevel.setValue(research.getLevels().get(--currentIndex))
         );
-        binding.popoverResearchNext.setOnClickListener(onNext ->
+        binding.dialogResearchNext.setOnClickListener(onNext ->
                 observableLevel.setValue(research.getLevels().get(++currentIndex))
         );
-        binding.popoverResearchUpgradeLayout.setOnClickListener(upgrade -> {
-            binding.popoverResearchUpgradeLayout.setClickable(false);
+        binding.dialogResearchUpgradeLayout.setOnClickListener(upgrade -> {
+            binding.dialogResearchUpgradeLayout.setClickable(false);
 
             DatabaseClient.dbWriteExecutor.execute(() -> {
                 CumulativeBonus cBonus = CumulativeBonus.getInstance();
@@ -122,33 +120,33 @@ public class ResearchDialog extends DialogFragment {
     private void setUpObservers() {
         observableLevel.observe(getViewLifecycleOwner(), level -> {
             //Get all views of @{ResourceMaterialAmount, ResourceAmount}
-            LinkedList<ResourceMaterialAmount> rma = new LinkedList<>(Arrays.asList(binding.popoverResearchMaterialA, binding.popoverResearchMaterialB, binding.popoverResearchMaterialC, binding.popoverResearchMaterialD));
-            LinkedList<ResourceAmount> ra = new LinkedList<>(Arrays.asList(binding.popoverResearchAmountA, binding.popoverResearchAmountB));
+            LinkedList<ResourceMaterialAmount> rma = new LinkedList<>(Arrays.asList(binding.dialogResearchMaterialA, binding.dialogResearchMaterialB, binding.dialogResearchMaterialC, binding.dialogResearchMaterialD));
+            LinkedList<ResourceAmount> ra = new LinkedList<>(Arrays.asList(binding.dialogResearchAmountA, binding.dialogResearchAmountB));
 
             isUpgradeable = (research.getUnlockedLevel() != research.getLevels().size() // Not max level
                     && level.getRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel() // Seen level is accessible with current Ops level
                     && level.getLevel() - 1 == research.getUnlockedLevel()); // Looking at next level that can be upgraded
 
-            //Note: Upgradelayout does not dissapear as with Buildings because otherwise the values can't be viewed anymore.
-            binding.popoverResearchUpgradeLayout.setClickable(isUpgradeable);
-            binding.popoverResearchUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
+            //Note: UpgradeLayout does not vanish as with Buildings because otherwise the values can't be viewed anymore.
+            binding.dialogResearchUpgradeLayout.setClickable(isUpgradeable);
+            binding.dialogResearchUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
 
-            binding.popoverResearchPrevious.setVisibility(currentIndex != 0 ? View.VISIBLE : View.INVISIBLE);
-            binding.popoverResearchNext.setVisibility(currentIndex != (research.getLevels().size() - 1) ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogResearchPrevious.setVisibility(currentIndex != 0 ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogResearchNext.setVisibility(currentIndex != (research.getLevels().size() - 1) ? View.VISIBLE : View.INVISIBLE);
 
             //Show current unlocked level in Progressbar.
-            binding.popoverResearchLevel.setValue(research.getUnlockedLevel(), research.getLevels().size());
+            binding.dialogResearchLevel.setValue(research.getUnlockedLevel(), research.getLevels().size());
 
-            binding.popoverResearchUpgradeTime.setText(new TimeDisplay(requireContext())
+            binding.dialogResearchUpgradeTime.setText(new TimeDisplay(requireContext())
                     .getTime(cumulativeBonus.applyBonus(level.getUpgradeTime(), cumulativeBonus.getResearchSpeedBonus())));
 
             //Set current shown level.
-            binding.popoverResearchCurrentLevelOnChange.setVisibility(research.getUnlockedLevel() == level.getLevel() ? View.INVISIBLE : View.VISIBLE);
-            binding.popoverResearchCurrentLevelOnChange.setText(getResources().getString(R.string.currentLevel, level.getLevel()));
+            binding.dialogResearchCurrentLevelOnChange.setVisibility(research.getUnlockedLevel() == level.getLevel() ? View.INVISIBLE : View.VISIBLE);
+            binding.dialogResearchCurrentLevelOnChange.setText(getResources().getString(R.string.currentLevel, level.getLevel()));
 
-            binding.popoverResearchBonusValue.setText(getString(R.string.percentage, level.getBonusA()));
-            binding.popoverResearchArrowUp.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
-            binding.popoverResearchBonusLayout.setVisibility(level.getBonusA() != -1 ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogResearchBonusValue.setText(getString(R.string.percentage, level.getBonusA()));
+            binding.dialogResearchArrowUp.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogResearchBonusLayout.setVisibility(level.getBonusA() != -1 ? View.VISIBLE : View.INVISIBLE);
 
             //Get all materials/resources of the level.
             LinkedList<ResourceMaterial> popMaterials = (level.getMaterials() != null ? level.getMaterials() : new LinkedList<>());
@@ -177,7 +175,7 @@ public class ResearchDialog extends DialogFragment {
                     label.setValue(item.getValue());
                     label.setLocation(view, 20, 20);
 
-                    binding.popoverResearchHolder.addView(label);
+                    binding.dialogResearchHolder.addView(label);
                 });
             });
 
