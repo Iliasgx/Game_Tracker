@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customButton_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:soundEffectsEnabled="false"
+    tools:foreground="@drawable/round_edge">
+
+    <FrameLayout
+        android:id="@+id/customButton_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="2dp"
+        tools:background="@drawable/button_ripple"/>
+
+    <TextView
+        android:id="@+id/customButton_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/customButton_time"
+        app:layout_constraintStart_toStartOf="@id/customButton_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="5dp"
+        style="@style/defaultText"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        tools:text="@string/upgrade"/>
+
+    <TextView
+        android:id="@+id/customButton_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/customButton_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginVertical="5dp"
+        style="@style/defaultText"
+        android:textSize="20sp"
+        tools:text="19m 14s" />
+</androidx.constraintlayout.widget.ConstraintLayout>
