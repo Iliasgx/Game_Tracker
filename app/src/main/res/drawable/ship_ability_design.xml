@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:start="2dp"
+        android:top="2dp"
+        android:width="24dp"
+        android:height="24dp">
+        <shape
+            android:shape="oval"
+            android:useLevel="false">
+            <solid android:color="@color/ability_backgroundColor"/>
+        </shape>
+    </item>
+    <item
+        android:width="28dp"
+        android:height="28dp">
+        <shape
+            android:innerRadiusRatio="2.5"
+            android:shape="ring"
+            android:thickness="1dp"
+            android:useLevel="false">
+            <solid android:color="@color/ability_backgroundBorderColor"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ship_ability"
+        android:width="16dp"
+        android:height="16dp"
+        android:gravity="center"/>
+</layer-list>

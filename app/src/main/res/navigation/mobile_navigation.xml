@@ -48,9 +48,8 @@
     </fragment>
     <fragment
         android:id="@+id/unknownFragment"
-        android:name="com.umbrella.stfctracker.ui.UnknownFragment"
         android:label="UnknownFragment"
-        tools:layout="@layout/frag_library"/>
+        tools:layout="@layout/frag_library" />
     <fragment
         android:id="@+id/overviewFragment"
         android:name="com.umbrella.stfctracker.ui.OverviewFragment"
@@ -89,19 +88,10 @@
     </fragment>
     <fragment
         android:id="@+id/officerFragment"
-        android:name="com.umbrella.stfctracker.ui.OfficerFragment"
-        android:label="OfficerFragment" >
+        android:label="OfficerFragment">
         <action
             android:id="@+id/officerToOfficerDialog"
             app:destination="@id/officerDialog" />
-    </fragment>
-    <fragment
-        android:id="@+id/shipFragment"
-        android:name="com.umbrella.stfctracker.ui.ShipFragment"
-        android:label="ShipFragment" >
-        <action
-            android:id="@+id/shipToShipDialog"
-            app:destination="@id/shipDialog" />
     </fragment>
     <fragment
         android:id="@+id/researchTreeFragment"
@@ -152,18 +142,9 @@
     </dialog>
     <dialog
         android:id="@+id/officerDialog"
-        android:name="com.umbrella.stfctracker.ui.Dialogs.OfficerDialog"
-        android:label="OfficerDialog" >
+        android:label="OfficerDialog">
         <argument
             android:name="officerId"
-            app:argType="long" />
-    </dialog>
-    <dialog
-        android:id="@+id/shipDialog"
-        android:name="com.umbrella.stfctracker.ui.Dialogs.ShipDialog"
-        android:label="ShipDialog" >
-        <argument
-            android:name="shipId"
             app:argType="long" />
     </dialog>
     <action
@@ -183,4 +164,59 @@
         app:destination="@id/unknownFragment"
         app:launchSingleTop="true"
         app:popUpTo="@id/unknownFragment" />
+    <fragment
+        android:id="@+id/shipFragment"
+        android:name="com.umbrella.stfctracker.ui.ShipFragment"
+        android:label="ShipFragment"
+        tools:layout="@layout/frag_ships">
+        <action
+            android:id="@+id/shipsToAddShip"
+            app:destination="@id/shipChooseDialog"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/shipsToShipDetails"
+            app:destination="@id/shipDetailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/shipsToScrapShip"
+            app:destination="@id/scrapShipDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipChooseDialog"
+        android:name="com.umbrella.stfctracker.ui.Dialogs.ShipChooseDialog"
+        android:label="ShipChooseDialog"
+        tools:layout="@layout/dialog_ships_choices">
+        <action
+            android:id="@+id/addShipToBuild"
+            app:destination="@id/buildShipDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipDetailsFragment"
+        android:name="com.umbrella.stfctracker.ui.ShipDetailsFragment"
+        android:label="ShipDetailsFragment"
+        tools:layout="@layout/frag_ship_details">
+        <action
+            android:id="@+id/shipDetailsToUpgradeShip"
+            app:destination="@id/upgradeShipDialog" />
+        <action
+            android:id="@+id/shipDetailsToScrapShip"
+            app:destination="@id/scrapShipDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/scrapShipDialog"
+        android:name="com.umbrella.stfctracker.ui.Dialogs.ScrapShipDialog"
+        android:label="ScrapShipDialog"
+        tools:layout="@layout/dialog_ship_scrap"/>
+    <dialog
+        android:id="@+id/buildShipDialog"
+        android:name="com.umbrella.stfctracker.ui.Dialogs.BuildShipDialog"
+        android:label="BuildShipDialog"
+        tools:layout="@layout/dialog_ship_build"/>
+    <dialog
+        android:id="@+id/upgradeShipDialog"
+        android:name="com.umbrella.stfctracker.ui.Dialogs.UpgradeShipDialog"
+        android:label="UpgradeShipDialog"
+        tools:layout="@layout/dialog_ship_upgrade"/>
 </navigation>

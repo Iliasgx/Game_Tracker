@@ -67,4 +67,10 @@
     <string name="scrapShipButtonText">Scrap ship</string>
     <string name="scrapShip_subtitle">[ %1$d ] %1$s</string>
     <string name="tierUp">Tier up</string>
+    <string name="showRepairs">Show repair details</string>
+    <string name="repairSpeed">Repair speed</string>
+    <string name="repairCosts">Repair costs</string>
+    <string name="tierSelector">Ship tiers</string>
+    <string name="totalXP">%1$d XP</string>
+    <string name="components">Components</string>
 </resources>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragShipDetails_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_background">
+
+    <ImageView
+        android:id="@+id/fragShipDetails_backgroundImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/fragShipDetails_levelCardView"
+        android:layout_marginBottom="-15dp"
+        android:alpha="0.75"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ship_background"
+        tools:ignore="ContentDescription" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragShipDetails_titleCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/fragShipDetails_titleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/shipScrapRewardItem_greenInner">
+
+            <RelativeLayout
+                android:id="@+id/fragShipDetails_title_shipInfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="1dp"
+                android:background="@color/button_green_backgroundSide">
+
+                <TextView
+                    android:id="@+id/fragShipDetails_shipInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@id/fragShipDetails_stars"
+                    android:textAllCaps="true"
+                    style="@style/defaultText"
+                    android:textSize="13sp"
+                    tools:text="COMMON - TIER 6"/>
+
+                <RatingBar
+                    android:id="@+id/fragShipDetails_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/fragShipDetails_shipInfo"
+                    android:layout_alignBottom="@id/fragShipDetails_shipInfo"
+                    android:layout_alignParentEnd="true"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:progressTint="@color/textColor_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fragShipDetails_shipName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragShipDetails_title_shipInfo_layout"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="2dp"
+                style="@style/defaultText"
+                android:textAllCaps="true"
+                tools:text="Uss mayflower"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/fragShipDetails_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragShipDetails_titleCardView"
+        android:layout_above="@id/fragShipDetails_levelCardView"
+        android:layout_marginBottom="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ship"
+        tools:ignore="ContentDescription"/>
+
+    <RelativeLayout
+        android:id="@+id/fragShipDetails_baseInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignStart="@id/fragShipDetails_img"
+        android:layout_alignEnd="@id/fragShipDetails_img"
+        android:layout_above="@id/fragShipDetails_levelCardView"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/fragShipDetails_classImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/battleship"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fragShipDetails_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/fragShipDetails_classImg"
+            android:fontFamily="@font/interstate_extra_light"
+            android:text="@string/shipItem_strength"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/fragShipDetails_strength_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@id/fragShipDetails_strength"
+            android:layout_toEndOf="@id/fragShipDetails_classImg"
+            android:fontFamily="@font/interstate_extra_light"
+            android:textColor="@color/textColor_white"
+            android:textSize="22sp"
+            tools:text="7.271.353" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragShipDetails_levelCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragShipDetails_ability_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:id="@+id/fragShipDetails_levelLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/dialog_lightBackgroundMiddle"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/fragShipDetails_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                style="@style/defaultText"
+                android:textSize="14sp"
+                tools:text="Level 27"/>
+
+            <TextView
+                android:id="@+id/fragShipDetails_xp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/fragShipDetails_level"
+                android:layout_marginEnd="10dp"
+                android:gravity="end"
+                style="@style/defaultText"
+                android:textSize="14sp"
+                tools:text="4500 XP"/>
+
+            <SeekBar
+                android:id="@+id/fragShipDetails_levelSeekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/fragShipDetails_level"
+                android:paddingVertical="10dp"
+                android:tickMark="@drawable/adjust"
+                android:tickMarkTint="@color/tickMarkTint"
+                tools:max="30" tools:min="26" tools:progress="27"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragShipDetails_ability_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragShipDetails_repairLayout"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/button_blue_backgroundMiddle">
+
+        <ImageView
+            android:id="@+id/fragShipDetails_ability_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ship_ability_design"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fragShipDetails_ability_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/fragShipDetails_ability_img"
+            app:layout_constraintBottom_toBottomOf="@id/fragShipDetails_ability_img"
+            app:layout_constraintStart_toEndOf="@id/fragShipDetails_ability_img"
+            app:layout_constraintEnd_toStartOf="@id/fragShipDetails_ability_value"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center_vertical"
+            style="@style/defaultText"
+            android:textSize="14sp"
+            android:textColor="@color/green"
+            tools:text="Klingon firepower"/>
+
+        <TextView
+            android:id="@+id/fragShipDetails_ability_value"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/fragShipDetails_ability_img"
+            app:layout_constraintBottom_toBottomOf="@id/fragShipDetails_ability_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center_vertical"
+            style="@style/defaultText"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            tools:text="32%"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragShipDetails_repairLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_above="@id/fragShipDetails_buttonLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="@color/dialog_background">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragShipDetails_repairBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/button_blue_backgroundMiddle"
+            app:cardCornerRadius="10dp"
+            android:alpha="0.3"/>
+
+        <TextView
+            android:id="@+id/fragShipDetails_repairSpeed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fragShipDetails_repairSpeed_time"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            style="@style/defaultText"
+            android:textSize="12sp"
+            android:text="@string/repairSpeed"/>
+
+        <TextView
+            android:id="@+id/fragShipDetails_repairSpeed_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fragShipDetails_repairCost_title"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            style="@style/defaultText"
+            android:textColor="@color/textColor_yellow"
+            android:textSize="14sp"
+            tools:text="7h 5m"/>
+
+        <TextView
+            android:id="@+id/fragShipDetails_repairCost_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fragShipDetails_resourceLayout"
+            android:gravity="center_horizontal"
+            style="@style/defaultText"
+            android:textSize="12sp"
+            android:text="@string/repairCosts"/>
+
+        <LinearLayout
+            android:id="@+id/fragShipDetails_resourceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                android:id="@+id/fragShipDetails_amountA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2.5dp"/>
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                android:id="@+id/fragShipDetails_amountB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2.5dp"/>
+
+            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+                android:id="@+id/fragShipDetails_amountC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2.5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragShipDetails_buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragShipDetails_tierTitle"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true">
+
+        <com.umbrella.stfctracker.CustomComponents.CustomButton
+            android:id="@+id/fragShipDetails_tierUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/fragShipDetails_scrap"
+            android:layout_marginEnd="5dp"
+            app:title="@string/components"
+            app:showTime="false"
+            app:borderDrawable="@drawable/round_edge"
+            app:frameDrawable="@drawable/button_ripple"
+            app:allTextSize="14sp" />
+
+        <com.umbrella.stfctracker.CustomComponents.CustomButton
+            android:id="@+id/fragShipDetails_scrap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fragShipDetails_tierUp"
+            android:layout_marginStart="5dp"
+            app:title="@string/scrapShipButtonText"
+            app:showTime="false"
+            app:borderDrawable="@drawable/round_edge_light_red"
+            app:frameDrawable="@drawable/button_ripple_red"
+            app:allTextSize="14sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/fragShipDetails_tierTitle"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/ability_backgroundBorderColor"/>
+
+    <TextView
+        android:id="@+id/fragShipDetails_tierTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragShipDetails_tierRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        style="@style/defaultText"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        android:text="@string/tierSelector"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragShipDetails_tierRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        tools:listitem="@layout/tier_level"
+        tools:itemCount="9"/>
+</RelativeLayout>

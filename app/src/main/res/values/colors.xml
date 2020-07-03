@@ -56,4 +56,9 @@
     <color name="shipScrapColor_middle">#922B19</color>
     <color name="shipScrapColor_side">#D75533</color>
     <color name="shipScrapBorderColor">#994332</color>
+    <color name="green">#BBA948</color>
+    <color name="ability_imageColor">#559B76</color>
+    <color name="ability_backgroundBorderColor">#D69C23</color>
+    <color name="ability_backgroundColor">#9E412A</color>
+    <color name="tickMarkTint">#238877</color>
 </resources>

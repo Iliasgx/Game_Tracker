@@ -9,18 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.umbrella.stfctracker.databinding.DialogShipScrapBinding;
+import com.umbrella.stfctracker.databinding.DialogShipsChoicesBinding;
 
-public class ScrapShipDialog extends DialogFragment {
-    private DialogShipScrapBinding binding;
+public class ShipChooseDialog extends DialogFragment {
+    private DialogShipsChoicesBinding binding;
 
-    public ScrapShipDialog() {
+    public ShipChooseDialog() {
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = DialogShipScrapBinding.inflate(inflater, container, false);
+        binding = DialogShipsChoicesBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 }

@@ -122,51 +122,26 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/shipItem_star1"
+                app:layout_constraintEnd_toStartOf="@id/shipItem_stars"
+                android:paddingVertical="1dp"
                 style="@style/defaultText"
                 android:textAllCaps="true"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 tools:text="Epic" />
 
-            <ImageView
-                android:id="@+id/shipItem_star1"
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+            <RatingBar
+                android:id="@+id/shipItem_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/shipItem_star2"
-                android:src="@drawable/star"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/shipItem_star2"
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/shipItem_star3"
-                android:src="@drawable/star"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/shipItem_star3"
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/shipItem_star4"
-                android:src="@drawable/star"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/shipItem_star4"
-                android:layout_width="12dp"
-                android:layout_height="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:src="@drawable/star"
-                tools:ignore="ContentDescription" />
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:progressTint="@color/textColor_white"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:numStars="4"
+                android:rating="4"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </merge>
