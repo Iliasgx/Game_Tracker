@@ -18,7 +18,6 @@ public class LevelListConverter {
     @TypeConverter
     public static LinkedList<Level> toListLevels(String data) {
         if (data == null) return new LinkedList<>();
-
         return new Gson().fromJson(data, new TypeToken<LinkedList<Level>>(){}.getType());
     }
 }

@@ -18,8 +18,8 @@
             android:id="@+id/dialogShipUpgrade_shipName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@id/dialogShipUpgrade_costCardView_layout"
-            android:layout_alignEnd="@id/dialogShipUpgrade_costCardView_layout"
+            android:layout_alignStart="@id/dialogShipUpgrade_up"
+            android:layout_alignEnd="@id/dialogShipUpgrade_up"
             android:layout_marginVertical="5dp"
             android:gravity="center"
             style="@style/defaultText"
@@ -33,12 +33,12 @@
             android:layout_height="wrap_content"
             android:minHeight="120dp"
             android:layout_below="@id/dialogShipUpgrade_shipName"
-            android:layout_alignStart="@id/dialogShipUpgrade_costCardView_layout"
-            android:layout_alignEnd="@id/dialogShipUpgrade_costCardView_layout"
+            android:layout_alignStart="@id/dialogShipUpgrade_up"
+            android:layout_alignEnd="@id/dialogShipUpgrade_up"
             android:divider="@android:drawable/divider_horizontal_dark"
             android:background="@color/dialog_background"
             android:dividerHeight="2dp"
-            android:paddingHorizontal="15dp"
+            android:layout_marginBottom="10dp"
             android:scrollbars="none"
             android:listSelector="@android:color/transparent"
             tools:listitem="@layout/list_ship_upgrade_item" />
@@ -48,9 +48,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/dialogShipUpgrade_list"
+            android:layout_alignEnd="@id/dialogShipUpgrade_up"
             android:layout_alignParentStart="true"
             android:background="@color/dialog_lightBackgroundMiddle"
-            android:padding="15dp">
+            android:paddingHorizontal="15dp"
+            tools:visibility="visible">
 
             <ImageView
                 android:id="@+id/dialogShipUpgrade_emptyMaterialD"
@@ -177,16 +179,17 @@
                 app:layout_constraintEnd_toEndOf="@id/dialogShipUpgrade_emptyMaterialA"
                 app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_emptyMaterialA"
                 android:layout_marginTop="5dp" />
-
-            <com.umbrella.stfctracker.CustomComponents.CustomButton
-                android:id="@+id/dialogShipUpgrade_tierUp"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_AmountA"
-                android:layout_marginTop="10dp"
-                app:title="@string/tierUp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.umbrella.stfctracker.CustomComponents.CustomButton
+            android:id="@+id/dialogShipUpgrade_up"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/dialogShipUpgrade_costCardView_layout"
+            android:paddingHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            app:title="@string/upgrade"
+            app:showTime="false"/>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
