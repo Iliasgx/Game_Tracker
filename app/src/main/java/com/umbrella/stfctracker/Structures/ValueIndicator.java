@@ -24,4 +24,11 @@ public class ValueIndicator {
         }
         return text.replace(",", ".");
     }
+
+    public String setStringFormat(long value, char separator) {
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.ITALIAN);
+        symbols.setGroupingSeparator(separator);
+        DecimalFormat pattern = new DecimalFormat("#,###", symbols);
+        return pattern.format(value);
+    }
 }

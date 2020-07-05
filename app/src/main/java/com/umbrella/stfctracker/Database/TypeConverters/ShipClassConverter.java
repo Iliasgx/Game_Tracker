@@ -11,14 +11,12 @@ import java.util.LinkedList;
 public class ShipClassConverter {
 
     @TypeConverter
-    public String fromShipClass(LinkedList<ShipClass> shipClasses) {
-        if (shipClasses == null) return null;
-        return new Gson().toJson(shipClasses, new TypeToken<LinkedList<ShipClass>>(){}.getType());
+    public ShipClass fromInt(int index) {
+        return (index == -1) ? null : ShipClass.values()[index];
     }
 
     @TypeConverter
-    public LinkedList<ShipClass> toShipClass(String shipClassString) {
-        if (shipClassString == null) return null;
-        return new Gson().fromJson(shipClassString, new TypeToken<LinkedList<ShipClass>>(){}.getType());
+    public int toInt(ShipClass shipClass) {
+        return (shipClass == null) ? -1 : shipClass.ordinal();
     }
 }

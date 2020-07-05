@@ -1,35 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/list_shipItem_frame"
+    android:id="@+id/listShipItem_base"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginVertical="5dp">
-    
-    <com.umbrella.stfctracker.CustomComponents.ShipItem
-        android:id="@+id/list_shipItem_shipItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"/>
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/list_shipItem_buildFrame"
+        android:id="@+id/listShipItem_cardViewMain"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:foreground="@drawable/round_edges_blue"
+        app:cardCornerRadius="9dp">
+
+        <RelativeLayout
+            android:id="@+id/listShipItem_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2.1dp">
+
+            <ImageView
+                android:id="@+id/listShipItem_backgroundImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@id/listShipItem_shipImg"
+                android:layout_alignParentStart="true"
+                android:alpha="0.85"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ship_background"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/listShipItem_shipImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_above="@id/listShipItem_shipTypeImg"
+                android:layout_below="@id/listShipItem_name"
+                android:scaleType="center"
+                android:src="@drawable/ship"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/listShipItem_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/interstate_extra_light"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor_white"
+                android:textSize="22sp"
+                tools:text="USS Saladin" />
+
+            <TextView
+                android:id="@+id/listShipItem_tier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/listShipItem_name"
+                android:fontFamily="@font/interstate_extra_light"
+                android:textAlignment="center"
+                android:textColor="@color/textColor_yellow"
+                android:textSize="12sp"
+                tools:text="Tier 6" />
+
+            <ImageView
+                android:id="@+id/listShipItem_shipTypeImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/battleship"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/listShipItem_strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/listShipItem_strengthValue"
+                android:layout_toEndOf="@id/listShipItem_shipTypeImg"
+                android:fontFamily="@font/interstate_extra_light"
+                android:text="@string/shipItem_strength"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/listShipItem_strengthValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_toEndOf="@id/listShipItem_shipTypeImg"
+                android:fontFamily="@font/interstate_extra_light"
+                android:textColor="@color/textColor_white"
+                android:textSize="22sp"
+                tools:text="7.271.353" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/listShipItem_cardViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/listShipItem_cardViewMain"
+        android:layout_alignEnd="@id/listShipItem_cardViewMain"
+        android:layout_marginHorizontal="15dp"
+        app:cardBackgroundColor="@color/borderBlue"
+        app:cardCornerRadius="6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/listShipItem_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/listShipItem_rarity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/listShipItem_stars"
+                android:paddingVertical="1dp"
+                style="@style/defaultText"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                tools:text="Epic" />
+
+            <RatingBar
+                android:id="@+id/listShipItem_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:progressTint="@color/textColor_white"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:numStars="4"
+                android:rating="4"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/listShipItem_buildFrame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/list_shipItem_shipItem"
-        android:layout_alignStart="@id/list_shipItem_shipItem"
-        android:layout_alignEnd="@id/list_shipItem_shipItem"
+        android:layout_below="@id/listShipItem_cardViewMain"
+        android:layout_alignStart="@id/listShipItem_cardViewMain"
+        android:layout_alignEnd="@id/listShipItem_cardViewMain"
         android:layout_marginTop="-4.5dp"
+        android:layout_marginBottom="20dp"
         android:foreground="@drawable/round_edges_blue"
         app:cardCornerRadius="9dp"
         android:visibility="gone"
         tools:visibility="visible">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/list_shipItem_upgradeLayout"
+            android:id="@+id/listShipItem_upgradeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
@@ -37,7 +179,7 @@
             android:background="@color/notBuild">
 
             <FrameLayout
-                android:id="@+id/list_shipItem_upgradeFrame"
+                android:id="@+id/listShipItem_upgradeFrame"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -49,12 +191,12 @@
                 tools:visibility="invisible"/>
 
             <TextView
-                android:id="@+id/list_shipItem_upgradeText"
+                android:id="@+id/listShipItem_upgradeText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/list_shipItem_upgradeTime"
-                app:layout_constraintStart_toStartOf="@id/list_shipItem_upgradeLayout"
+                app:layout_constraintEnd_toStartOf="@id/listShipItem_buildTime"
+                app:layout_constraintStart_toStartOf="@id/listShipItem_upgradeLayout"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="5dp"
@@ -63,11 +205,11 @@
                 android:textAllCaps="true" />
 
             <TextView
-                android:id="@+id/list_shipItem_upgradeTime"
+                android:id="@+id/listShipItem_buildTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/list_shipItem_upgradeLayout"
+                app:layout_constraintEnd_toEndOf="@id/listShipItem_upgradeLayout"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginEnd="10dp"
                 android:layout_marginVertical="5dp"

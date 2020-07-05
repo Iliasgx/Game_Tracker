@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "d8d04023e997f09a3b08b2de5dead656",
+    "identityHash": "9ab514e6eed6ef1d8532932699216858",
     "entities": [
       {
         "tableName": "building",
@@ -133,12 +133,178 @@
         },
         "indices": [],
         "foreignKeys": []
+      },
+      {
+        "tableName": "ship",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `rarity` INTEGER, `grade` INTEGER, `ship_class` INTEGER, `image` TEXT, `base_strength` INTEGER NOT NULL, `ship_ability` TEXT, `required_operations_level` INTEGER NOT NULL, `scrap_required_operations_level` INTEGER NOT NULL, `tiers` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rarity",
+            "columnName": "rarity",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "grade",
+            "columnName": "grade",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shipClass",
+            "columnName": "ship_class",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "image",
+            "columnName": "image",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "baseStrength",
+            "columnName": "base_strength",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shipAbility",
+            "columnName": "ship_ability",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "requiredOperationsLevel",
+            "columnName": "required_operations_level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scrapRequiredOperationsLevel",
+            "columnName": "scrap_required_operations_level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tiers",
+            "columnName": "tiers",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "built_ship",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`current_tier` INTEGER NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `rarity` INTEGER, `grade` INTEGER, `ship_class` INTEGER, `image` TEXT, `base_strength` INTEGER NOT NULL, `ship_ability` TEXT, `required_operations_level` INTEGER NOT NULL, `scrap_required_operations_level` INTEGER NOT NULL, `tiers` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "currentTier",
+            "columnName": "current_tier",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rarity",
+            "columnName": "rarity",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "grade",
+            "columnName": "grade",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shipClass",
+            "columnName": "ship_class",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "image",
+            "columnName": "image",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "baseStrength",
+            "columnName": "base_strength",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shipAbility",
+            "columnName": "ship_ability",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "requiredOperationsLevel",
+            "columnName": "required_operations_level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scrapRequiredOperationsLevel",
+            "columnName": "scrap_required_operations_level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tiers",
+            "columnName": "tiers",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
       }
     ],
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd8d04023e997f09a3b08b2de5dead656')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9ab514e6eed6ef1d8532932699216858')"
     ]
   }
 }

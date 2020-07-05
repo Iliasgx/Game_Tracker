@@ -14,12 +14,14 @@ import java.util.List;
 
 public class Tier implements Serializable {
     private int tier;
-    private long repairTime;
+    private int buildTime;
+    private int repairTime;
     private LinkedList<Level> levels;
     private List<Component> components;
 
-    public Tier(int tier, long repairTime, LinkedList<Level> levels, List<Component> components) {
+    public Tier(int tier, int buildTime, int repairTime, LinkedList<Level> levels, List<Component> components) {
         this.tier = tier;
+        this.buildTime = buildTime;
         this.repairTime = repairTime;
         this.levels = levels;
         this.components = components;
@@ -28,7 +30,10 @@ public class Tier implements Serializable {
     public int getTier() {
         return tier;
     }
-    public long getRepairTime() {
+    public int getBuildTime() {
+        return buildTime;
+    }
+    public int getRepairTime() {
         return repairTime;
     }
     public LinkedList<Level> getLevels() {
@@ -41,7 +46,10 @@ public class Tier implements Serializable {
     public void setTier(int tier) {
         this.tier = tier;
     }
-    public void setRepairTime(long repairTime) {
+    public void setBuildTime(int buildTime) {
+        this.buildTime = buildTime;
+    }
+    public void setRepairTime(int repairTime) {
         this.repairTime = repairTime;
     }
     public void setLevels(LinkedList<Level> levels) {

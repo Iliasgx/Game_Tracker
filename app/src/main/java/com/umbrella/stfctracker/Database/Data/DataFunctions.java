@@ -1,10 +1,12 @@
 package com.umbrella.stfctracker.Database.Data;
 
+import android.app.Application;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Entities.Level;
+import com.umbrella.stfctracker.MainActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,6 +27,7 @@ public abstract class DataFunctions {
     }
 
     public static Drawable decodeDrawable(Resources resources, String code) {
-        return resources.getDrawable(resources.getIdentifier(code, "drawable", "com.umbrella.stfctracker"), null);
+        //return resources.getDrawable(resources.getIdentifier(code, "drawable", "com.umbrella.stfctracker"), null);
+        return resources.getDrawable(resources.getIdentifier(code, "drawable", Application.getProcessName()), null);
     }
 }

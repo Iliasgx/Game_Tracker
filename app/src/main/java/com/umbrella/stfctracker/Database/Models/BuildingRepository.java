@@ -13,10 +13,10 @@ import com.umbrella.stfctracker.Structures.Data;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class BuildingRepository {
+public class BuildingRepository {
     private DaoBuilding daoBuilding;
 
-    BuildingRepository(Application application) {
+    public BuildingRepository(Application application) {
         DatabaseClient client = DatabaseClient.getInstance(application.getApplicationContext());
         daoBuilding = client.daoBuilding();
     }

@@ -49,19 +49,19 @@ public class CumulativeBonus {
 
     public int applySpecificBonus(BonusType bonusType) {
         switch (bonusType) {
-            case PARSTEEL_PRODUCTION: return getParsteelGenerationBonus();
-            case TRITANIUM_PRODUCTION: return getTritaniumGenerationBonus();
-            case DILITHIUM_PRODUCTION: return getDilithiumGenerationBonus();
-            case PARSTEEL_STORAGE: return getParsteelGeneratorStorageBonus();
-            case TRITANIUM_STORAGE: return getTritaniumGeneratorStorageBonus();
-            case DILITHIUM_STORAGE: return getDilithiumGeneratorStorageBonus();
-            case PARSTEEL_CAPACITY: return getParsteelStorageBonus();
-            case TRITANIUM_CAPACITY: return getTritaniumStorageBonus();
-            case DILITHIUM_CAPACITY: return getDilithiumStorageBonus();
-            case PARSTEEL_VAULT_PROTECTION: return getParsteelProtectionBonus();
-            case TRITANIUM_VAULT_PROTECTION: return getTritaniumProtectionBonus();
-            case DILITHIUM_VAULT_PROTECTION: return getDilithiumProtectionBonus();
-            default: return 0;
+            case PARSTEEL_PRODUCTION:           return getParsteelGenerationBonus();
+            case TRITANIUM_PRODUCTION:          return getTritaniumGenerationBonus();
+            case DILITHIUM_PRODUCTION:          return getDilithiumGenerationBonus();
+            case PARSTEEL_STORAGE:              return getParsteelGeneratorStorageBonus();
+            case TRITANIUM_STORAGE:             return getTritaniumGeneratorStorageBonus();
+            case DILITHIUM_STORAGE:             return getDilithiumGeneratorStorageBonus();
+            case PARSTEEL_CAPACITY:             return getParsteelStorageBonus();
+            case TRITANIUM_CAPACITY:            return getTritaniumStorageBonus();
+            case DILITHIUM_CAPACITY:            return getDilithiumStorageBonus();
+            case PARSTEEL_VAULT_PROTECTION:     return getParsteelProtectionBonus();
+            case TRITANIUM_VAULT_PROTECTION:    return getTritaniumProtectionBonus();
+            case DILITHIUM_VAULT_PROTECTION:    return getDilithiumProtectionBonus();
+            default:                            return 0;
         }
     }
 

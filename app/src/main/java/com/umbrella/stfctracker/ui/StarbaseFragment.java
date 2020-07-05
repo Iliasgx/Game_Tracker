@@ -94,8 +94,6 @@ public class StarbaseFragment extends Fragment {
         mBuildingViewModel.addItemTouchHelperTo(binding.fragStarbaseRecyclerView, requireContext());
     }
 
-
-
     private void changeToOtherList(boolean isSubList) {
         mBuildingViewModel.getAllBuildingsLive().observe(getViewLifecycleOwner(), buildings ->
             adapter.setBuildings(isSubList ? mBuildingViewModel.collectBuildingsByGroup(buildings) : mBuildingViewModel.collectAllBuildings(buildings), isSubList)

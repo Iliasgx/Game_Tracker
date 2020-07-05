@@ -9,28 +9,20 @@ import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import com.umbrella.stfctracker.Database.Dao.DaoBuilding;
-import com.umbrella.stfctracker.Database.Dao.DaoBuiltShip;
-import com.umbrella.stfctracker.Database.Dao.DaoResearch;
-import com.umbrella.stfctracker.Database.Dao.DaoShip;
-import com.umbrella.stfctracker.Database.Data.DataBuildings;
-import com.umbrella.stfctracker.Database.Data.DataResearch;
-import com.umbrella.stfctracker.Database.Entities.Building;
-import com.umbrella.stfctracker.Database.Entities.Research;
-import com.umbrella.stfctracker.Database.TypeConverters.BonusTypeConverter;
-import com.umbrella.stfctracker.Database.TypeConverters.GradeConverter;
-import com.umbrella.stfctracker.Database.TypeConverters.GroupTypeConverter;
-import com.umbrella.stfctracker.Database.TypeConverters.LevelListConverter;
-import com.umbrella.stfctracker.Database.TypeConverters.RarityConverter;
-import com.umbrella.stfctracker.Database.TypeConverters.ResearchTreeConverter;
-import com.umbrella.stfctracker.Database.TypeConverters.ResourceMaterialTypeConverter;
-import com.umbrella.stfctracker.Database.TypeConverters.ShipClassConverter;
-import com.umbrella.stfctracker.Database.TypeConverters.TierConverter;
+import com.umbrella.stfctracker.Database.Dao.*;
+import com.umbrella.stfctracker.Database.Data.*;
+import com.umbrella.stfctracker.Database.Entities.*;
+import com.umbrella.stfctracker.Database.TypeConverters.*;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Building.class, Research.class}, version = 1)
+@Database(entities = {
+        Building.class,
+        Research.class,
+        Ship.class,
+        BuiltShip.class},
+        version = 1)
 @TypeConverters({
         GroupTypeConverter.class,
         BonusTypeConverter.class,
@@ -53,7 +45,6 @@ public abstract class DatabaseClient extends RoomDatabase {
     public abstract DaoShip daoShip();
     public abstract DaoBuiltShip daoBuiltShip();
 
-    // TODO: Put @DaoShip + @DaoBuiltShip in dbWriteExecutor below.
     public static DatabaseClient getInstance(final Context context) {
         if (mInstance == null) {
             synchronized (DatabaseClient.class) {
@@ -78,6 +69,14 @@ public abstract class DatabaseClient extends RoomDatabase {
                                                 .getInstance(context.getResources())
                                                 .getResearch()
                                                 .toArray(new Research[0]));
+                                    });
+                                    dbWriteExecutor.execute(() -> {
+                                        DaoShip daoShip = mInstance.daoShip();
+
+                                        daoShip.insertAll(DataShips
+                                                .getInstance(context.getResources())
+                                                .getShips()
+                                                .toArray(new Ship[0]));
                                     });
                                 }
                             })

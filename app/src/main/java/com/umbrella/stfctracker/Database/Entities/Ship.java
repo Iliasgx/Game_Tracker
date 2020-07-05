@@ -2,6 +2,7 @@ package com.umbrella.stfctracker.Database.Entities;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import com.umbrella.stfctracker.DataTypes.Enums.Grade;
@@ -61,6 +62,7 @@ public class Ship implements Serializable {
         this.tiers = tiers;
     }
 
+    @Ignore
     public Ship(long id, String name, Rarity rarity, Grade grade, ShipClass shipClass, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, LinkedList<Tier> tiers) {
         this.id = id;
         this.name = name;

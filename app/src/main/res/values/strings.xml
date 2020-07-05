@@ -71,6 +71,13 @@
     <string name="repairSpeed">Repair speed</string>
     <string name="repairCosts">Repair costs</string>
     <string name="tierSelector">Ship tiers</string>
+    <string name="tierNumber">Tier %1$d</string>
     <string name="totalXP">%1$d XP</string>
     <string name="components">Components</string>
+    <string name="shipDetails_shipInfo">%1$s - TIER %2$d</string>
+
+    <string name="ship_tierDown_confirmation_title">Tier %1$s down</string>
+    <string name="ship_tierDown_confirmation_description">Are you sure you want to tier the %1$s down?</string>
+    <string name="ship_tierDown_confirmation">%1$s has been tiered down.</string>
+    <string name="ship_tierDown_warning">%1$s is on lowest tier.</string>
 </resources>

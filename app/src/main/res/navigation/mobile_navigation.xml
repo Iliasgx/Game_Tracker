@@ -203,20 +203,35 @@
         <action
             android:id="@+id/shipDetailsToScrapShip"
             app:destination="@id/scrapShipDialog" />
+        <argument
+            android:name="builtShip"
+            app:argType="com.umbrella.stfctracker.Database.Entities.BuiltShip" />
     </fragment>
     <dialog
         android:id="@+id/scrapShipDialog"
         android:name="com.umbrella.stfctracker.ui.Dialogs.ScrapShipDialog"
         android:label="ScrapShipDialog"
-        tools:layout="@layout/dialog_ship_scrap"/>
+        tools:layout="@layout/dialog_ship_scrap">
+        <argument
+            android:name="builtShip"
+            app:argType="com.umbrella.stfctracker.Database.Entities.BuiltShip" />
+    </dialog>
     <dialog
         android:id="@+id/buildShipDialog"
         android:name="com.umbrella.stfctracker.ui.Dialogs.BuildShipDialog"
         android:label="BuildShipDialog"
-        tools:layout="@layout/dialog_ship_build"/>
+        tools:layout="@layout/dialog_ship_build">
+        <argument
+            android:name="ship"
+            app:argType="com.umbrella.stfctracker.Database.Entities.Ship" />
+    </dialog>
     <dialog
         android:id="@+id/upgradeShipDialog"
         android:name="com.umbrella.stfctracker.ui.Dialogs.UpgradeShipDialog"
         android:label="UpgradeShipDialog"
-        tools:layout="@layout/dialog_ship_upgrade"/>
+        tools:layout="@layout/dialog_ship_upgrade">
+        <argument
+            android:name="builtShip"
+            app:argType="com.umbrella.stfctracker.Database.Entities.BuiltShip" />
+    </dialog>
 </navigation>
