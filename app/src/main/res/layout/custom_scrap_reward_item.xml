@@ -51,8 +51,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/scrapRewardItem_innerLayer_layout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingBottom="2dp">
+                        android:layout_height="match_parent">
 
                         <ImageView
                             android:id="@+id/scrapRewardItem_itemImg"
@@ -66,49 +65,19 @@
                             tools:ignore="ContentDescription"
                             tools:src="@drawable/gas" />
 
-                        <ImageView
-                            android:id="@+id/scrapRewardItem__star1"
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
+                        <RatingBar
+                            android:id="@+id/scrapRewardItem_grade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/scrapRewardItem__star2"
-                            app:layout_constraintHorizontal_chainStyle="packed"
-                            android:src="@drawable/star"
-                            tools:ignore="ContentDescription" />
-
-                        <ImageView
-                            android:id="@+id/scrapRewardItem__star2"
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/scrapRewardItem__star3"
-                            app:layout_constraintStart_toEndOf="@+id/scrapRewardItem__star1"
-                            app:layout_constraintHorizontal_chainStyle="packed"
-                            android:src="@drawable/star"
-                            tools:ignore="ContentDescription" />
-
-                        <ImageView
-                            android:id="@+id/scrapRewardItem__star3"
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/scrapRewardItem__star4"
-                            app:layout_constraintStart_toEndOf="@+id/scrapRewardItem__star2"
-                            app:layout_constraintHorizontal_chainStyle="packed"
-                            android:src="@drawable/star"
-                            tools:ignore="ContentDescription" />
-
-                        <ImageView
-                            android:id="@+id/scrapRewardItem__star4"
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/scrapRewardItem__star3"
-                            app:layout_constraintHorizontal_chainStyle="packed"
-                            android:src="@drawable/star"
-                            tools:ignore="ContentDescription" />
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:progressTint="@color/textColor_white"
+                            android:scaleX="0.6"
+                            android:scaleY="0.6"
+                            android:numStars="4"
+                            android:rating="4"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
             </androidx.cardview.widget.CardView>

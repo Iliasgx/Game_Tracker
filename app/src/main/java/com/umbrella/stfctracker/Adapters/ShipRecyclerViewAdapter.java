@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.umbrella.stfctracker.CustomComponents.CustomButton;
 import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
 import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.Entities.Ship;
@@ -55,12 +56,11 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         holder.rarity.setText(ship.getRarity().toString());
         holder.grade.setNumStars(ship.getGrade().ordinal());
         holder.grade.setRating(ship.getGrade().ordinal());
-        holder.shipClassImage.setImageDrawable(shipClassDrawable(ship.getShipClass()));
+        holder.shipClassImage.setImageDrawable(application.getDrawable(ship.getShipClass().getImageId()));
         holder.strength.setText(new ValueIndicator().setStringFormat(ship.getBaseStrength(), '.'));
         holder.itemView.setLongClickable(true);
         holder.buildFrame.setVisibility(View.VISIBLE);
-        holder.buildTime.setText(new TimeDisplay(application.getApplicationContext())
-                .getTime(ship.getTiers().get(0).getBuildTime()));
+        holder.buildTime.setTime(ship.getTiers().get(0).getBuildTime());
     }
 
     @Override
@@ -71,17 +71,6 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
     public void setBuiltShips(List<Ship> ships) {
         this.ships = ships;
         notifyDataSetChanged();
-    }
-
-    // TODO: Create shipClass images (4)
-    private Drawable shipClassDrawable(ShipClass shipClass) {
-        switch (shipClass) {
-            case BATTLESHIP:    return application.getResources().getDrawable(0, null);
-            case EXPLORER:      return application.getResources().getDrawable(0, null);
-            case INTERCEPTOR:   return application.getResources().getDrawable(0, null);
-            case SURVEY:        return application.getResources().getDrawable(0, null);
-        }
-        return null;
     }
 
     /**
@@ -100,7 +89,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         private ImageView shipClassImage;
         private TextView strength;
         private CardView buildFrame;
-        private TextView buildTime;
+        private CustomButton buildTime;
 
         public CustomViewHolder(@NonNull View itemView, ItemBuildListener itemBuildListener) {
             super(itemView);
@@ -112,7 +101,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
             shipClassImage = binding.listShipItemShipTypeImg;
             strength = binding.listShipItemStrengthValue;
             buildFrame = binding.listShipItemBuildFrame;
-            buildTime = binding.listShipItemBuildTime;
+            buildTime = binding.listShipItemBuildButton;
 
             buildFrame.setOnClickListener(v -> itemBuildListener.onBuildClick(ships.get(getAdapterPosition())));
         }

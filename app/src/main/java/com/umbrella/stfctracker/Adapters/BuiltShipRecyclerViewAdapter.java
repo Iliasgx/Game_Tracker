@@ -56,7 +56,7 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
         holder.rarity.setText(builtShip.getRarity().toString());
         holder.grade.setNumStars(builtShip.getGrade().ordinal());
         holder.grade.setRating(builtShip.getGrade().ordinal());
-        holder.shipClassImage.setImageDrawable(shipClassDrawable(builtShip.getShipClass()));
+        holder.shipClassImage.setImageDrawable(application.getDrawable(builtShip.getShipClass().getImageId()));
         holder.strength.setText(new ValueIndicator().setStringFormat(builtShip.getBaseStrength(), '.'));
         holder.itemView.setLongClickable(true);
     }
@@ -69,17 +69,6 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
     public void setBuiltShips(List<BuiltShip> builtShips) {
         this.builtShips = builtShips;
         notifyDataSetChanged();
-    }
-
-    // TODO: Create shipClass images (4)
-    private Drawable shipClassDrawable(ShipClass shipClass) {
-        switch (shipClass) {
-            case BATTLESHIP:    return application.getResources().getDrawable(0, null);
-            case EXPLORER:      return application.getResources().getDrawable(0, null);
-            case INTERCEPTOR:   return application.getResources().getDrawable(0, null);
-            case SURVEY:        return application.getResources().getDrawable(0, null);
-        }
-        return null;
     }
 
     /**

@@ -48,8 +48,7 @@ public class Ship implements Serializable {
     @ColumnInfo(name = "tiers")
     private LinkedList<Tier> tiers;
 
-    public Ship(long id, String name, Rarity rarity, Grade grade, ShipClass shipClass, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, int scrapRequiredOperationsLevel, LinkedList<Tier> tiers) {
-        this.id = id;
+    public Ship(String name, Rarity rarity, Grade grade, ShipClass shipClass, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, int scrapRequiredOperationsLevel, LinkedList<Tier> tiers) {
         this.name = name;
         this.rarity = rarity;
         this.grade = grade;
@@ -63,8 +62,7 @@ public class Ship implements Serializable {
     }
 
     @Ignore
-    public Ship(long id, String name, Rarity rarity, Grade grade, ShipClass shipClass, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, LinkedList<Tier> tiers) {
-        this.id = id;
+    public Ship(String name, Rarity rarity, Grade grade, ShipClass shipClass, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, LinkedList<Tier> tiers) {
         this.name = name;
         this.rarity = rarity;
         this.grade = grade;

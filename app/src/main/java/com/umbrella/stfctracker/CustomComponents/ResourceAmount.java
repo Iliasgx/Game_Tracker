@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.R;
@@ -16,7 +17,7 @@ public class ResourceAmount extends RelativeLayout {
     private ImageView resource;
     private TextView amount;
 
-    private ResourceMaterial.Material material;
+    private Material material;
     private long value;
 
     private boolean isNeeded = true;
@@ -32,7 +33,7 @@ public class ResourceAmount extends RelativeLayout {
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.ResourceAmount);
 
         try {
-            material = ResourceMaterial.Material.values()[arr.getIndex(R.styleable.ResourceAmount_resourceType)];
+            material = Material.values()[arr.getIndex(R.styleable.ResourceAmount_resourceType)];
 
             String mAmount = arr.getString(R.styleable.ResourceAmount_amount);
             value = mAmount != null ? Long.parseLong(mAmount) : 0L;
@@ -56,7 +57,7 @@ public class ResourceAmount extends RelativeLayout {
         amount = requireViewById(R.id.customResourceAmount_ResourceAmount);
     }
 
-    public ResourceMaterial.Material getMaterial() {
+    public Material getMaterial() {
         return material;
     }
     public long getValue() {
@@ -66,23 +67,10 @@ public class ResourceAmount extends RelativeLayout {
         return isNeeded;
     }
 
-    public void setMaterial(ResourceMaterial.Material material) {
+    public void setMaterial(Material material) {
         if (material == null) return;
         this.material = material;
-
-        Drawable dr = null;
-        switch (material) {
-            case PARSTEEL:
-                dr = getResources().getDrawable(R.drawable.parsteel, null);
-                break;
-            case TRITANIUM:
-                dr = getResources().getDrawable(R.drawable.tritanium, null);
-                break;
-            case DILITHIUM:
-                dr = getResources().getDrawable(R.drawable.dilithium, null);
-                break;
-        }
-        resource.setImageDrawable(dr);
+        resource.setImageDrawable(getResources().getDrawable(material.getImageId(), null));
     }
 
     public void setValue(long val) {

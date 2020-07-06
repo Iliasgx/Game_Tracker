@@ -170,51 +170,17 @@
         android:visibility="gone"
         tools:visibility="visible">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/listShipItem_upgradeLayout"
+        <com.umbrella.stfctracker.CustomComponents.CustomButton
+            android:id="@+id/listShipItem_buildButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/dialogShipUpgrade_costCardView_layout"
             android:soundEffectsEnabled="false"
-            android:background="@color/notBuild">
-
-            <FrameLayout
-                android:id="@+id/listShipItem_upgradeFrame"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_margin="2dp"
-                android:background="@color/borderBlue"
-                tools:visibility="invisible"/>
-
-            <TextView
-                android:id="@+id/listShipItem_upgradeText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/listShipItem_buildTime"
-                app:layout_constraintStart_toStartOf="@id/listShipItem_upgradeLayout"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="5dp"
-                android:text="@string/build"
-                style="@style/defaultText"
-                android:textAllCaps="true" />
-
-            <TextView
-                android:id="@+id/listShipItem_buildTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/listShipItem_upgradeLayout"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginEnd="10dp"
-                android:layout_marginVertical="5dp"
-                style="@style/defaultText"
-                tools:text="19m 14s"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:padding="2dp"
+            app:allTextSize="14sp"
+            app:frameDrawable="@drawable/button_ripple_red"
+            app:borderDrawable="@drawable/round_edge_light_red"
+            app:title="@string/build"/>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

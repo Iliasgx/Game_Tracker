@@ -85,8 +85,8 @@ public class BuildingDialog extends DialogFragment {
         binding.dialogBuildingsName.setText(building.getName());
         binding.dialogBuildingsLevelMaxValue.setText(String.valueOf(building.getLevels().size()));
 
-        binding.dialogBuildingsUpgradeLayout.setOnClickListener(listener -> {
-            binding.dialogBuildingsUpgradeLayout.setClickable(false);
+        binding.dialogBuildingsButton.setOnClickListener(listener -> {
+            binding.dialogBuildingsButton.setClickable(false);
             DatabaseClient.dbWriteExecutor.execute(() -> {
                 building.setUnlockedLevel(nextLevel.getLevel());
                 DatabaseClient.getInstance(requireContext()).daoBuilding().levelUp(building);
@@ -115,17 +115,16 @@ public class BuildingDialog extends DialogFragment {
             //boolean isLastOne = (building.getUnlockedLevel() == building.getLevels().size());
             boolean isLastOne = (level.getLevel() == building.getLevels().size());
 
-            binding.dialogBuildingsUpgradeLayout.setClickable(isUpgradeable);
-            binding.dialogBuildingsUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogBuildingsButton.setClickable(isUpgradeable);
 
-            binding.dialogBuildingsUpgradeLayout.setClickable(isUpgradeable);
-            binding.dialogBuildingsUpgradeLayout.setVisibility(isLastOne | isSpecAccess ? View.GONE : View.VISIBLE);
-            binding.dialogBuildingsUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogBuildingsButton.setUsable(isUpgradeable);
+
+            binding.dialogBuildingsButton.setVisibility(isLastOne | isSpecAccess ? View.GONE : View.VISIBLE);
+
 
             binding.dialogBuildingsLevelValue.setText(String.valueOf(level != null ? level.getLevel() : 0));
 
-            binding.dialogBuildingsUpgradeTime.setText((nextLevel == null) ? "" : new TimeDisplay(requireContext())
-                    .getTime( cumulativeBonus.applyBonus(nextLevel.getUpgradeTime(), cumulativeBonus.getBuildSpeedBonus())));
+            binding.dialogBuildingsButton.setTime((nextLevel == null) ? 0 : cumulativeBonus.applyBonus(nextLevel.getUpgradeTime(), cumulativeBonus.getBuildSpeedBonus()));
 
             //Get all materials/resources of the level.
             LinkedList<ResourceMaterial> popMaterials = ((nextLevel != null && nextLevel.getMaterials() != null) ? nextLevel.getMaterials() : new LinkedList<>());
@@ -138,7 +137,7 @@ public class BuildingDialog extends DialogFragment {
                 item.setValue(Long.valueOf(resourceMaterial.getValue()).intValue());
                 item.setRarity(resourceMaterial.getRarity());
                 item.setMaterial(resourceMaterial.getMaterial());
-                item.setStars(resourceMaterial.getStars());
+                item.setGrade(resourceMaterial.getGrade());
                 item.setNeeded(!isLastOne);
             });
 

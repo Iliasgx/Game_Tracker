@@ -8,8 +8,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
-import com.umbrella.stfctracker.DataTypes.ResourceMaterial.Stars;
+import com.umbrella.stfctracker.DataTypes.Enums.Grade;
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
+import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
 import com.umbrella.stfctracker.R;
 
 public class ResourceMaterialAmount extends RelativeLayout {
@@ -22,9 +23,9 @@ public class ResourceMaterialAmount extends RelativeLayout {
     private TextView resourceType;
 
     private int value;
-    private ResourceMaterial.Rarity rarity;
-    private ResourceMaterial.Material material;
-    private ResourceMaterial.Stars stars;
+    private Rarity rarity;
+    private Material material;
+    private Grade grade;
 
     private boolean isNeeded = true;
     private boolean isBackgroundVisible = true;
@@ -41,9 +42,9 @@ public class ResourceMaterialAmount extends RelativeLayout {
 
         try {
             value = arr.getInt(R.styleable.ResourceAmount_amount, 0);
-            rarity = ResourceMaterial.Rarity.values()[arr.getIndex(R.styleable.ResourceMaterialAmount_rarity)];
-            material = ResourceMaterial.Material.values()[3 + arr.getIndex(R.styleable.ResourceMaterialAmount_materialType)];
-            stars = ResourceMaterial.Stars.values()[arr.getIndex(R.styleable.ResourceMaterialAmount_stars)];
+            rarity = Rarity.values()[arr.getIndex(R.styleable.ResourceMaterialAmount_rarity)];
+            material = Material.values()[3 + arr.getIndex(R.styleable.ResourceMaterialAmount_materialType)];
+            grade = Grade.values()[arr.getIndex(R.styleable.ResourceMaterialAmount_stars)];
             isBackgroundVisible = arr.getBoolean(R.styleable.ResourceMaterialAmount_backgroundVisible, true);
         } catch (IndexOutOfBoundsException ignored) {
         } catch (Exception e) {
@@ -60,7 +61,7 @@ public class ResourceMaterialAmount extends RelativeLayout {
             setValue(value);
             setRarity(rarity);
             setMaterial(material);
-            setStars(stars);
+            setGrade(grade);
         }
     }
 
@@ -77,14 +78,14 @@ public class ResourceMaterialAmount extends RelativeLayout {
     public int getValue() {
         return value;
     }
-    public ResourceMaterial.Rarity getRarity() {
+    public Rarity getRarity() {
         return rarity;
     }
-    public ResourceMaterial.Material getMaterial() {
+    public Material getMaterial() {
         return material;
     }
-    public ResourceMaterial.Stars getStars() {
-        return stars;
+    public Grade getGrade() {
+        return grade;
     }
 
     public void setValue(int value) {
@@ -92,8 +93,8 @@ public class ResourceMaterialAmount extends RelativeLayout {
         resourceAmount.setText(String.valueOf(value));
     }
 
-    public void setRarity(ResourceMaterial.Rarity rarity) {
-        if (rarity == null) return;
+    public void setRarity(Rarity rarity) {
+        if (rarity == null | rarity == Rarity.NONE) return;
         this.rarity = rarity;
 
         String type = "";
@@ -107,38 +108,30 @@ public class ResourceMaterialAmount extends RelativeLayout {
             case RARE:
                 type = getResources().getString(R.string.short_rare);
                 break;
+            case EPIC:
+                type = getResources().getString(R.string.short_epic);
+                break;
         }
         resourceType.setText(type);
     }
 
-    public void setMaterial(ResourceMaterial.Material material) {
+    // TODO: setMaterialDrawables
+    public void setMaterial(Material material) {
         if (material == null) return;
         this.material = material;
 
-        Drawable dr = null;
-        switch (material) {
-            case GAS:
-                dr = getResources().getDrawable(R.drawable.gas, null);
-                break;
-            case ORE:
-                dr = getResources().getDrawable(R.drawable.ore, null);
-                break;
-            case CRYSTAL:
-                dr = getResources().getDrawable(R.drawable.crystal, null);
-                break;
-        }
-        resourceImg.setImageDrawable(dr);
+        resourceImg.setImageDrawable(getResources().getDrawable(material.getImageId(), null));
     }
 
-    public void setStars(Stars stars) {
-        if (stars == null) return;
-        this.stars = stars;
+    public void setGrade(Grade grade) {
+        if (grade == null | grade == Grade.NONE) return;
+        this.grade = grade;
 
-        int nr = stars.ordinal() - 1;
-        star1.setVisibility(nr >= Stars.ONE.ordinal() ? VISIBLE : INVISIBLE);
-        star2.setVisibility(nr >= Stars.TWO.ordinal() ? VISIBLE : INVISIBLE);
-        star3.setVisibility(nr >= Stars.THREE.ordinal() ? VISIBLE : INVISIBLE);
-        star4.setVisibility(nr >= Stars.FOUR.ordinal() ? VISIBLE : INVISIBLE);
+        int nr = grade.ordinal() - 1;
+        star1.setVisibility(nr >= Grade.ONE.ordinal() ? VISIBLE : INVISIBLE);
+        star2.setVisibility(nr >= Grade.TWO.ordinal() ? VISIBLE : INVISIBLE);
+        star3.setVisibility(nr >= Grade.THREE.ordinal() ? VISIBLE : INVISIBLE);
+        star4.setVisibility(nr >= Grade.FOUR.ordinal() ? VISIBLE : INVISIBLE);
     }
 
     public void setNeeded(boolean needed) {

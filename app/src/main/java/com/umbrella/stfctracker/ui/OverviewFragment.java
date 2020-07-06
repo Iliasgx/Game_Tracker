@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Models.OverviewViewModel;
 import com.umbrella.stfctracker.R;
@@ -90,27 +91,27 @@ public class OverviewFragment extends Fragment {
             );
 
             //Requirements
-            model.getBuildingResource(ResourceMaterial.Material.PARSTEEL).observe(getViewLifecycleOwner(), rss ->
+            model.getBuildingResource(Material.PARSTEEL).observe(getViewLifecycleOwner(), rss ->
                     changeResource(binding.fragOverviewCostBuildingResourceAValue, rss, true)
             );
 
-            model.getBuildingResource(ResourceMaterial.Material.TRITANIUM).observe(getViewLifecycleOwner(), rss ->
+            model.getBuildingResource(Material.TRITANIUM).observe(getViewLifecycleOwner(), rss ->
                     changeResource(binding.fragOverviewCostBuildingResourceBValue, rss, true)
             );
 
-            model.getBuildingResource(ResourceMaterial.Material.DILITHIUM).observe(getViewLifecycleOwner(), rss ->
+            model.getBuildingResource(Material.DILITHIUM).observe(getViewLifecycleOwner(), rss ->
                     changeResource(binding.fragOverviewCostBuildingResourceCValue, rss, true)
             );
 
-            model.getResearchResource(ResourceMaterial.Material.PARSTEEL).observe(getViewLifecycleOwner(), rss ->
+            model.getResearchResource(Material.PARSTEEL).observe(getViewLifecycleOwner(), rss ->
                     changeResource(binding.fragOverviewCostResearchResourceAValue, rss, false)
             );
 
-            model.getResearchResource(ResourceMaterial.Material.TRITANIUM).observe(getViewLifecycleOwner(), rss ->
+            model.getResearchResource(Material.TRITANIUM).observe(getViewLifecycleOwner(), rss ->
                     changeResource(binding.fragOverviewCostResearchResourceBValue, rss, false)
             );
 
-            model.getResearchResource(ResourceMaterial.Material.DILITHIUM).observe(getViewLifecycleOwner(), rss ->
+            model.getResearchResource(Material.DILITHIUM).observe(getViewLifecycleOwner(), rss ->
                     changeResource(binding.fragOverviewCostResearchResourceCValue, rss, false)
             );
 
@@ -176,7 +177,7 @@ public class OverviewFragment extends Fragment {
             ResourceMaterial resMat = materials.get(position);
 
             bindingMaterials.item.setMaterial(resMat.getMaterial());
-            bindingMaterials.item.setStars(resMat.getStars());
+            bindingMaterials.item.setGrade(resMat.getGrade());
             bindingMaterials.item.setRarity(resMat.getRarity());
             bindingMaterials.item.setNeeded(true);
             bindingMaterials.item.setIsBackgroundVisible(false);

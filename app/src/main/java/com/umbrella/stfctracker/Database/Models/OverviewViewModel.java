@@ -7,6 +7,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Entities.Building;
 import com.umbrella.stfctracker.Database.Entities.Level;
@@ -68,11 +69,11 @@ public class OverviewViewModel extends AndroidViewModel {
         return new MutableLiveData<>(getTime(researchList));
     }
 
-    public LiveData<Long> getBuildingResource(ResourceMaterial.Material material) {
+    public LiveData<Long> getBuildingResource(Material material) {
         return new MutableLiveData<>(getResource(buildingList, material));
     }
 
-    public LiveData<Long> getResearchResource(ResourceMaterial.Material material) {
+    public LiveData<Long> getResearchResource(Material material) {
         return new MutableLiveData<>(getResource(researchList, material));
     }
 
@@ -119,10 +120,8 @@ public class OverviewViewModel extends AndroidViewModel {
         return time.get();
     }
 
-    private long getResource(List<?> list, ResourceMaterial.Material material) {
+    private long getResource(List<?> list, Material material) {
         AtomicLong value = new AtomicLong(0L);
-
-        StringBuilder builder = new StringBuilder("");
 
         list.forEach(item -> {
             LinkedList<Level> levels = (item instanceof Building ? ((Building)item).getLevels() : ((Research)item).getLevels());
@@ -157,7 +156,7 @@ public class OverviewViewModel extends AndroidViewModel {
                                                 .filter(item ->
                                                         (item.getMaterial() == mat.getMaterial()) &&
                                                         (item.getRarity() == mat.getRarity()) &&
-                                                        (item.getStars() == mat.getStars())
+                                                        (item.getGrade() == mat.getGrade())
                                                 ).findFirst().orElse(null);
 
                         if (m == null) {
@@ -182,7 +181,7 @@ public class OverviewViewModel extends AndroidViewModel {
                                         .filter(item ->
                                                 (item.getMaterial() == mat.getMaterial()) &&
                                                         (item.getRarity() == mat.getRarity()) &&
-                                                        (item.getStars() == mat.getStars())
+                                                        (item.getGrade() == mat.getGrade())
                                         ).findFirst().orElse(null);
 
                                 if (m == null) {
@@ -198,7 +197,7 @@ public class OverviewViewModel extends AndroidViewModel {
 
         return materialList.stream()
                 .sorted(Comparator
-                        .comparing(ResourceMaterial::getStars)
+                        .comparing(ResourceMaterial::getGrade)
                         .thenComparing(ResourceMaterial::getMaterial)
                         .thenComparing(ResourceMaterial::getRarity))
                 .collect(Collectors.toList());

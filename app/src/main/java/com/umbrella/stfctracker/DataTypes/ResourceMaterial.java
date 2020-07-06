@@ -1,18 +1,22 @@
 package com.umbrella.stfctracker.DataTypes;
 
+import com.umbrella.stfctracker.DataTypes.Enums.Grade;
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
+import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
+
 public final class ResourceMaterial {
 
     private int id;
     private Material material;
     private Rarity rarity;
-    private Stars stars;
+    private Grade grade;
     private long value;
 
-    public ResourceMaterial(int id, Material material, Rarity rarity, Stars stars, long value) {
+    public ResourceMaterial(int id, Material material, Rarity rarity, Grade grade, long value) {
         this.id = id;
         this.material = material;
         this.rarity = rarity;
-        this.stars = stars;
+        this.grade = grade;
         this.value = value;
     }
 
@@ -20,7 +24,7 @@ public final class ResourceMaterial {
         this.id = id;
         this.material = material;
         this.rarity = null;
-        this.stars = null;
+        this.grade = null;
         this.value = value;
     }
 
@@ -33,8 +37,8 @@ public final class ResourceMaterial {
     public Rarity getRarity() {
         return rarity;
     }
-    public Stars getStars() {
-        return stars;
+    public Grade getGrade() {
+        return grade;
     }
     public long getValue() {
         return value;
@@ -42,27 +46,5 @@ public final class ResourceMaterial {
 
     public void setValue(long value) {
         this.value = value;
-    }
-
-    public enum Material {
-        PARSTEEL,
-        TRITANIUM,
-        DILITHIUM,
-        GAS,
-        ORE,
-        CRYSTAL
-    }
-
-    public enum Rarity {
-        COMMON,
-        UNCOMMON,
-        RARE
-    }
-
-    public enum Stars {
-        ONE,
-        TWO,
-        THREE,
-        FOUR
     }
 }

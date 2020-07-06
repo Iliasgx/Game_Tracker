@@ -33,9 +33,7 @@ public class HomeFragment extends Fragment {
         binding.fragHomeBName.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.homeToResearch));
         //binding.fragHomeCName.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.homeToOfficers));
         binding.fragHomeCName.setOnClickListener(v -> Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show());
-        //binding.fragHomeDName.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.homeToShips));
-        binding.fragHomeDName.setOnClickListener(v -> Toast.makeText(requireContext(), "Coming soon", Toast.LENGTH_SHORT).show());
-
+        binding.fragHomeDName.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.homeToShips));
     }
 
     @Override

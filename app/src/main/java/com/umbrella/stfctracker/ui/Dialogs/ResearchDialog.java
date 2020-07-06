@@ -99,8 +99,8 @@ public class ResearchDialog extends DialogFragment {
         binding.dialogResearchNext.setOnClickListener(onNext ->
                 observableLevel.setValue(research.getLevels().get(++currentIndex))
         );
-        binding.dialogResearchUpgradeLayout.setOnClickListener(upgrade -> {
-            binding.dialogResearchUpgradeLayout.setClickable(false);
+        binding.dialogResearchStartButton.setOnClickListener(upgrade -> {
+            binding.dialogResearchStartButton.setClickable(false);
 
             DatabaseClient.dbWriteExecutor.execute(() -> {
                 CumulativeBonus cBonus = CumulativeBonus.getInstance();
@@ -128,8 +128,7 @@ public class ResearchDialog extends DialogFragment {
                     && level.getLevel() - 1 == research.getUnlockedLevel()); // Looking at next level that can be upgraded
 
             //Note: UpgradeLayout does not vanish as with Buildings because otherwise the values can't be viewed anymore.
-            binding.dialogResearchUpgradeLayout.setClickable(isUpgradeable);
-            binding.dialogResearchUpgradeFrame.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
+            binding.dialogResearchStartButton.setUsable(isUpgradeable);
 
             binding.dialogResearchPrevious.setVisibility(currentIndex != 0 ? View.VISIBLE : View.INVISIBLE);
             binding.dialogResearchNext.setVisibility(currentIndex != (research.getLevels().size() - 1) ? View.VISIBLE : View.INVISIBLE);
@@ -137,8 +136,7 @@ public class ResearchDialog extends DialogFragment {
             //Show current unlocked level in Progressbar.
             binding.dialogResearchLevel.setValue(research.getUnlockedLevel(), research.getLevels().size());
 
-            binding.dialogResearchUpgradeTime.setText(new TimeDisplay(requireContext())
-                    .getTime(cumulativeBonus.applyBonus(level.getUpgradeTime(), cumulativeBonus.getResearchSpeedBonus())));
+            binding.dialogResearchStartButton.setTime(cumulativeBonus.applyBonus(level.getUpgradeTime(), cumulativeBonus.getResearchSpeedBonus()));
 
             //Set current shown level.
             binding.dialogResearchCurrentLevelOnChange.setVisibility(research.getUnlockedLevel() == level.getLevel() ? View.INVISIBLE : View.VISIBLE);
@@ -159,7 +157,7 @@ public class ResearchDialog extends DialogFragment {
                 item.setValue(Long.valueOf(resourceMaterial.getValue()).intValue());
                 item.setRarity(resourceMaterial.getRarity());
                 item.setMaterial(resourceMaterial.getMaterial());
-                item.setStars(resourceMaterial.getStars());
+                item.setGrade(resourceMaterial.getGrade());
                 item.setNeeded(true);
             });
 

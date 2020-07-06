@@ -3,55 +3,51 @@ package com.umbrella.stfctracker.CustomComponents;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 
+import com.umbrella.stfctracker.DataTypes.Enums.Grade;
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
+import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
+import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.R;
-import com.umbrella.stfctracker.databinding.CustomScrapRewardItemBinding;
 
 public class RewardItem extends RelativeLayout {
-    private CustomScrapRewardItemBinding binding;
-
     private ImageView rewardImg;
-    private ImageView star1;
-    private ImageView star2;
-    private ImageView star3;
-    private ImageView star4;
+    private RatingBar gradeRate;
     private TextView nameDisplay;
     private TextView value;
     private CardView border;
     private CardView layer;
 
     private String name;
-    private int amount;
-    private Reward reward;
+    private long amount;
+    private Material reward;
     private Rarity rarity = Rarity.NONE;
-    private Stars stars = Stars.NONE;
+    private Grade grade = Grade.NONE;
 
     public RewardItem(Context context) {
         super(context);
         init(context);
     }
 
-    public void fromDatabase(String name, int amount, Reward reward, Rarity rarity, Stars stars) {
+    public void fromDatabase(String name, long amount, Material rewardMaterial, Rarity rarity, Grade grade) {
         this.name = name;
         this.amount = amount;
-        this.reward = reward;
+        this.reward = rewardMaterial;
         this.rarity = rarity;
-        this.stars = stars;
+        this.grade = grade;
     }
 
     private void init(Context context) {
         inflate(context, R.layout.custom_scrap_reward_item, this);
 
         rewardImg = requireViewById(R.id.scrapRewardItem_itemImg);
-        star1 = requireViewById(R.id.scrapRewardItem__star1);
-        star2 = requireViewById(R.id.scrapRewardItem__star2);
-        star3 = requireViewById(R.id.scrapRewardItem__star3);
-        star4 = requireViewById(R.id.scrapRewardItem__star4);
+        gradeRate = requireViewById(R.id.scrapRewardItem_grade);
         nameDisplay = requireViewById(R.id.scrapRewardItem_rewardName);
         value = requireViewById(R.id.scrapRewardItem_amount);
         border = requireViewById(R.id.scrapRewardItem_border);
@@ -61,17 +57,17 @@ public class RewardItem extends RelativeLayout {
     public String getName() {
         return name;
     }
-    public int getAmount() {
+    public long getAmount() {
         return amount;
     }
-    public Reward getReward() {
+    public Material getReward() {
         return reward;
     }
     public Rarity getRarity() {
         return rarity;
     }
-    public Stars getStars() {
-        return stars;
+    public Grade getGrade() {
+        return grade;
     }
 
     public void setName(String name) {
@@ -79,41 +75,14 @@ public class RewardItem extends RelativeLayout {
         nameDisplay.setText(name);
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(long amount) {
         this.amount = amount;
         value.setText(getResources().getString(R.string.rewardItem_amount, new ValueIndicator().setValueWithIndicator(amount)));
     }
 
-    public void setReward(Reward reward) {
+    public void setReward(Material reward) {
         this.reward = reward;
-        // TODO: set drawables
-        Drawable dr = null;
-        switch (reward) {
-            case PARSTEEL: dr = getResources().getDrawable(R.drawable.parsteel, null);
-                break;
-            case TRITANIUM: dr = getResources().getDrawable(R.drawable.tritanium, null);
-                break;
-            case DILITHIUM: dr = getResources().getDrawable(R.drawable.dilithium, null);
-                break;
-            case GAS: dr = getResources().getDrawable(R.drawable.gas, null);
-                break;
-            case ORE: dr = getResources().getDrawable(R.drawable.ore, null);
-                break;
-            case CRYSTAL: dr = getResources().getDrawable(R.drawable.crystal, null);
-                break;
-            case XP:
-                break;
-            case SURVEY_PARTS:
-                break;
-            case INTERCEPTOR_PARTS:
-                break;
-            case BATTLESHIP_PARTS:
-                break;
-            case EXPLORER_PARTS:
-                break;
-        }
-
-        rewardImg.setImageDrawable(dr);
+        rewardImg.setImageDrawable(getResources().getDrawable(reward.getImageId(), null));
     }
 
     public void setRarity(Rarity rarity) {
@@ -142,43 +111,9 @@ public class RewardItem extends RelativeLayout {
         layer.setCardBackgroundColor(innerColor);
     }
 
-    public void setStars(Stars stars) {
-        this.stars = stars;
-
-        int nr = stars.ordinal();
-        star1.setVisibility(nr >= Stars.ONE.ordinal() ? VISIBLE : INVISIBLE);
-        star2.setVisibility(nr >= Stars.TWO.ordinal() ? VISIBLE : INVISIBLE);
-        star3.setVisibility(nr >= Stars.THREE.ordinal() ? VISIBLE : INVISIBLE);
-        star4.setVisibility(nr >= Stars.FOUR.ordinal() ? VISIBLE : INVISIBLE);
+    public void setGrade(Grade grade) {
+        this.grade = grade;
+        gradeRate.setNumStars(grade.ordinal());
+        gradeRate.setRating(grade.ordinal());
     }
-
-    private enum Reward {
-        PARSTEEL,
-        TRITANIUM,
-        DILITHIUM,
-        GAS,
-        ORE,
-        CRYSTAL,
-        XP,
-        SURVEY_PARTS,
-        INTERCEPTOR_PARTS,
-        BATTLESHIP_PARTS,
-        EXPLORER_PARTS
-    }
-
-    private enum Rarity {
-        NONE,
-        COMMON,
-        UNCOMMON,
-        RARE
-    }
-
-    private enum Stars {
-        NONE,
-        ONE,
-        TWO,
-        THREE,
-        FOUR
-    }
-
 }

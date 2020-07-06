@@ -18,11 +18,15 @@ public class BuiltShipRepository {
         daoBuiltShip = client.daoBuiltShip();
     }
 
-    LiveData<List<BuiltShip>> getLiveBuiltShip() {
+    LiveData<List<BuiltShip>> getLiveAllBuiltShip() {
         return daoBuiltShip.getLiveAll();
     }
 
-    void scrap(BuiltShip builtShip) {
+    LiveData<BuiltShip> getShipById(long id) {
+        return daoBuiltShip.getBuiltShip(id);
+    }
+
+    public void scrap(BuiltShip builtShip) {
         DatabaseClient.dbWriteExecutor.execute(() -> daoBuiltShip.delete(builtShip));
     }
 

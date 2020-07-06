@@ -179,9 +179,6 @@
             app:destination="@id/shipDetailsFragment"
             app:enterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
-        <action
-            android:id="@+id/shipsToScrapShip"
-            app:destination="@id/scrapShipDialog" />
     </fragment>
     <fragment
         android:id="@+id/shipChooseDialog"
@@ -215,6 +212,9 @@
         <argument
             android:name="builtShip"
             app:argType="com.umbrella.stfctracker.Database.Entities.BuiltShip" />
+        <argument
+            android:name="selectedItem"
+            app:argType="com.umbrella.stfctracker.Database.Entities.Tier$Level" />
     </dialog>
     <dialog
         android:id="@+id/buildShipDialog"
@@ -233,5 +233,8 @@
         <argument
             android:name="builtShip"
             app:argType="com.umbrella.stfctracker.Database.Entities.BuiltShip" />
+        <argument
+            android:name="selectedTier"
+            app:argType="com.umbrella.stfctracker.Database.Entities.Tier" />
     </dialog>
 </navigation>

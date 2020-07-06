@@ -20,11 +20,15 @@ public class BuiltShipViewModel extends AndroidViewModel {
         super(application);
 
         mRepos = new BuiltShipRepository(application);
-        liveDataList = mRepos.getLiveBuiltShip();
+        liveDataList = mRepos.getLiveAllBuiltShip();
     }
 
     public LiveData<List<BuiltShip>> getAllBuiltShipsLive() {
         return liveDataList;
+    }
+
+    public LiveData<BuiltShip> getShipById(long id) {
+        return mRepos.getShipById(id);
     }
 
     public void onTierDown(BuiltShip builtShip) {

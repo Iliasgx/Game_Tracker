@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">STFC Tracker</string>
+
     <string name="title_library">Library</string>
     <string name="title_progress">Star Base</string>
     <string name="title_overview">Overview</string>
     <string name="title_research">Research</string>
     <string name="title_buildings">Buildings</string>
     <string name="title_buildingLevels">%1$s Levels</string>
-    <string name="scrapRewardTitle">Scrap rewards</string>
+    <string name="title_scrapRewards">Scrap rewards</string>
 
     <string name="shipItem_strength">Strength</string>
     <string name="level">Level</string>
@@ -42,6 +43,7 @@
     <string name="short_common">C</string>
     <string name="short_uncommon">U</string>
     <string name="short_rare">R</string>
+    <string name="short_epic">E</string>
 
     <string name="percentage">%1$d%%</string>
     <string name="progressString">%1$d / %2$d</string>
@@ -65,7 +67,7 @@
     <string name="add_ship_button">Add ship</string>
     <string name="rewardItem_amount">x%1$s</string>
     <string name="scrapShipButtonText">Scrap ship</string>
-    <string name="scrapShip_subtitle">[ %1$d ] %1$s</string>
+    <string name="scrapShip_subtitle">[ %1$d ] %2$s</string>
     <string name="tierUp">Tier up</string>
     <string name="showRepairs">Show repair details</string>
     <string name="repairSpeed">Repair speed</string>
@@ -80,4 +82,7 @@
     <string name="ship_tierDown_confirmation_description">Are you sure you want to tier the %1$s down?</string>
     <string name="ship_tierDown_confirmation">%1$s has been tiered down.</string>
     <string name="ship_tierDown_warning">%1$s is on lowest tier.</string>
+    <string name="currentTier_selected">The current tier is already selected.</string>
+    <string name="shipScrap_confirmation">%1$s is successfully scrapped.</string>
+    <string name="builtShip_create_confirmation">The %1$s has successfully been build.</string>
 </resources>

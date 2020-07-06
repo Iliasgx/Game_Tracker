@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.nav_unknown:
                     item.setEnabled(false);
-
                     Toast.makeText(this, "Coming soon", Toast.LENGTH_SHORT).show();
                     //navController.navigate(R.id.globalUnknown);
                     break;

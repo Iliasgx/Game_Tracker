@@ -1,11 +1,5 @@
 package com.umbrella.stfctracker.Database.Entities;
 
-import androidx.annotation.IntRange;
-import androidx.annotation.NonNull;
-
-import com.umbrella.stfctracker.DataTypes.Enums.Grade;
-import com.umbrella.stfctracker.DataTypes.Enums.Material;
-import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 
 import java.io.Serializable;
@@ -59,7 +53,7 @@ public class Tier implements Serializable {
         this.components = components;
     }
 
-    public static class Level {
+    public static class Level implements Serializable {
         private int level;
         private int requiredShipXP;
         private int shipAbilityBonus;
@@ -106,25 +100,25 @@ public class Tier implements Serializable {
         }
 
         public static class Scrap {
-            private long scrapTime;
-            private List<Mat> rewards;
+            private int scrapTime;
+            private List<ResourceMaterial> rewards;
 
-            public Scrap(long scrapTime, List<Mat> rewards) {
+            public Scrap(int scrapTime, List<ResourceMaterial> rewards) {
                 this.scrapTime = scrapTime;
                 this.rewards = rewards;
             }
 
-            public long getScrapTime() {
+            public int getScrapTime() {
                 return scrapTime;
             }
-            public List<Mat> getRewards() {
+            public List<ResourceMaterial> getRewards() {
                 return rewards;
             }
 
-            public void setScrapTime(long scrapTime) {
+            public void setScrapTime(int scrapTime) {
                 this.scrapTime = scrapTime;
             }
-            public void setRewards(List<Mat> rewards) {
+            public void setRewards(List<ResourceMaterial> rewards) {
                 this.rewards = rewards;
             }
         }
@@ -135,10 +129,10 @@ public class Tier implements Serializable {
         private String image;
         private boolean locked;
         private LinkedList<ResourceMaterial> repairCosts;
-        private LinkedList<Mat> resources;
-        private LinkedList<Mat> materials;
+        private LinkedList<ResourceMaterial> resources;
+        private LinkedList<ResourceMaterial> materials;
 
-        public Component(ComponentName name, String image, boolean locked, LinkedList<ResourceMaterial> repairCosts, LinkedList<Mat> resources, LinkedList<Mat> materials) {
+        public Component(ComponentName name, String image, boolean locked, LinkedList<ResourceMaterial> repairCosts, LinkedList<ResourceMaterial> resources, LinkedList<ResourceMaterial> materials) {
             this.name = name;
             this.image = image;
             this.locked = locked;
@@ -147,7 +141,7 @@ public class Tier implements Serializable {
             this.materials = materials;
         }
 
-        public Component(ComponentName name, String image, LinkedList<ResourceMaterial> repairCosts, LinkedList<Mat> resources, LinkedList<Mat> materials) {
+        public Component(ComponentName name, String image, LinkedList<ResourceMaterial> repairCosts, LinkedList<ResourceMaterial> resources, LinkedList<ResourceMaterial> materials) {
             this.name = name;
             this.image = image;
             this.locked = true;
@@ -168,10 +162,10 @@ public class Tier implements Serializable {
         public LinkedList<ResourceMaterial> getRepairCosts() {
             return repairCosts;
         }
-        public LinkedList<Mat> getResources() {
+        public LinkedList<ResourceMaterial> getResources() {
             return resources;
         }
-        public LinkedList<Mat> getMaterials() {
+        public LinkedList<ResourceMaterial> getMaterials() {
             return materials;
         }
 
@@ -187,14 +181,15 @@ public class Tier implements Serializable {
         public void setRepairCosts(LinkedList<ResourceMaterial> repairCosts) {
             this.repairCosts = repairCosts;
         }
-        public void setResources(LinkedList<Mat> resources) {
+        public void setResources(LinkedList<ResourceMaterial> resources) {
             this.resources = resources;
         }
-        public void setMaterials(LinkedList<Mat> materials) {
+        public void setMaterials(LinkedList<ResourceMaterial> materials) {
             this.materials = materials;
         }
 
         public enum ComponentName {
+            BUILD_SHIP_TOTAL,
             WARP_ENGINES,
             CARGO_BAY,
             SHIELD,
@@ -203,62 +198,6 @@ public class Tier implements Serializable {
             PHASER_CANNON,
             PHOTON_TORPEDOES,
             MINING_LASER
-        }
-    }
-
-    public static class Mat {
-        private Material material;
-        private Grade grade;
-        private Rarity rarity;
-        private String image;
-        private int amount;
-
-        public Mat(@NonNull Material material, Grade grade, Rarity rarity, @NonNull String image, @IntRange(from = 1) int amount) {
-            this.material = material;
-            this.grade = grade;
-            this.rarity = rarity;
-            this.image = image;
-            this.amount = amount;
-        }
-
-        public Mat(@NonNull Material material, @NonNull String image, @IntRange(from = 1) int amount) {
-            this.material = material;
-            this.grade = null;
-            this.rarity = null;
-            this.image = image;
-            this.amount = amount;
-        }
-
-        public Material getMaterial() {
-            return material;
-        }
-        public Grade getGrade() {
-            return grade;
-        }
-        public Rarity getRarity() {
-            return rarity;
-        }
-        public String getImage() {
-            return image;
-        }
-        public int getAmount() {
-            return amount;
-        }
-
-        public void setMaterial(@NonNull Material material) {
-            this.material = material;
-        }
-        public void setGrade(Grade grade) {
-            this.grade = grade;
-        }
-        public void setRarity(Rarity rarity) {
-            this.rarity = rarity;
-        }
-        public void setImage(@NonNull String image) {
-            this.image = image;
-        }
-        public void setAmount(@IntRange(from = 1) int amount) {
-            this.amount = amount;
         }
     }
 }

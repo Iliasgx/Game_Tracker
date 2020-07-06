@@ -19,7 +19,7 @@ public interface DaoBuiltShip {
     LiveData<List<BuiltShip>> getLiveAll();
 
     @Query("SELECT * FROM built_ship WHERE id=:id")
-    BuiltShip getBuiltShip(long id);
+    LiveData<BuiltShip> getBuiltShip(long id);
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insertAll(BuiltShip... builtShips);
@@ -35,4 +35,7 @@ public interface DaoBuiltShip {
 
     @Update
     void tierDown(BuiltShip builtShip);
+
+    @Update
+    void update(BuiltShip builtShip);
 }

@@ -2,10 +2,10 @@ package com.umbrella.stfctracker.Database.Data;
 
 import com.umbrella.stfctracker.DataTypes.Enums.BonusType;
 import com.umbrella.stfctracker.DataTypes.Enums.Group;
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
+import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
+import com.umbrella.stfctracker.DataTypes.Enums.Grade;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
-import com.umbrella.stfctracker.DataTypes.ResourceMaterial.Material;
-import com.umbrella.stfctracker.DataTypes.ResourceMaterial.Rarity;
-import com.umbrella.stfctracker.DataTypes.ResourceMaterial.Stars;
 import com.umbrella.stfctracker.Database.Entities.Building;
 import com.umbrella.stfctracker.Database.Entities.Level;
 
@@ -184,7 +184,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 220L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -198,7 +198,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 375L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 50L)
                                         )
                                 ),
                                 new Level(
@@ -212,8 +212,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.TWO, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.TWO, 5L)
                                         )
                                 ),
                                 new Level(
@@ -227,8 +227,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 700L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 200L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.TWO, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 200L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.TWO, 10L)
                                         )
                                 ),
                                 new Level(
@@ -242,8 +242,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -257,8 +257,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -272,8 +272,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 2125L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 5000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.TWO, 300L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 5000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.TWO, 300L)
                                         )
                                 ),
                                 new Level(
@@ -299,7 +299,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 5565L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 300L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 300L)
                                         )
                                 ),
                                 new Level(
@@ -313,7 +313,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 9158L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 430L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 430L)
                                         )
                                 ),
                                 new Level(
@@ -327,8 +327,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 14_430L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 560L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 560L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -342,8 +342,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 23_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -357,8 +357,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 36_563L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 860L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 860L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -372,8 +372,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 55_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1030L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1030L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -387,8 +387,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 83_700L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1210L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 230L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1210L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 230L)
                                         )
                                 ),
                                 new Level(
@@ -402,8 +402,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 133_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1410L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 300L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1410L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 300L)
                                         )
                                 ),
                                 new Level(
@@ -417,8 +417,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 195_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1640L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 390L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1640L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 390L)
                                         )
                                 ),
                                 new Level(
@@ -432,8 +432,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 308_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1900L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1900L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -447,8 +447,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 445_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 630L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 630L)
                                         )
                                 ),
                                 new Level(
@@ -462,8 +462,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 688_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2400L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 780L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2400L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 780L)
                                         )
                                 ),
                                 new Level(
@@ -477,8 +477,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1_087_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 950L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 950L)
                                         )
                                 ),
                                 new Level(
@@ -492,8 +492,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1_683_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 3100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.THREE, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 3100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 100L)
                                         )
                                 ),
                                 new Level(
@@ -507,8 +507,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 2_371_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 3500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 1370L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 3500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 1370L)
                                         )
                                 ),
                                 new Level(
@@ -522,8 +522,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 3_645_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 3900L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 1620L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 3900L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 1620L)
                                         )
                                 ),
                                 new Level(
@@ -537,8 +537,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 5_670_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 4300L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 1900L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 4300L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 1900L)
                                         )
                                 ),
                                 new Level(
@@ -552,8 +552,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 9_675_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 4800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.THREE, 500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 4800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 500L)
                                         )
                                 ),
                                 new Level(
@@ -579,7 +579,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 21_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 50_000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 50_000L)
                                         )
                                 ),
                                 new Level(
@@ -593,8 +593,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 32_025_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 88_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 30_000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 88_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 30_000L)
                                         )
                                 ),
                                 new Level(
@@ -608,8 +608,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 45_750_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -623,8 +623,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 68_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 16_500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 16_500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -638,8 +638,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 97_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 150_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 9000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 150_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 9000L)
                                         )
                                 ),
                                 new Level(
@@ -653,8 +653,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 134_062_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 10_000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 10_000L)
                                         )
                                 ),
                                 new Level(
@@ -668,8 +668,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 195_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 12_000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 12_000L)
                                         )
                                 ),
                                 new Level(
@@ -683,8 +683,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 315_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -698,8 +698,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 525_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 12_500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 3_400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 12_500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3_400L)
                                         )
                                 ),
                                 new Level(
@@ -713,8 +713,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 918_750_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 60_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 20_000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 60_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 20_000L)
                                         )
                                 )
                         )
@@ -888,7 +888,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 142_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -900,7 +900,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 204_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -912,7 +912,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 306_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 200L)
                                         )
                                 ),
                                 new Level(
@@ -974,8 +974,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 4_773_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 2L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L)
                                         )
                                 ),
                                 new Level(
@@ -987,8 +987,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 7_458_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 5L)
                                         )
                                 ),
                                 new Level(
@@ -1000,7 +1000,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 11_383_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -1012,8 +1012,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 17_074_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 17L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 17L)
                                         )
                                 ),
                                 new Level(
@@ -1025,8 +1025,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 27_183_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 26L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 26L)
                                         )
                                 ),
                                 new Level(
@@ -1038,7 +1038,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 39_780_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 37L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 37L)
                                         )
                                 ),
                                 new Level(
@@ -1050,8 +1050,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 62_883_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -1063,8 +1063,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_831_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -1076,8 +1076,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 140_505_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -1089,7 +1089,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 221_850_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L)
                                         )
                                 ),
                                 new Level(
@@ -1101,8 +1101,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 343_332_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -1114,8 +1114,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 483_786_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -1127,8 +1127,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 743_580_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -1140,8 +1140,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_156_680_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -1153,8 +1153,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_973_700_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 230L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 230L)
                                         )
                                 ),
                                 new Level(
@@ -1166,7 +1166,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_596_560_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L)
                                         )
                                 ),
                                 new Level(
@@ -1178,8 +1178,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_772_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 22_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 22_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -1191,8 +1191,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 13_066_200_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1500L)
                                         )
                                 ),
                                 new Level(
@@ -1204,8 +1204,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 18_666_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 78_500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 78_500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -1217,8 +1217,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 27_999_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -1230,8 +1230,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 39_780_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 5000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 3200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 5000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3200L)
                                         )
                                 ),
                                 new Level(
@@ -1243,8 +1243,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 54_697_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 3500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3500L)
                                         )
                                 ),
                                 new Level(
@@ -1256,8 +1256,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 79_560_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -1269,8 +1269,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 128_520_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 3000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -1282,8 +1282,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 214_200_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 9000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 9000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -1624,7 +1624,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 50_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -1639,7 +1639,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 73_125L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -1654,7 +1654,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 111_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -1669,7 +1669,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -1684,7 +1684,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 266_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -1699,7 +1699,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 390_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -1714,7 +1714,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 616_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -1729,7 +1729,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 890_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -1744,7 +1744,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1_377_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -1759,7 +1759,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 2_175_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -1774,7 +1774,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 3_366_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -1789,7 +1789,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 4_743_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -1804,7 +1804,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 7_290_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -1819,7 +1819,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 11_340_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -2246,7 +2246,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 28_080L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 2L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L)
                                         )
                                 ),
                                 new Level(
@@ -2259,8 +2259,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 43_875L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 5L)
                                         )
                                 ),
                                 new Level(
@@ -2273,7 +2273,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 66_960L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -2286,8 +2286,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 100_440L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 17L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 17L)
                                         )
                                 ),
                                 new Level(
@@ -2300,8 +2300,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 159_900L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 26L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 26L)
                                         )
                                 ),
                                 new Level(
@@ -2314,8 +2314,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 234_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 550L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 37L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 550L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 37L)
                                         )
                                 ),
                                 new Level(
@@ -2328,7 +2328,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 369_900L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -2341,8 +2341,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 534_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -2355,8 +2355,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 826_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -2369,8 +2369,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_305_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L)
                                         )
                                 ),
                                 new Level(
@@ -2383,7 +2383,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_019_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -2396,8 +2396,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_845_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -2410,8 +2410,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_374_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -2424,8 +2424,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_804_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -2438,8 +2438,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_610_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 230L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 230L)
                                         )
                                 ),
                                 new Level(
@@ -2452,7 +2452,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 18_060_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -2465,7 +2465,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 25_800_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -2478,7 +2478,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_430_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -2491,7 +2491,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 54_900_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -2504,7 +2504,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 82_350_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 7000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 7000L)
                                         )
                                 ),
                                 new Level(
@@ -2517,7 +2517,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 117_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -2530,8 +2530,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 160_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -2544,8 +2544,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 234_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -2558,8 +2558,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 378_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 800L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 800L)
                                         )
                                 ),
                                 new Level(
@@ -2572,8 +2572,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 630_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -2749,7 +2749,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 225L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 50L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 50L)
                                         )
                                 ),
                                 new Level(
@@ -2762,7 +2762,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -2775,8 +2775,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 420L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 200L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.TWO, 15L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 200L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.TWO, 15L)
                                         )
                                 ),
                                 new Level(
@@ -2789,8 +2789,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 1000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.TWO, 85L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 1000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.TWO, 85L)
                                         )
                                 ),
                                 new Level(
@@ -2803,8 +2803,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 900L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 5000L),
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.TWO, 300L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 5000L),
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.TWO, 300L)
                                         )
                                 ),
                                 new Level(
@@ -2850,7 +2850,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5495L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -2863,7 +2863,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8658L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 600L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 600L)
                                         )
                                 ),
                                 new Level(
@@ -2876,8 +2876,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 14_040L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -2890,8 +2890,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_938L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 900L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 900L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -2904,8 +2904,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 33_480L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 160L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 160L)
                                         )
                                 ),
                                 new Level(
@@ -2918,8 +2918,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 50_220L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1200L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 210L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1200L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 210L)
                                         )
                                 ),
                                 new Level(
@@ -2932,8 +2932,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 79_950L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1400L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1400L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -2946,8 +2946,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 117_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 330L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 330L)
                                         )
                                 ),
                                 new Level(
@@ -2960,8 +2960,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 184_950L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1900L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 410L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1900L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 410L)
                                         )
                                 ),
                                 new Level(
@@ -2974,8 +2974,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 267_150L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 25L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 25L)
                                         )
                                 ),
                                 new Level(
@@ -2988,8 +2988,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 413_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2400L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 590L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2400L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 590L)
                                         )
                                 ),
                                 new Level(
@@ -3002,8 +3002,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 652_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 700L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 700L)
                                         )
                                 ),
                                 new Level(
@@ -3016,8 +3016,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_009_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 3100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 820L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 3100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 820L)
                                         )
                                 ),
                                 new Level(
@@ -3030,8 +3030,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_422_900L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 3500L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 75L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 3500L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 75L)
                                         )
                                 ),
                                 new Level(
@@ -3044,8 +3044,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_187_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 3900L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 3900L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1110L)
                                         )
                                 ),
                                 new Level(
@@ -3058,8 +3058,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_482_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 4300L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 4300L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -3072,8 +3072,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_805_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 4800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 4800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -3086,7 +3086,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_030_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 50_000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 50_000L)
                                         )
                                 ),
                                 new Level(
@@ -3099,8 +3099,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 12_900_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 85_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 14_000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 85_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 14_000L)
                                         )
                                 ),
                                 new Level(
@@ -3113,8 +3113,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_215_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 14_500L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 14_500L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -3127,8 +3127,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 16_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 16_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -3141,8 +3141,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 41_175_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 6500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 6500L)
                                         )
                                 ),
                                 new Level(
@@ -3155,8 +3155,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 58_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 8000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 8000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -3169,8 +3169,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 80_437_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 9000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 9000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 9000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 9000L)
                                         )
                                 ),
                                 new Level(
@@ -3183,8 +3183,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 117_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 10_000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 10_000L)
                                         )
                                 ),
                                 new Level(
@@ -3197,8 +3197,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 189_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -3211,8 +3211,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 315_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 20_000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 20_000L)
                                         )
                                 ),
                                 new Level(
@@ -3427,7 +3427,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -3441,7 +3441,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 8000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -3455,7 +3455,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 12_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 400L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 400L)
                                         )
                                 ),
                                 new Level(
@@ -3517,7 +3517,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 115_440L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -3531,8 +3531,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 187_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -3546,8 +3546,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -3561,8 +3561,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 446_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -3576,7 +3576,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 669_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -3590,8 +3590,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_066_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -3605,7 +3605,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_560_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -3619,7 +3619,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_466_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -3633,8 +3633,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_562_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -3648,7 +3648,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_510_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -3662,8 +3662,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 8_700_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -3677,7 +3677,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 13_464_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -3691,8 +3691,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 18_972_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -3706,7 +3706,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 29_160_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -3720,8 +3720,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_360_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -3747,8 +3747,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 120_400_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 5000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 5000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1500L)
                                         )
                                 ),
                                 new Level(
@@ -3762,8 +3762,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 172_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -3777,8 +3777,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 256_200_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -3792,8 +3792,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 366_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -3807,8 +3807,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 549_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 7000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 7000L)
                                         )
                                 ),
                                 new Level(
@@ -3822,8 +3822,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 780_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -3837,8 +3837,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_072_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -3852,8 +3852,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_560_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -3867,8 +3867,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_520_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 55_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 55_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -3882,8 +3882,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4_200_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 80_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 7500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 80_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 7500L)
                                         )
                                 ),
                                 new Level(
@@ -3912,7 +3912,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 243_338L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.TWO, 3L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.TWO, 3L)
                                         )
                                 ),
                                 new Level(
@@ -4217,8 +4217,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 33_480L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -4232,8 +4232,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 50_220L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -4247,7 +4247,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 79_950L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -4261,8 +4261,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 117_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -4276,8 +4276,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 184_950L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -4291,7 +4291,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 267_150L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -4305,8 +4305,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 413_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -4320,8 +4320,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 652_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -4335,7 +4335,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_009_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -4349,8 +4349,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_422_900L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -4364,7 +4364,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_187_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -4378,8 +4378,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_402_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -4393,8 +4393,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_805_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2500L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 360L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2500L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 360L)
                                         )
                                 ),
                                 new Level(
@@ -4408,8 +4408,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_030_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -4423,8 +4423,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 12_900_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -4438,8 +4438,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_215_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -4453,8 +4453,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -4468,8 +4468,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 41_175_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -4483,8 +4483,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 58_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -4498,8 +4498,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 80_437_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -4513,8 +4513,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 117_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.DILITHIUM, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -4528,8 +4528,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 189_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -4543,8 +4543,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 315_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -4573,7 +4573,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 194_670L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.TWO, 3L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.TWO, 3L)
                                         )
                                 ),
                                 new Level(
@@ -4878,8 +4878,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 55_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -4893,8 +4893,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 83_700L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -4908,7 +4908,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 133_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -4922,7 +4922,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 195_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -4936,8 +4936,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 308_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -4951,8 +4951,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 445_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -4966,8 +4966,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 688_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -4981,7 +4981,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_087_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -4995,7 +4995,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_683_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -5009,8 +5009,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_371_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -5024,7 +5024,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_645_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -5038,8 +5038,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_670_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -5053,7 +5053,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_675_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -5067,8 +5067,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 15_050_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5082,8 +5082,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5097,8 +5097,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 32_025_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR,3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR,3000L)
                                         )
                                 ),
                                 new Level(
@@ -5112,8 +5112,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 45_750_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5127,8 +5127,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 68_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5142,8 +5142,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 97_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5157,8 +5157,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 134_062_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -5172,8 +5172,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 195_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -5187,8 +5187,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 315_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -5202,8 +5202,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 525_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -5232,7 +5232,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 243_338L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.TWO, 3L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.TWO, 3L)
                                         )
                                 ),
                                 new Level(
@@ -5517,7 +5517,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 70_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -5531,7 +5531,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 109_688L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -5545,8 +5545,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -5560,8 +5560,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 251_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -5575,7 +5575,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 399_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -5589,8 +5589,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -5604,7 +5604,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 924_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -5618,8 +5618,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_335_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -5633,8 +5633,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_066_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -5648,7 +5648,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_262_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -5662,8 +5662,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_049_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -5677,7 +5677,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 7_114_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -5691,7 +5691,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_935_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -5705,8 +5705,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 17_010_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -5720,8 +5720,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 29_025_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2500L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 360L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2500L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 360L)
                                         )
                                 ),
                                 new Level(
@@ -5735,8 +5735,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5750,8 +5750,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -5765,8 +5765,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -5780,8 +5780,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5795,8 +5795,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5810,8 +5810,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -5825,8 +5825,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -5840,8 +5840,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -5855,8 +5855,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -5870,8 +5870,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -6070,7 +6070,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -6083,7 +6083,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -6096,7 +6096,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 6000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 400L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 400L)
                                         )
                                 ),
                                 new Level(
@@ -6153,7 +6153,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 57_720L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -6166,8 +6166,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 93_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -6180,7 +6180,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 146_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -6193,8 +6193,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 223_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -6207,8 +6207,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 334_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -6221,8 +6221,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 533_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -6235,7 +6235,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 780_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -6248,8 +6248,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_233_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -6262,8 +6262,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_781_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -6276,7 +6276,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_755_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -6289,8 +6289,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4_350_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -6303,7 +6303,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 6_732_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -6316,7 +6316,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 9_486_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -6329,8 +6329,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 14_580_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -6343,8 +6343,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 22_680_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -6357,8 +6357,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 38_700_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 360L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 360L)
                                         )
                                 ),
                                 new Level(
@@ -6371,8 +6371,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 60_200_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -6385,8 +6385,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 86_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 7000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7000L)
                                         )
                                 ),
                                 new Level(
@@ -6399,8 +6399,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 128_100_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -6413,8 +6413,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 183_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 9000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 9000L)
                                         )
                                 ),
                                 new Level(
@@ -6427,8 +6427,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 274_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 10_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 10_000L)
                                         )
                                 ),
                                 new Level(
@@ -6441,7 +6441,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 390_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 25_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 25_000L)
                                         )
                                 ),
                                 new Level(
@@ -6454,7 +6454,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 536_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 30_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 30_000L)
                                         )
                                 ),
                                 new Level(
@@ -6467,7 +6467,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 780_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 35_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_000L)
                                         )
                                 ),
                                 new Level(
@@ -6480,7 +6480,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_260_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 40_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 40_000L)
                                         )
                                 ),
                                 new Level(
@@ -6493,7 +6493,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_100_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 45_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 45_000L)
                                         )
                                 ),
                                 new Level(
@@ -6795,7 +6795,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 57_720L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -6809,8 +6809,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 93_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -6824,8 +6824,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 146_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -6839,8 +6839,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 223_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -6854,8 +6854,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 334_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -6869,8 +6869,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 533_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -6884,8 +6884,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 780_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -6899,7 +6899,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_233_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -6913,8 +6913,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_781_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -6928,8 +6928,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_755_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -6943,7 +6943,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4_350_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -6957,8 +6957,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 6_732_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -6972,7 +6972,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 9_486_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -6986,8 +6986,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 14_580_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -7001,8 +7001,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 22_680_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -7016,8 +7016,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 38_700_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 360L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 360L)
                                         )
                                 ),
                                 new Level(
@@ -7031,8 +7031,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 60_200_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -7046,8 +7046,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 86_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -7061,8 +7061,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 128_100_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 26_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 1500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 26_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1500L)
                                         )
                                 ),
                                 new Level(
@@ -7076,8 +7076,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 183_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -7091,8 +7091,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 274_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 35_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -7106,8 +7106,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 390_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 12_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 12_000L)
                                         )
                                 ),
                                 new Level(
@@ -7121,8 +7121,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 536_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 90_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 90_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -7136,8 +7136,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 780_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 16_500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 7500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 16_500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 7500L)
                                         )
                                 ),
                                 new Level(
@@ -7151,8 +7151,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_260_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 5000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -7166,8 +7166,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_100_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 8000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 10_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 8000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 10_000L)
                                         )
                                 ),
                                 new Level(
@@ -7619,7 +7619,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 60_200_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -7632,7 +7632,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 86_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 1500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1500L)
                                         )
                                 ),
                                 new Level(
@@ -7645,7 +7645,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 128_100_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -7658,7 +7658,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 183_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -7671,7 +7671,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 274_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -7684,7 +7684,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 390_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 3500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3500L)
                                         )
                                 ),
                                 new Level(
@@ -7697,7 +7697,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 536_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -7710,7 +7710,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 780_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -7723,7 +7723,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_260_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -7736,7 +7736,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_100_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 5500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 5500L)
                                         )
                                 ),
                                 new Level(
@@ -7927,7 +7927,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 50L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 50L)
                                         )
                                 ),
                                 new Level(
@@ -7941,7 +7941,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -7955,8 +7955,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 200L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.TWO, 15L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 200L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.TWO, 15L)
                                         )
                                 ),
                                 new Level(
@@ -7970,8 +7970,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 1000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.TWO, 85L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 1000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.TWO, 85L)
                                         )
                                 ),
                                 new Level(
@@ -7985,8 +7985,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 5000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.TWO, 300L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 5000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.TWO, 300L)
                                         )
                                 ),
                                 new Level(
@@ -8036,7 +8036,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 18_315L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -8050,7 +8050,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 28_860L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 600L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 600L)
                                         )
                                 ),
                                 new Level(
@@ -8064,8 +8064,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 46_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -8079,8 +8079,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 73_125L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 900L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 900L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -8094,8 +8094,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 111_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -8109,8 +8109,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1200L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 230L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 230L)
                                         )
                                 ),
                                 new Level(
@@ -8124,8 +8124,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 266_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1400L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 300L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1400L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 300L)
                                         )
                                 ),
                                 new Level(
@@ -8139,8 +8139,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 390_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 390L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 390L)
                                         )
                                 ),
                                 new Level(
@@ -8154,8 +8154,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 616_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1900L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1900L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 500L)
                                         )
                                 ),
                                 new Level(
@@ -8169,8 +8169,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 890_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.THREE, 25L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 25L)
                                         )
                                 ),
                                 new Level(
@@ -8184,8 +8184,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_377_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2400L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 780L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2400L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 780L)
                                         )
                                 ),
                                 new Level(
@@ -8199,8 +8199,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_175_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2800L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 950L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2800L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 950L)
                                         )
                                 ),
                                 new Level(
@@ -8214,8 +8214,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_366_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 3100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 1140L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1140L)
                                         )
                                 ),
                                 new Level(
@@ -8229,8 +8229,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4_743_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 3500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.THREE, 75L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 75L)
                                         )
                                 ),
                                 new Level(
@@ -8244,8 +8244,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 7_290_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 3900L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 1620L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3900L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1620L)
                                         )
                                 ),
                                 new Level(
@@ -8259,8 +8259,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 11_340_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 4300L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 4300L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -8274,8 +8274,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 19_350_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 4800L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 4800L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -8289,7 +8289,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 30_100_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 50_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 50_000L)
                                         )
                                 ),
                                 new Level(
@@ -8303,8 +8303,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 43_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 85_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 20_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 85_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 20_000L)
                                         )
                                 ),
                                 new Level(
@@ -8318,8 +8318,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_050_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 8000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 8000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -8333,8 +8333,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 91_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -8348,8 +8348,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -8363,8 +8363,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 195_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -8378,8 +8378,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 268_125_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 11_500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 11_500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -8393,8 +8393,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 390_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -8408,8 +8408,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 630_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -8423,8 +8423,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_050_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 20_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 20_000L)
                                         )
                                 ),
                                 new Level(
@@ -8628,7 +8628,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 700L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -8641,7 +8641,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -8654,7 +8654,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 200L)
                                         )
                                 ),
                                 new Level(
@@ -8711,7 +8711,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 14_430L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -8724,7 +8724,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 23_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 2L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L)
                                         )
                                 ),
                                 new Level(
@@ -8737,8 +8737,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 36_563L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 5L)
                                         )
                                 ),
                                 new Level(
@@ -8751,7 +8751,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 55_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -8764,7 +8764,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 83_700)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 17L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 17L)
                                         )
                                 ),
                                 new Level(
@@ -8777,8 +8777,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 133_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 26L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 26L)
                                         )
                                 ),
                                 new Level(
@@ -8791,7 +8791,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 195_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 37L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 37L)
                                         )
                                 ),
                                 new Level(
@@ -8804,8 +8804,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 308_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE,50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE,50L)
                                         )
                                 ),
                                 new Level(
@@ -8818,7 +8818,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 445_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -8831,7 +8831,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 688_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -8844,8 +8844,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_087_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L)
                                         )
                                 ),
                                 new Level(
@@ -8858,7 +8858,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_683_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -8871,8 +8871,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_371_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -8885,7 +8885,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_645_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -8898,8 +8898,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_670_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -8923,7 +8923,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 15_050_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -8936,7 +8936,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 21_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -8949,8 +8949,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 32_025_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 7000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 7000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 400L)
                                         )
                                 ),
                                 new Level(
@@ -8963,8 +8963,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_750_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 600L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 600L)
                                         )
                                 ),
                                 new Level(
@@ -8977,8 +8977,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 68_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 800L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 800L)
                                         )
                                 ),
                                 new Level(
@@ -8991,7 +8991,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 97_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 3500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3500L)
                                         )
                                 ),
                                 new Level(
@@ -9004,8 +9004,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 134_062_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 150L)
                                         )
                                 ),
                                 new Level(
@@ -9018,8 +9018,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 195_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 300L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 300L)
                                         )
                                 ),
                                 new Level(
@@ -9032,8 +9032,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 315_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -9046,8 +9046,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 525_000_000)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -9339,8 +9339,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 70_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 2L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L)
                                         )
                                 ),
                                 new Level(
@@ -9353,7 +9353,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 109_688L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 5L)
                                         )
                                 ),
                                 new Level(
@@ -9366,7 +9366,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -9379,8 +9379,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 251_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 17L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 17L)
                                         )
                                 ),
                                 new Level(
@@ -9393,8 +9393,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 399_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 26L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 26L)
                                         )
                                 ),
                                 new Level(
@@ -9407,7 +9407,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 37L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 37L)
                                         )
                                 ),
                                 new Level(
@@ -9420,7 +9420,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 924_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -9433,7 +9433,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_335_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -9446,8 +9446,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_066_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -9460,7 +9460,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_262_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L)
                                         )
                                 ),
                                 new Level(
@@ -9473,7 +9473,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_049_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -9486,8 +9486,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 7_114_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -9500,7 +9500,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_935_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -9513,8 +9513,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 17_010_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -9538,7 +9538,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -9551,7 +9551,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -9564,8 +9564,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 7000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 7000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 400L)
                                         )
                                 ),
                                 new Level(
@@ -9578,8 +9578,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 600L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 600L)
                                         )
                                 ),
                                 new Level(
@@ -9592,8 +9592,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 800L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 800L)
                                         )
                                 ),
                                 new Level(
@@ -9606,7 +9606,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 3500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3500L)
                                         )
                                 ),
                                 new Level(
@@ -9619,8 +9619,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 150L)
                                         )
                                 ),
                                 new Level(
@@ -9633,8 +9633,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR,300L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR,300L)
                                         )
                                 ),
                                 new Level(
@@ -9647,8 +9647,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -9661,8 +9661,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -10153,7 +10153,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 15_050_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -10179,7 +10179,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 32_025_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -10193,7 +10193,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 45_750_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -10207,7 +10207,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 68_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -10221,7 +10221,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 95_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -10235,8 +10235,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 134_062_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -10250,8 +10250,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 195_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -10265,8 +10265,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 315_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -10280,8 +10280,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 525_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 13_250L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 13_250L)
                                         )
                                 ),
                                 new Level(
@@ -10773,7 +10773,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 15_050_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -10787,7 +10787,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -10801,7 +10801,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 32_025_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -10815,7 +10815,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 45_750_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -10829,7 +10829,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 68_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -10843,7 +10843,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 97_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -10857,8 +10857,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 134_062_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -10872,8 +10872,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 195_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -10887,8 +10887,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 315_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -10902,8 +10902,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 525_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 13_250L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 13_250L)
                                         )
                                 ),
                                 new Level(
@@ -14719,7 +14719,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 12_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -14732,7 +14732,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 18_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -14745,7 +14745,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 27_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 200L)
                                         )
                                 ),
                                 new Level(
@@ -14802,7 +14802,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 259_740L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -14815,7 +14815,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 421_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 2L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L)
                                         )
                                 ),
                                 new Level(
@@ -14828,7 +14828,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 658_125L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 5L)
                                         )
                                 ),
                                 new Level(
@@ -14841,8 +14841,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_004_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -14855,7 +14855,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_506_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 17L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 17L)
                                         )
                                 ),
                                 new Level(
@@ -14868,7 +14868,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_398_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 26L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 26L)
                                         )
                                 ),
                                 new Level(
@@ -14881,7 +14881,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_510_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 37L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 37L)
                                         )
                                 ),
                                 new Level(
@@ -14894,8 +14894,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_548_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -14908,7 +14908,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 8_014_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -14921,7 +14921,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 12_397_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -14934,7 +14934,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 19_575_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L)
                                         )
                                 ),
                                 new Level(
@@ -14947,8 +14947,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 30_294_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -14961,7 +14961,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 42_687_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -14974,8 +14974,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 65_610_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -14988,8 +14988,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 102_060_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -15013,7 +15013,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 270_900_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -15026,7 +15026,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 387_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -15039,8 +15039,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 576_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 7000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 7000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 400L)
                                         )
                                 ),
                                 new Level(
@@ -15053,8 +15053,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 823_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 600L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 600L)
                                         )
                                 ),
                                 new Level(
@@ -15067,8 +15067,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_235_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 800L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 800L)
                                         )
                                 ),
                                 new Level(
@@ -15081,7 +15081,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_755_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -15094,8 +15094,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_413_125_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 200L)
                                         )
                                 ),
                                 new Level(
@@ -15108,8 +15108,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_510_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 400L)
                                         )
                                 ),
                                 new Level(
@@ -15122,8 +15122,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_670_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -15136,8 +15136,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 9_450_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -15429,8 +15429,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 234_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 2L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L)
                                         )
                                 ),
                                 new Level(
@@ -15443,8 +15443,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 365_625L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 5L)
                                         )
                                 ),
                                 new Level(
@@ -15457,8 +15457,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 558_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -15471,7 +15471,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 837_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 17L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 17L)
                                         )
                                 ),
                                 new Level(
@@ -15484,7 +15484,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_332_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 26L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 26L)
                                         )
                                 ),
                                 new Level(
@@ -15497,8 +15497,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_950_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 37L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 37L)
                                         )
                                 ),
                                 new Level(
@@ -15511,8 +15511,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_082_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -15525,8 +15525,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4_452_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -15539,7 +15539,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 6_887_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -15552,7 +15552,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L)
                                         )
                                 ),
                                 new Level(
@@ -15565,8 +15565,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 16_830_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -15579,7 +15579,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 23_715_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -15592,7 +15592,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 36_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -15605,8 +15605,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 56_700_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -15630,7 +15630,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 150_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -15643,7 +15643,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 215_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -15656,8 +15656,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 320_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 7000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 7000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 400L)
                                         )
                                 ),
                                 new Level(
@@ -15670,8 +15670,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 457_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 600L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 600L)
                                         )
                                 ),
                                 new Level(
@@ -15684,8 +15684,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 686_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 800L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 800L)
                                         )
                                 ),
                                 new Level(
@@ -15698,7 +15698,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 975_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -15711,8 +15711,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_340_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 200L)
                                         )
                                 ),
                                 new Level(
@@ -15725,8 +15725,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_950_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 400L)
                                         )
                                 ),
                                 new Level(
@@ -15739,8 +15739,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_150_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -15753,8 +15753,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_250_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -16241,7 +16241,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_020_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -16255,7 +16255,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_600_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -16269,7 +16269,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 12_810_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -16283,7 +16283,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 18_300_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -16297,7 +16297,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -16311,7 +16311,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -16325,8 +16325,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 53_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -16340,8 +16340,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 78_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -16355,8 +16355,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 126_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -16370,8 +16370,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 210_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 13_250L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 13_250L)
                                         )
                                 ),
                                 new Level(
@@ -16859,7 +16859,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_020_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -16873,7 +16873,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_600_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -16887,7 +16887,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 12_810_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -16901,7 +16901,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 18_300_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -16915,7 +16915,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -16929,7 +16929,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -16943,8 +16943,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 53_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -16958,8 +16958,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 78_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -16973,8 +16973,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 126_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -16988,8 +16988,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 210_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 13_250L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 13_250L)
                                         )
                                 ),
                                 new Level(
@@ -20759,7 +20759,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -20772,7 +20772,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -20785,7 +20785,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.TWO, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.TWO, 200L)
                                         )
                                 ),
                                 new Level(
@@ -20842,7 +20842,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 57_720L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -20855,7 +20855,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 93_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 2L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L)
                                         )
                                 ),
                                 new Level(
@@ -20868,7 +20868,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 146_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 5L)
                                         )
                                 ),
                                 new Level(
@@ -20881,8 +20881,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 223_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -20895,7 +20895,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 334_800L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 17L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 17L)
                                         )
                                 ),
                                 new Level(
@@ -20908,7 +20908,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 533_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 26L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 26L)
                                         )
                                 ),
                                 new Level(
@@ -20921,8 +20921,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 780_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 550L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 37L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 550L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 37L)
                                         )
                                 ),
                                 new Level(
@@ -20935,7 +20935,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_233_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -20948,8 +20948,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_781_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -20962,7 +20962,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_755_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -20975,7 +20975,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_350_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L)
                                         )
                                 ),
                                 new Level(
@@ -20988,8 +20988,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_732_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -21002,7 +21002,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_486_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -21015,7 +21015,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 14_580_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -21028,8 +21028,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_680_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -21053,7 +21053,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 60_200_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -21066,7 +21066,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 86_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 9000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 9000L)
                                         )
                                 ),
                                 new Level(
@@ -21079,8 +21079,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 128_100_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 400L)
                                         )
                                 ),
                                 new Level(
@@ -21093,8 +21093,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 183_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 600L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 600L)
                                         )
                                 ),
                                 new Level(
@@ -21107,8 +21107,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 274_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -21121,7 +21121,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 390_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -21134,8 +21134,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 536_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 250L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 250L)
                                         )
                                 ),
                                 new Level(
@@ -21148,8 +21148,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 780_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 3000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -21162,8 +21162,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_260_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -21176,8 +21176,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_100_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 70_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 70_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -21469,8 +21469,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 70_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 2L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L)
                                         )
                                 ),
                                 new Level(
@@ -21483,7 +21483,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 109_688L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 5L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 5L)
                                         )
                                 ),
                                 new Level(
@@ -21496,8 +21496,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -21510,8 +21510,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 251_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 17L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 17L)
                                         )
                                 ),
                                 new Level(
@@ -21524,7 +21524,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 399_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 26L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 26L)
                                         )
                                 ),
                                 new Level(
@@ -21537,8 +21537,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 585_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 550L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 37L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 550L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 37L)
                                         )
                                 ),
                                 new Level(
@@ -21551,7 +21551,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 924_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 50L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L)
                                         )
                                 ),
                                 new Level(
@@ -21564,7 +21564,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_335_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -21577,8 +21577,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_066_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 80L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 80L)
                                         )
                                 ),
                                 new Level(
@@ -21591,8 +21591,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_262_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE,100L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE,100L)
                                         )
                                 ),
                                 new Level(
@@ -21605,7 +21605,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_049_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 120L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L)
                                         )
                                 ),
                                 new Level(
@@ -21618,7 +21618,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_114_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -21631,8 +21631,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 10_935_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 170L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L)
                                         )
                                 ),
                                 new Level(
@@ -21645,8 +21645,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 17_010_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.THREE, 200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L)
                                         )
                                 ),
                                 new Level(
@@ -21670,7 +21670,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 12_000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 12_000L)
                                         )
                                 ),
                                 new Level(
@@ -21683,8 +21683,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 9000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 9000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L)
                                         )
                                 ),
                                 new Level(
@@ -21697,8 +21697,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 400L)
                                         )
                                 ),
                                 new Level(
@@ -21711,8 +21711,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 600L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 600L)
                                         )
                                 ),
                                 new Level(
@@ -21725,8 +21725,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -21739,7 +21739,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -21752,8 +21752,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1500L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 250L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1500L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 250L)
                                         )
                                 ),
                                 new Level(
@@ -21766,8 +21766,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 3000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -21780,8 +21780,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -21794,8 +21794,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 70_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 70_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -22292,8 +22292,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 301_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 3000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2400L)
                                         )
                                 ),
                                 new Level(
@@ -22307,8 +22307,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 430_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -22322,7 +22322,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 640_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -22336,7 +22336,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 915_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -22350,7 +22350,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_372_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -22364,7 +22364,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_950_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -22378,8 +22378,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_681_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1500L)
                                         )
                                 ),
                                 new Level(
@@ -22393,8 +22393,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_900_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -22408,8 +22408,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 6_300_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -22423,8 +22423,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_500_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 13_250L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 13_250L)
                                         )
                                 ),
                                 new Level(
@@ -22922,8 +22922,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 301_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 3000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2400L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2400L)
                                         )
                                 ),
                                 new Level(
@@ -22937,8 +22937,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 430_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -22952,7 +22952,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 640_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -22966,7 +22966,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 915_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -22980,7 +22980,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_372_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -22994,7 +22994,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_950_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -23008,8 +23008,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_681_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 1500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1500L)
                                         )
                                 ),
                                 new Level(
@@ -23023,8 +23023,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_900_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -23038,8 +23038,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 6_300_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -23053,8 +23053,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_500_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Stars.FOUR, 13_250L)
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 13_250L)
                                         )
                                 ),
                                 new Level(
@@ -26892,7 +26892,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 280L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -26906,7 +26906,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -26920,7 +26920,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 400L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 400L)
                                         )
                                 ),
                                 new Level(
@@ -26982,7 +26982,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 5772L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -26996,8 +26996,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 9360L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -27011,8 +27011,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 14_625L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -27026,7 +27026,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 22_320L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -27040,8 +27040,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 33_480L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -27055,7 +27055,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -27069,7 +27069,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -27083,8 +27083,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 123_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -27098,7 +27098,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 178_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1,Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1,Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -27112,7 +27112,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 275_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -27126,8 +27126,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 435_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -27141,7 +27141,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 673_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -27155,8 +27155,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 948_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -27170,8 +27170,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1_458_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -27185,8 +27185,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 2_268_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -27212,8 +27212,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 6_020_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1400L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1400L)
                                         )
                                 ),
                                 new Level(
@@ -27227,8 +27227,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 8_600_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -27242,8 +27242,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 12_810_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -27257,8 +27257,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 18_300_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 750L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 750L)
                                         )
                                 ),
                                 new Level(
@@ -27272,7 +27272,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.RARE, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -27286,8 +27286,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 39_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -27301,8 +27301,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1800L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1800L)
                                         )
                                 ),
                                 new Level(
@@ -27316,8 +27316,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -27331,8 +27331,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 126_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 75_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 75_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -27346,8 +27346,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 210_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -27569,7 +27569,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 280L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -27583,7 +27583,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -27597,7 +27597,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.TWO, 400L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.TWO, 400L)
                                         )
                                 ),
                                 new Level(
@@ -27659,7 +27659,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 5772L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -27673,8 +27673,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 9_360L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -27688,8 +27688,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 14_625L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -27703,7 +27703,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 22_320L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -27717,7 +27717,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 33_480L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -27731,8 +27731,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -27746,7 +27746,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -27760,8 +27760,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 123_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -27775,7 +27775,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 178_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -27789,7 +27789,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 275_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -27803,8 +27803,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 435_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -27818,8 +27818,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 673_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -27833,7 +27833,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 948_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -27847,8 +27847,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1_458_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -27862,8 +27862,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 2_268_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -27889,8 +27889,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 6_020_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1400L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1400L)
                                         )
                                 ),
                                 new Level(
@@ -27904,8 +27904,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 8_600_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 14_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 14_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -27919,8 +27919,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 12_810_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -27934,8 +27934,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 18_300_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 750L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 750L)
                                         )
                                 ),
                                 new Level(
@@ -27949,7 +27949,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.RARE, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -27963,8 +27963,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 39_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -27978,8 +27978,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1800L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1800L)
                                         )
                                 ),
                                 new Level(
@@ -27993,8 +27993,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -28008,8 +28008,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 126_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 75_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 75_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -28023,8 +28023,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 210_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 14_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 14_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -28342,8 +28342,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 9360L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -28357,8 +28357,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 14_625L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -28372,7 +28372,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 22_320L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -28386,7 +28386,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 33_480L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -28400,8 +28400,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -28415,8 +28415,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -28430,7 +28430,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 123_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -28444,8 +28444,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 178_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -28459,7 +28459,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 275_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -28473,7 +28473,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 435_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -28487,8 +28487,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 673_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -28502,7 +28502,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 948_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -28516,8 +28516,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1_458_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -28531,8 +28531,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 2_268_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -28558,8 +28558,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 6_020_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 8000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1400L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 8000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1400L)
                                         )
                                 ),
                                 new Level(
@@ -28573,8 +28573,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 8_600_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -28588,8 +28588,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 12_810_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -28603,8 +28603,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 18_300_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 750L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 750L)
                                         )
                                 ),
                                 new Level(
@@ -28618,7 +28618,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.RARE, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -28632,8 +28632,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 39_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -28647,8 +28647,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1800L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1800L)
                                         )
                                 ),
                                 new Level(
@@ -28662,8 +28662,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -28677,8 +28677,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 126_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 75_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 75_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -28692,8 +28692,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 210_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 16_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 16_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -29011,7 +29011,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 9360L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -29025,7 +29025,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 14_625L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -29039,7 +29039,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 22_320L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -29053,7 +29053,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 33_480L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -29067,8 +29067,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -29082,8 +29082,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -29097,7 +29097,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 123_300L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -29111,7 +29111,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 178_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -29125,8 +29125,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 275_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -29140,7 +29140,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 435_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -29154,8 +29154,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 673_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -29169,7 +29169,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 948_600L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -29183,8 +29183,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 1_458_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 1800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -29198,8 +29198,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 2_268_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -29225,8 +29225,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 6_020_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 5000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.THREE, 1400L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 5000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1400L)
                                         )
                                 ),
                                 new Level(
@@ -29240,8 +29240,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 8_600_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -29255,8 +29255,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 12_810_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -29270,8 +29270,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 18_300_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 750L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 750L)
                                         )
                                 ),
                                 new Level(
@@ -29285,7 +29285,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.RARE, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -29299,8 +29299,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 39_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 15_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 15_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -29314,8 +29314,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 30_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1800L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 30_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1800L)
                                         )
                                 ),
                                 new Level(
@@ -29329,8 +29329,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -29344,8 +29344,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 126_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 75_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 75_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -29359,8 +29359,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 210_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 18_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 5500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 18_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 5500L)
                                         )
                                 ),
                                 new Level(
@@ -29858,8 +29858,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 6_020_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 3800L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -29873,8 +29873,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 8_600_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 8000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 8000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -29888,8 +29888,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 12_810_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -29903,8 +29903,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 18_300_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 16_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 16_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -29918,8 +29918,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 7000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 7000L)
                                         )
                                 ),
                                 new Level(
@@ -29933,8 +29933,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 39_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 24_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 8000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 24_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 8000L)
                                         )
                                 ),
                                 new Level(
@@ -29948,8 +29948,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 9000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 9000L)
                                         )
                                 ),
                                 new Level(
@@ -29963,8 +29963,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -29978,8 +29978,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 126_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 75_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 75_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -29993,8 +29993,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 210_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 6500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 6500L)
                                         )
                                 ),
                                 new Level(
@@ -30492,8 +30492,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 6_020_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 1400L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1400L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -30507,8 +30507,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 8_600_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 8000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 8000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -30522,8 +30522,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 12_810_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -30537,8 +30537,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 18_300_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 16_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 16_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -30552,8 +30552,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 27_450_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 500L)
                                         )
                                 ),
                                 new Level(
@@ -30567,8 +30567,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 39_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 24_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 24_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -30582,8 +30582,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 53_625_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 1800L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1800L)
                                         )
                                 ),
                                 new Level(
@@ -30597,8 +30597,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 78_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 45_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 45_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -30612,8 +30612,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 126_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Stars.FOUR, 75_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 75_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -30627,8 +30627,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(3, Material.DILITHIUM, 210_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -30847,7 +30847,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -30861,7 +30861,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -30875,7 +30875,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 400L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 400L)
                                         )
                                 ),
                                 new Level(
@@ -30937,7 +30937,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 43_290L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -30951,8 +30951,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 70_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -30966,8 +30966,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 109_688L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -30981,8 +30981,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -30996,7 +30996,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 251_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -31010,8 +31010,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 399_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -31025,8 +31025,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -31040,8 +31040,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 924_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -31055,7 +31055,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_335_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -31069,7 +31069,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_066_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -31083,8 +31083,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_262_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -31098,8 +31098,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_049_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -31113,8 +31113,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 7_114_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -31128,7 +31128,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_935_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -31142,8 +31142,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 17_010_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -31169,8 +31169,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -31184,8 +31184,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 3200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3200L)
                                         )
                                 ),
                                 new Level(
@@ -31199,8 +31199,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 24_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 7000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 24_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7000L)
                                         )
                                 ),
                                 new Level(
@@ -31214,7 +31214,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -31228,8 +31228,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 6500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -31243,8 +31243,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -31258,8 +31258,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -31273,8 +31273,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 35_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -31288,8 +31288,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 110_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 13_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 110_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 13_000L)
                                         )
                                 ),
                                 new Level(
@@ -31303,8 +31303,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 22_500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 22_500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -31520,7 +31520,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -31534,7 +31534,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -31548,7 +31548,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 400L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 400L)
                                         )
                                 ),
                                 new Level(
@@ -31610,7 +31610,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 43_290L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -31624,8 +31624,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 70_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -31639,8 +31639,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 109_688L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -31654,8 +31654,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -31669,7 +31669,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 251_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -31683,8 +31683,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 399_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -31698,8 +31698,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -31713,8 +31713,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 924_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -31728,7 +31728,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_335_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -31742,7 +31742,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_066_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -31756,8 +31756,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_262_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -31771,8 +31771,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_049_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -31786,8 +31786,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 7_114_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -31801,7 +31801,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_935_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -31815,8 +31815,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 17_010_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -31842,8 +31842,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -31857,8 +31857,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 3200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3200L)
                                         )
                                 ),
                                 new Level(
@@ -31872,8 +31872,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 24_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 7000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 24_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7000L)
                                         )
                                 ),
                                 new Level(
@@ -31887,7 +31887,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -31901,8 +31901,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 6500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -31916,8 +31916,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -31931,8 +31931,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -31946,8 +31946,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 35_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -31961,8 +31961,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 85_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 13_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 85_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 13_000L)
                                         )
                                 ),
                                 new Level(
@@ -31976,8 +31976,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 16_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 16_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -32193,7 +32193,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 25L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 25L)
                                         )
                                 ),
                                 new Level(
@@ -32207,7 +32207,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -32221,7 +32221,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 4500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.TWO, 400L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.TWO, 400L)
                                         )
                                 ),
                                 new Level(
@@ -32283,7 +32283,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 43_290L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 150L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 150L)
                                         )
                                 ),
                                 new Level(
@@ -32297,8 +32297,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 70_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 190L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 190L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -32312,8 +32312,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 109_688L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 230L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 230L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -32327,8 +32327,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 290L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 290L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -32342,8 +32342,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 251_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 360L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 360L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -32357,8 +32357,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 399_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -32372,8 +32372,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -32387,8 +32387,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 924_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -32402,7 +32402,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_335_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -32416,7 +32416,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_066_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -32430,8 +32430,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_262_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -32445,8 +32445,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_049_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -32460,8 +32460,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 7_114_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -32475,7 +32475,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_935_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -32489,8 +32489,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 17_010_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -32516,8 +32516,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -32531,8 +32531,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 3200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3200L)
                                         )
                                 ),
                                 new Level(
@@ -32546,8 +32546,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 24_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 7000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 24_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7000L)
                                         )
                                 ),
                                 new Level(
@@ -32561,7 +32561,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -32575,8 +32575,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 6500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -32590,8 +32590,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -32605,8 +32605,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -32620,8 +32620,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 35_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -32635,8 +32635,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 80_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 13_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 80_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 13_000L)
                                         )
                                 ),
                                 new Level(
@@ -32650,8 +32650,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 14_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -32680,7 +32680,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.TWO, 100L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.TWO, 100L)
                                         )
                                 ),
                                 new Level(
@@ -32965,7 +32965,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 70_200L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 1L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1L)
                                         )
                                 ),
                                 new Level(
@@ -32979,7 +32979,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 109_688L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 4L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4L)
                                         )
                                 ),
                                 new Level(
@@ -32993,7 +32993,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 167_400L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 10L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 10L)
                                         )
                                 ),
                                 new Level(
@@ -33007,7 +33007,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 251_100L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 18L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 18L)
                                         )
                                 ),
                                 new Level(
@@ -33021,8 +33021,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 399_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 450L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 30L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 450L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 30L)
                                         )
                                 ),
                                 new Level(
@@ -33036,7 +33036,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000L)
                                         )   ,
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 45L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 45L)
                                         )
                                 ),
                                 new Level(
@@ -33050,8 +33050,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 924_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 700L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 65L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 700L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 65L)
                                         )
                                 ),
                                 new Level(
@@ -33065,8 +33065,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_335_750L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 800L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 87L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 800L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 87L)
                                         )
                                 ),
                                 new Level(
@@ -33080,8 +33080,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 2_066_250L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 110L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 110L)
                                         )
                                 ),
                                 new Level(
@@ -33095,7 +33095,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 3_262_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 140L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 140L)
                                         )
                                 ),
                                 new Level(
@@ -33109,8 +33109,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 5_049_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1300L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 180L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1300L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L)
                                         )
                                 ),
                                 new Level(
@@ -33124,8 +33124,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 7_114_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 1600L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 220L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1600L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 220L)
                                         )
                                 ),
                                 new Level(
@@ -33139,7 +33139,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 10_935_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 260L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 260L)
                                         )
                                 ),
                                 new Level(
@@ -33153,8 +33153,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 17_010_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.THREE, 2100L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.THREE, 310L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 310L)
                                         )
                                 ),
                                 new Level(
@@ -33180,8 +33180,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 6000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -33195,8 +33195,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 3200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3200L)
                                         )
                                 ),
                                 new Level(
@@ -33210,8 +33210,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 24_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 24_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -33225,7 +33225,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 600L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 600L)
                                         )
                                 ),
                                 new Level(
@@ -33239,8 +33239,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 6500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 1000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1000L)
                                         )
                                 ),
                                 new Level(
@@ -33254,8 +33254,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -33269,8 +33269,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -33284,8 +33284,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 35_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -33299,8 +33299,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 70_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 13_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 70_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 13_000L)
                                         )
                                 ),
                                 new Level(
@@ -33314,8 +33314,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -33344,7 +33344,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 6_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.TWO, 3000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.TWO, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -33809,7 +33809,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 800L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 800L)
                                         )
                                 ),
                                 new Level(
@@ -33823,7 +33823,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -33837,7 +33837,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 3500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3500L)
                                         )
                                 ),
                                 new Level(
@@ -33851,7 +33851,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 4000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4000L)
                                         )
                                 ),
                                 new Level(
@@ -33865,8 +33865,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 25_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 25_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -33880,8 +33880,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -33895,7 +33895,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -33909,8 +33909,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 35_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -33924,8 +33924,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 65_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 13_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 65_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 13_000L)
                                         )
                                 ),
                                 new Level(
@@ -33939,8 +33939,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 10_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 10_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(
@@ -34432,8 +34432,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 45_150_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 12_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 2500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
                                 ),
                                 new Level(
@@ -34447,8 +34447,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 64_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 20_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 3200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3200L)
                                         )
                                 ),
                                 new Level(
@@ -34462,8 +34462,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 96_075_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 24_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 7000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 24_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7000L)
                                         )
                                 ),
                                 new Level(
@@ -34477,7 +34477,7 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 137_250_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 1200L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1200L)
                                         )
                                 ),
                                 new Level(
@@ -34491,8 +34491,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 205_875_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 6500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 3000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 3000L)
                                         )
                                 ),
                                 new Level(
@@ -34506,8 +34506,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 292_500_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 40_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 5000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 40_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 5000L)
                                         )
                                 ),
                                 new Level(
@@ -34521,8 +34521,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 402_187_500L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 50_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 50_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -34536,8 +34536,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 585_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 35_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 6000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6000L)
                                         )
                                 ),
                                 new Level(
@@ -34551,8 +34551,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 945_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Stars.FOUR, 110_000L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 13_000L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 110_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 13_000L)
                                         )
                                 ),
                                 new Level(
@@ -34566,8 +34566,8 @@ public final class DataBuildings extends DataFunctions {
                                                 new ResourceMaterial(2, Material.TRITANIUM, 1_575_000_000L)
                                         ),
                                         addMaterials(
-                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Stars.FOUR, 22_500L),
-                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Stars.FOUR, 4500L)
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 22_500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 4500L)
                                         )
                                 ),
                                 new Level(

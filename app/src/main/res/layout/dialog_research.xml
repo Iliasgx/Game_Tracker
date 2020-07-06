@@ -316,56 +316,16 @@
                             android:layout_marginStart="-3dp"
                             android:layout_marginTop="5dp" />
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/dialogResearch_upgradeLayout"
-                            android:layout_width="@dimen/resource_amount_width"
-                            android:layout_height="@dimen/resource_amount_height"
+                        <com.umbrella.stfctracker.CustomComponents.CustomButton
+                            android:id="@+id/dialogResearch_startButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_below="@id/dialogResearch_AmountA"
                             android:layout_alignStart="@id/dialogResearch_resourceLayout"
-                            android:layout_alignParentEnd="true"
+                            android:layout_alignEnd="@id/dialogResearch_resourceLayout"
+                            android:soundEffectsEnabled="false"
                             android:layout_marginTop="10dp"
-                            android:foreground="@drawable/round_edge"
-                            android:soundEffectsEnabled="false">
-
-                            <FrameLayout
-                                android:id="@+id/dialogResearch_upgradeFrame"
-                                android:layout_width="0dp"
-                                android:layout_height="0dp"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                android:layout_margin="2dp"
-                                android:background="@drawable/button_ripple" />
-
-                            <TextView
-                                android:id="@+id/dialogResearch_upgradeText"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@id/dialogResearch_upgradeTime"
-                                app:layout_constraintStart_toStartOf="@id/dialogResearch_upgradeLayout"
-                                app:layout_constraintTop_toTopOf="parent"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginVertical="5dp"
-                                android:text="@string/start"
-                                style="@style/defaultText"
-                                android:textAllCaps="true"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/dialogResearch_upgradeTime"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="@id/dialogResearch_upgradeLayout"
-                                app:layout_constraintTop_toTopOf="parent"
-                                android:layout_marginEnd="10dp"
-                                android:layout_marginVertical="5dp"
-                                style="@style/defaultText"
-                                android:textSize="20sp"
-                                tools:text="19m 14s" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+                            app:title="@string/start"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </RelativeLayout>

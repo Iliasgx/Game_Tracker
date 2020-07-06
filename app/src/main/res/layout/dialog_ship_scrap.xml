@@ -23,7 +23,7 @@
             style="@style/defaultText"
             android:textAllCaps="true"
             android:textSize="18sp"
-            android:text="@string/scrapRewardTitle"/>
+            android:text="@string/title_scrapRewards"/>
 
         <TextView
             android:id="@+id/dialogShipScrap_subtitle"

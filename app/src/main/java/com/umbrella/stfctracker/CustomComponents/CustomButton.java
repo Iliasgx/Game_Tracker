@@ -145,5 +145,6 @@ public class CustomButton extends ConstraintLayout {
     public void setUsable(boolean usable) {
         isUsable = usable;
         mFrame.setVisibility(usable ? VISIBLE : INVISIBLE);
+        setClickable(usable);
     }
 }

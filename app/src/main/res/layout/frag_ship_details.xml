@@ -392,7 +392,19 @@
         android:textAllCaps="true"
         android:text="@string/tierSelector"/>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ListView
+        android:id="@+id/fragShipDetails_tierRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none"
+        tools:listitem="@layout/tier_level"
+        tools:layout_height="40dp"/>
+
+    <!--<androidx.recyclerview.widget.RecyclerView
         android:id="@+id/fragShipDetails_tierRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -404,5 +416,5 @@
         android:orientation="horizontal"
         android:scrollbars="none"
         tools:listitem="@layout/tier_level"
-        tools:itemCount="9"/>
+        tools:itemCount="9"/>-->
 </RelativeLayout>
