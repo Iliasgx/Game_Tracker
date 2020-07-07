@@ -173,7 +173,7 @@ public class UpgradeShipDialog extends DialogFragment {
 
             Tier.Component component = components.get(position);
 
-            ((ImageView)convertView.requireViewById(R.id.listShipUpgradeItem_img)).setImageDrawable(DataFunctions.decodeDrawable(getResources(), component.getImage()));
+            ((ImageView)convertView.requireViewById(R.id.listShipUpgradeItem_img)).setImageDrawable(getResources().getDrawable(component.getImage(), null));
             ((TextView)convertView.requireViewById(R.id.listShipUpgradeItem_name)).setText(component.getName().toString());
             convertView.requireViewById(R.id.listShipUpgradeItem_locked).setVisibility(component.isLocked() ? View.VISIBLE : View.INVISIBLE);
 

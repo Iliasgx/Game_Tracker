@@ -1,6 +1,7 @@
 package com.umbrella.stfctracker.Database.Entities;
 
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
+import com.umbrella.stfctracker.R;
 
 import java.io.Serializable;
 import java.util.LinkedList;
@@ -125,36 +126,39 @@ public class Tier implements Serializable {
     }
 
     public static class Component {
+        private int id;
         private ComponentName name;
-        private String image;
         private boolean locked;
         private LinkedList<ResourceMaterial> repairCosts;
         private LinkedList<ResourceMaterial> resources;
         private LinkedList<ResourceMaterial> materials;
 
-        public Component(ComponentName name, String image, boolean locked, LinkedList<ResourceMaterial> repairCosts, LinkedList<ResourceMaterial> resources, LinkedList<ResourceMaterial> materials) {
+        public Component(int id, ComponentName name, boolean locked, LinkedList<ResourceMaterial> repairCosts, LinkedList<ResourceMaterial> resources, LinkedList<ResourceMaterial> materials) {
+            this.id = id;
             this.name = name;
-            this.image = image;
             this.locked = locked;
             this.repairCosts = repairCosts;
             this.resources = resources;
             this.materials = materials;
         }
 
-        public Component(ComponentName name, String image, LinkedList<ResourceMaterial> repairCosts, LinkedList<ResourceMaterial> resources, LinkedList<ResourceMaterial> materials) {
+        public Component(int id, ComponentName name, LinkedList<ResourceMaterial> repairCosts, LinkedList<ResourceMaterial> resources, LinkedList<ResourceMaterial> materials) {
+            this.id = id;
             this.name = name;
-            this.image = image;
             this.locked = true;
             this.repairCosts = repairCosts;
             this.resources = resources;
             this.materials = materials;
         }
 
+        public int getId() {
+            return id;
+        }
         public ComponentName getName() {
             return name;
         }
-        public String getImage() {
-            return image;
+        public int getImage() {
+            return name.getImageId();
         }
         public boolean isLocked() {
             return locked;
@@ -169,11 +173,11 @@ public class Tier implements Serializable {
             return materials;
         }
 
+        public void setId(int id) {
+            this.id = id;
+        }
         public void setName(ComponentName name) {
             this.name = name;
-        }
-        public void setImage(String image) {
-            this.image = image;
         }
         public void setLocked(boolean locked) {
             this.locked = locked;
@@ -189,15 +193,25 @@ public class Tier implements Serializable {
         }
 
         public enum ComponentName {
-            BUILD_SHIP_TOTAL,
-            WARP_ENGINES,
-            CARGO_BAY,
-            SHIELD,
-            TRITANIUM_ARMOR,
-            IMPULSE_ENGINE,
-            PHASER_CANNON,
-            PHOTON_TORPEDOES,
-            MINING_LASER
+            BUILD_SHIP_TOTAL(-1),
+            WARP_ENGINES(R.drawable.component_warp),
+            CARGO_BAY(R.drawable.component_cargo),
+            SHIELD(R.drawable.component_shield),
+            TRITANIUM_ARMOR(R.drawable.component_armor),
+            IMPULSE_ENGINE(R.drawable.component_impulse),
+            PHASER_CANNON(R.drawable.component_phaser),
+            PHOTON_TORPEDOES(R.drawable.component_photon_torpedo),
+            MINING_LASER(R.drawable.component_mining_laser);
+
+            private int imageId;
+
+            ComponentName(int id) {
+                this.imageId = id;
+            }
+
+            public int getImageId() {
+                return imageId;
+            }
         }
     }
 }

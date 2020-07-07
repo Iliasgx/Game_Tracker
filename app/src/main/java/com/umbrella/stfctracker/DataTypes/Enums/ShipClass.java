@@ -6,12 +6,12 @@ import com.umbrella.stfctracker.R;
 
 // TODO: set images
 public enum ShipClass {
-    BATTLESHIP  (R.drawable.add),
-    EXPLORER    (0),
-    INTERCEPTOR (0),
-    SURVEY      (0);
+    BATTLESHIP  (R.drawable.shipclass_battleship),
+    EXPLORER    (R.drawable.shipclass_explorer),
+    INTERCEPTOR (R.drawable.shipclass_interceptor),
+    SURVEY      (R.drawable.shipclass_survey);
 
-    public int imageId;
+    private int imageId;
 
     ShipClass(int id) {
         this.imageId = id;

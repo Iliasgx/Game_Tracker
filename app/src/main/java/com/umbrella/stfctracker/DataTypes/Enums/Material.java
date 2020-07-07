@@ -10,13 +10,13 @@ public enum Material {
     GAS                 (R.drawable.gas),
     ORE                 (R.drawable.ore),
     CRYSTAL             (R.drawable.crystal),
-    BATTLESHIP_PARTS    (0),
-    EXPLORER_PARTS      (0),
-    INTERCEPTOR_PARTS   (0),
-    SURVEY_PARTS        (0),
-    SHIP_XP             (0);
+    BATTLESHIP_PARTS    (R.drawable.battleship_parts),
+    EXPLORER_PARTS      (R.drawable.explorer_parts),
+    INTERCEPTOR_PARTS   (R.drawable.interceptor_parts),
+    SURVEY_PARTS        (R.drawable.survey_parts),
+    SHIP_XP             (R.drawable.ship_xp);
 
-    public int imageId;
+    private int imageId;
 
     Material(int id) {
         this.imageId = id;

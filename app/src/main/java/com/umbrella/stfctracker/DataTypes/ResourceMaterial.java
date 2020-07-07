@@ -28,6 +28,14 @@ public final class ResourceMaterial {
         this.value = value;
     }
 
+    public ResourceMaterial(int id, Material material, Grade grade, long value) {
+        this.id = id;
+        this.material = material;
+        this.rarity = null;
+        this.grade = grade;
+        this.value = value;
+    }
+
     public int getId() {
         return id;
     }
