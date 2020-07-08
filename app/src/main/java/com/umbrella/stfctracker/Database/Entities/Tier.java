@@ -57,17 +57,17 @@ public class Tier implements Serializable {
     public static class Level implements Serializable {
         private int level;
         private int requiredShipXP;
-        private int shipAbilityBonus;
+        private float shipAbilityBonus;
         private Scrap scrapInfo;
 
-        public Level(int level, int requiredShipXP, int shipAbilityBonus, Scrap scrapInfo) {
+        public Level(int level, int requiredShipXP, float shipAbilityBonus, Scrap scrapInfo) {
             this.level = level;
             this.requiredShipXP = requiredShipXP;
             this.shipAbilityBonus = shipAbilityBonus;
             this.scrapInfo = scrapInfo;
         }
 
-        public Level(int level, int requiredShipXP, int shipAbilityBonus) {
+        public Level(int level, int requiredShipXP, float shipAbilityBonus) {
             this.level = level;
             this.requiredShipXP = requiredShipXP;
             this.shipAbilityBonus = shipAbilityBonus;
@@ -80,7 +80,7 @@ public class Tier implements Serializable {
         public int getRequiredShipXP() {
             return requiredShipXP;
         }
-        public int getShipAbilityBonus() {
+        public float getShipAbilityBonus() {
             return shipAbilityBonus;
         }
         public Scrap getScrapInfo() {
@@ -93,7 +93,7 @@ public class Tier implements Serializable {
         public void setRequiredShipXP(int requiredShipXP) {
             this.requiredShipXP = requiredShipXP;
         }
-        public void setShipAbilityBonus(int shipAbilityBonus) {
+        public void setShipAbilityBonus(float shipAbilityBonus) {
             this.shipAbilityBonus = shipAbilityBonus;
         }
         public void setScrapInfo(Scrap scrapInfo) {
@@ -151,6 +151,15 @@ public class Tier implements Serializable {
             this.materials = materials;
         }
 
+        public Component(int id, ComponentName name) {
+            this.id = id;
+            this.name = name;
+            this.locked = false;
+            this.repairCosts = new LinkedList<>();
+            this.resources = new LinkedList<>();
+            this.materials = new LinkedList<>();
+        }
+
         public int getId() {
             return id;
         }
@@ -200,7 +209,7 @@ public class Tier implements Serializable {
             TRITANIUM_ARMOR(R.drawable.component_armor),
             IMPULSE_ENGINE(R.drawable.component_impulse),
             PHASER_CANNON(R.drawable.component_phaser),
-            PHOTON_TORPEDOES(R.drawable.component_photon_torpedo),
+            PHOTON_TORPEDO(R.drawable.component_photon_torpedo),
             MINING_LASER(R.drawable.component_mining_laser);
 
             private int imageId;

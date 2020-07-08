@@ -40,12 +40,16 @@ public abstract class DataFunctions {
         return new LinkedList<>(new ArrayList<>(Arrays.asList(components)));
     }
 
-    public LinkedList<ResourceMaterial> addRepairCostsResources(ResourceMaterial... resourceMaterials) {
+    public LinkedList<ResourceMaterial> addRepairCostResources(ResourceMaterial... resourceMaterials) {
         return new LinkedList<>(new ArrayList<>(Arrays.asList(resourceMaterials)));
     }
 
     public LinkedList<ResourceMaterial> addRewards(ResourceMaterial... resourceMaterials) {
         return new LinkedList<>(new ArrayList<>(Arrays.asList(resourceMaterials)));
+    }
+
+    public LinkedList<ResourceMaterial> setEmpty() {
+        return new LinkedList<>();
     }
 
     public static Drawable decodeDrawable(Resources resources, String code) {
