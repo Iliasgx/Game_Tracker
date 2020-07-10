@@ -12,6 +12,7 @@ public final class ResourceMaterial {
     private Grade grade;
     private long value;
 
+    //Materials
     public ResourceMaterial(int id, Material material, Rarity rarity, Grade grade, long value) {
         this.id = id;
         this.material = material;
@@ -20,6 +21,7 @@ public final class ResourceMaterial {
         this.value = value;
     }
 
+    //Resources
     public ResourceMaterial(int id, Material material, long value) {
         this.id = id;
         this.material = material;
@@ -28,10 +30,11 @@ public final class ResourceMaterial {
         this.value = value;
     }
 
+    //Parts (only COMMON) others should use the 'Constructor for Materials'
     public ResourceMaterial(int id, Material material, Grade grade, long value) {
         this.id = id;
         this.material = material;
-        this.rarity = null;
+        this.rarity = Rarity.COMMON;
         this.grade = grade;
         this.value = value;
     }

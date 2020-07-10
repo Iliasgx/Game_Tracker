@@ -1,5 +1,7 @@
 package com.umbrella.stfctracker.Database.Entities;
 
+import androidx.annotation.NonNull;
+
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.R;
 
@@ -60,7 +62,7 @@ public class Tier implements Serializable {
         private float shipAbilityBonus;
         private Scrap scrapInfo;
 
-        public Level(int level, int requiredShipXP, float shipAbilityBonus, Scrap scrapInfo) {
+        public Level(int level, int requiredShipXP, float shipAbilityBonus, @NonNull Scrap scrapInfo) {
             this.level = level;
             this.requiredShipXP = requiredShipXP;
             this.shipAbilityBonus = shipAbilityBonus;
@@ -149,15 +151,6 @@ public class Tier implements Serializable {
             this.repairCosts = repairCosts;
             this.resources = resources;
             this.materials = materials;
-        }
-
-        public Component(int id, ComponentName name) {
-            this.id = id;
-            this.name = name;
-            this.locked = false;
-            this.repairCosts = new LinkedList<>();
-            this.resources = new LinkedList<>();
-            this.materials = new LinkedList<>();
         }
 
         public int getId() {
