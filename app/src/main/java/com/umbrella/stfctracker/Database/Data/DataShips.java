@@ -10,10 +10,10 @@ import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Entities.Ship;
 import com.umbrella.stfctracker.Database.Entities.Tier;
-import com.umbrella.stfctracker.Database.Entities.Tier.Component;
-import com.umbrella.stfctracker.Database.Entities.Tier.Component.ComponentName;
 import com.umbrella.stfctracker.Database.Entities.Tier.Level;
 import com.umbrella.stfctracker.Database.Entities.Tier.Level.Scrap;
+import com.umbrella.stfctracker.Database.Entities.Tier.Component;
+import com.umbrella.stfctracker.Database.Entities.Tier.Component.ComponentName;
 
 import java.util.ArrayList;
 import java.util.Arrays;
