@@ -20574,7 +20574,7 @@ public final class DataShips extends DataFunctions {
                                                 new Scrap(1_567_320, addRewards(
                                                         new ResourceMaterial(1, Material.TRITANIUM, 22_425_001L),
                                                         new ResourceMaterial(2, Material.DILITHIUM, 677_425L),
-                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_339),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_339L),
                                                         new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 396L),
                                                         new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 21L),
                                                         new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 19_200L),
@@ -20880,7 +20880,7 @@ public final class DataShips extends DataFunctions {
                                                         new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 552L),
                                                         new ResourceMaterial(9, Material.SHIP_XP, 47_234L),
                                                         new ResourceMaterial(10, Material.INTERCEPTOR_PARTS, Rarity.COMMON, Grade.FOUR, 110_960L),
-                                                        new ResourceMaterial(11, Material.INTERCEPTOR_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8_322L)
+                                                        new ResourceMaterial(11, Material.INTERCEPTOR_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8322L)
                                                 ))
                                         ),
                                         new Level(45, 200_000, 40,
@@ -20974,6 +20974,9339 @@ public final class DataShips extends DataFunctions {
         );
     }
 
+    private Ship getCenturion() {
+        return new Ship(
+                "Centurion",
+                Rarity.UNCOMMON,
+                Grade.THREE,
+                ShipClass.EXPLORER,
+                img(R.drawable.centurion),
+                0,
+                "Territorial",
+                28,
+                42,
+                addTiers(
+                        new Tier(1, 1_468_800, 30_000,
+                                addShipLevels(
+                                        new Level(1, 0, 20,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 240_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_600L)
+                                                ))
+                                        ),
+                                        new Level(2, 800, 20,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 240_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_600L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 32L)
+                                                ))
+                                        ),
+                                        new Level(3, 1000, 22,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 240_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_600L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 72L)
+                                                ))
+                                        ),
+                                        new Level(4, 1400, 22,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 240_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_600L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 128L)
+                                                ))
+                                        ),
+                                        new Level(5, 1700, 23,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 240_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_600L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 196L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.BUILD_SHIP_TOTAL,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 39_472L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2060L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 53_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2200L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 275L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(2, 240_000, 33_672,
+                                addShipLevels(
+                                        new Level(6, 2400, 24,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 692_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 34_334L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 431L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 232L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 274L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 617L)
+                                                ))
+                                        ),
+                                        new Level(7, 2900, 25,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 692_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 34_334L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 516L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 278L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 383L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 757L)
+                                                ))
+                                        ),
+                                        new Level(8, 3900, 25,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 692_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 34_334L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 643L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 347L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 529L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 967L)
+                                                ))
+                                        ),
+                                        new Level(9, 4600, 26,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 692_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 34_334L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 771L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 415L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 701L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 1176L)
+                                                ))
+                                        ),
+                                        new Level(10, 6000, 27,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 692_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 34_334L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 941L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 507L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 926L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 1456L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 470L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 17_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 70L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 36L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2470L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 525_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 80L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 12L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2470L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 783L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 325L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 50L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 48L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2470L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 522L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 525_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 35_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 70L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2470L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 522L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 525_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 35_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 70L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1235L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 261L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 525_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 35_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 70L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(3, 480_000, 37_686,
+                                addShipLevels(
+                                        new Level(11, 7000, 28,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_539_377L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 88_038L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 923L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 497L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1110L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 1567L)
+                                                ))
+                                        ),
+                                        new Level(12, 8500, 29,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_539_377L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 88_038L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1033L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 557L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1407L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 1802L)
+                                                ))
+                                        ),
+                                        new Level(13, 9500, 29,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_539_377L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 88_038L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1255L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 676L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1740L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 2270L)
+                                                ))
+                                        ),
+                                        new Level(14, 11_000, 30,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_539_377L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 88_038L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1532L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 825L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2125L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 2855L)
+                                                ))
+                                        ),
+                                        new Level(15, 13_500, 31,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_539_377L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 88_038L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1920L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.FOUR, 1034L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2597L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 3675L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1047L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 41_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 220L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 70L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7076L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 250L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 24L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7076L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1745L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 150L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 100L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7076L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1613L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 83_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 62L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 15L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7076L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1613L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 83_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 62L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 15L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3538L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 582L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 83_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 62L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 15L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 140L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(4, 800_000, 43_144,
+                                addShipLevels(
+                                        new Level(16, 15_000, 32,
+                                                new Scrap(1_231_440, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_858_437L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 196_381L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1993L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 27L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 1073L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 15L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2899L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 3748L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 60L)
+                                                ))
+                                        ),
+                                        new Level(17, 17_500, 33,
+                                                new Scrap(1_231_440, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_858_437L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 196_381L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2251L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 30L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 1212L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 16L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 3468L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 4175L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 66L)
+                                                ))
+                                        ),
+                                        new Level(18, 19_500, 33,
+                                                new Scrap(1_231_4400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_858_437L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 196_381L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2767L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 37L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 1490L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 20L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4102L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 5030L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 80L)
+                                                ))
+                                        ),
+                                        new Level(19, 23_000, 34,
+                                                new Scrap(1_231_440, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_858_437L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 196_381L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 3412L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 45L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 1838L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 25L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4849L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 6099L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 97L)
+                                                ))
+                                        ),
+                                        new Level(20, 25_000, 35,
+                                                new Scrap(1_231_440, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_858_437L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 196_381L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4315L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 57L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 2324L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 31L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 5662L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 7595L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 120L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1820L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 87_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 600L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 130L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_750_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 650L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 42L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3033L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2600L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 170L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2022L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 175_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 210L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 250L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2022L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 175_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 210L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 250L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6525L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1011L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 175_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 210L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 250L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(5, 1_200_000, 51_966,
+                                addShipLevels(
+                                        new Level(21, 29_000, 36,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_171_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 401_375L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4353L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 82L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 2344L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 45L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 6096L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 7689L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 174L)
+                                                ))
+                                        ),
+                                        new Level(22, 31_500, 37,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_171_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 401_375L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4699L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 89L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 2531L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 48L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2589L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 8327L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 189L)
+                                                ))
+                                        ),
+                                        new Level(23, 36_000, 37,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_171_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 401_375L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 5392L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 102L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 2903L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 55L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 8121L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 9602L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 217L)
+                                                ))
+                                        ),
+                                        new Level(24, 39_000, 38,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_171_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 401_375L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 6257L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 118L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 3370L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 64L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 9291L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 11_195L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 253L)
+                                                ))
+                                        ),
+                                        new Level(25, 42_000, 38,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_171_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 401_375L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7469L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 141L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 4022L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 76L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_551L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 13_427L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 304L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 3385L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 173_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1125L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 220L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_250_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1250L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 70L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5642L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 325L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 50L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 300L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3761L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_250_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 345_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 425L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3761L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_250_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 345_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 425L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1881L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_250_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 345_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 425L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(6, 1_600_000, 62_418,
+                                addShipLevels(
+                                        new Level(26, 47_000, 40,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_092_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 794_950L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7368L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 205L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 3967L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 111L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_964L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 13_247L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 492L)
+                                                ))
+                                        ),
+                                        new Level(27, 51_000, 41,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_092_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 794_950L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7899L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 220L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 4254L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 119L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 12_367L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 14_344L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 532L)
+                                                ))
+                                        ),
+                                        new Level(28, 57_000, 41,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_092_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 794_950L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 8963L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 249L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 4827L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 135L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 13_934L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 16_536L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 614L)
+                                                ))
+                                        ),
+                                        new Level(29, 61_000, 42,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_092_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 794_950L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_293L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 286L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 5543L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 154L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 15_612L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 19_277L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 715L)
+                                                ))
+                                        ),
+                                        new Level(30, 69_000, 43,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_092_814L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 794_950L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_155L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 338L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.FOUR, 6545L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 182L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 17_509L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 23_114L),
+                                                        new ResourceMaterial(9, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 858L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 6093L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 345_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 425L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 42_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2500L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 42_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 575L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 42_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6770L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 690_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 15L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 4L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 875L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 42_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6770L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 690_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 15L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 4L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 875L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3385L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 690_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 15L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 4L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 875L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(7, 2_000_000, 71_802,
+                                addShipLevels(
+                                        new Level(31, 72_000, 44,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_425_627L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_791_275L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_161L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 465L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 24L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 6549L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 251L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 13L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 17_718L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 23_446L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1146L)
+                                                ))
+                                        ),
+                                        new Level(32, 81_000, 45,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_425_627L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_791_275L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 13_503L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 517L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 27L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 7271L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 278L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 15L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 25_841L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1262L)
+                                                ))
+                                        ),
+                                        new Level(33, 86_000, 45,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_425_627L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_791_275L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 16_187L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 619L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 32L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 8716L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 334L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 18L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 21_893L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 30_630L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1496L)
+                                                ))
+                                        ),
+                                        new Level(34, 95_000, 46,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_425_627L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_791_275L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 19_541L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 748L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 39L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 10_523L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 403L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 21L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 24_268L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 36_616L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1789L)
+                                                ))
+                                        ),
+                                        new Level(35, 100_000, 47,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_425_627L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_791_275L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 24_238L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 927L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 48L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 13_051L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 500L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 26L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_768L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 44_997L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2198L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 910_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 975L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 69_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 5750L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 69_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 29_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1800L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1300L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 69_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 56L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 14L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1900L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 69_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 56L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 14L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1900L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 34_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5760L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 56L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 14L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1900L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(8, 2_600_000, 81_916,
+                                addShipLevels(
+                                        new Level(36, 105_000, 48,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_660_937L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_504_039L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 23_890L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1120L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 125L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 12_864L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 603L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 67L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_453L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 45_017L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2767L)
+                                                ))
+                                        ),
+                                        new Level(37, 116_000, 49,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_660_937L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_504_039L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 26_358L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1236L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 138L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 14_193L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 666L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 74L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 29_063L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 49_255L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3027L)
+                                                ))
+                                        ),
+                                        new Level(38, 122_000, 49,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_660_937L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_504_039L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 31_295L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1467L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 163L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 16_851L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 790L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 88L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 31_808L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 57_731L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3548L)
+                                                ))
+                                        ),
+                                        new Level(39, 134_000, 50,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_660_937L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_504_039L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 37_466L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1757L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 196L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_174L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 946L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 106L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 34_823L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 68_326L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 4199L)
+                                                ))
+                                        ),
+                                        new Level(40, 140_000, 51,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_660_937L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_504_039L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 46_106L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2162L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 241L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 24_826L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1164L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 130L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 37_973L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 83_160L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5110L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 16_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1_650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 900L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 1800L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 103_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 600L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 103_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 27_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 50_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 110L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 16L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 2400L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 103_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 18_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_250_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 130L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 32L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 3600L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 103_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 18_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_250_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 130L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 32L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 3600L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 51_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9198L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_250_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 130L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 32L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 3600L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(9, 3_200_000, 96_834,
+                                addShipLevels(
+                                        new Level(41, 154_000, 52,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 55_955_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_199_300L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 44_075L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2498L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 392L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 23_733L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1345L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 211L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 36_834L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 81_005L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6076L)
+                                                ))
+                                        ),
+                                        new Level(42, 161_000, 53,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 55_955_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_199_300L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 47_732L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2705L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 425L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 25_702L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1457L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 229L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 40_054L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 87_061L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6530L)
+                                                ))
+                                        ),
+                                        new Level(43, 176_000, 53,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 55_955_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_199_300L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 55_048L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3120L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 490L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 29_641L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1680L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 264L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 43_574L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 99_173L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7438L)
+                                                ))
+                                        ),
+                                        new Level(44, 183_000, 55,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 55_955_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_199_300L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 64_191L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3638L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 571L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 34_565L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1959L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 308L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 47_234L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 114_312L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8574L)
+                                                ))
+                                        ),
+                                        new Level(45, 200_000, 60,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 55_955_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_199_300L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 76_993L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4363L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 685L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.FOUR, 41_458L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2350L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.FOUR, 369L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 51_234L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 135_508L),
+                                                        new ResourceMaterial(11, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 10_164L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 29_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 2_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 41L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 2700L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 164_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1700L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 900L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 164_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 49_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 27L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 3600L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 164_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 33_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_400_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 230L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 54L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 5500L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 164_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 33_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_400_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 230L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 54L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 5500L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 82_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 16_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_400_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 230L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 54L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 5500L)
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+    }
+
+    private Ship getBortas() {
+        return new Ship(
+                "Bortas",
+                Rarity.UNCOMMON,
+                Grade.THREE,
+                ShipClass.BATTLESHIP,
+                img(R.drawable.bortas),
+                0,
+                "Revenge",
+                28,
+                42,
+                addTiers(
+                        new Tier(1, 1_468_800, 30_000,
+                                addShipLevels(
+                                        new Level(1, 0, 10,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 285_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8500L)
+                                                ))
+                                        ),
+                                        new Level(2, 800, 10,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 285_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8500L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 32L)
+                                                ))
+                                        ),
+                                        new Level(3, 1000, 11,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 285_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8500L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 72L)
+                                                ))
+                                        ),
+                                        new Level(4, 1400, 11,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 285_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8500L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 128L)
+                                                ))
+                                        ),
+                                        new Level(5, 1700, 12,
+                                                new Scrap(895_620, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 285_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8500L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 196L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.BUILD_SHIP_TOTAL,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 52_640L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1522L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 42_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2200L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 275L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(2, 240_000, 33_666,
+                                addShipLevels(
+                                        new Level(6, 2400, 12,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 888_752L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_384L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 422L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 227L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 274L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 613L)
+                                                ))
+                                        ),
+                                        new Level(7, 2900, 13,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 888_752L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_384L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 503L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 271L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 383L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 751L)
+                                                ))
+                                        ),
+                                        new Level(8, 3900, 13,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 888_752L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_384L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 624L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 336L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 529L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 957L)
+                                                ))
+                                        ),
+                                        new Level(9, 4600, 14,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 888_752L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_384L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 746L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 402L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 701L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 1164L)
+                                                ))
+                                        ),
+                                        new Level(10, 6000, 14,
+                                                new Scrap(1_007_580, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 888_752L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_384L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 909L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 489L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 926L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 1439L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 347L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 17_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 70L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 36L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3418L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 525_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 80L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 12L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 325L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 50L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 48L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1709L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 193L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 525_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 35_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 70L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5697L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 232L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 7000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 325L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 70L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 60L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5697L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 232L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 7000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 325L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 70L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 60L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(3, 480_000, 37_668,
+                                addShipLevels(
+                                        new Level(11, 7000, 15,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_017_501L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 50_500L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 955L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 515L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1110L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 1596L)
+                                                ))
+                                        ),
+                                        new Level(12, 8500, 15,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_017_501L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 50_500L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 1134L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 611L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1407L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 1875L)
+                                                ))
+                                        ),
+                                        new Level(13, 9500, 16,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_017_501L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 50_500L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 1491L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 803L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1740L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 2433L)
+                                                ))
+                                        ),
+                                        new Level(14, 11_000, 16,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_017_501L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 50_500L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 1937L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1043L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2125L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 3130L)
+                                                ))
+                                        ),
+                                        new Level(15, 13_500, 17,
+                                                new Scrap(1_119_540, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_017_501L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 50_500L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 2562L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1380L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2597L),
+                                                        new ResourceMaterial(6, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 4106L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 774L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 41_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 220L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 70L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9650L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 250L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 24L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 150L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 100L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4825L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 430L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_050_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 83_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 62L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 15L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 516L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 16_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 220L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 120L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 516L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 16_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 220L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 120L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(4, 800_000, 43_146,
+                                addShipLevels(
+                                        new Level(16, 15_000, 17,
+                                                new Scrap(1_231_440, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_776_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 109_275L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 2585L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 35L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1392L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 19L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2899L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 4154L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 66L)
+                                                ))
+                                        ),
+                                        new Level(17, 17_500, 18,
+                                                new Scrap(1_231_440, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_776_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 109_275L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 2848L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 38L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1534L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 21L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 3468L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 4585L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 73L)
+                                                ))
+                                        ),
+                                        new Level(18, 19_500, 18,
+                                                new Scrap(1_231_4400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_776_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 109_275L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 3372L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 45L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1816L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 24L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4102L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 5447L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 87L)
+                                                ))
+                                        ),
+                                        new Level(19, 23_000, 19,
+                                                new Scrap(1_231_440, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_776_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 109_275L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 4028L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 53L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2169L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 29L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4849L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 6525L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 104L)
+                                                ))
+                                        ),
+                                        new Level(20, 25_000, 19,
+                                                new Scrap(1_231_440, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_776_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 109_275L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 4947L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 66L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2664L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 36L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 5662L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 8034L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 127L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1345L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 87_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 600L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 130L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 17_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_750_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 650L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 42L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 53_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2600L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 170L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8866L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 747L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 175_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 210L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 50L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 250L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 29_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 897L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 35_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 37L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 210L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 29_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 897L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 35_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 170L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 37L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 210L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(5, 1_200_000, 51_960,
+                                addShipLevels(
+                                        new Level(21, 29_000, 20,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_860_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 220_601L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 4952L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 94L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2667L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 51L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 6096L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 8123L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 184L)
+                                                ))
+                                        ),
+                                        new Level(22, 31_500, 20,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_860_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 220_601L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 5292L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 100L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2850L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 54L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2589L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 8757L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 198L)
+                                                ))
+                                        ),
+                                        new Level(23, 36_000, 21,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_860_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 220_601L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 5971L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 113L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3216L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 61L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 8121L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 10_023L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 227L)
+                                                ))
+                                        ),
+                                        new Level(24, 39_000, 21,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_860_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 220_601L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 6821L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 129L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3673L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 70L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 9291L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 11_606L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 263L)
+                                                ))
+                                        ),
+                                        new Level(25, 42_000, 22,
+                                                new Scrap(1_343_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_860_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 220_601L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 8010L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 151L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4313L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 82L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_551L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 13_822L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 313L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 2502L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 173_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1125L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 220L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_250_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1250L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 70L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 99_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 325L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 50L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 300L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1390L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_250_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 345_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 425L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 55_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1668L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 69_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 325L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 70L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 350L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 55_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1668L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 69_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 325L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 70L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 350L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(6, 1_600_000, 62_370,
+                                addShipLevels(
+                                        new Level(26, 47_000, 22,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_088_752),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 434_256),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 7978L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 222L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4296L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 120L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_964L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 13_718L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 509L)
+                                                ))
+                                        ),
+                                        new Level(27, 51_000, 23,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_088_752),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 434_256),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 8592L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 239L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4626L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 129L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 12_367L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 14_870L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 552L)
+                                                ))
+                                        ),
+                                        new Level(28, 57_000, 23,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_088_752),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 434_256),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 9819L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 273L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 5287L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 147L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 13_934L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 17_174L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 637L)
+                                                ))
+                                        ),
+                                        new Level(29, 61_000, 24,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_088_752),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 434_256),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 11_353L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 316L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6113L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 170L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 15_612L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 20_054L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 744L)
+                                                ))
+                                        ),
+                                        new Level(30, 69_000, 24,
+                                                new Scrap(1_455_360, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_088_752),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 434_256),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 13_501L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 376L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 7270L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 202L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 17_509L),
+                                                        new ResourceMaterial(8, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 24_086L),
+                                                        new ResourceMaterial(9, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 894L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 4503L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 345_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 425L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 58_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2500L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 174_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 575L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 29_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2502L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 690_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 15L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 4L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 875L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 96_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3002L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 138_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 725L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 96_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3002L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 138_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 725L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(7, 2_000_000, 71_832,
+                                addShipLevels(
+                                        new Level(31, 72_000, 25,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_551_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 977_487L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 13_417L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 513L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 27L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 7225L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 277L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 15L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 17_718L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 24_468L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1195L)
+                                                ))
+                                        ),
+                                        new Level(32, 81_000, 25,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_551_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 977_487L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 14_755L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 565L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 29L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 7945L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 304L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 16L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 26_888L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1314L)
+                                                ))
+                                        ),
+                                        new Level(33, 86_000, 26,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_551_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 977_487L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 17_430L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 667L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 35L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 9385L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 359L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 19L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 21_893L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 31_727L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1550L)
+                                                ))
+                                        ),
+                                        new Level(34, 95_000, 26,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_551_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 977_487L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 20_773L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 795L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 41L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 11_186L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 428L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 22L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 24_268L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 37_776L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1845L)
+                                                ))
+                                        ),
+                                        new Level(35, 100_000, 27,
+                                                new Scrap(1_567_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 24_551_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 977_487L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 25_455L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 974L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 50L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 13_707L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 525L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 27L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_768L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 46_244L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2259L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 7664L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 910_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 975L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 94_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 5750L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 283_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 29_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 1800L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 1300L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 47_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4258L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 56L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 14L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 1900L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 157_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5109L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 29_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 365_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 45L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 10L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 1600L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 157_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5109L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 29_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 365_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 45L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 10L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 1600L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(8, 2_600_000, 81_918,
+                                addShipLevels(
+                                        new Level(36, 105_000, 27,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 44_846_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_908_969L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 25_124L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1178L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 131L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 13_529L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 635L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 71L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_453L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 46_458L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2855L)
+                                                ))
+                                        ),
+                                        new Level(37, 116_000, 28,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 44_846_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_908_969L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 27_622L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1295L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 144L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_874L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 698L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 78L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 29_063L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 50_765L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3120L)
+                                                ))
+                                        ),
+                                        new Level(38, 122_000, 28,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 44_846_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_908_969L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 32_618L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1529L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 170L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 17_564L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 824L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 92L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 31_808L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 59_379L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3649L)
+                                                ))
+                                        ),
+                                        new Level(39, 134_000, 29,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 44_846_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_908_969L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 38_863L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1822L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 203L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 20_926L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 981L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 109L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 34_823L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 70_146L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 4311L)
+                                                ))
+                                        ),
+                                        new Level(40, 140_000, 29,
+                                                new Scrap(1_679_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 44_846_251L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_908_969L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 47_605L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2232L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 248L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 25_634L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1202L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 134L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 37_973L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 85_220L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5237L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 12_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1_650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 900L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 1800L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 140_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 600L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 422_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 50_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 110L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 16L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 2400L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 70_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6799L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_250_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 130L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 32L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 3600L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 234_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8158L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 50_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 110L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 24L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 3600L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 234_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8158L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 50_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 110L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 24L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 3600L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(9, 3_200_000, 96_822,
+                                addShipLevels(
+                                        new Level(41, 154_000, 30,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 74_625_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_377_950L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 45_639L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2587L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 406L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 24_575L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1393L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 219L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 36_834L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 83_410L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6256L)
+                                                ))
+                                        ),
+                                        new Level(42, 161_000, 30,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 74_625_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_377_950L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 49_273L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2793L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 438L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 26_532L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1504L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 236L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 40_054L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 89_511L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6714L)
+                                                ))
+                                        ),
+                                        new Level(43, 176_000, 31,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 74_625_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_377_950L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 56_542L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3205L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 503L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 30_446L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1726L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 271L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 43_574L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 101_715L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7629L)
+                                                ))
+                                        ),
+                                        new Level(44, 183_000, 31,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 74_625_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_377_950L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 65_628L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3719L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 584L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 35_339L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2003L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 315L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 47_234L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 116_969L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8773L)
+                                                ))
+                                        ),
+                                        new Level(45, 200_000, 32,
+                                                new Scrap(1_791_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 74_625_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_377_950L),
+                                                        new ResourceMaterial(3, Material.ORE, Rarity.COMMON, Grade.FOUR, 78_349L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4440L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.RARE, Grade.FOUR, 697L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 42_188L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2391L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 376L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 51_234L),
+                                                        new ResourceMaterial(10, Material.BATTLESHIP_PARTS, Rarity.COMMON, Grade.FOUR, 138_325L),
+                                                        new ResourceMaterial(11, Material.BATTLESHIP_PARTS, Rarity.UNCOMMON, Grade.FOUR, 10_375L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 21_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 2_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 41L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 2700L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 222_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 1700L),
+                                                        new ResourceMaterial(2, Material.BATTLESHIP_PARTS, Grade.THREE, 900L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 666_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 27L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 3600L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 111_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 12_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_400_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 230L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 54L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 5500L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 370_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 14_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 41L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 4500L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 370_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 14_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 41L),
+                                                        new ResourceMaterial(3, Material.BATTLESHIP_PARTS, Grade.THREE, 4500L)
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+    }
+
+    private Ship getVahklas() {
+        return new Ship(
+                "Vahklas",
+                Rarity.COMMON,
+                Grade.THREE,
+                ShipClass.EXPLORER,
+                img(R.drawable.vahklas),
+                0,
+                "Pinpoint Targeting",
+                22,
+                26,
+                addTiers(
+                        new Tier(1, 540_000, 12_612,
+                                addShipLevels(
+                                        new Level(1, 0, 10,
+                                                new Scrap(275_520, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 75_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4000L)
+                                                ))
+                                        ),
+                                        new Level(2, 800, 11,
+                                                new Scrap(275_520, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 75_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4000L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 32L)
+                                                ))
+                                        ),
+                                        new Level(3, 1000, 12,
+                                                new Scrap(275_520, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 75_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4000L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 72L)
+                                                ))
+                                        ),
+                                        new Level(4, 1400, 13,
+                                                new Scrap(275_520, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 75_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4000L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 128L)
+                                                ))
+                                        ),
+                                        new Level(5, 1700, 14,
+                                                new Scrap(275_520, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 75_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4000L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 196L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.BUILD_SHIP_TOTAL,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_545L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 542L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 20_000L)
+                                                ),
+                                                setEmpty()
+                                        )
+                                )
+                        ),
+                        new Tier(2, 70_200, 13_854,
+                                addShipLevels(
+                                        new Level(6, 2400, 15,
+                                                new Scrap(309_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 183_390L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_606L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 33L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.THREE, 18L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 274L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Grade.THREE, 8L)
+                                                ))
+                                        ),
+                                        new Level(7, 2900, 16,
+                                                new Scrap(309_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 183_390L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_606L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 42L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.THREE, 23L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 383L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Grade.THREE, 10L)
+                                                ))
+                                        ),
+                                        new Level(8, 3900, 17,
+                                                new Scrap(309_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 183_390L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_606L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 54L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.THREE, 29L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 529L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Grade.THREE, 13L)
+                                                ))
+                                        ),
+                                        new Level(9, 4600, 18,
+                                                new Scrap(309_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 183_390L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_606L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 66L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.THREE, 36L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 701L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Grade.THREE, 16L)
+                                                ))
+                                        ),
+                                        new Level(10, 6000, 19,
+                                                new Scrap(309_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 183_390L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_606L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 83L),
+                                                        new ResourceMaterial(4, Material.ORE, Rarity.COMMON, Grade.THREE, 45L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 926L),
+                                                        new ResourceMaterial(6, Material.EXPLORER_PARTS, Grade.THREE, 20L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 203L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 5500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 18L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 12L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1108L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 126_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 20L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 4L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1108L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 338L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 250_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 80L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 12L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 16L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1662L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 338L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 126_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_250L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 24L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 24L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1662L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 338L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 126_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_250L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 24L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 24L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1662L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 338L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 126_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_250L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 24L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 24L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(3, 140_000, 16_284,
+                                addShipLevels(
+                                        new Level(11, 7000, 20,
+                                                new Scrap(344_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 364_990L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 27_108L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 77L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 42L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 2L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 1110L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 22L)
+                                                ))
+                                        ),
+                                        new Level(12, 8500, 21,
+                                                new Scrap(344_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 364_990L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 27_108L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 86L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 4L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 47L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 3L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 1407L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 26L)
+                                                ))
+                                        ),
+                                        new Level(13, 9500, 22,
+                                                new Scrap(344_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 364_990L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 27_108L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 105L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 5L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 57L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 3L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 1740L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 32L)
+                                                ))
+                                        ),
+                                        new Level(14, 11_000, 23,
+                                                new Scrap(344_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 364_990L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 27_108L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 128L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 6L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 69L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 4L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2125L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 41L)
+                                                ))
+                                        ),
+                                        new Level(15, 13_500, 24,
+                                                new Scrap(344_4000, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 364_990L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 27_108L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 161L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 8L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 87L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 4L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2597L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 52L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 380L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 12_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 53L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 24L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2413L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 225_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 59L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 8L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2413L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 633L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 455_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 240L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 36L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 32L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3619L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 633L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 225_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 24_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 14L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 3L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 48L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3619L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 633L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 225_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 24_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 14L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 3L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 48L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3619L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 633L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 225_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 24_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 14L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 3L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 48L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(4, 234_000, 18_498,
+                                addShipLevels(
+                                        new Level(16, 15_000, 25,
+                                                new Scrap(378_840, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 666_807L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 60_324L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 156L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 13L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 84L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 7L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2899L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 56L)
+                                                ))
+                                        ),
+                                        new Level(17, 17_500, 26,
+                                                new Scrap(378_840, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 666_807L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 60_324L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 175L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 15L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 94L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 8L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 3468L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 62L)
+                                                ))
+                                        ),
+                                        new Level(18, 19_500, 27,
+                                                new Scrap(378_840, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 666_807L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 60_324L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 213L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 18L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 115L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 10L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4102L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 74L)
+                                                ))
+                                        ),
+                                        new Level(19, 23_000, 28,
+                                                new Scrap(378_840, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 666_807L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 60_324L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 262L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 22L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 141L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 12L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4849L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 89L)
+                                                ))
+                                        ),
+                                        new Level(20, 25_000, 29,
+                                                new Scrap(378_840, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 666_807L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 60_324L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 329L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 28L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 178L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 15L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 5662L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 111L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 699L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 27_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 140L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 42L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4863L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 400_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 160L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 14L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4863L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1165L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 800_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 625L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.THREE, 100L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 56L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7295L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1165L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 53_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 46L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 11L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 80L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7295L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1165L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 53_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 46L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 11L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 80L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7295L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1165L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 53_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 46L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 11L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 80L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(5, 351_000, 22_524,
+                                addShipLevels(
+                                        new Level(21, 29_000, 30,
+                                                new Scrap(413_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_196_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 123_306L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 273L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 46L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 147L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 25L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 6096L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 115L)
+                                                ))
+                                        ),
+                                        new Level(22, 31_500, 31,
+                                                new Scrap(413_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_196_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 123_306L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 295L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 49L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 159L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 27L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 8041L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 125L)
+                                                ))
+                                        ),
+                                        new Level(23, 36_000, 32,
+                                                new Scrap(413_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_196_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 123_306L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 336L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 56L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 181L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 31L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 8121L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 144L)
+                                                ))
+                                        ),
+                                        new Level(24, 39_000, 33,
+                                                new Scrap(413_280, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_196_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 123_306L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 389L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 65L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 210L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 35L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 9291L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 167L)
+                                                ))
+                                        ),
+                                        new Level(25, 42_000, 34,
+                                                new Scrap(413_2800, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_196_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 123_306L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 462L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 77L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.COMMON, Grade.THREE, 249L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 42L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_551L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 200L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1280L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 53_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 70L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9100L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 740_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 300L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 24L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9100L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2134L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 70L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 11L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 100L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 106_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 740_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 106_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 90L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 22L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 106_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 740_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 106_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 90L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 22L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 106_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 740_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 106_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 90L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 22L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 140L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(6, 468_000, 27_054,
+                                addShipLevels(
+                                        new Level(26, 47_000, 35,
+                                                new Scrap(447_720, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_096_007L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 243_247L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 315L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 89L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 170L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 48L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 10_964L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 209L)
+                                                ))
+                                        ),
+                                        new Level(27, 51_000, 36,
+                                                new Scrap(447_720, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_096_007L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 243_247L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 337L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 95L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 181L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 51L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 12_367L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 226L)
+                                                ))
+                                        ),
+                                        new Level(28, 57_000, 37,
+                                                new Scrap(447_720, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_096_007L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 243_247L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 379L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 107L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 204L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 58L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 13_934L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 261L)
+                                                ))
+                                        ),
+                                        new Level(29, 61_000, 38,
+                                                new Scrap(447_720, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_096_007L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 243_247L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 432L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 122L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 233L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 66L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 15_612L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 305L)
+                                                ))
+                                        ),
+                                        new Level(30, 69_000, 40,
+                                                new Scrap(447_720, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_096_007L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 243_247L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 506L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 143L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 272L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 77L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 17_509L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 366L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 2246L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 106_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 40L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 15_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_350_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 600L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 48L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 15_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3744L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 27L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 190L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 23_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3744L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_350_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 210_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 300L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 23_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3744L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_350_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 210_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 300L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 23_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3744L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_350_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 210_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 1L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 300L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(7, 585_000, 32_598,
+                                addShipLevels(
+                                        new Level(31, 72_000, 41,
+                                                new Scrap(482_160, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_211_515L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_197L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 333L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 150L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 3L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 81L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 17_718L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 387L)
+                                                ))
+                                        ),
+                                        new Level(32, 81_000, 42,
+                                                new Scrap(482_160, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_211_515L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_197L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 365L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 165L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 3L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 197L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 89L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 425L)
+                                                ))
+                                        ),
+                                        new Level(33, 86_000, 43,
+                                                new Scrap(482_160, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_211_515L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_197L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 430L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 194L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 4L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 232L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 104L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 21_893L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 501L)
+                                                ))
+                                        ),
+                                        new Level(34, 95_000, 44,
+                                                new Scrap(482_160, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_211_515L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_197L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 510L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 230L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 4L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 124L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 3L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 24_268L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 595L)
+                                                ))
+                                        ),
+                                        new Level(35, 100_000, 45,
+                                                new Scrap(482_160, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_211_515L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_197L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 622L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 280L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 5L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 335L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 151L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 3L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_768L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 728L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 3819L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 275_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 90L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1375L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 110L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6366L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_550_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 62L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 425L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 37_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6366L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 550_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 650L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 37_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6366L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 550_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 650L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 37_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6366L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 550_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 650L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(8, 760_500, 39_084,
+                                addShipLevels(
+                                        new Level(36, 105_000, 46,
+                                                new Scrap(516_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_647_332L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_067_710L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 260L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 293L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 140L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 158L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 4L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_453L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 759L)
+                                                ))
+                                        ),
+                                        new Level(37, 116_000, 48,
+                                                new Scrap(516_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_647_332L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_067_710L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 283L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 319L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 153L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 172L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 5L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 29_063L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 827L)
+                                                ))
+                                        ),
+                                        new Level(38, 122_000, 49,
+                                                new Scrap(516_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_647_332L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_067_710L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 330L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 371L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 10L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 178L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 5L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 31_808L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 961L)
+                                                ))
+                                        ),
+                                        new Level(39, 134_000, 50,
+                                                new Scrap(516_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_647_332L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_067_710L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 389L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 437L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 11L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 209L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 236L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 6L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 34_823L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 1130L)
+                                                ))
+                                        ),
+                                        new Level(40, 140_000, 51,
+                                                new Scrap(516_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_647_332L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_067_710L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.THREE, 470L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 529L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.THREE, 14L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.COMMON, Grade.THREE, 254L),
+                                                        new ResourceMaterial(7, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 285L),
+                                                        new ResourceMaterial(8, Material.ORE, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 37_973L),
+                                                        new ResourceMaterial(10, Material.EXPLORER_PARTS, Grade.THREE, 1366L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 6844L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 495_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 200L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 600L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 42_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_750_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 220L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 200L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 42_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 16L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 2L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 800L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 63_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 990_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 20L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 5L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1200L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 63_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 990_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 20L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 5L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1200L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 63_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 990_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 20L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 5L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1200L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(9, 936_000, 47_160,
+                                addShipLevels(
+                                        new Level(41, 154_000, 52,
+                                                new Scrap(551_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_661_900L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_866_664L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 481L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.RARE, Grade.THREE, 19L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 259L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.RARE, Grade.THREE, 10L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 36_834L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 1391L)
+                                                ))
+                                        ),
+                                        new Level(42, 161_000, 53,
+                                                new Scrap(551_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_661_900L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_866_664L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 517L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.RARE, Grade.THREE, 20L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 279L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.RARE, Grade.THREE, 11L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 40_054L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 1489L)
+                                                ))
+                                        ),
+                                        new Level(43, 176_000, 54,
+                                                new Scrap(551_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_661_900L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_866_664L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 588L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.RARE, Grade.THREE, 23L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 317L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.RARE, Grade.THREE, 12L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 43_574L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 1684L)
+                                                ))
+                                        ),
+                                        new Level(44, 183_000, 57,
+                                                new Scrap(551_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_661_900L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_866_664L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 677L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.RARE, Grade.THREE, 26L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 365L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.RARE, Grade.THREE, 14L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 47_234L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 1928L)
+                                                ))
+                                        ),
+                                        new Level(45, 200_000, 60,
+                                                new Scrap(551_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_661_900L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_866_664L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 802L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.RARE, Grade.THREE, 31L),
+                                                        new ResourceMaterial(5, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 432L),
+                                                        new ResourceMaterial(6, Material.ORE, Rarity.RARE, Grade.THREE, 17L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 51_234L),
+                                                        new ResourceMaterial(8, Material.EXPLORER_PARTS, Grade.THREE, 2270L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 13_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 810_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.ORE, Rarity.RARE, Grade.THREE, 6L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 900L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 74_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 375L),
+                                                        new ResourceMaterial(2, Material.EXPLORER_PARTS, Grade.THREE, 300L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 74_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 27L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 4L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1200L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 111_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_600_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 34L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1800L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 111_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_600_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 34L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1800L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 111_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_600_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 34L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 8L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Grade.THREE, 1800L)
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+    }
+
+    private Ship getUssAntares() {
+        return new Ship(
+                "USS Antares",
+                Rarity.RARE,
+                Grade.THREE,
+                ShipClass.SURVEY,
+                img(R.drawable.uss_antares),
+                0,
+                "Gas Mining Laser",
+                30,
+                41,
+                addTiers(
+                        new Tier(1, 1_814_400, 17_562,
+                                addShipLevels(
+                                        new Level(1, 0, 70,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 551_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 25_650L)
+                                                ))
+                                        ),
+                                        new Level(2, 800, 73.9f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 551_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 25_650L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 32L)
+                                                ))
+                                        ),
+                                        new Level(3, 1000, 77.8f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 551_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 25_650L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 72L)
+                                                ))
+                                        ),
+                                        new Level(4, 1400, 81.7f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 551_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 25_650L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 128L)
+                                                ))
+                                        ),
+                                        new Level(5, 1700, 85.6f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 551_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 25_650L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 196L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.BUILD_SHIP_TOTAL,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 35_665L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 7133L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 171_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 625L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2500L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(2, 288_000, 20_208,
+                                addShipLevels(
+                                        new Level(6, 2400, 89.5f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_958_202L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 93_438L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 381L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 707L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 274L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1108L)
+                                                ))
+                                        ),
+                                        new Level(7, 2900, 93.4f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_958_202L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 93_438L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 453L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 840L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 383L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1357L)
+                                                ))
+                                        ),
+                                        new Level(8, 3900, 97.3f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_958_202L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 93_438L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 560L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1040L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 529L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1730L)
+                                                ))
+                                        ),
+                                        new Level(9, 4600, 101.2f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_958_202L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 93_438L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 668L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1240L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 701L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2103L)
+                                                ))
+                                        ),
+                                        new Level(10, 6000, 105.1f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_958_202L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 93_438L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 812L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1507L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 926L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2601L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 526L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 78_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 64L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5208L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_350_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 39_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2604L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 702L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 100L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 868L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 351L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_450_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 58_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 59L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 16L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1736L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 702L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_450_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 97_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 130L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2604L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 877L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 194_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(3, 576_000, 23_442,
+                                addShipLevels(
+                                        new Level(11, 7000, 109,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_604_064L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 246_502L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 823L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1528L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1110L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2805L)
+                                                ))
+                                        ),
+                                        new Level(12, 8500, 112.9f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_604_064L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 246_502L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 967L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1795L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1407L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 3255L)
+                                                ))
+                                        ),
+                                        new Level(13, 9500, 116.8f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_604_064L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 246_502L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1254L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2329L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1740L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 4157L)
+                                                ))
+                                        ),
+                                        new Level(14, 11_000, 120.7f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_604_064L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 246_502L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1614L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2997L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2125L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 5285L)
+                                                ))
+                                        ),
+                                        new Level(15, 13_500, 124.6f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_604_064L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 246_502L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2117L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3932L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2597L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 6863L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1161L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 184_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 120L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 92_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 350L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 350L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5693L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1548L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 350L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 170L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1898L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 774L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 138_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 29L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3795L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1548L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 230_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 525L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 230L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5693L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1934L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 460_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 27L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 150L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 350L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(4, 960_000, 27_960,
+                                addShipLevels(
+                                        new Level(16, 15_000, 128.5f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_721_563L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 555_739L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2148L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 29L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3989L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 53L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2899L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 6856L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 109L)
+                                                ))
+                                        ),
+                                        new Level(17, 17_500, 132.4f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_721_563L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 555_739L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2401L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 32L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4459L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 59L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 3468L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 7571L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 120L)
+                                                ))
+                                        ),
+                                        new Level(18, 19_500, 136.3f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_721_563L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 555_739L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2908L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 39L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 5399L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 72L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4102L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 9001L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 143L)
+                                                ))
+                                        ),
+                                        new Level(19, 23_000, 140.2f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_721_563L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 555_739L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 3541L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 47L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6575L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 87L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4849L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 10_788L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 171L)
+                                                ))
+                                        ),
+                                        new Level(20, 25_000, 144.1f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_721_563L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 555_739L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4427L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 59L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8221L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 109L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 5662L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 13_290L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 210L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 2330L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 390_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 22_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 194_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 59L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3106L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 300L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3740L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1553L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 290_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 475L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 48L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7480L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3106L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 485_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1400L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 375L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3883L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 970_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 90L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 500L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(5, 1_440_000, 33_720,
+                                addShipLevels(
+                                        new Level(21, 29_000, 148,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_010_626L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_150_398L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4427L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 84L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8222L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 155L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 6096L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 13_268L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 300L)
+                                                ))
+                                        ),
+                                        new Level(22, 31_500, 151.9f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_010_626L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_150_398L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4789L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 91L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8893L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 168L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 7041L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 14_329L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 324L)
+                                                ))
+                                        ),
+                                        new Level(23, 36_000, 155.8f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_010_626L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_150_398L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 5511L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 104L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 10_234L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 193L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 8121L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 16_452L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 372L)
+                                                ))
+                                        ),
+                                        new Level(24, 39_000, 159.7f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_010_626L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_150_398L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 6413L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 121L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 11_910L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 225L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 9291L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 19_105L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 432L)
+                                                ))
+                                        ),
+                                        new Level(25, 42_000, 163.6f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_010_626L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_150_398L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7677L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 145L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_257L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 269L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_551L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 22_819L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 516L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 4021L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 780_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 6000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 37_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 27_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 390_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 950L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5361L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 6000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 475L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6273L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2681L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 580_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 900L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 80L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5361L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 970_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 650L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6702L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_950_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 950L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(6, 1_920_000, 38_046,
+                                addShipLevels(
+                                        new Level(26, 47_000, 167.5f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_356_562L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_291_055L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7463L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 208L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 13_860L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 385L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_964L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 22_026L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 817L)
+                                                ))
+                                        ),
+                                        new Level(27, 51_000, 171.4f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_356_562L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_291_055L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7986L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 222L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_831L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 412L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 12_367L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 23_652L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 877L)
+                                                ))
+                                        ),
+                                        new Level(28, 57_000, 175.2f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_356_562L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_291_055L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 9031L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 251L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 16_772L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 466L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 13_934L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 26_903L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 998L)
+                                                ))
+                                        ),
+                                        new Level(29, 61_000, 179.2f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_356_562L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_291_055L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_338L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 288L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 19_198L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 534L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 15_612L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 30_967L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1149L)
+                                                ))
+                                        ),
+                                        new Level(30, 69_000, 183.1f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_356_562L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_291_055L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_167L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 338L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 22_595L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 628L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 17_509L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 36_657L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1360L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 6459L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1_550_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 12_000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 49_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 780_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1900L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1700L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8612L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 875L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9597L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4306L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_150_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 19_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8612L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_950_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1150L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 6L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 36L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1700L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(7, 2_400_000, 42_684,
+                                addShipLevels(
+                                        new Level(31, 72_000, 186.9f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_690_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_168_714L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 11_662L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 446L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 23L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 21_658L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 829L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 43L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 39_339L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1922L)
+                                                ))
+                                        ),
+                                        new Level(32, 81_000, 190.9f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_690_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_168_714L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_643L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 484L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 25L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 23_479L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 898L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 47L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 39_339L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1922L)
+                                                ))
+                                        ),
+                                        new Level(33, 86_000, 194.8f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_690_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_168_714L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 14_604L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 559L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 29L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 27_121L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1037L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 54L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 21_893L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 45_751L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2235L)
+                                                ))
+                                        ),
+                                        new Level(34, 95_000, 198.6f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_690_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_168_714L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 17_055L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 653L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 34L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 31_674L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1212L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 63L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 24_268L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 53_767L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2626L)
+                                                ))
+                                        ),
+                                        new Level(35, 100_000, 202.5f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_690_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_168_714L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 20_487L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 784L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 41L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 38_047L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1455L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 75L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_768L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 64_988L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3174L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 4_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 1275L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 87_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 122_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 16L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 110L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3800L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 43_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 13_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 675L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1900L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6900L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 4200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 29_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 13_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 2600L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 43_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 24L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 140L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3800L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(8, 3_120_000, 50_724,
+                                addShipLevels(
+                                        new Level(36, 105_000, 206.4f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_420_001L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_091_998L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 19_617L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 920L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 103L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 36_431L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1708L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 190L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_453L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 63_371L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3894L)
+                                                ))
+                                        ),
+                                        new Level(37, 116_000, 210.3f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_420_001L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_091_998L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 21_412L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1004L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 112L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 39_766L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1864L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 208L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 29_063L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 68_773L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 4226L)
+                                                ))
+                                        ),
+                                        new Level(38, 122_000, 214.2f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_420_001L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_091_998L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_004L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1173L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 131L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 46_435L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2177L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 242L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 31_808L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 79_577L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 4890L)
+                                                ))
+                                        ),
+                                        new Level(39, 134_000, 218.1f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_420_001L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_091_998L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 29_492L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1383L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 154L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 54_771L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2568L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 286L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 34_823L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 93_081L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5720L)
+                                                ))
+                                        ),
+                                        new Level(40, 140_000, 222,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_420_001L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_091_998L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 35_777L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1678L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 187L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 66_442L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3115L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 347L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 37_973L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 111_988L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6882L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 16_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 7_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4800L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 2200L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 126_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 213_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 38L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 250L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6750L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 63_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 142_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1400L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3400L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 70_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_450_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 725L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 550L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 42_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 70_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 57L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 130L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 4500L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 63_000L),
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 26_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 142_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 18_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 57L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 325L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6750L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(9, 3_840_000, 57_240,
+                                addShipLevels(
+                                        new Level(41, 154_000, 225.9f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_426_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_918_719L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 33_363L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1891L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 297L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 61_960L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3512L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 551L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 36_834L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 106_360L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7977L)
+                                                ))
+                                        ),
+                                        new Level(42, 161_000, 229.8f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_426_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_918_719L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 35_934L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2037L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 320L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 66_735L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3782L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 594L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 40_054L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 113_627L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8522L)
+                                                ))
+                                        ),
+                                        new Level(43, 176_000, 233.7f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_426_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_918_719L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 41_077L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2328L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 366L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 76_286L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4323L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 679L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 43_574L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 128_160L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 9612L)
+                                                ))
+                                        ),
+                                        new Level(44, 183_000, 237.6f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_426_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_918_719L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 47_505L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2692L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 423L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 88_224L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5000L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 785L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 47_234L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 146_327L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 10_975L)
+                                                ))
+                                        ),
+                                        new Level(45, 200_000, 250,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_426_250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_918_719L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 56_505L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3202L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 503L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 104_938L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5947L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 933L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 51_234L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 171_762L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 12_883L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 27_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 12_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 8000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 3200L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 190_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 343_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 65L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 425L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 9500L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 95_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 36_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 229_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 65L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 220L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 4800L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 31_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 18_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 114_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9_150_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 800L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 63_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 36_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 114_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 220L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6500L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 95_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 46_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 229_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 30_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 550L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 9500L)
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+    }
+
+    private Ship getValkis() {
+        return new Ship(
+                "Valkis",
+                Rarity.RARE,
+                Grade.THREE,
+                ShipClass.SURVEY,
+                img(R.drawable.valkis),
+                0,
+                "Ore Mining Laser",
+                30,
+                41,
+                addTiers(
+                        new Tier(1, 1_814_400, 17_562,
+                                addShipLevels(
+                                        new Level(1, 0, 70,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 804_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_550L)
+                                                ))
+                                        ),
+                                        new Level(2, 800, 73.9f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 804_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_550L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 32L)
+                                                ))
+                                        ),
+                                        new Level(3, 1000, 77.8f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 804_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_550L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 72L)
+                                                ))
+                                        ),
+                                        new Level(4, 1400, 81.7f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 804_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_550L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 128L)
+                                                ))
+                                        ),
+                                        new Level(5, 1700, 85.6f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 804_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_550L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 196L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.BUILD_SHIP_TOTAL,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_423L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5269L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_150_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 117_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 625L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2500L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(2, 288_000, 20_208,
+                                addShipLevels(
+                                        new Level(6, 2400, 89.5f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_211_327L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 85_338L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 381L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 707L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 274L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1108L)
+                                                ))
+                                        ),
+                                        new Level(7, 2900, 93.4f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_211_327L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 85_338L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 453L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 840L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 383L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1357L)
+                                                ))
+                                        ),
+                                        new Level(8, 3900, 97.3f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_211_327L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 85_338L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 560L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1040L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 529L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1730L)
+                                                ))
+                                        ),
+                                        new Level(9, 4600, 101.2f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_211_327L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 85_338L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 668L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1240L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 701L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2103L)
+                                                ))
+                                        ),
+                                        new Level(10, 6000, 105.1f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_211_327L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 85_338L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 812L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1507L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 926L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2601L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1023L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 78_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 64L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4735L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_350_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 39_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2367L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1365L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 100L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 868L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 351L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_450_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 58_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 59L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 16L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1578L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1365L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_450_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 97_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 130L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2367L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1706L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 194_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(3, 576_000, 23_442,
+                                addShipLevels(
+                                        new Level(11, 7000, 109,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_857_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 238_402L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 823L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1528L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1110L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2805L)
+                                                ))
+                                        ),
+                                        new Level(12, 8500, 112.9f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_857_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 238_402L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 967L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1795L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1407L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 3255L)
+                                                ))
+                                        ),
+                                        new Level(13, 9500, 116.8f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_857_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 238_402L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1254L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2329L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1740L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 4157L)
+                                                ))
+                                        ),
+                                        new Level(14, 11_000, 120.7f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_857_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 238_402L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1614L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2997L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2125L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 5285L)
+                                                ))
+                                        ),
+                                        new Level(15, 13_500, 124.6f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_857_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 238_402L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2117L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3932L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2597L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 6863L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1744L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 184_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 120L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 92_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 350L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 350L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5175L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2326L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 350L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 170L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1725L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1163L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 138_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 29L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3450L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2326L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 230_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 525L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 230L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5175L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2907L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 460_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 27L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 150L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 350L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(4, 960_000, 27_960,
+                                addShipLevels(
+                                        new Level(16, 15_000, 128.5f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_974_688L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_639L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2148L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 29L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3989L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 53L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2899L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 6856L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 109L)
+                                                ))
+                                        ),
+                                        new Level(17, 17_500, 132.4f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_974_688L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_639L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2401L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 32L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4459L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 59L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 3468L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 7571L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 120L)
+                                                ))
+                                        ),
+                                        new Level(18, 19_500, 136.3f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_974_688L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_639L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2908L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 39L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 5399L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 72L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4102L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 9001L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 143L)
+                                                ))
+                                        ),
+                                        new Level(19, 23_000, 140.2f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_974_688L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_639L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 3541L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 47L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6575L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 87L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4849L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 10_788L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 171L)
+                                                ))
+                                        ),
+                                        new Level(20, 25_000, 144.1f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_974_688L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 547_639L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4427L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 59L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8221L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 109L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 5662L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 13_290L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 210L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 3073L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 390_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 20_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 194_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 59L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4097L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 300L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3400L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2049L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 290_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 475L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 48L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6800L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4097L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 485_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1400L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 375L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5122L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 970_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 90L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 500L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(5, 1_440_000, 33_720,
+                                addShipLevels(
+                                        new Level(21, 29_000, 148,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_263_751L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_142_298L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4427L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 84L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8222L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 155L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 6096L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 13_268L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 300L)
+                                                ))
+                                        ),
+                                        new Level(22, 31_500, 151.9f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_263_751L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_142_298L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4789L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 91L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8893L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 168L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 7041L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 14_329L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 324L)
+                                                ))
+                                        ),
+                                        new Level(23, 36_000, 155.8f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_263_751L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_142_298L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 5511L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 104L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 10_234L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 193L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 8121L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 16_452L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 372L)
+                                                ))
+                                        ),
+                                        new Level(24, 39_000, 159.7f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_263_751L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_142_298L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 6413L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 121L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 11_910L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 225L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 9291L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 19_105L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 432L)
+                                                ))
+                                        ),
+                                        new Level(25, 42_000, 163.6f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_263_751L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_142_298L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7677L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 145L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_257L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 269L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_551L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 22_819L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 516L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 4995L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 780_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 6000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 34_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 27_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 390_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 950L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 17_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6660L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 6000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 475L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5703L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3330L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 580_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 900L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 80L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6660L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 970_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 650L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 17_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8325L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_950_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 950L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(6, 1_920_000, 38_046,
+                                addShipLevels(
+                                        new Level(26, 47_000, 167.5f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_609_687L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_282_955L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7463L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 208L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 13_860L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 385L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_964L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 22_026L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 817L)
+                                                ))
+                                        ),
+                                        new Level(27, 51_000, 171.4f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_609_687L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_282_955L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7986L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 222L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_831L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 412L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 12_367L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 23_652L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 877L)
+                                                ))
+                                        ),
+                                        new Level(28, 57_000, 175.2f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_609_687L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_282_955L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 9031L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 251L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 16_772L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 466L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 13_934L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 26_903L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 998L)
+                                                ))
+                                        ),
+                                        new Level(29, 61_000, 179.2f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_609_687L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_282_955L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_338L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 288L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 19_198L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 534L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 15_612L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 30_967L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1149L)
+                                                ))
+                                        ),
+                                        new Level(30, 69_000, 183.1f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_609_687L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_282_955L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_167L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 338L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 22_595L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 628L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 17_509L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 36_657L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1360L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 7765L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1_550_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 12_000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 52_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 49_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 780_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1900L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1700L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 26_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 875L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8724L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5177L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_150_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 17_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_950_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1150L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 26_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 12_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 6L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 36L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1700L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(7, 2_400_000, 42_684,
+                                addShipLevels(
+                                        new Level(31, 72_000, 186.9f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_943_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_160_614L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 11_662L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 446L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 23L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 21_658L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 829L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 43L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 39_339L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1922L)
+                                                ))
+                                        ),
+                                        new Level(32, 81_000, 190.9f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_943_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_160_614L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_643L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 484L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 25L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 23_479L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 898L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 47L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 39_339L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1922L)
+                                                ))
+                                        ),
+                                        new Level(33, 86_000, 194.8f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_943_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_160_614L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 14_604L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 559L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 29L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 27_121L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1037L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 54L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 21_893L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 45_751L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2235L)
+                                                ))
+                                        ),
+                                        new Level(34, 95_000, 198.6f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_943_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_160_614L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 17_055L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 653L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 34L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 31_674L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1212L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 63L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 24_268L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 53_767L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2626L)
+                                                ))
+                                        ),
+                                        new Level(35, 100_000, 202.5f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_943_125L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_160_614L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 20_487L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 784L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 41L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 38_047L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1455L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 75L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_768L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 64_988L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3174L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 12_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 4_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 1275L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 79_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 122_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 16L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 110L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3800L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 39_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 16_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 675L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1900L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 13_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8124L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 4200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 26_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 16_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 2600L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 39_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 20_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 24L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 140L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3800L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(8, 3_120_000, 50_724,
+                                addShipLevels(
+                                        new Level(36, 105_000, 206.4f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_673_126L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_083_898L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 19_617L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 920L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 103L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 36_431L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1708L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 190L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_453L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 63_371L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3894L)
+                                                ))
+                                        ),
+                                        new Level(37, 116_000, 210.3f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_673_126L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_083_898L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 21_412L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1004L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 112L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 39_766L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1864L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 208L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 29_063L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 68_773L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 4226L)
+                                                ))
+                                        ),
+                                        new Level(38, 122_000, 214.2f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_673_126L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_083_898L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_004L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1173L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 131L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 46_435L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2177L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 242L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 31_808L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 79_577L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 4890L)
+                                                ))
+                                        ),
+                                        new Level(39, 134_000, 218.1f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_673_126L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_083_898L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 29_492L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1383L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 154L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 54_771L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2568L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 286L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 34_823L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 93_081L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5720L)
+                                                ))
+                                        ),
+                                        new Level(40, 140_000, 222,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 105_673_126L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_083_898L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 35_777L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1678L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 187L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 66_442L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3115L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 347L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 37_973L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 111_988L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6882L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 18_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 7_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4800L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 2200L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 114_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 213_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 38L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 250L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6750L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 24_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 142_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1400L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3400L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 19_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 12_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 70_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_450_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 725L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 550L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 38_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 24_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 70_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 57L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 130L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 4500L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_000L),
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 31_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 142_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 18_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 57L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 325L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6750L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(9, 3_840_000, 57_240,
+                                addShipLevels(
+                                        new Level(41, 154_000, 225.9f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_679_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_910_619L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 33_363L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1891L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 297L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 61_960L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3512L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 551L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 36_834L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 106_360L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7977L)
+                                                ))
+                                        ),
+                                        new Level(42, 161_000, 229.8f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_679_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_910_619L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 35_934L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2037L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 320L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 66_735L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3782L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 594L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 40_054L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 113_627L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8522L)
+                                                ))
+                                        ),
+                                        new Level(43, 176_000, 233.7f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_679_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_910_619L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 41_077L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2328L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 366L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 76_286L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4323L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 679L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 43_574L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 128_160L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 9612L)
+                                                ))
+                                        ),
+                                        new Level(44, 183_000, 237.6f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_679_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_910_619L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 47_505L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2692L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 423L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 88_224L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5000L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 785L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 47_234L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 146_327L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 10_975L)
+                                                ))
+                                        ),
+                                        new Level(45, 200_000, 250,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 176_679_375L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 17_910_619L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 56_505L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3202L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 503L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 104_938L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5947L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 933L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 51_234L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 171_762L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 12_883L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 31_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 12_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 8000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 3200L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 172_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 343_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 65L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 425L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 9500L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 86_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 42_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 229_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 65L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 220L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 4800L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 114_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9_150_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 800L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 42_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 114_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 220L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6500L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 86_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 52_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 229_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 30_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 550L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 9500L)
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+    }
+
+    private Ship getKvort() {
+        return new Ship(
+                "K'Vort",
+                Rarity.RARE,
+                Grade.THREE,
+                ShipClass.SURVEY,
+                img(R.drawable.kvort),
+                0,
+                "Crystal Mining Laser",
+                30,
+                41,
+                addTiers(
+                        new Tier(1, 1_814_400, 17_562,
+                                addShipLevels(
+                                        new Level(1, 0, 70,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 675_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_600L)
+                                                ))
+                                        ),
+                                        new Level(2, 800, 73.9f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 675_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_600L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 32L)
+                                                ))
+                                        ),
+                                        new Level(3, 1000, 77.8f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 675_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_600L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 72L)
+                                                ))
+                                        ),
+                                        new Level(4, 1400, 81.7f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 675_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_600L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 128L)
+                                                ))
+                                        ),
+                                        new Level(5, 1700, 85.6f,
+                                                new Scrap(1_010_880, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 675_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_600L),
+                                                        new ResourceMaterial(3, Material.SHIP_XP, 196L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.BUILD_SHIP_TOTAL,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_528L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6485L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 144_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 625L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2500L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(2, 288_000, 20_208,
+                                addShipLevels(
+                                        new Level(6, 2400, 89.5f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_319_140L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 80_960L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 381L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 707L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 274L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1108L)
+                                                ))
+                                        ),
+                                        new Level(7, 2900, 93.4f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_319_140L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 80_960L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 453L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 840L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 383L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1357L)
+                                                ))
+                                        ),
+                                        new Level(8, 3900, 97.3f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_319_140L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 80_960L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 560L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1040L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 529L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 1730L)
+                                                ))
+                                        ),
+                                        new Level(9, 4600, 101.2f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_319_140L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 80_960L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 668L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1240L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 701L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2103L)
+                                                ))
+                                        ),
+                                        new Level(10, 6000, 105.1f,
+                                                new Scrap(1_137_240, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_319_140L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 80_960L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 812L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1507L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 926L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2601L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 478L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 78_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 64L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5918L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_350_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 39_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2959L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 638L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 100L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 986L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 319L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_450_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 58_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 59L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 16L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2959L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 319L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_650_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 39_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 130L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2959L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 797L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 194_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(3, 576_000, 23_442,
+                                addShipLevels(
+                                        new Level(11, 7000, 109,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_408_439L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 214_890L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 823L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1528L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1110L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 2805L)
+                                                ))
+                                        ),
+                                        new Level(12, 8500, 112.9f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_408_439L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 214_890L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 967L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 1795L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1407L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 3255L)
+                                                ))
+                                        ),
+                                        new Level(13, 9500, 116.8f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_408_439L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 214_890L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1254L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2329L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 1740L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 4157L)
+                                                ))
+                                        ),
+                                        new Level(14, 11_000, 120.7f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_408_439L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 214_890L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 1614L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2997L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2125L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 5285L)
+                                                ))
+                                        ),
+                                        new Level(15, 13_500, 124.6f,
+                                                new Scrap(1_263_600, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_408_439L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 214_890L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2117L),
+                                                        new ResourceMaterial(4, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3932L),
+                                                        new ResourceMaterial(5, Material.SHIP_XP, 2597L),
+                                                        new ResourceMaterial(6, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 6863L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1055L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 184_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 120L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_750_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 92_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 350L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 350L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6469L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1407L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 350L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 170L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2156L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 703L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 138_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 29L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6469L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 703L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 92_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 525L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 230L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6469L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1759L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 460_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 27L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 150L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 350L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(4, 960_000, 27_960,
+                                addShipLevels(
+                                        new Level(16, 15_000, 128.5f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_218_516L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 485_488L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2148L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 29L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3989L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 53L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 2899L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 6856L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 109L)
+                                                ))
+                                        ),
+                                        new Level(17, 17_500, 132.4f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_218_516L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 485_488L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2401L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 32L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4459L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 59L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 3468L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 7571L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 120L)
+                                                ))
+                                        ),
+                                        new Level(18, 19_500, 136.3f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_218_516L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 485_488L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 2908L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 39L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 5399L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 72L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4102L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 9001L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 143L)
+                                                ))
+                                        ),
+                                        new Level(19, 23_000, 140.2f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_218_516L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 485_488L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 3541L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 47L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 6575L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 87L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 4849L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 10_788L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 171L)
+                                                ))
+                                        ),
+                                        new Level(20, 25_000, 144.1f,
+                                                new Scrap(1_389_960, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_218_516L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 485_488L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4427L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 59L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8221L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 109L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 5662L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 13_290L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 210L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 2118L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 390_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 190L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 14_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 194_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 59L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2824L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 300L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4250L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1412L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_850_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 290_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 475L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 48L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1412L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 194_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1400L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 375L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3530L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 970_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 90L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 500L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(5, 1_440_000, 33_720,
+                                addShipLevels(
+                                        new Level(21, 29_000, 148,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_717_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_006_304L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4427L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 84L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8222L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 155L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 6096L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 13_268L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 300L)
+                                                ))
+                                        ),
+                                        new Level(22, 31_500, 151.9f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_717_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_006_304L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 4789L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 91L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8893L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 168L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 7041L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 14_329L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 324L)
+                                                ))
+                                        ),
+                                        new Level(23, 36_000, 155.8f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_717_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_006_304L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 5511L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 104L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 10_234L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 193L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 8121L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 16_452L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 372L)
+                                                ))
+                                        ),
+                                        new Level(24, 39_000, 159.7f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_717_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_006_304L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 6413L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 121L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 11_910L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 225L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 9291L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 19_105L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 432L)
+                                                ))
+                                        ),
+                                        new Level(25, 42_000, 163.6f,
+                                                new Scrap(1_516_320, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_717_189L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_006_304L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7677L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 145L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_257L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 269L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_551L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 22_819L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 516L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 3655L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 780_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 6000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 42_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 27_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 390_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 120L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 950L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4874L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 6000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 475L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7128L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2437L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 580_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 900L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 80L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2437L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 22_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 390_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 400L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 650L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6092L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_950_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 180L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 950L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(6, 1_920_000, 38_046,
+                                addShipLevels(
+                                        new Level(26, 47_000, 167.5f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_116_015L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_003_885L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7463L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 208L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 13_860L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 385L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 10_964L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 22_026L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 817L)
+                                                ))
+                                        ),
+                                        new Level(27, 51_000, 171.4f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_116_015L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_003_885L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 7986L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 222L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_831L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 412L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 12_367L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 23_652L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 877L)
+                                                ))
+                                        ),
+                                        new Level(28, 57_000, 175.2f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_116_015L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_003_885L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 9031L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 251L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 16_772L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 466L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 13_934L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 26_903L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 998L)
+                                                ))
+                                        ),
+                                        new Level(29, 61_000, 179.2f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_116_015L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_003_885L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_338L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 288L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 19_198L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 534L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 15_612L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 30_967L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1149L)
+                                                ))
+                                        ),
+                                        new Level(30, 69_000, 183.1f,
+                                                new Scrap(1_642_680, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 33_116_015L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_003_885L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_167L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 338L),
+                                                        new ResourceMaterial(5, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 22_595L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 628L),
+                                                        new ResourceMaterial(7, Material.SHIP_XP, 17_509L),
+                                                        new ResourceMaterial(8, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 36_657L),
+                                                        new ResourceMaterial(9, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1360L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 5872L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1_550_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 12_000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 575L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 65_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 49_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 780_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 1900L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1700L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 7829L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 275L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 875L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3915L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_150_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1800L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 140L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3915L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 780_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 425L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 950L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1150L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9787L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 32_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 6L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 36L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1700L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(7, 2_400_000, 42_684,
+                                addShipLevels(
+                                        new Level(31, 72_000, 186.9f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 67_310_156L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_526_405L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 11_662L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 446L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 23L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 21_658L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 829L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 43L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 39_339L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1922L)
+                                                ))
+                                        ),
+                                        new Level(32, 81_000, 190.9f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 67_310_156L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_526_405L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_643L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 484L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 25L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 23_479L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 898L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 47L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 19_743L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 39_339L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1922L)
+                                                ))
+                                        ),
+                                        new Level(33, 86_000, 194.8f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 67_310_156L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_526_405L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 14_604L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 559L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 29L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 27_121L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1037L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 54L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 21_893L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 45_751L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2235L)
+                                                ))
+                                        ),
+                                        new Level(34, 95_000, 198.6f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 67_310_156L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_526_405L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 17_055L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 653L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 34L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 31_674L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1212L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 63L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 24_268L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 53_767L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2626L)
+                                                ))
+                                        ),
+                                        new Level(35, 100_000, 202.5f,
+                                                new Scrap(1_769_040, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 67_310_156L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_526_405L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 20_487L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 784L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 41L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 38_047L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1455L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 75L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_768L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 64_988L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3174L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 9409L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 4_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 1275L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 99_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 122_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 16L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 110L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3800L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 49_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 12_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 675L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2200L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 1900L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 15_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6272L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 40_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 4200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 325L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 49_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6272L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 101_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_050_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1000L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 2000L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 2600L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 49_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 81_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 24L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 140L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3800L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(8, 3_120_000, 50_724,
+                                addShipLevels(
+                                        new Level(36, 105_000, 206.4f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 122_967_423L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8_835_565L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 19_617L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 920L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 103L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 36_431L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1708L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 190L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 26_453L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 63_371L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3894L)
+                                                ))
+                                        ),
+                                        new Level(37, 116_000, 210.3f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 122_967_423L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8_835_565L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 21_412L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1004L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 112L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 39_766L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1864L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 208L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 29_063L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 68_773L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 4226L)
+                                                ))
+                                        ),
+                                        new Level(38, 122_000, 214.2f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 122_967_423L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8_835_565L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_004L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1173L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 131L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 46_435L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2177L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 242L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 31_808L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 79_577L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 4890L)
+                                                ))
+                                        ),
+                                        new Level(39, 134_000, 218.1f,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 122_967_423L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8_835_565L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 29_492L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1383L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 154L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 54_771L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2568L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 286L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 34_823L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 93_081L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5720L)
+                                                ))
+                                        ),
+                                        new Level(40, 140_000, 222,
+                                                new Scrap(1_895_400, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 122_967_423L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8_835_565L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 35_777L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1678L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 187L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 66_442L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3115L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 347L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 37_973L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 111_988L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6882L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 14_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 7_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4800L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 2200L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 143_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 213_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 38L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 250L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6750L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 71_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 19_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 142_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1400L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 4800L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 3400L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 23_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9752L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 70_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_450_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 725L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 550L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 71_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9752L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 177_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_650_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 57L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 130L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 4500L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 71_000L),
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 24_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 142_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 18_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 57L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 325L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6750L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(9, 3_840_000, 57_240,
+                                addShipLevels(
+                                        new Level(41, 154_000, 225.9f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 205_848_750L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_688_632L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 33_363L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1891L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 297L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 61_960L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3512L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 551L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 36_834L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 106_360L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7977L)
+                                                ))
+                                        ),
+                                        new Level(42, 161_000, 229.8f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 205_848_750L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_688_632L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 35_934L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2037L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 320L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 66_735L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3782L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 594L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 40_054L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 113_627L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8522L)
+                                                ))
+                                        ),
+                                        new Level(43, 176_000, 233.7f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 205_848_750L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_688_632L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 41_077L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2328L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 366L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 76_286L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4323L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 679L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 43_574L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 128_160L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 9612L)
+                                                ))
+                                        ),
+                                        new Level(44, 183_000, 237.6f,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 205_848_750L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_688_632L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 47_505L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2692L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 423L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 88_224L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5000L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 785L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 47_234L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 146_327L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 10_975L)
+                                                ))
+                                        ),
+                                        new Level(45, 200_000, 250,
+                                                new Scrap(2_021_760, addRewards(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 205_848_750L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_688_632L),
+                                                        new ResourceMaterial(3, Material.GAS, Rarity.COMMON, Grade.FOUR, 56_505L),
+                                                        new ResourceMaterial(4, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3202L),
+                                                        new ResourceMaterial(5, Material.GAS, Rarity.RARE, Grade.FOUR, 503L),
+                                                        new ResourceMaterial(6, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 104_938L),
+                                                        new ResourceMaterial(7, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5947L),
+                                                        new ResourceMaterial(8, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 933L),
+                                                        new ResourceMaterial(9, Material.SHIP_XP, 51_234L),
+                                                        new ResourceMaterial(10, Material.SURVEY_PARTS, Rarity.COMMON, Grade.FOUR, 171_762L),
+                                                        new ResourceMaterial(11, Material.SURVEY_PARTS, Rarity.UNCOMMON, Grade.FOUR, 12_883L)
+                                                ))
+                                        )
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 25_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 12_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 8000L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 3200L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 215_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 343_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 65L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 425L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 9500L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 107_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 33_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 229_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 65L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 220L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 4800L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 35_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 16_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 114_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9_150_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 1200L),
+                                                        new ResourceMaterial(2, Material.SURVEY_PARTS, Grade.THREE, 800L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 107_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 16_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 286_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 220L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 6500L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.MINING_LASER,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 107_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 41_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 229_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 30_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.THREE, 100L),
+                                                        new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 550L),
+                                                        new ResourceMaterial(3, Material.SURVEY_PARTS, Grade.THREE, 9500L)
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+    }
+
+    private Ship getIssJellyfish() {
+        return new Ship(
+                "ISS Jellyfish",
+                Rarity.RARE,
+                Grade.FOUR,
+                ShipClass.EXPLORER,
+                img(R.drawable.iss_jellyfish),
+                0,
+                "Imperial Might",
+                39,
+                -1,
+                addTiers(
+                        new Tier(1, 9_115_200, 126_240,
+                                addShipLevels(
+                                        new Level(1, 0, 15),
+                                        new Level(2, 8000, 16),
+                                        new Level(3, 12_000, 17),
+                                        new Level(4, 20_000, 18),
+                                        new Level(5, 29_000, 19)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.BUILD_SHIP_TOTAL,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_742_200L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 30_620L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 800_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 5000L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 3000L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(2, 300_000, 142_038,
+                                addShipLevels(
+                                        new Level(6, 41_000, 20),
+                                        new Level(7, 59_000, 21),
+                                        new Level(8, 78_000, 22),
+                                        new Level(9, 100_000, 23),
+                                        new Level(10, 130_000, 24)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 16_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 65_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 1800L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 970L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 4000L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 99_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 28_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 780L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 420L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 1740L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 99_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 28_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 65_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 1800L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 970L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 4000L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 297_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 65_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 1800L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 970L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 4000L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 99_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 28_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 59_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 1645L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 885L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 3660L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 49_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9366L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 85_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 2345L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 1265L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 5220L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 49_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 9366L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 85_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_500_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 2345L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 1265L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 5220L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 99_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 18_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 114_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 3130L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 1690L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 6960L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(3, 600_000, 167_130,
+                                addShipLevels(
+                                        new Level(11, 158_000, 25),
+                                        new Level(12, 190_000, 26),
+                                        new Level(13, 235_000, 27),
+                                        new Level(14, 275_000, 28),
+                                        new Level(15, 318_000, 29)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 58_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 132_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 3640L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 1960L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 8100L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2280L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 256_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 57_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 1580L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 860L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 3520L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1000L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 256_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 97_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 132_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1280L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 700L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 8100L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2280L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 769_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 132_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1280L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 700L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 8100L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2280L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 256_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 97_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 121_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1180L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 660L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 7400L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2080L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 128_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 32_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 172_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1580L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 860L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 10_560L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2980L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 128_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 32_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 172_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1580L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 860L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 10_560L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2980L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 256_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 64_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 230_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 4_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2040L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1120L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 14_080L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3960L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(4, 1_000_000, 193_272,
+                                addShipLevels(
+                                        new Level(16, 378_000, 30),
+                                        new Level(17, 430_000, 31),
+                                        new Level(18, 483_000, 32),
+                                        new Level(19, 565_000, 33),
+                                        new Level(20, 628_000, 34)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 76_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 224_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 7_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 6160L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 3320L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 13_680L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3860L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 421_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 97_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 3_400_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 2680L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 1440L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 5960L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 1680L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 421_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 127_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 224_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 7_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2160L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1160L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 13_680L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3860L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_264_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 224_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 7_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2160L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1160L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 13_680L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3860L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 421_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 127_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 204_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 7_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2020L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1080L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 12_500L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3520L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 210_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 42_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 292_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2700L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1460L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 17_860L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5040L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 210_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 42_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 292_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2700L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1460L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 17_860L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5040L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 421_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 84_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 389_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_800_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3460L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1860L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 23_800L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6700L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(5, 1_500_000, 225_444,
+                                addShipLevels(
+                                        new Level(21, 695_000, 35),
+                                        new Level(22, 798_000, 36),
+                                        new Level(23, 875_000, 37),
+                                        new Level(24, 955_000, 38),
+                                        new Level(25, 1_083_000, 39)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 103_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 349_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 12_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 9580L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 5180L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 21_320L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 658_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 151_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 5_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 4160L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 2260L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 9280L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 2620L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 658_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 172_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 349_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 12_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3380L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1820L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 21_320L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_974_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 349_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 12_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3380L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1820L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 21_320L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 6000L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 658_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 172_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 318_700_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 11_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3140L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1680L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 19_480L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5480L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 329_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 57_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 455_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4220L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2260L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 27_820L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7840L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 329_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 57_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 455_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 8_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4220L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2260L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 27_820L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7840L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 658_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 115_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 607_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_700_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5400L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2900L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 37_080L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 10_460L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(6, 2_000_000, 267_261,
+                                addShipLevels(
+                                        new Level(26, 1_175_000, 40),
+                                        new Level(27, 1_270_000, 41),
+                                        new Level(28, 1_423_000, 42),
+                                        new Level(29, 1_530_000, 43),
+                                        new Level(30, 1_640_000, 44)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 158_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 517_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_516_375L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 16_015L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 9840L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 32_375L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8635L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_118_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 224_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 6_746_250L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 6965L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 2435L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 14_075L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 3755L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_118_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 264_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 517_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_516_375L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4250L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2220L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 32_375L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8635L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_356_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 517_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_516_375L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4250L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2220L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 32_375L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 8635L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_118_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 264_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 472_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 14_167_125L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5785L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2025L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 29_560L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7880L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 559_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 88_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 674_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5545L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2895L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 42_225L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 11_260L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 559_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 88_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 674_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5545L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2895L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 42_225L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 11_260L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_118_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 176_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 899_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 26_985_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 7395L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3855L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 56_300L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 15_015L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(7, 2_500_000, 317_588,
+                                addShipLevels(
+                                        new Level(31, 1_825_000, 45),
+                                        new Level(32, 1_948_000, 46),
+                                        new Level(33, 2_075_000, 47),
+                                        new Level(34, 2_293_000, 48),
+                                        new Level(35, 2_433_000, 49)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 258_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 770_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 23_123_625L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 32_980L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 16_565L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 47_615L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 12_780L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_893_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 335_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 10_053_750)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 14_340L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 5020L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 20_700L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 5555L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_893_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 430_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 770_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 23_123_625L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6335L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3260L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 47_615L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 12_780L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_679_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 770_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 23_123_625L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6335L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3260L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 47_615L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 12_780L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_893_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 430_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 703_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 21_112_875L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 8500L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2975L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 43_475L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 11_665L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 946_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 143_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_005_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 8265L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4250L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 62_105L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 16_665L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 946_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 143_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_005_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 15_100_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 8265L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4250L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 62_105L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 16_665L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_893_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 286_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_340_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 40_215_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 11_020L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 5665L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 82_810L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 22_220L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(8, 3_250_000, 356_342,
+                                addShipLevels(
+                                        new Level(36, 2_578_000, 50),
+                                        new Level(37, 2_830_000, 51),
+                                        new Level(38, 2_990_000, 52),
+                                        new Level(39, 3_153_000, 53),
+                                        new Level(40, 3_445_000, 54)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 469_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_474_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 60_314_625L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 58_680L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 26_330L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 67_775L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 18_190L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_427_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 641_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 26_223_750L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 25_515L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 8930L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 29_470L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 7910L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_428_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 783_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_474_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 60_314_625L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 9310L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4640L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 67_775L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 18_190L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_474_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 60_314_625L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 9310L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4640L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 67_775L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 18_190L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_428_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 783_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_346_200_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 55_069_875L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 12_100L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4235L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 61_885L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 16_605L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_713_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 261_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_923_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 39_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 12_145L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6050L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 88_405L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 23_725L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_713_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 261_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_923_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 39_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 12_145L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6050L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 88_405L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 23_725L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_427_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 522_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_564_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 104_895_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 16_190L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 8065L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 117_870L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 31_630L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(9, 4_000_000, 398_625,
+                                addShipLevels(
+                                        new Level(41, 3_623_000, 55),
+                                        new Level(42, 3_805_000, 56),
+                                        new Level(43, 4_140_000, 57),
+                                        new Level(44, 4_340_000, 58),
+                                        new Level(45, 4_543_000, 59)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 903_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_098_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 85_853_250L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 111_660L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 39_240L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 96_725L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 25_935L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_001_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 912_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 37_327_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 48_545L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.COMMON, Grade.FOUR, 16_990L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 42_055L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 11_275L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_001_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_505_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_098_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 85_853_250L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 13_250L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6615L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 96_725L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 25_935L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 18_000_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_098_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 85_853_250L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 13_250L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6615L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 96_725L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 25_935L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_001_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_505_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_916_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 78_387_750L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 17_250L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6040L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 88_315L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 23_680L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 501_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_737_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 56_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 17_285L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 8625L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 126_160L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 33_830L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 501_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_737_400_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 56_000_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 17_285L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 8625L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 126_160L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 33_830L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_001_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_003_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_649_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 149_310_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 23_045L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 11_500L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 168_215L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.UNCOMMON, Grade.FOUR, 45_105L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(10, 5_000_000, 440_906,
+                                addShipLevels(
+                                        new Level(46, 4_923_000, 60),
+                                        new Level(47, 5_143_000, 61),
+                                        new Level(48, 5_370_000, 62),
+                                        new Level(49, 5_798_000, 63),
+                                        new Level(50, 6_040_000, 64)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1_083_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_024_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 152_040_350L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 133_395L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 46_690L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 134_945L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 5065L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_201_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 1_749_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 66_104_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 58_000L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 20_300L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 58_670L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 2205L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_201_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_806_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_024_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 152_040_350L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 7350L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 2575L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 134_945L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 5065L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 21_000_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_024_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 152_040_350L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 7350L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 2575L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 134_945L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 5065L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_201_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_806_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_674_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 138_819_450L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 6715L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 2350L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 123_210L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 4625L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 602_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_249_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 99_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 9590L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3355L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 176_015L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 6610L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 3_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 602_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_249_500_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 99_200_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 9590L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3355L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 176_015L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 6610L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_201_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_204_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 6_999_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 264_418_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 12_785L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4475L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 234_685L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 8810L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(11, 6_500_000, 487_414,
+                                addShipLevels(
+                                        new Level(51, 6_290_000, 65),
+                                        new Level(52, 6_770_000, 66),
+                                        new Level(53, 7_038_000, 67),
+                                        new Level(54, 7_310_000, 68),
+                                        new Level(55, 7_848_000, 69)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1_300_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_614_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 212_117_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 187_465L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 65_610L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 189_820L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 7095L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_641_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 2_441_300_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 92_225_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 81_505L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 28_525L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 82_530L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 3085L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_641_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_167_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_614_980_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 212_117_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 10_340L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3620L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 189_820L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 7095L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 25_000_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_614_900_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 212_117_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 10_340L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3620L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 189_820L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 7095L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_641_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_167_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_126_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 193_672_500L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 9_440L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 3305L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 173_310L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 6475L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_320_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 722_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_323_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 138_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 13_485L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4720L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 247_590L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 9250L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 4_320_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 722_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 7_323_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 138_300_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 13_485L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4720L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 247_590L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 9250L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 8_641_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_444_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 9_765_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 368_900_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 17_980L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 6295L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 330_120L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 12_335L)
+                                                )
+                                        )
+                                )
+                        ),
+                        new Tier(12, 9_000_000, 540_903,
+                                addShipLevels(
+                                        new Level(56, 8_143_000, 70),
+                                        new Level(57, 8_440_000, 71),
+                                        new Level(58, 9_038_000, 72),
+                                        new Level(59, 9_355_000, 73),
+                                        new Level(60, 10_000_000, 74)
+                                ),
+                                addComponents(
+                                        new Component(1, ComponentName.WARP_ENGINES,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.DILITHIUM, 1_560_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_282_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 371_938_175L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 252_275L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 88_295L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 225_445L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 9545L)
+                                                )
+                                        ),
+                                        new Component(2, ComponentName.CARGO_BAY,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_340_360_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 161_712_250L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 109_685L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 38_390L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 111_065L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 4150L)
+                                                )
+                                        ),
+                                        new Component(3, ComponentName.SHIELD,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_600_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_282_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 371_938_175L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 13_915L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4870L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 255_445L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 9545L)
+                                                )
+                                        ),
+                                        new Component(4, ComponentName.TRITANIUM_ARMOR,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 31_000_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 12_282_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 371_938_175L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 13_915L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4870L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 255_445L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 9545L)
+                                                )
+                                        ),
+                                        new Component(5, ComponentName.IMPULSE_ENGINE,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 2_600_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 11_214_600_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 449_595_725L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 12_705L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 4445L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 233_235L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 8715L)
+                                                )
+                                        ),
+                                        new Component(6, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_185_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 866_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_020_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 242_600_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 18_145L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 6350L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 333_190L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 12_450L)
+                                                )
+                                        ),
+                                        new Component(7, ComponentName.PHASER_CANNON,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 5_185_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 866_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 16_020_800_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 242_600_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 18_145L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 6350L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 333_190L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 12_450L)
+                                                )
+                                        ),
+                                        new Component(8, ComponentName.PHOTON_TORPEDO,
+                                                addRepairCostResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 10_000_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 1_733_000L)
+                                                ),
+                                                addResources(
+                                                        new ResourceMaterial(1, Material.TRITANIUM, 21_361_100_000L),
+                                                        new ResourceMaterial(2, Material.DILITHIUM, 646_849_000L)
+                                                ),
+                                                addMaterials(
+                                                        new ResourceMaterial(1, Material.GAS, Rarity.RARE, Grade.FOUR, 24_195L),
+                                                        new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 8470L),
+                                                        new ResourceMaterial(3, Material.EXPLORER_PARTS, Rarity.COMMON, Grade.FOUR, 444_255L),
+                                                        new ResourceMaterial(4, Material.EXPLORER_PARTS, Rarity.RARE, Grade.FOUR, 16_600L)
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+    }
 }
 
 
