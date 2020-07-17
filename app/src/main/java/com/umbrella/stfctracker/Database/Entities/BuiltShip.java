@@ -15,9 +15,6 @@ import java.util.LinkedList;
 @Entity(tableName = "built_ship")
 public class BuiltShip extends Ship implements Serializable {
 
-    @PrimaryKey(autoGenerate = true)
-    private long id;
-
     @ColumnInfo(name = "current_tier")
     private int currentTier;
 
@@ -32,15 +29,5 @@ public class BuiltShip extends Ship implements Serializable {
 
     public void setCurrentTier(int currentTier) {
         this.currentTier = currentTier;
-    }
-
-    @Override
-    public long getId() {
-        return id;
-    }
-
-    @Override
-    public void setId(long id) {
-        this.id = id;
     }
 }
