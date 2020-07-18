@@ -32,7 +32,8 @@ import java.util.concurrent.Executors;
         RarityConverter.class,
         GradeConverter.class,
         TierConverter.class,
-        ShipClassConverter.class})
+        ShipClassConverter.class,
+        FactionConverter.class})
 public abstract class DatabaseClient extends RoomDatabase {
     private static final String DB_NAME = "tracker_database";
     private static volatile DatabaseClient mInstance;

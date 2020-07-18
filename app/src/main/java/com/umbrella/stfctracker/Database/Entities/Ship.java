@@ -5,6 +5,7 @@ import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
+import com.umbrella.stfctracker.DataTypes.Enums.Faction;
 import com.umbrella.stfctracker.DataTypes.Enums.Grade;
 import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
 import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
@@ -30,6 +31,9 @@ public class Ship implements Serializable {
     @ColumnInfo(name = "ship_class")
     private ShipClass shipClass;
 
+    @ColumnInfo(name = "faction")
+    private Faction faction;
+
     @ColumnInfo(name = "image")
     private String image;
 
@@ -48,11 +52,12 @@ public class Ship implements Serializable {
     @ColumnInfo(name = "tiers")
     private LinkedList<Tier> tiers;
 
-    public Ship(String name, Rarity rarity, Grade grade, ShipClass shipClass, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, int scrapRequiredOperationsLevel, LinkedList<Tier> tiers) {
+    public Ship(String name, Rarity rarity, Grade grade, ShipClass shipClass, Faction faction, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, int scrapRequiredOperationsLevel, LinkedList<Tier> tiers) {
         this.name = name;
         this.rarity = rarity;
         this.grade = grade;
         this.shipClass = shipClass;
+        this.faction = faction;
         this.image = image;
         this.baseStrength = baseStrength;
         this.shipAbility = shipAbility;
@@ -62,11 +67,12 @@ public class Ship implements Serializable {
     }
 
     @Ignore
-    public Ship(String name, Rarity rarity, Grade grade, ShipClass shipClass, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, LinkedList<Tier> tiers) {
+    public Ship(String name, Rarity rarity, Grade grade, ShipClass shipClass, Faction faction, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, LinkedList<Tier> tiers) {
         this.name = name;
         this.rarity = rarity;
         this.grade = grade;
         this.shipClass = shipClass;
+        this.faction = faction;
         this.image = image;
         this.baseStrength = baseStrength;
         this.shipAbility = shipAbility;
@@ -89,6 +95,9 @@ public class Ship implements Serializable {
     }
     public ShipClass getShipClass() {
         return shipClass;
+    }
+    public Faction getFaction() {
+        return faction;
     }
     public String getImage() {
         return image;
@@ -120,6 +129,9 @@ public class Ship implements Serializable {
     }
     public void setGrade(Grade grade) {
         this.grade = grade;
+    }
+    public void setFaction(Faction faction) {
+        this.faction = faction;
     }
     public void setShipClass(ShipClass shipClass) {
         this.shipClass = shipClass;

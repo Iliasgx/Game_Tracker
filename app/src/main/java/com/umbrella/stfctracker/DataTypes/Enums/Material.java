@@ -14,7 +14,8 @@ public enum Material {
     EXPLORER_PARTS      (R.drawable.explorer_parts),
     INTERCEPTOR_PARTS   (R.drawable.interceptor_parts),
     SURVEY_PARTS        (R.drawable.survey_parts),
-    SHIP_XP             (R.drawable.ship_xp);
+    SHIP_XP             (R.drawable.ship_xp),
+    URANIUM             (R.drawable.plutonium);
 
     private int imageId;
 

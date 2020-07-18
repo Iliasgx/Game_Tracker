@@ -39,6 +39,15 @@ public final class ResourceMaterial {
         this.value = value;
     }
 
+    //Uranium without grade
+    public ResourceMaterial(int id, Material material, Rarity rarity, long value) {
+        this.id = id;
+        this.material = material;
+        this.rarity = rarity;
+        this.grade = null;
+        this.value = value;
+    }
+
     public int getId() {
         return id;
     }

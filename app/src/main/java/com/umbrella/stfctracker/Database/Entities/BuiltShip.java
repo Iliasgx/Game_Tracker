@@ -5,6 +5,7 @@ import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
+import com.umbrella.stfctracker.DataTypes.Enums.Faction;
 import com.umbrella.stfctracker.DataTypes.Enums.Grade;
 import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
 import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
@@ -18,8 +19,8 @@ public class BuiltShip extends Ship implements Serializable {
     @ColumnInfo(name = "current_tier")
     private int currentTier;
 
-    public BuiltShip(String name, Rarity rarity, Grade grade, ShipClass shipClass, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, int scrapRequiredOperationsLevel, LinkedList<Tier> tiers, int currentTier) {
-        super(name, rarity, grade, shipClass, image, baseStrength, shipAbility, requiredOperationsLevel, scrapRequiredOperationsLevel, tiers);
+    public BuiltShip(String name, Rarity rarity, Grade grade, ShipClass shipClass, Faction faction, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, int scrapRequiredOperationsLevel, LinkedList<Tier> tiers, int currentTier) {
+        super(name, rarity, grade, shipClass, faction, image, baseStrength, shipAbility, requiredOperationsLevel, scrapRequiredOperationsLevel, tiers);
         this.currentTier = currentTier;
     }
 
