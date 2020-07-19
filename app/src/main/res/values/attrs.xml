@@ -56,4 +56,18 @@
         <attr name="usable" format="boolean"/>
         <attr name="allTextSize" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="CustomResourceMaterialView">
+        <attr name="showResources" format="boolean"/>
+        <attr name="showMaterials" format="boolean"/>
+        <attr name="numOfResources" format="enum">
+            <enum name="LIVE_ADAPTING" value="0"/>
+            <enum name="TWO" value="1"/>
+            <enum name="THREE" value="2"/>
+        </attr>
+        <attr name="materialDisplayType" format="enum">
+            <enum name="TWO" value="0"/>
+            <enum name="FOUR" value="1"/>
+        </attr>
+    </declare-styleable>
 </resources>

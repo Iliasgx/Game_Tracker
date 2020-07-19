@@ -22,7 +22,7 @@
             android:gravity="center"
             style="@style/defaultText"
             android:textAllCaps="true"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:text="@string/title_scrapRewards"/>
 
         <TextView
@@ -34,7 +34,7 @@
             android:gravity="center"
             style="@style/defaultText"
             android:textColor="@color/textColor_yellow"
-            android:textSize="14sp"
+            android:textSize="15sp"
             tools:text="[ 28 ] USS Horizon"/>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -69,7 +69,7 @@
                 android:layout_marginEnd="5dp"
                 app:title="@string/cancel"
                 app:showTime="false"
-                app:allTextSize="15sp"/>
+                app:allTextSize="18sp"/>
 
             <com.umbrella.stfctracker.CustomComponents.CustomButton
                 android:id="@+id/dialogShipScrap_scrap"
@@ -80,7 +80,7 @@
                 app:layout_constraintStart_toEndOf="@id/dialogShipScrap_cancel"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="5dp"
-                app:allTextSize="15sp"
+                app:allTextSize="18sp"
                 app:title="@string/scrapShipButtonText"
                 app:borderDrawable="@drawable/round_edge_light_red"
                 app:frameDrawable="@drawable/button_ripple_red"/>

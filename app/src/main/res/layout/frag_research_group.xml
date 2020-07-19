@@ -68,9 +68,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/interstate_extra_light"
+            style="@style/defaultText"
             android:text="@string/researchGroup_A"
-            android:textColor="@color/textColor_white"
             android:textSize="24sp" />
 
         <ImageView
@@ -121,9 +120,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/interstate_extra_light"
+            style="@style/defaultText"
             android:text="@string/researchGroup_B"
-            android:textColor="@color/textColor_white"
             android:textSize="24sp" />
 
         <ImageView
@@ -175,9 +173,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/interstate_extra_light"
+            style="@style/defaultText"
             android:text="@string/researchGroup_C"
-            android:textColor="@color/textColor_white"
             android:textSize="24sp" />
 
         <ImageView

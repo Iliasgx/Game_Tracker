@@ -26,6 +26,7 @@ import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.Database.Entities.Tier;
 import com.umbrella.stfctracker.Database.Models.BuiltShipViewModel;
 import com.umbrella.stfctracker.R;
+import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.databinding.DialogShipUpgradeBinding;
 
 import java.util.Arrays;
@@ -36,13 +37,12 @@ import java.util.Objects;
 public class UpgradeShipDialog extends DialogFragment {
     private DialogShipUpgradeBinding binding;
 
+    private CumulativeBonus cumulativeBonus = CumulativeBonus.getInstance();
+
     private BuiltShip builtShip;
     private MutableLiveData<Tier> observableTier;
 
     private ComponentAdapter adapter;
-
-    private LinkedList<ResourceMaterialAmount> rma;
-    private LinkedList<ResourceAmount> rm;
 
     public UpgradeShipDialog() {
     }
@@ -57,9 +57,6 @@ public class UpgradeShipDialog extends DialogFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        rma = new LinkedList<>(Arrays.asList(binding.dialogShipUpgradeMaterialA, binding.dialogShipUpgradeMaterialB, binding.dialogShipUpgradeMaterialC, binding.dialogShipUpgradeMaterialD));
-        rm = new LinkedList<>(Arrays.asList(binding.dialogShipUpgradeAmountA, binding.dialogShipUpgradeAmountB));
 
         adapter = new ComponentAdapter(requireContext(), new LinkedList<>());
 
@@ -97,43 +94,24 @@ public class UpgradeShipDialog extends DialogFragment {
         });
 
         binding.dialogShipUpgradeList.setOnItemClickListener((parent, view, position, id) -> {
+            binding.dialogShipUpgradeCosts.setShowMaterials(position != -1);
+            binding.dialogShipUpgradeCosts.setShowResources(position != -1);
+
             if (position == -1) {
-                //Clears fields
-                rma.forEach(item -> item.setNeeded(false));
-                rm.forEach(item -> item.setNeeded(false));
                 binding.dialogShipUpgradeUp.setUsable(false);
             } else {
                 //SetUp fields
                 Tier.Component component = Objects.requireNonNull(adapter.getItem(position));
 
-                LinkedList<ResourceAmount> rss = new LinkedList<>(rm);
-                LinkedList<ResourceMaterialAmount> mat = new LinkedList<>(rma);
+                LinkedList<ResourceMaterial> rss = new LinkedList<>(component.getResources());
+                rss.forEach(resourceMaterial -> resourceMaterial.setValue(cumulativeBonus
+                        .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipCostEfficiencyBonus(builtShip.getFaction(), resourceMaterial.getMaterial()))));
+                binding.dialogShipUpgradeCosts.setResources(rss);
 
-                component.getResources().forEach(item -> {
-                    ResourceAmount curr = rss.pop();
-                    curr.setMaterial(item.getMaterial());
-                    curr.setValue(item.getValue());
-                    curr.setNeeded(true);
-
-                    curr.setOnClickListener(v -> {
-                        InformationLabel label = new InformationLabel(requireContext());
-                        label.setValue(item.getValue());
-                        label.setLocation(v, -15, -10);
-                        binding.dialogShipUpgradeCardView.addView(label);
-                    });
-                });
-
-                component.getMaterials().forEach(item -> {
-                    ResourceMaterialAmount curr = mat.pop();
-                    curr.setMaterial(item.getMaterial());
-                    curr.setGrade(item.getGrade());
-                    curr.setRarity(item.getRarity());
-                    curr.setValue((int)item.getValue());
-                    curr.setNeeded(true);
-                });
-
-                rma.forEach(item -> item.setNeeded(false));
-                rm.forEach(item -> item.setNeeded(false));
+                LinkedList<ResourceMaterial> mats = new LinkedList<>(component.getMaterials());
+                mats.forEach(resourceMaterial -> resourceMaterial.setValue(cumulativeBonus
+                        .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipMaterialCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass(), resourceMaterial.getMaterial()))));
+                binding.dialogShipUpgradeCosts.setMaterials(mats);
 
                 if (Objects.requireNonNull(observableTier.getValue()).getComponents().stream().anyMatch(Tier.Component::isLocked)) {
                     binding.dialogShipUpgradeUp.setUsable(component.isLocked());

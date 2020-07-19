@@ -39,7 +39,7 @@
             android:id="@+id/fragShipDetails_titleLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/shipScrapRewardItem_greenInner">
+            tools:background="@color/rarity_greenInner">
 
             <RelativeLayout
                 android:id="@+id/fragShipDetails_title_shipInfo_layout"
@@ -49,7 +49,7 @@
                 android:layout_alignParentTop="true"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="1dp"
-                android:background="@color/button_green_backgroundSide">
+                tools:background="@color/rarity_greenBorder">
 
                 <TextView
                     android:id="@+id/fragShipDetails_shipInfo"
@@ -106,7 +106,7 @@
         android:layout_alignStart="@id/fragShipDetails_img"
         android:layout_alignEnd="@id/fragShipDetails_img"
         android:layout_above="@id/fragShipDetails_levelCardView"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="5dp">
 
         <ImageView
             android:id="@+id/fragShipDetails_classImg"
@@ -120,6 +120,28 @@
             tools:ignore="ContentDescription" />
 
         <TextView
+            android:id="@+id/fragShipDetails_faction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/fragShipDetails_classImg"
+            style="@style/defaultText"
+            android:text="@string/ship_faction"
+            android:textAllCaps="true"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/fragShipDetails_factionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragShipDetails_faction"
+            android:layout_toEndOf="@id/fragShipDetails_classImg"
+            android:layout_marginBottom="5dp"
+            style="@style/defaultText"
+            android:textSize="18sp"
+            tools:text="Federation" />
+
+       <!-- <TextView
             android:id="@+id/fragShipDetails_strength"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -141,7 +163,7 @@
             android:fontFamily="@font/interstate_extra_light"
             android:textColor="@color/textColor_white"
             android:textSize="22sp"
-            tools:text="7.271.353" />
+            tools:text="7.271.353" />-->
     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
@@ -299,39 +321,21 @@
             android:id="@+id/fragShipDetails_repairCost_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@id/fragShipDetails_resourceLayout"
+            android:layout_above="@id/fragShipDetails_repairResources"
             android:gravity="center_horizontal"
             style="@style/defaultText"
             android:textSize="12sp"
             android:text="@string/repairCosts"/>
 
-        <LinearLayout
-            android:id="@+id/fragShipDetails_resourceLayout"
+        <com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView
+            android:id="@+id/fragShipDetails_repairResources"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="10dp">
-
-            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
-                android:id="@+id/fragShipDetails_amountA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="2.5dp"/>
-
-            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
-                android:id="@+id/fragShipDetails_amountB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="2.5dp"/>
-
-            <com.umbrella.stfctracker.CustomComponents.ResourceAmount
-                android:id="@+id/fragShipDetails_amountC"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="2.5dp"/>
-        </LinearLayout>
+            android:paddingBottom="5dp"
+            app:showMaterials="false"
+            app:numOfResources="LIVE_ADAPTING"
+            tools:numOfResources="TWO"/>
     </RelativeLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -355,7 +359,7 @@
             app:showTime="false"
             app:borderDrawable="@drawable/round_edge"
             app:frameDrawable="@drawable/button_ripple"
-            app:allTextSize="14sp" />
+            app:allTextSize="18sp" />
 
         <com.umbrella.stfctracker.CustomComponents.CustomButton
             android:id="@+id/fragShipDetails_scrap"
@@ -369,7 +373,7 @@
             app:showTime="false"
             app:borderDrawable="@drawable/round_edge_light_red"
             app:frameDrawable="@drawable/button_ripple_red"
-            app:allTextSize="14sp"/>
+            app:allTextSize="18sp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View

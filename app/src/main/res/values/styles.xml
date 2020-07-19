@@ -1,5 +1,4 @@
 <resources>
-
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -13,7 +12,7 @@
     <style name="defaultText">
         <item name="android:textColor">@color/textColor_white</item>
         <item name="android:textSize">16sp</item>
-        <item name="fontFamily">@font/interstate_extra_light</item>
+        <item name="android:fontFamily">@font/interstate_extra_light</item>
     </style>
 
     <style name="FullScreen" parent="android:Theme.Material.Dialog">

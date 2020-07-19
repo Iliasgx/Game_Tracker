@@ -19,6 +19,7 @@ import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.Database.Entities.Ship;
 import com.umbrella.stfctracker.Database.Entities.Tier;
 import com.umbrella.stfctracker.R;
+import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.databinding.DialogShipBuildBinding;
 
 import java.util.Arrays;
@@ -26,6 +27,8 @@ import java.util.LinkedList;
 
 public class BuildShipDialog extends DialogFragment {
     private DialogShipBuildBinding binding;
+
+    private CumulativeBonus cumulativeBonus = CumulativeBonus.getInstance();
 
     private Ship ship;
 
@@ -55,37 +58,10 @@ public class BuildShipDialog extends DialogFragment {
         Tier firstTier = ship.getTiers().getFirst();
 
         binding.dialogShipUpgradeTierUp.setTime(firstTier.getBuildTime());
+        binding.dialogShipUpgradeTierUp.setTime(cumulativeBonus.applyBonus(firstTier.getBuildTime(), cumulativeBonus.getShipConstructionSpeedBonus()));
 
-        LinkedList<ResourceAmount> ra = new LinkedList<>(Arrays.asList(binding.dialogShipUpgradeAmountA, binding.dialogShipUpgradeAmountB));
-        LinkedList<ResourceMaterialAmount> rma = new LinkedList<>(Arrays.asList(binding.dialogShipUpgradeMaterialA, binding.dialogShipUpgradeMaterialB, binding.dialogShipUpgradeMaterialC, binding.dialogShipUpgradeMaterialD));
-
-        firstTier.getComponents().get(0).getResources().forEach(rss -> {
-            ResourceAmount curr = ra.pop();
-
-            curr.setMaterial(rss.getMaterial());
-            curr.setValue(rss.getValue());
-            curr.setNeeded(true);
-
-            curr.setOnClickListener(view -> {
-                InformationLabel label = new InformationLabel(requireContext());
-                label.setValue(rss.getValue());
-                label.setLocation(view, -15, -10);
-                binding.dialogShipUpgradeCardView.addView(label);
-            });
-        });
-
-        firstTier.getComponents().get(0).getMaterials().forEach(mat -> {
-            ResourceMaterialAmount curr = rma.pop();
-
-            curr.setMaterial(mat.getMaterial());
-            curr.setGrade(mat.getGrade());
-            curr.setRarity(mat.getRarity());
-            curr.setValue((int)mat.getValue());
-            curr.setNeeded(true);
-        });
-
-        ra.forEach(itemLeft -> itemLeft.setNeeded(false));
-        rma.forEach(itemLeft -> itemLeft.setNeeded(false));
+        binding.dialogShipUpgradeBuildCosts.setResources(firstTier.getComponents().get(0).getResources());
+        binding.dialogShipUpgradeBuildCosts.setMaterials(firstTier.getComponents().get(0).getMaterials());
     }
 
     private void setUpMainListener() {

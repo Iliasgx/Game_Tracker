@@ -2,7 +2,6 @@ package com.umbrella.stfctracker.DataTypes.Enums;
 
 import com.umbrella.stfctracker.R;
 
-// TODO: set images
 public enum Material {
     PARSTEEL            (R.drawable.parsteel),
     TRITANIUM           (R.drawable.tritanium),
@@ -15,7 +14,7 @@ public enum Material {
     INTERCEPTOR_PARTS   (R.drawable.interceptor_parts),
     SURVEY_PARTS        (R.drawable.survey_parts),
     SHIP_XP             (R.drawable.ship_xp),
-    URANIUM             (R.drawable.plutonium);
+    URANIUM             (R.drawable.uranium);
 
     private int imageId;
 

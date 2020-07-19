@@ -1,7 +1,6 @@
 package com.umbrella.stfctracker.CustomComponents;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
@@ -12,7 +11,6 @@ import androidx.cardview.widget.CardView;
 import com.umbrella.stfctracker.DataTypes.Enums.Grade;
 import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
-import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.R;
 
@@ -88,27 +86,8 @@ public class RewardItem extends RelativeLayout {
     public void setRarity(Rarity rarity) {
         this.rarity = rarity;
 
-        int borderColor = 0;
-        int innerColor = 0;
-
-        switch (rarity) {
-            case NONE:
-            case COMMON:
-                borderColor = getResources().getColor(R.color.shipScrapRewardItem_greyBorder, null);
-                innerColor = getResources().getColor(R.color.shipScrapRewardItem_greyInner, null);
-                break;
-            case UNCOMMON:
-                borderColor = getResources().getColor(R.color.shipScrapRewardItem_greenBorder, null);
-                innerColor = getResources().getColor(R.color.shipScrapRewardItem_greenInner, null);
-                break;
-            case RARE:
-                borderColor = getResources().getColor(R.color.shipScrapRewardItem_blueBorder, null);
-                innerColor = getResources().getColor(R.color.shipScrapRewardItem_blueInner, null);
-                break;
-        }
-
-        border.setCardBackgroundColor(borderColor);
-        layer.setCardBackgroundColor(innerColor);
+        border.setCardBackgroundColor(getResources().getColor(rarity.getColorBorder(), null));
+        layer.setCardBackgroundColor(getResources().getColor(rarity.getColorInner(), null));
     }
 
     public void setGrade(Grade grade) {

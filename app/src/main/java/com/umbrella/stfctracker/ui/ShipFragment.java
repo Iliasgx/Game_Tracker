@@ -88,7 +88,15 @@ public class ShipFragment extends Fragment {
             }
         };
 
-        ItemScrapListener scrapListener = builtShip -> mViewModel.onScrap(builtShip);
+        //Ship doesn't hold in account if the opsLevel is high enough for scrapping. This is the case in the DetailFragment.
+        //When a user doesn't want this ship to be here, he can use this screen to remove the ship without the requirements.
+        ItemScrapListener scrapListener = builtShip -> {
+            if (builtShip.getScrapRequiredOperationsLevel() == -1) {
+                Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
+            } else {
+                mViewModel.onScrap(builtShip);
+            }
+        };
 
         mAdapter = new BuiltShipRecyclerViewAdapter(requireActivity().getApplication(), pressedListener, scrapListener);
         binding.fragShipsGrid.setAdapter(mAdapter);

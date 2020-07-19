@@ -115,7 +115,6 @@ public class ResourceMaterialAmount extends RelativeLayout {
         resourceType.setText(type);
     }
 
-    // TODO: setMaterialDrawables
     public void setMaterial(Material material) {
         if (material == null) return;
         this.material = material;

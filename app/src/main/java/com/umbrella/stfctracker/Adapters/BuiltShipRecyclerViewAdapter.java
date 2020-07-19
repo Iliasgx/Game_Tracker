@@ -57,7 +57,7 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
         holder.grade.setNumStars(builtShip.getGrade().ordinal());
         holder.grade.setRating(builtShip.getGrade().ordinal());
         holder.shipClassImage.setImageDrawable(application.getDrawable(builtShip.getShipClass().getImageId()));
-        holder.strength.setText(new ValueIndicator().setStringFormat(builtShip.getBaseStrength(), '.'));
+        holder.faction.setText(builtShip.getFaction().toString());
         holder.itemView.setLongClickable(true);
     }
 
@@ -95,7 +95,7 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
         private TextView rarity;
         private RatingBar grade;
         private ImageView shipClassImage;
-        private TextView strength;
+        private TextView faction;
 
         public CustomViewHolder(@NonNull View itemView, ItemPressedListener itemPressedListener, ItemScrapListener itemScrapListener) {
             super(itemView);
@@ -107,7 +107,7 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
             rarity = binding.listShipItemRarity;
             grade = binding.listShipItemStars;
             shipClassImage = binding.listShipItemShipTypeImg;
-            strength = binding.listShipItemStrengthValue;
+            faction = binding.listShipItemFactionName;
 
             itemView.setOnClickListener(v -> itemPressedListener.onClick(builtShip));
             itemView.setOnLongClickListener(v -> {

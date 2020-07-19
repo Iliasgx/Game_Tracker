@@ -52,10 +52,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/interstate_extra_light"
+                style="@style/defaultText"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="@color/textColor_white"
                 android:textSize="22sp"
                 tools:text="USS Saladin" />
 
@@ -65,10 +64,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_below="@id/listShipItem_name"
-                android:fontFamily="@font/interstate_extra_light"
+                style="@style/defaultText"
                 android:textAlignment="center"
                 android:textColor="@color/textColor_yellow"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 tools:text="Tier 6" />
 
             <ImageView
@@ -85,6 +84,28 @@
                 tools:ignore="ContentDescription" />
 
             <TextView
+                android:id="@+id/listShipItem_faction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/listShipItem_factionName"
+                android:layout_toEndOf="@id/listShipItem_shipTypeImg"
+                style="@style/defaultText"
+                android:text="@string/ship_faction"
+                android:textAllCaps="true"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/listShipItem_factionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/listShipItem_shipTypeImg"
+                style="@style/defaultText"
+                android:textSize="18sp"
+                tools:text="Federation" />
+
+            <!--<TextView
                 android:id="@+id/listShipItem_strength"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -106,7 +127,7 @@
                 android:fontFamily="@font/interstate_extra_light"
                 android:textColor="@color/textColor_white"
                 android:textSize="22sp"
-                tools:text="7.271.353" />
+                tools:text="7.271.353" />-->
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
@@ -178,7 +199,7 @@
             android:layout_below="@id/dialogShipUpgrade_costCardView_layout"
             android:soundEffectsEnabled="false"
             android:padding="2dp"
-            app:allTextSize="14sp"
+            app:allTextSize="18sp"
             app:frameDrawable="@drawable/button_ripple_red"
             app:borderDrawable="@drawable/round_edge_light_red"
             app:title="@string/build"/>

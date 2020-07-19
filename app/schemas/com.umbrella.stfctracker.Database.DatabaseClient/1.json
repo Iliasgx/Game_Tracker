@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "9ab514e6eed6ef1d8532932699216858",
+    "identityHash": "3abf44c06ae60ca77013ece1f3176d56",
     "entities": [
       {
         "tableName": "building",
@@ -136,7 +136,7 @@
       },
       {
         "tableName": "ship",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `rarity` INTEGER, `grade` INTEGER, `ship_class` INTEGER, `image` TEXT, `base_strength` INTEGER NOT NULL, `ship_ability` TEXT, `required_operations_level` INTEGER NOT NULL, `scrap_required_operations_level` INTEGER NOT NULL, `tiers` TEXT)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `rarity` INTEGER, `grade` INTEGER, `ship_class` INTEGER, `faction` INTEGER, `image` TEXT, `base_strength` INTEGER NOT NULL, `ship_ability` TEXT, `required_operations_level` INTEGER NOT NULL, `scrap_required_operations_level` INTEGER NOT NULL, `tiers` TEXT)",
         "fields": [
           {
             "fieldPath": "id",
@@ -165,6 +165,12 @@
           {
             "fieldPath": "shipClass",
             "columnName": "ship_class",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "faction",
+            "columnName": "faction",
             "affinity": "INTEGER",
             "notNull": false
           },
@@ -216,7 +222,7 @@
       },
       {
         "tableName": "built_ship",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`current_tier` INTEGER NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `rarity` INTEGER, `grade` INTEGER, `ship_class` INTEGER, `image` TEXT, `base_strength` INTEGER NOT NULL, `ship_ability` TEXT, `required_operations_level` INTEGER NOT NULL, `scrap_required_operations_level` INTEGER NOT NULL, `tiers` TEXT)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`current_tier` INTEGER NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `rarity` INTEGER, `grade` INTEGER, `ship_class` INTEGER, `faction` INTEGER, `image` TEXT, `base_strength` INTEGER NOT NULL, `ship_ability` TEXT, `required_operations_level` INTEGER NOT NULL, `scrap_required_operations_level` INTEGER NOT NULL, `tiers` TEXT)",
         "fields": [
           {
             "fieldPath": "currentTier",
@@ -251,6 +257,12 @@
           {
             "fieldPath": "shipClass",
             "columnName": "ship_class",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "faction",
+            "columnName": "faction",
             "affinity": "INTEGER",
             "notNull": false
           },
@@ -304,7 +316,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9ab514e6eed6ef1d8532932699216858')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3abf44c06ae60ca77013ece1f3176d56')"
     ]
   }
 }

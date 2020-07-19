@@ -27,6 +27,8 @@ import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.Database.Entities.Tier;
 import com.umbrella.stfctracker.R;
+import com.umbrella.stfctracker.Structures.CumulativeBonus;
+import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.Structures.TimeDisplay;
 import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.databinding.FragShipDetailsBinding;
@@ -42,6 +44,8 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
 
     private BuiltShip builtShip;
     private MutableLiveData<Tier> observableTier = new MutableLiveData<>();
+
+    private CumulativeBonus cumulativeBonus = CumulativeBonus.getInstance();
 
     @Nullable
     @Override
@@ -74,14 +78,18 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         });
     }
 
-    // TODO: Possible - change color of fragShipDetailsTitleShipInfoLayout to Rarity
     private void fillBaseData(BuiltShip builtShip) {
         binding.fragShipDetailsShipName.setText(builtShip.getName());
         binding.fragShipDetailsStars.setNumStars(builtShip.getGrade().ordinal());
         binding.fragShipDetailsStars.setRating(builtShip.getGrade().ordinal());
         binding.fragShipDetailsImg.setImageDrawable(DataFunctions.decodeDrawable(getResources(), builtShip.getImage()));
-        binding.fragShipDetailsClassImg.setImageDrawable(shipClassDrawable(builtShip.getShipClass()));
+        binding.fragShipDetailsClassImg.setImageDrawable(getResources().getDrawable(builtShip.getShipClass().getImageId(), null));
         binding.fragShipDetailsAbilityName.setText(builtShip.getShipAbility());
+        binding.fragShipDetailsTitleLayout.setBackgroundColor(getResources().getColor(builtShip.getRarity().getColorInner(), null));
+        binding.fragShipDetailsTitleShipInfoLayout.setBackgroundColor(getResources().getColor(builtShip.getRarity().getColorBorder(), null));
+
+        //Ship can't be scrapped when it has no scrapping possibility OR when the opsLevel is not high enough
+        binding.fragShipDetailsScrap.setUsable(builtShip.getRequiredOperationsLevel() != -1 && Data.getInstance().getOperationsLevel() >= builtShip.getScrapRequiredOperationsLevel());
 
         binding.fragShipDetailsLevelSeekBar.setOnSeekBarChangeListener(this);
 
@@ -108,7 +116,8 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
             binding.fragShipDetailsShipInfo.setText(getString(R.string.shipDetails_shipInfo, builtShip.getRarity().toString(), tier.getTier()));
             binding.fragShipDetailsLevelSeekBar.setMin(tier.getLevels().get(0).getLevel());
             binding.fragShipDetailsLevelSeekBar.setMax(tier.getLevels().get(tier.getLevels().size() - 1).getLevel());
-            binding.fragShipDetailsRepairSpeedTime.setText(new TimeDisplay(requireContext()).getTime(tier.getRepairTime()));
+            binding.fragShipDetailsRepairSpeedTime.setText(new TimeDisplay(requireContext())
+                    .getTime(cumulativeBonus.applyBonus(tier.getRepairTime(), cumulativeBonus.getShipRepairSpeedBonus(builtShip.getFaction(), builtShip.getShipClass()))));
 
             updateRepairCosts(tier);
         });
@@ -131,20 +140,7 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
 
     }
 
-    // TODO: Create shipClass images (4)
-    private Drawable shipClassDrawable(ShipClass shipClass) {
-        switch (shipClass) {
-            case BATTLESHIP:    return getResources().getDrawable(0, null);
-            case EXPLORER:      return getResources().getDrawable(0, null);
-            case INTERCEPTOR:   return getResources().getDrawable(0, null);
-            case SURVEY:        return getResources().getDrawable(0, null);
-        }
-        return null;
-    }
-
     private void updateRepairCosts(Tier tier) {
-        //All resource views
-        LinkedList<ResourceAmount> ra = new LinkedList<>(Arrays.asList(binding.fragShipDetailsAmountA, binding.fragShipDetailsAmountB, binding.fragShipDetailsAmountC));
         LinkedList<ResourceMaterial> popResources = new LinkedList<>();
 
         //The next tier if not last tier else @null
@@ -186,24 +182,10 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
             }
         }
 
-        //Add Resource Views that are needed for the repair costs
-        sortedList.forEach(sortedItem -> {
-            ResourceAmount itemView = ra.pop();
+        sortedList.forEach(resourceMaterial -> resourceMaterial.setValue(cumulativeBonus
+                .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipRepairCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass()))));
 
-            itemView.setNeeded(true);
-            itemView.setMaterial(sortedItem.getMaterial());
-            itemView.setValue(sortedItem.getValue());
-
-            itemView.setOnClickListener(view -> {
-                InformationLabel label = new InformationLabel(requireContext());
-                label.setValue(itemView.getValue());
-                label.setLocation(view, -15, -10);
-                binding.fragShipDetailsRepairLayout.addView(label);
-            });
-        });
-
-        //Set all residual views to NOT needed.
-        ra.forEach(leftItem -> leftItem.setNeeded(false));
+        binding.fragShipDetailsRepairResources.setResources(sortedList);
     }
 
     private static class TierAdapter extends ArrayAdapter<Tier> {

@@ -237,7 +237,7 @@ public class CumulativeBonus {
         return temp;
     }
 
-    public int getShipMaterialCostEfficiencyBonus(Faction faction, Material material) {
+    public int getShipMaterialCostEfficiencyBonus(Faction faction, ShipClass shipClass, Material material) {
         int temp = 0;
 
         switch (material) {
@@ -253,18 +253,22 @@ public class CumulativeBonus {
                 temp += getValue(BonusType.COST_EFFICIENCY_CRYSTAL);
                 if (faction.equals(Faction.KLINGON)) temp += getValue(BonusType.COST_EFFICIENCY_CRYSTAL_KLINGONS);
                 break;
+            case EXPLORER_PARTS:
+            case BATTLESHIP_PARTS:
+            case INTERCEPTOR_PARTS:
+            case SURVEY_PARTS:
+                switch (shipClass) {
+                    case BATTLESHIP: temp += getValue(BonusType.COST_EFFICIENCY_PARTS_BATTLESHIPS);
+                        break;
+                    case EXPLORER: temp += getValue(BonusType.COST_EFFICIENCY_PARTS_EXPLORERS);
+                        break;
+                    case INTERCEPTOR: temp += getValue(BonusType.COST_EFFICIENCY_PARTS_INTERCEPTORS);
+                        break;
+                }
+                break;
         }
 
         return temp;
-    }
-
-    public int getShipPartsCostEfficiencyBonus(ShipClass shipClass) {
-        switch (shipClass) {
-            case BATTLESHIP: return getValue(BonusType.COST_EFFICIENCY_PARTS_BATTLESHIPS);
-            case EXPLORER: return getValue(BonusType.COST_EFFICIENCY_PARTS_EXPLORERS);
-            case INTERCEPTOR: return getValue(BonusType.COST_EFFICIENCY_PARTS_INTERCEPTORS);
-            default: return 0;
-        }
     }
 
     public int getShipWarpRangeBonus() {

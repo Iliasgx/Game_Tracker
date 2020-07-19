@@ -163,7 +163,7 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 style="@style/defaultText"
                                 android:textSize="14sp"
-                                tools:text="105%"/>
+                                tools:text="15%"/>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>

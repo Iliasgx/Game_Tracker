@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customResourceMaterialView_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customResourceMaterialView_materialLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/customResourceMaterialView_emptyMaterialD"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/resource_materialAmount_height"
+            app:layout_constraintStart_toStartOf="@id/customResourceMaterialView_MaterialD"
+            app:layout_constraintTop_toTopOf="@id/customResourceMaterialView_MaterialD"
+            app:layout_constraintEnd_toEndOf="@id/customResourceMaterialView_MaterialD"
+            app:layout_constraintBottom_toBottomOf="@id/customResourceMaterialView_MaterialD"
+            android:alpha="0.6"
+            android:background="@color/dialog_background"
+            android:foreground="@drawable/empty_backgroundborder"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/empty_background"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/customResourceMaterialView_emptyMaterialC"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/resource_materialAmount_height"
+            app:layout_constraintStart_toStartOf="@id/customResourceMaterialView_MaterialC"
+            app:layout_constraintTop_toTopOf="@id/customResourceMaterialView_MaterialC"
+            app:layout_constraintEnd_toEndOf="@id/customResourceMaterialView_MaterialC"
+            app:layout_constraintBottom_toBottomOf="@id/customResourceMaterialView_MaterialC"
+            android:alpha="0.6"
+            android:background="@color/dialog_background"
+            android:foreground="@drawable/empty_backgroundborder"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/empty_background"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/customResourceMaterialView_emptyMaterialB"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/resource_materialAmount_height"
+            app:layout_constraintStart_toStartOf="@id/customResourceMaterialView_MaterialB"
+            app:layout_constraintTop_toTopOf="@id/customResourceMaterialView_MaterialB"
+            app:layout_constraintEnd_toEndOf="@id/customResourceMaterialView_MaterialB"
+            app:layout_constraintBottom_toBottomOf="@id/customResourceMaterialView_MaterialB"
+            android:alpha="0.6"
+            android:background="@color/dialog_background"
+            android:foreground="@drawable/empty_backgroundborder"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/empty_background"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/customResourceMaterialView_emptyMaterialA"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/resource_materialAmount_height"
+            app:layout_constraintStart_toStartOf="@id/customResourceMaterialView_MaterialA"
+            app:layout_constraintTop_toTopOf="@id/customResourceMaterialView_MaterialA"
+            app:layout_constraintEnd_toEndOf="@id/customResourceMaterialView_MaterialA"
+            app:layout_constraintBottom_toBottomOf="@id/customResourceMaterialView_MaterialA"
+            android:alpha="0.6"
+            android:background="@color/dialog_background"
+            android:foreground="@drawable/empty_backgroundborder"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/empty_background"
+            tools:ignore="ContentDescription" />
+
+        <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+            android:id="@+id/customResourceMaterialView_MaterialD"
+            android:layout_width="@dimen/resource_materialAmount_width"
+            android:layout_height="@dimen/resource_materialAmount_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/customResourceMaterialView_MaterialC"
+            app:layout_constraintBottom_toTopOf="@id/customResourceMaterialView_MaterialB"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginEnd="2dp"
+            app:backgroundVisible="true"
+            tools:visibility="invisible"/>
+
+        <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+            android:id="@+id/customResourceMaterialView_MaterialC"
+            android:layout_width="@dimen/resource_materialAmount_width"
+            android:layout_height="@dimen/resource_materialAmount_height"
+            app:layout_constraintStart_toEndOf="@id/customResourceMaterialView_MaterialD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/customResourceMaterialView_MaterialA"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginStart="2dp"
+            app:backgroundVisible="true"/>
+
+        <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+            android:id="@+id/customResourceMaterialView_MaterialB"
+            android:layout_width="@dimen/resource_materialAmount_width"
+            android:layout_height="@dimen/resource_materialAmount_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customResourceMaterialView_MaterialD"
+            app:layout_constraintEnd_toStartOf="@id/customResourceMaterialView_MaterialA"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="4dp"
+            app:backgroundVisible="true"/>
+
+        <com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount
+            android:id="@+id/customResourceMaterialView_MaterialA"
+            android:layout_width="@dimen/resource_materialAmount_width"
+            android:layout_height="@dimen/resource_materialAmount_height"
+            app:layout_constraintStart_toEndOf="@id/customResourceMaterialView_MaterialB"
+            app:layout_constraintTop_toBottomOf="@id/customResourceMaterialView_MaterialC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            app:backgroundVisible="true"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/customResourceMaterialView_resourceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/customResourceMaterialView_materialLayout"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+            android:id="@+id/customResourceMaterialView_amountA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2.5dp"/>
+
+        <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+            android:id="@+id/customResourceMaterialView_amountB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2.5dp" />
+
+        <com.umbrella.stfctracker.CustomComponents.ResourceAmount
+            android:id="@+id/customResourceMaterialView_amountC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2.5dp"/>
+    </LinearLayout>
+</RelativeLayout>

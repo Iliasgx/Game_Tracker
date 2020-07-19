@@ -63,20 +63,18 @@
             android:id="@+id/fragHome_A_overlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:alpha="0.7"
+            android:alpha="0.5"
             android:background="@color/research_treeGroups_backgroundOverColor" />
 
         <TextView
             android:id="@+id/fragHome_A_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/interstate_extra_light"
             android:gravity="center"
+            style="@style/defaultText"
             android:text="@string/progress_A"
             android:textAllCaps="true"
-            android:textColor="@color/textColor_white"
             android:textSize="36sp" />
-
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -109,18 +107,17 @@
             android:id="@+id/fragHome_B_overlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:alpha="0.7"
+            android:alpha="0.5"
             android:background="@color/research_treeGroups_backgroundOverColor" />
 
         <TextView
             android:id="@+id/fragHome_B_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/interstate_extra_light"
             android:gravity="center"
+            style="@style/defaultText"
             android:text="@string/progress_B"
             android:textAllCaps="true"
-            android:textColor="@color/textColor_white"
             android:textSize="36sp" />
 
     </androidx.cardview.widget.CardView>
@@ -155,18 +152,17 @@
             android:id="@+id/fragHome_C_overlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:alpha="0.7"
+            android:alpha="0.6"
             android:background="@color/research_treeGroups_backgroundOverColor" />
 
         <TextView
             android:id="@+id/fragHome_C_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/interstate_extra_light"
             android:gravity="center"
+            style="@style/defaultText"
             android:text="@string/progress_C"
             android:textAllCaps="true"
-            android:textColor="@color/textColor_white"
             android:textSize="36sp" />
 
     </androidx.cardview.widget.CardView>
@@ -202,18 +198,17 @@
             android:id="@+id/fragHome_D_overlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:alpha="0.4"
+            android:alpha="0.2"
             android:background="@color/research_treeGroups_backgroundOverColor" />
 
         <TextView
             android:id="@+id/fragHome_D_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/interstate_extra_light"
             android:gravity="center"
+            style="@style/defaultText"
             android:text="@string/progress_D"
             android:textAllCaps="true"
-            android:textColor="@color/textColor_white"
             android:textSize="36sp" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

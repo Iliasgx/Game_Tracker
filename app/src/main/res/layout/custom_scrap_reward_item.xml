@@ -25,8 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="1dp"
         android:layout_below="@id/scrapRewardItem_rewardName"
-        app:cardBackgroundColor="@color/shipScrapRewardItem_greyInner">
+        app:cardBackgroundColor="@color/rarity_greyInner">
 
         <RelativeLayout
             android:id="@+id/scrapRewardItem_outerLayer_layout"
@@ -39,7 +40,7 @@
                 android:layout_height="80dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
-                app:cardBackgroundColor="@color/shipScrapRewardItem_greyBorder">
+                app:cardBackgroundColor="@color/rarity_greyBorder">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/scrapRewardItem_innerLayer"

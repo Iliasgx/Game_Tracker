@@ -18,6 +18,7 @@ import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
 import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.Entities.Ship;
 import com.umbrella.stfctracker.R;
+import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.TimeDisplay;
 import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.databinding.ListShipItemBinding;
@@ -28,6 +29,8 @@ import java.util.List;
 public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerViewAdapter.CustomViewHolder> {
     private ListShipItemBinding binding;
     private Application application;
+
+    private CumulativeBonus cumulativeBonus = CumulativeBonus.getInstance();
 
     private ItemBuildListener itemBuildListener;
 
@@ -57,10 +60,11 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         holder.grade.setNumStars(ship.getGrade().ordinal());
         holder.grade.setRating(ship.getGrade().ordinal());
         holder.shipClassImage.setImageDrawable(application.getDrawable(ship.getShipClass().getImageId()));
-        holder.strength.setText(new ValueIndicator().setStringFormat(ship.getBaseStrength(), '.'));
+        holder.faction.setText(ship.getFaction().toString());
         holder.itemView.setLongClickable(true);
         holder.buildFrame.setVisibility(View.VISIBLE);
         holder.buildTime.setTime(ship.getTiers().get(0).getBuildTime());
+        holder.buildTime.setTime(cumulativeBonus.applyBonus(ship.getTiers().get(0).getBuildTime(), cumulativeBonus.getShipConstructionSpeedBonus()));
     }
 
     @Override
@@ -87,7 +91,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         private TextView rarity;
         private RatingBar grade;
         private ImageView shipClassImage;
-        private TextView strength;
+        private TextView faction;
         private CardView buildFrame;
         private CustomButton buildTime;
 
@@ -99,7 +103,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
             rarity = binding.listShipItemRarity;
             grade = binding.listShipItemStars;
             shipClassImage = binding.listShipItemShipTypeImg;
-            strength = binding.listShipItemStrengthValue;
+            faction = binding.listShipItemFactionName;
             buildFrame = binding.listShipItemBuildFrame;
             buildTime = binding.listShipItemBuildButton;
 

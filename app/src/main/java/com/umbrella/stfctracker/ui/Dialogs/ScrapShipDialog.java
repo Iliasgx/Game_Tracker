@@ -15,6 +15,7 @@ import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.Database.Entities.Tier;
 import com.umbrella.stfctracker.Database.Models.BuiltShipRepository;
 import com.umbrella.stfctracker.R;
+import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.databinding.DialogShipScrapBinding;
 
@@ -35,13 +36,14 @@ public class ScrapShipDialog extends DialogFragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        CumulativeBonus cumulativeBonus = CumulativeBonus.getInstance();
+
         ScrapShipDialogArgs args = ScrapShipDialogArgs.fromBundle(requireArguments());
         BuiltShip builtShip = args.getBuiltShip();
         Tier.Level level = args.getSelectedItem();
 
-
         binding.dialogShipScrapSubtitle.setText(getString(R.string.scrapShip_subtitle, level.getLevel(), builtShip.getName()));
-        binding.dialogShipScrapScrap.setTime(level.getScrapInfo().getScrapTime());
+        binding.dialogShipScrapScrap.setTime(cumulativeBonus.applyBonus(level.getScrapInfo().getScrapTime(), cumulativeBonus.getShipScrapSpeedBonus()));
         binding.dialogShipScrapScrap.setUsable(builtShip.getScrapRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel());
 
         binding.dialogShipScrapCancel.setOnClickListener(v -> requireDialog().cancel());

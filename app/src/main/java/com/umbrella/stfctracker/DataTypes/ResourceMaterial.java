@@ -5,7 +5,6 @@ import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
 
 public final class ResourceMaterial {
-
     private int id;
     private Material material;
     private Rarity rarity;
@@ -39,7 +38,7 @@ public final class ResourceMaterial {
         this.value = value;
     }
 
-    //Uranium without grade
+    //Items without grade
     public ResourceMaterial(int id, Material material, Rarity rarity, long value) {
         this.id = id;
         this.material = material;
