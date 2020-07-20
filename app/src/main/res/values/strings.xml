@@ -7,6 +7,9 @@
     <string name="title_research">Research</string>
     <string name="title_buildings">Buildings</string>
     <string name="title_buildingLevels">%1$s Levels</string>
+    <string name="title_builtShips">My Built Ships</string>
+    <string name="title_ships">Ships</string>
+    <string name="title_shipDetails">Ship Details</string>
     <string name="title_scrapRewards">Scrap rewards</string>
 
     <string name="shipItem_strength">Strength</string>
@@ -85,7 +88,10 @@
     <string name="currentTier_selected">The current tier is already selected.</string>
     <string name="shipScrap_confirmation">%1$s is successfully scrapped.</string>
     <string name="shipScrap_notScrap_warning">%1$s can\'t be scrapped.</string>
+    <string name="shipScrap_confirmation_title">Scrapping %1$s</string>
+    <string name="shipScrap_confirmation_description">Are you sure you want to scrap your %1$s? This action cannot be undone.</string>
     <string name="builtShip_create_confirmation">The %1$s has successfully been build.</string>
 
     <string name="ship_faction">Faction</string>
+    <string name="ship_percentage">%1$s%%</string>
 </resources>

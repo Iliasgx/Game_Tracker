@@ -66,11 +66,11 @@ public class BuildShipDialog extends DialogFragment {
 
     private void setUpMainListener() {
         binding.dialogShipUpgradeTierUp.setOnClickListener(listener -> {
-            BuiltShip builtShip = (BuiltShip)ship;
+            BuiltShip builtShip = new BuiltShip(ship);
 
             DatabaseClient.dbWriteExecutor.execute(() -> {
                 DatabaseClient.getInstance(requireContext()).daoBuiltShip().insert(builtShip);
-                Toast.makeText(requireContext(), getString(R.string.builtShip_create_confirmation, ship.getName()), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(requireContext(), getString(R.string.builtShip_create_confirmation, ship.getName()), Toast.LENGTH_SHORT).show();
                 dismiss();
             });
         });

@@ -3,6 +3,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.LayoutDirection;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.umbrella.stfctracker.CustomComponents.InformationLabel;
 import com.umbrella.stfctracker.CustomComponents.ResourceAmount;
@@ -32,7 +35,9 @@ import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.Structures.TimeDisplay;
 import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.databinding.FragShipDetailsBinding;
+import com.umbrella.stfctracker.databinding.TierLevelBinding;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -87,49 +92,44 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         binding.fragShipDetailsAbilityName.setText(builtShip.getShipAbility());
         binding.fragShipDetailsTitleLayout.setBackgroundColor(getResources().getColor(builtShip.getRarity().getColorInner(), null));
         binding.fragShipDetailsTitleShipInfoLayout.setBackgroundColor(getResources().getColor(builtShip.getRarity().getColorBorder(), null));
+        binding.fragShipDetailsFactionName.setText(builtShip.getFaction().toString());
+
+        binding.fragShipDetailsLevelSeekBar.setMin(1);
+        binding.fragShipDetailsLevelSeekBar.setMax(5);
 
         //Ship can't be scrapped when it has no scrapping possibility OR when the opsLevel is not high enough
         binding.fragShipDetailsScrap.setUsable(builtShip.getRequiredOperationsLevel() != -1 && Data.getInstance().getOperationsLevel() >= builtShip.getScrapRequiredOperationsLevel());
 
         binding.fragShipDetailsLevelSeekBar.setOnSeekBarChangeListener(this);
 
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(binding.fragShipDetailsTierRecyclerView.getLayoutParams());
-        params.setLayoutDirection(LayoutDirection.LTR);
-        binding.fragShipDetailsTierRecyclerView.setLayoutParams(params);
-
-        TierAdapter adapter = new TierAdapter(requireContext(), builtShip.getTiers());
+        TierAdapter adapter = new TierAdapter();
         binding.fragShipDetailsTierRecyclerView.setAdapter(adapter);
-        binding.fragShipDetailsTierRecyclerView.setOnItemClickListener((parent, view, position, id) -> {
-            Tier selectedTier = builtShip.getTiers().get(position);
-
-            if (Objects.requireNonNull(observableTier.getValue()).equals(selectedTier)) {
-                Toast.makeText(requireContext(), getString(R.string.currentTier_selected), Toast.LENGTH_SHORT).show();
-                binding.fragShipDetailsTierRecyclerView.setSelection(position);
-            } else {
-                observableTier.setValue(builtShip.getTiers().get(position));
-            }
-        });
+        adapter.setTiers(builtShip.getTiers());
     }
 
     private void setUpObserver() {
         observableTier.observe(getViewLifecycleOwner(), tier -> {
             binding.fragShipDetailsShipInfo.setText(getString(R.string.shipDetails_shipInfo, builtShip.getRarity().toString(), tier.getTier()));
-            binding.fragShipDetailsLevelSeekBar.setMin(tier.getLevels().get(0).getLevel());
-            binding.fragShipDetailsLevelSeekBar.setMax(tier.getLevels().get(tier.getLevels().size() - 1).getLevel());
             binding.fragShipDetailsRepairSpeedTime.setText(new TimeDisplay(requireContext())
                     .getTime(cumulativeBonus.applyBonus(tier.getRepairTime(), cumulativeBonus.getShipRepairSpeedBonus(builtShip.getFaction(), builtShip.getShipClass()))));
+
+            binding.fragShipDetailsLevelSeekBar.setProgress(2);
+            binding.fragShipDetailsLevelSeekBar.setProgress(1);
 
             updateRepairCosts(tier);
         });
     }
 
+    // TODO: Show rippleColor when clicked
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-        Tier.Level level = Objects.requireNonNull(observableTier.getValue()).getLevels().get(progress);
+        Tier.Level level = Objects.requireNonNull(observableTier.getValue()).getLevels().get(progress - 1);
 
-        binding.fragShipDetailsLevel.setText(getString(R.string.currentLevel, progress));
+        binding.fragShipDetailsLevel.setText(getString(R.string.currentLevel, level.getLevel()));
         binding.fragShipDetailsXp.setText(getString(R.string.totalXP, level.getRequiredShipXP()));
-        binding.fragShipDetailsAbilityValue.setText(getString(R.string.percentage, level.getShipAbilityBonus()));
+
+        String temp = (level.getShipAbilityBonus() % 1 == 0) ? String.valueOf(Math.round(level.getShipAbilityBonus())) : String.valueOf(level.getShipAbilityBonus());
+        binding.fragShipDetailsAbilityValue.setText(getString(R.string.ship_percentage, temp));
     }
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {
@@ -144,7 +144,7 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         LinkedList<ResourceMaterial> popResources = new LinkedList<>();
 
         //The next tier if not last tier else @null
-        Tier nextTier = (builtShip.getCurrentTier() != builtShip.getTiers().size()) ? builtShip.getTiers().get(tier.getTier()) : null;
+        Tier nextTier = (tier.getTier() != builtShip.getTiers().size()) ? builtShip.getTiers().get(tier.getTier()) : null;
         //Get all components of the current tier
         List<Tier.Component> activeComponents = new LinkedList<>(tier.getComponents());
 
@@ -163,10 +163,9 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
                 }
             });
             //Items that are left are taken from the current tier.
-            activeComponents.forEach(activeComponent -> {
-                finalRss.addAll(activeComponent.getRepairCosts());
-                activeComponents.removeIf(c -> c.getName().equals(activeComponent.getName()));
-            });
+            activeComponents.forEach(activeComponent ->
+                finalRss.addAll(activeComponent.getRepairCosts())
+            );
             popResources = finalRss;
         }
 
@@ -188,26 +187,51 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         binding.fragShipDetailsRepairResources.setResources(sortedList);
     }
 
-    private static class TierAdapter extends ArrayAdapter<Tier> {
-        private Context mContext;
-        private List<Tier> items;
+    private class TierAdapter extends RecyclerView.Adapter<TierAdapter.CustomViewHolder> {
+        private TierLevelBinding tierBinding;
 
-        TierAdapter(@NonNull Context context, List<Tier> items) {
-            super(context, 0, items);
-            this.mContext = context;
-            this.items = items;
+        private LinkedList<Tier> tiers = new LinkedList<>();
+
+        public TierAdapter() {
         }
 
         @NonNull
         @Override
-        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-            if (convertView == null) convertView = LayoutInflater.from(mContext).inflate(R.layout.tier_level, parent, false);
+        public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            tierBinding = TierLevelBinding.inflate(LayoutInflater.from(requireContext()), parent, false);
+            return new CustomViewHolder(tierBinding.getRoot());
+        }
 
-            TextView titleView = convertView.requireViewById(R.id.tierLevel_level);
+        @Override
+        public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
+            holder.tierView.setText(String.valueOf(tiers.get(position).getTier()));
 
-            titleView.setText(items.get(position).getTier());
+            holder.itemView.setOnClickListener(v -> {
+                if (Objects.requireNonNull(observableTier.getValue()).equals(tiers.get(position))) {
+                    Toast.makeText(requireContext(), getString(R.string.currentTier_selected), Toast.LENGTH_SHORT).show();
+                } else {
+                    observableTier.setValue(builtShip.getTiers().get(position));
+                }
+            });
+        }
 
-            return convertView;
+        public void setTiers(LinkedList<Tier> tiers) {
+            this.tiers = tiers;
+            notifyDataSetChanged();
+        }
+
+        @Override
+        public int getItemCount() {
+            return tiers.size();
+        }
+
+        class CustomViewHolder extends RecyclerView.ViewHolder {
+            private TextView tierView;
+
+            public CustomViewHolder(@NonNull View itemView) {
+                super(itemView);
+                tierView = tierBinding.tierLevelLevel;
+            }
         }
     }
 

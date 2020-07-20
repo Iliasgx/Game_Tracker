@@ -24,6 +24,22 @@ public class BuiltShip extends Ship implements Serializable {
         this.currentTier = currentTier;
     }
 
+    @Ignore
+    public BuiltShip(Ship ship) {
+        super(ship.getName(),
+                ship.getRarity(),
+                ship.getGrade(),
+                ship.getShipClass(),
+                ship.getFaction(),
+                ship.getImage(),
+                ship.getBaseStrength(),
+                ship.getShipAbility(),
+                ship.getRequiredOperationsLevel(),
+                ship.getScrapRequiredOperationsLevel(),
+                ship.getTiers());
+        this.currentTier = 1;
+    }
+
     public int getCurrentTier() {
         return currentTier;
     }

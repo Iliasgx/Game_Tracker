@@ -6,10 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
+import android.view.animation.OvershootInterpolator;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.view.ViewCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
@@ -48,7 +50,7 @@ public class ShipFragment extends Fragment {
             if (tierDownActivated) {
                 tierDownActivated = false;
 
-                v.startAnimation(AnimationUtils.loadAnimation(requireContext(), R.anim.rotate_fab_back));
+                rotateFAB(v, -90f);
             } else {
                 Navigation.findNavController(requireView()).navigate(ShipFragmentDirections.shipsToAddShip());
             }
@@ -57,7 +59,7 @@ public class ShipFragment extends Fragment {
             if (!tierDownActivated) {
                 tierDownActivated = true;
 
-                v.startAnimation(AnimationUtils.loadAnimation(requireContext(), R.anim.rotate_fab));
+                rotateFAB(v, 45f);
             }
             return true;
         });
@@ -91,10 +93,22 @@ public class ShipFragment extends Fragment {
         //Ship doesn't hold in account if the opsLevel is high enough for scrapping. This is the case in the DetailFragment.
         //When a user doesn't want this ship to be here, he can use this screen to remove the ship without the requirements.
         ItemScrapListener scrapListener = builtShip -> {
-            if (builtShip.getScrapRequiredOperationsLevel() == -1) {
-                Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
-            } else {
-                mViewModel.onScrap(builtShip);
+            if (!tierDownActivated) {
+                if (builtShip.getScrapRequiredOperationsLevel() == -1) {
+                    Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
+                } else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+                    builder.setTitle(getString(R.string.shipScrap_confirmation_title, builtShip.getName()));
+                    builder.setMessage(getString(R.string.shipScrap_confirmation_description, builtShip.getName()));
+
+                    builder.setPositiveButton("YES", (((dialog, which) -> {
+                        mViewModel.onScrap(builtShip);
+                        Toast.makeText(requireContext(), getString(R.string.shipScrap_confirmation, builtShip.getName()), Toast.LENGTH_SHORT).show();
+                    })));
+                    builder.setNegativeButton("NO", (((dialog, which) -> dialog.cancel())));
+
+                    builder.create().show();
+                }
             }
         };
 
@@ -106,6 +120,16 @@ public class ShipFragment extends Fragment {
     private void setUpLiveData() {
         mViewModel.getAllBuiltShipsLive().observe(getViewLifecycleOwner(), builtShips ->
                 mAdapter.setBuiltShips(builtShips));
+    }
+
+    private void rotateFAB(View FAB, float degrees) {
+        OvershootInterpolator interpolator = new OvershootInterpolator();
+        ViewCompat.animate(FAB)
+                .rotation(degrees)
+                .withLayer()
+                .setDuration(500)
+                .setInterpolator(interpolator)
+                .start();
     }
 
     @Override

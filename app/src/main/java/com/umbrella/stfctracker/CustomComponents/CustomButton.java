@@ -78,6 +78,7 @@ public class CustomButton extends ConstraintLayout {
                     break;
             }
         }
+
         arr.recycle();
     }
 

@@ -19,6 +19,7 @@ import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.Entities.Ship;
 import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
+import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.Structures.TimeDisplay;
 import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.databinding.ListShipItemBinding;
@@ -55,7 +56,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
 
         holder.name.setText(ship.getName());
         holder.shipImage.setImageDrawable(DataFunctions.decodeDrawable(application.getResources(), ship.getImage()));
-        holder.tier.setText(application.getResources().getString(R.string.tierNumber, 1));
+        holder.tier.setVisibility(View.INVISIBLE);
         holder.rarity.setText(ship.getRarity().toString());
         holder.grade.setNumStars(ship.getGrade().ordinal());
         holder.grade.setRating(ship.getGrade().ordinal());
@@ -63,8 +64,8 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         holder.faction.setText(ship.getFaction().toString());
         holder.itemView.setLongClickable(true);
         holder.buildFrame.setVisibility(View.VISIBLE);
-        holder.buildTime.setTime(ship.getTiers().get(0).getBuildTime());
         holder.buildTime.setTime(cumulativeBonus.applyBonus(ship.getTiers().get(0).getBuildTime(), cumulativeBonus.getShipConstructionSpeedBonus()));
+        holder.buildTime.setUsable(ship.getRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel());
     }
 
     @Override
@@ -84,7 +85,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         void onBuildClick(Ship ship);
     }
 
-    class CustomViewHolder extends RecyclerView.ViewHolder{
+    class CustomViewHolder extends RecyclerView.ViewHolder {
         private TextView name;
         private ImageView shipImage;
         private TextView tier;
@@ -107,7 +108,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
             buildFrame = binding.listShipItemBuildFrame;
             buildTime = binding.listShipItemBuildButton;
 
-            buildFrame.setOnClickListener(v -> itemBuildListener.onBuildClick(ships.get(getAdapterPosition())));
+            buildTime.setOnClickListener(v -> itemBuildListener.onBuildClick(ships.get(getAdapterPosition())));
         }
     }
 }

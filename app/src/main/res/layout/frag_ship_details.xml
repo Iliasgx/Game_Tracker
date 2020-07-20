@@ -48,7 +48,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:paddingHorizontal="10dp"
-                android:paddingVertical="1dp"
+                android:paddingVertical="2dp"
                 tools:background="@color/rarity_greenBorder">
 
                 <TextView
@@ -93,7 +93,9 @@
         android:layout_height="match_parent"
         android:layout_below="@id/fragShipDetails_titleCardView"
         android:layout_above="@id/fragShipDetails_levelCardView"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="20dp"
+        android:paddingHorizontal="5dp"
         android:scaleType="fitCenter"
         android:src="@drawable/ship"
         tools:ignore="ContentDescription"/>
@@ -110,13 +112,14 @@
 
         <ImageView
             android:id="@+id/fragShipDetails_classImg"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_marginEnd="5dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
             android:scaleType="fitXY"
-            android:src="@drawable/battleship"
+            android:src="@drawable/shipclass_battleship"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -396,19 +399,7 @@
         android:textAllCaps="true"
         android:text="@string/tierSelector"/>
 
-    <ListView
-        android:id="@+id/fragShipDetails_tierRecyclerView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:layout_centerHorizontal="true"
-        android:scrollbars="none"
-        tools:listitem="@layout/tier_level"
-        tools:layout_height="40dp"/>
-
-    <!--<androidx.recyclerview.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/fragShipDetails_tierRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -420,5 +411,5 @@
         android:orientation="horizontal"
         android:scrollbars="none"
         tools:listitem="@layout/tier_level"
-        tools:itemCount="9"/>-->
+        tools:itemCount="9"/>
 </RelativeLayout>

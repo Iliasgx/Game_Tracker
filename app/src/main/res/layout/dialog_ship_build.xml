@@ -6,8 +6,7 @@
     android:id="@+id/dialogShipUpgrade_cardView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="@color/dialog_lightBackgroundMiddle"
-    app:cardCornerRadius="6dp">
+    app:cardBackgroundColor="@color/dialog_lightBackgroundMiddle">
 
     <RelativeLayout
         android:id="@+id/dialogShipUpgrade_layout"
@@ -53,6 +52,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_buildCosts"
                 android:layout_marginTop="5dp"
+                app:borderDrawable="@drawable/round_edge"
+                app:frameDrawable="@drawable/button_ripple"
                 app:title="@string/build"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </RelativeLayout>

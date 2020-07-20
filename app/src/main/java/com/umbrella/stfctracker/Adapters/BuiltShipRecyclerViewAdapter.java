@@ -59,6 +59,12 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
         holder.shipClassImage.setImageDrawable(application.getDrawable(builtShip.getShipClass().getImageId()));
         holder.faction.setText(builtShip.getFaction().toString());
         holder.itemView.setLongClickable(true);
+
+        holder.itemView.setOnClickListener(v -> itemPressedListener.onClick(builtShip));
+        holder.itemView.setOnLongClickListener(v -> {
+            itemScrapListener.onLongClick(builtShip);
+            return true;
+        });
     }
 
     @Override
@@ -99,7 +105,6 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
 
         public CustomViewHolder(@NonNull View itemView, ItemPressedListener itemPressedListener, ItemScrapListener itemScrapListener) {
             super(itemView);
-            BuiltShip builtShip = builtShips.get(getAdapterPosition());
 
             name = binding.listShipItemName;
             shipImage = binding.listShipItemShipImg;
@@ -108,12 +113,6 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
             grade = binding.listShipItemStars;
             shipClassImage = binding.listShipItemShipTypeImg;
             faction = binding.listShipItemFactionName;
-
-            itemView.setOnClickListener(v -> itemPressedListener.onClick(builtShip));
-            itemView.setOnLongClickListener(v -> {
-                itemScrapListener.onLongClick(builtShip);
-                return true;
-            });
         }
     }
 }

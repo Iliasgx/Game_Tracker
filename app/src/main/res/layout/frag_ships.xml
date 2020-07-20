@@ -19,16 +19,17 @@
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
         tools:listitem="@layout/list_ship_item"
-        tools:itemCount="20"/>
+        tools:itemCount="10"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fragShips_action"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        app:fabCustomSize="40dp"
+        app:fabSize="normal"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
+        android:scaleType="center"
         android:src="@drawable/add"
-        android:backgroundTint="@color/ship_fabColor"
-        android:elevation="10dp"
-        style="@style/Widget.Design.FloatingActionButton"/>
+        android:backgroundTint="@color/ship_fabColor"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

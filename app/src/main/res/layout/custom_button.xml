@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/customButton_layout"
     android:layout_width="match_parent"
-    android:layout_height="40dp"
+    android:layout_height="wrap_content"
     android:soundEffectsEnabled="false"
     tools:foreground="@drawable/round_edge">
 
@@ -28,8 +28,8 @@
         app:layout_constraintEnd_toStartOf="@id/customButton_time"
         app:layout_constraintStart_toStartOf="@id/customButton_layout"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="5dp"
         style="@style/defaultText"
         android:textAllCaps="true"
         android:textSize="20sp"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="@id/customButton_layout"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginEnd="10dp"
-        android:layout_marginVertical="5dp"
+        android:paddingVertical="5dp"
         style="@style/defaultText"
         android:textSize="20sp"
         tools:text="19m 14s" />

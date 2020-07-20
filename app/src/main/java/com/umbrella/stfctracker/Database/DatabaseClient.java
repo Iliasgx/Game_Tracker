@@ -43,8 +43,8 @@ public abstract class DatabaseClient extends RoomDatabase {
 
     public abstract DaoBuilding daoBuilding();
     public abstract DaoResearch daoResearch();
-    public abstract DaoShip daoShip();
     public abstract DaoBuiltShip daoBuiltShip();
+    public abstract DaoShip daoShip();
 
     public static DatabaseClient getInstance(final Context context) {
         if (mInstance == null) {

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/listShipItem_base"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/listShipItem_cardViewMain"
@@ -40,7 +41,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_above="@id/listShipItem_shipTypeImg"
                 android:layout_below="@id/listShipItem_name"
-                android:scaleType="center"
+                android:padding="5dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/ship"
                 tools:ignore="ContentDescription" />
 
@@ -72,15 +74,15 @@
 
             <ImageView
                 android:id="@+id/listShipItem_shipTypeImg"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="7dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/battleship"
+                android:src="@drawable/shipclass_battleship"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -137,7 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_toStartOf="@id/listShipItem_cardViewMain"
         android:layout_alignEnd="@id/listShipItem_cardViewMain"
-        android:layout_marginHorizontal="15dp"
+        android:layout_marginHorizontal="10dp"
         app:cardBackgroundColor="@color/borderBlue"
         app:cardCornerRadius="6dp">
 
@@ -185,8 +187,8 @@
         android:layout_alignStart="@id/listShipItem_cardViewMain"
         android:layout_alignEnd="@id/listShipItem_cardViewMain"
         android:layout_marginTop="-4.5dp"
-        android:layout_marginBottom="20dp"
         android:foreground="@drawable/round_edges_blue"
+        app:cardBackgroundColor="@color/empty_backgroundBorder"
         app:cardCornerRadius="9dp"
         android:visibility="gone"
         tools:visibility="visible">
@@ -194,14 +196,12 @@
         <com.umbrella.stfctracker.CustomComponents.CustomButton
             android:id="@+id/listShipItem_buildButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/dialogShipUpgrade_costCardView_layout"
-            android:soundEffectsEnabled="false"
+            android:layout_height="wrap_content"
             android:padding="2dp"
-            app:allTextSize="18sp"
+            app:allTextSize="16sp"
             app:frameDrawable="@drawable/button_ripple_red"
             app:borderDrawable="@drawable/round_edge_light_red"
+            app:usable="false"
             app:title="@string/build"/>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

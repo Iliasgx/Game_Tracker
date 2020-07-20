@@ -167,7 +167,7 @@
     <fragment
         android:id="@+id/shipFragment"
         android:name="com.umbrella.stfctracker.ui.ShipFragment"
-        android:label="ShipFragment"
+        android:label="@string/title_builtShips"
         tools:layout="@layout/frag_ships">
         <action
             android:id="@+id/shipsToAddShip"
@@ -183,7 +183,7 @@
     <fragment
         android:id="@+id/shipChooseDialog"
         android:name="com.umbrella.stfctracker.ui.Dialogs.ShipChooseDialog"
-        android:label="ShipChooseDialog"
+        android:label="@string/title_ships"
         tools:layout="@layout/dialog_ships_choices">
         <action
             android:id="@+id/addShipToBuild"
@@ -192,7 +192,7 @@
     <fragment
         android:id="@+id/shipDetailsFragment"
         android:name="com.umbrella.stfctracker.ui.ShipDetailsFragment"
-        android:label="ShipDetailsFragment"
+        android:label="@string/title_shipDetails"
         tools:layout="@layout/frag_ship_details">
         <action
             android:id="@+id/shipDetailsToUpgradeShip"
