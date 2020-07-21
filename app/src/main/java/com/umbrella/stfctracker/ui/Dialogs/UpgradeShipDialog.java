@@ -1,35 +1,33 @@
 package com.umbrella.stfctracker.ui.Dialogs;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.umbrella.stfctracker.CustomComponents.InformationLabel;
-import com.umbrella.stfctracker.CustomComponents.ResourceAmount;
-import com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
-import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.DatabaseClient;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.Database.Entities.Tier;
-import com.umbrella.stfctracker.Database.Models.BuiltShipViewModel;
 import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.databinding.DialogShipUpgradeBinding;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
@@ -42,6 +40,9 @@ public class UpgradeShipDialog extends DialogFragment {
     private BuiltShip builtShip;
     private MutableLiveData<Tier> observableTier;
 
+    private int selectedListPos = ListView.INVALID_POSITION;
+    private boolean observedTierIsLastTier;
+
     private ComponentAdapter adapter;
 
     public UpgradeShipDialog() {
@@ -51,6 +52,7 @@ public class UpgradeShipDialog extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = DialogShipUpgradeBinding.inflate(inflater, container, false);
+        Objects.requireNonNull(requireDialog().getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         return binding.getRoot();
     }
 
@@ -58,82 +60,109 @@ public class UpgradeShipDialog extends DialogFragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        adapter = new ComponentAdapter(requireContext(), new LinkedList<>());
-
         UpgradeShipDialogArgs args = UpgradeShipDialogArgs.fromBundle(requireArguments());
         builtShip = args.getBuiltShip();
-        observableTier = new MutableLiveData<>(args.getSelectedTier());
 
+        //Current tier that was selected is the last one on the list of tiers. Equal to the last tier.
+        observedTierIsLastTier = (args.getSelectedTier() == builtShip.getTiers().getLast());
+
+        //If selected tier is last one, observe the last tier, else show everything of next tier.
+        observableTier = new MutableLiveData<>(observedTierIsLastTier ? args.getSelectedTier() : builtShip.getTiers().get(args.getSelectedTier().getTier()));
+
+        binding.dialogShipUpgradeShipName.setText(builtShip.getName());
+        adapter = new ComponentAdapter(requireContext(), new LinkedList<>());
         binding.dialogShipUpgradeList.setAdapter(adapter);
 
         setUpListeners();
     }
 
     private void setUpListeners() {
-        observableTier.observe(getViewLifecycleOwner(), tier -> {
-            adapter.clear();
-            adapter.addAll(tier.getComponents());
-            adapter.notifyDataSetChanged();
-
-            if (Objects.requireNonNull(observableTier.getValue()).getComponents().stream().noneMatch(Tier.Component::isLocked)) {
-                //All components were max, the ship can only tier up.
-                binding.dialogShipUpgradeUp.setTitle(getString(R.string.tierUp));
-                binding.dialogShipUpgradeUp.setBorderDrawable(getResources().getDrawable(R.drawable.round_edge_light_red, null));
-                binding.dialogShipUpgradeUp.setFrameDrawable(getResources().getDrawable(R.drawable.button_ripple_red, null));
-                binding.dialogShipUpgradeUp.setTime(builtShip.getTiers().get(builtShip.getCurrentTier()).getBuildTime());
-                binding.dialogShipUpgradeUp.setShowTime(true);
-            } else {
-                if (binding.dialogShipUpgradeUp.isShowTime()) {
-                    //After a tier up the button has to be back to default.
-                    binding.dialogShipUpgradeUp.setTitle(getString(R.string.upgrade));
-                    binding.dialogShipUpgradeUp.setBorderDrawable(getResources().getDrawable(R.drawable.round_edge, null));
-                    binding.dialogShipUpgradeUp.setFrameDrawable(getResources().getDrawable(R.drawable.button_ripple, null));
-                    binding.dialogShipUpgradeUp.setShowTime(false);
-                }
-            }
-        });
-
         binding.dialogShipUpgradeList.setOnItemClickListener((parent, view, position, id) -> {
-            binding.dialogShipUpgradeCosts.setShowMaterials(position != -1);
-            binding.dialogShipUpgradeCosts.setShowResources(position != -1);
+            selectedListPos = position;
 
-            if (position == -1) {
-                binding.dialogShipUpgradeUp.setUsable(false);
-            } else {
-                //SetUp fields
+            if (!observedTierIsLastTier) {
                 Tier.Component component = Objects.requireNonNull(adapter.getItem(position));
 
+                //Set resources
                 LinkedList<ResourceMaterial> rss = new LinkedList<>(component.getResources());
                 rss.forEach(resourceMaterial -> resourceMaterial.setValue(cumulativeBonus
                         .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipCostEfficiencyBonus(builtShip.getFaction(), resourceMaterial.getMaterial()))));
                 binding.dialogShipUpgradeCosts.setResources(rss);
 
+                //Set materials
                 LinkedList<ResourceMaterial> mats = new LinkedList<>(component.getMaterials());
                 mats.forEach(resourceMaterial -> resourceMaterial.setValue(cumulativeBonus
                         .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipMaterialCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass(), resourceMaterial.getMaterial()))));
                 binding.dialogShipUpgradeCosts.setMaterials(mats);
 
                 if (Objects.requireNonNull(observableTier.getValue()).getComponents().stream().anyMatch(Tier.Component::isLocked)) {
+                    //If any component can still be upgraded.
                     binding.dialogShipUpgradeUp.setUsable(component.isLocked());
                 } else {
+                    //All components upgraded. Setting button usable to tier up.
                     binding.dialogShipUpgradeUp.setUsable(true);
                 }
             }
         });
 
-        binding.dialogShipUpgradeUp.setOnClickListener(listener -> {
-            if (Objects.requireNonNull(observableTier.getValue()).getComponents().stream().anyMatch(Tier.Component::isLocked)) {
-                //Not all components are leveled up. This means a component is being leveled up now.
-                builtShip.getTiers().get(builtShip.getCurrentTier() - 1).getComponents().get(binding.dialogShipUpgradeList.getSelectedItemPosition()).setLocked(false);
+        observableTier.observe(getViewLifecycleOwner(), tier -> {
+            adapter.clear();
+            adapter.addAll(tier.getComponents());
+
+            boolean usable = false;
+
+            if (observedTierIsLastTier) {
+                setButton(getString(R.string.max_level), R.drawable.round_edge_light_red, R.drawable.button_ripple_red, -1);
             } else {
-                //All components are maxed for the current Tier. This means the user wants to tier up now.
-                builtShip.setCurrentTier(builtShip.getCurrentTier() + 1);
+                //Observing next tier of current tier, only way any upgrade may happen.
+                if (tier.getTier() - 1 == builtShip.getCurrentTierId()) {
+                    usable = (selectedListPos != -1);
+                    //All components are unlocked. Ready to tier up.
+                    if (tier.getComponents().stream().noneMatch(Tier.Component::isLocked)) {
+                        setButton(getString(R.string.tierUp), R.drawable.round_edge_light_red, R.drawable.button_ripple_red, tier.getBuildTime());
+                    } else {
+                        //Not all components are unlocked.
+                        setButton(getString(R.string.upgrade), R.drawable.round_edge, R.drawable.button_ripple, -1);
+                    }
+                } else {
+                    //Observing other tiers, upgrade not possible.
+                    setButton(getString(R.string.upgrade), R.drawable.round_edge, R.drawable.button_ripple, -1);
+                }
             }
+            adapter.notifyDataSetChanged();
+            binding.dialogShipUpgradeUp.setUsable(usable);
+        });
+
+        binding.dialogShipUpgradeUp.setOnClickListener(listener -> {
+            if (Objects.requireNonNull(observableTier.getValue()).getComponents().stream().noneMatch(Tier.Component::isLocked)) {
+                //All components are unlocked. User wants to tier up.
+                builtShip.setCurrentTierId(builtShip.getCurrentTierId() + 1);
+
+                //Return selected position back to default;
+                selectedListPos = ListView.INVALID_POSITION;
+
+                //Remove costs because nothing is selected anymore.
+                binding.dialogShipUpgradeCosts.setMaterials(new LinkedList<>());
+                binding.dialogShipUpgradeCosts.setResources(new LinkedList<>());
+            } else {
+                //User wants to upgrade a component. Not all are unlocked yet.
+                builtShip.getNextTier().getComponents().get(selectedListPos).setLocked(false);
+            }
+            // TODO: Tier up gets NOT usable before clicking on an item again.
             DatabaseClient.dbWriteExecutor.execute(() -> {
                 DatabaseClient.getInstance(requireContext()).daoBuiltShip().update(builtShip);
-                observableTier.setValue(builtShip.getTiers().get(builtShip.getCurrentTier() - 1));
+                observableTier.postValue(builtShip.getNextTier());
+                requireActivity().runOnUiThread(() -> binding.dialogShipUpgradeUp.setUsable(false));
             });
         });
+    }
+
+    private void setButton(String title, int border, int frame, int time) {
+        binding.dialogShipUpgradeUp.setTitle(title);
+        binding.dialogShipUpgradeUp.setBorderDrawable(getResources().getDrawable(border, null));
+        binding.dialogShipUpgradeUp.setFrameDrawable(getResources().getDrawable(frame, null));
+        binding.dialogShipUpgradeUp.setTime((time != -1) ? time : 0);
+        binding.dialogShipUpgradeUp.setShowTime(time != -1);
     }
 
     class ComponentAdapter extends ArrayAdapter<Tier.Component> {
@@ -151,12 +180,22 @@ public class UpgradeShipDialog extends DialogFragment {
 
             Tier.Component component = components.get(position);
 
-            ((ImageView)convertView.requireViewById(R.id.listShipUpgradeItem_img)).setImageDrawable(getResources().getDrawable(component.getImage(), null));
+            ImageView img = (ImageView)convertView.requireViewById(R.id.listShipUpgradeItem_img);
+
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(img.getLayoutParams());
+            params.setMargins(dim(10), dim(1), dim(0), dim(1));
+            img.setLayoutParams(params);
+
+            img.setImageDrawable(getResources().getDrawable(component.getImage(), null));
             ((TextView)convertView.requireViewById(R.id.listShipUpgradeItem_name)).setText(component.getName().toString());
             convertView.requireViewById(R.id.listShipUpgradeItem_locked).setVisibility(component.isLocked() ? View.VISIBLE : View.INVISIBLE);
 
             return convertView;
         }
+    }
+
+    private int dim(int dp) {
+        return Float.valueOf(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics())).intValue();
     }
 
     @Override

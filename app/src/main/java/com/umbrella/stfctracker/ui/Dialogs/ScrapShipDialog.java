@@ -1,6 +1,9 @@
 package com.umbrella.stfctracker.ui.Dialogs;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +22,8 @@ import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.databinding.DialogShipScrapBinding;
 
+import java.util.Objects;
+
 public class ScrapShipDialog extends DialogFragment {
     private DialogShipScrapBinding binding;
 
@@ -29,6 +34,7 @@ public class ScrapShipDialog extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = DialogShipScrapBinding.inflate(inflater, container, false);
+        Objects.requireNonNull(requireDialog().getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         return binding.getRoot();
     }
 
@@ -44,19 +50,33 @@ public class ScrapShipDialog extends DialogFragment {
 
         binding.dialogShipScrapSubtitle.setText(getString(R.string.scrapShip_subtitle, level.getLevel(), builtShip.getName()));
         binding.dialogShipScrapScrap.setTime(cumulativeBonus.applyBonus(level.getScrapInfo().getScrapTime(), cumulativeBonus.getShipScrapSpeedBonus()));
-        binding.dialogShipScrapScrap.setUsable(builtShip.getScrapRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel());
+
+        boolean usable = (builtShip.getScrapRequiredOperationsLevel() != -1 &&
+                builtShip.getScrapRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel() &&
+                builtShip.getTiers().get(builtShip.getCurrentTierId()).getLevels().contains(level));
+
+        binding.dialogShipScrapScrap.setUsable(usable);
+        binding.dialogShipScrapScrap.setClickable(true);
 
         binding.dialogShipScrapCancel.setOnClickListener(v -> requireDialog().cancel());
         binding.dialogShipScrapScrap.setOnClickListener(v -> {
-            new BuiltShipRepository(requireActivity().getApplication()).scrap(builtShip);
-            Toast.makeText(requireContext(), getString(R.string.shipScrap_confirmation, builtShip.getName()), Toast.LENGTH_SHORT).show();
-            dismiss();
+            if (Data.getInstance().getOperationsLevel() < builtShip.getScrapRequiredOperationsLevel()) {
+                Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_ops_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
+            } else {
+                new BuiltShipRepository(requireActivity().getApplication()).scrap(builtShip);
+                Toast.makeText(requireContext(), getString(R.string.shipScrap_confirmation, builtShip.getName()), Toast.LENGTH_SHORT).show();
+                dismiss();
+            }
         });
 
-        ShipScrapRecyclerViewAdapter adapter = new ShipScrapRecyclerViewAdapter();
+        ShipScrapRecyclerViewAdapter adapter = new ShipScrapRecyclerViewAdapter(requireActivity().getApplication());
         binding.dialogShipScrapRewardRecyclerView.setAdapter(adapter);
         binding.dialogShipScrapRewardRecyclerView.setHasFixedSize(true);
         adapter.setRewards(level.getScrapInfo().getRewards());
+
+        if (level.getScrapInfo().getRewards().size() > 3) {
+            binding.dialogShipScrapRewardRecyclerView.getLayoutParams().height = Float.valueOf(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 300, getResources().getDisplayMetrics())).intValue();
+        }
     }
 
     @Override

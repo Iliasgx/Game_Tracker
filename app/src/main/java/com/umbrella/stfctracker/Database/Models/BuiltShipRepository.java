@@ -31,9 +31,9 @@ public class BuiltShipRepository {
     }
 
     void tierDown(BuiltShip builtShip) {
-        if (builtShip.getCurrentTier() == 1) return;
+        if (builtShip.getCurrentTierId() == 1) return;
 
-        builtShip.setCurrentTier(builtShip.getCurrentTier() - 1);
+        builtShip.setCurrentTierId(builtShip.getCurrentTierId() - 1);
 
         DatabaseClient.dbWriteExecutor.execute(() -> daoBuiltShip.tierDown(builtShip));
     }

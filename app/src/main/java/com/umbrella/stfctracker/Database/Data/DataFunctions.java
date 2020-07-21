@@ -36,7 +36,7 @@ public abstract class DataFunctions {
         return new LinkedList<>(new ArrayList<>(Arrays.asList(levels)));
     }
 
-    public List<Tier.Component> addComponents(Tier.Component... components) {
+    public LinkedList<Tier.Component> addComponents(Tier.Component... components) {
         return new LinkedList<>(new ArrayList<>(Arrays.asList(components)));
     }
 

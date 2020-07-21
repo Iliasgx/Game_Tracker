@@ -40,7 +40,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/dialogShipScrap_rewardRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
             android:layout_below="@id/dialogShipScrap_subtitle"
             android:paddingHorizontal="10dp"
             android:clipToPadding="false"
@@ -49,7 +50,8 @@
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="3"
             tools:listitem="@layout/custom_scrap_reward_item"
-            tools:itemCount="10"/>
+            tools:itemCount="10"
+            tools:layout_height="300dp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/dialogShipScrap_actionLayout"
@@ -67,6 +69,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/dialogShipScrap_scrap"
                 android:layout_marginEnd="5dp"
+                app:borderDrawable="@drawable/round_edge"
+                app:frameDrawable="@drawable/button_ripple"
                 app:title="@string/cancel"
                 app:showTime="false"
                 app:allTextSize="18sp"/>
@@ -80,7 +84,7 @@
                 app:layout_constraintStart_toEndOf="@id/dialogShipScrap_cancel"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="5dp"
-                app:allTextSize="18sp"
+                app:allTextSize="16sp"
                 app:title="@string/scrapShipButtonText"
                 app:borderDrawable="@drawable/round_edge_light_red"
                 app:frameDrawable="@drawable/button_ripple_red"/>

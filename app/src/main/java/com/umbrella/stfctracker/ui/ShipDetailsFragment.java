@@ -1,15 +1,14 @@
 package com.umbrella.stfctracker.ui;
-import android.content.Context;
-import android.graphics.drawable.Drawable;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ValueAnimator;
 import android.os.Bundle;
-import android.util.LayoutDirection;
-import android.util.Log;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,12 +18,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.umbrella.stfctracker.CustomComponents.InformationLabel;
-import com.umbrella.stfctracker.CustomComponents.ResourceAmount;
-import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
@@ -33,12 +28,10 @@ import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.Structures.TimeDisplay;
-import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.databinding.FragShipDetailsBinding;
 import com.umbrella.stfctracker.databinding.TierLevelBinding;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
@@ -51,6 +44,9 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
     private MutableLiveData<Tier> observableTier = new MutableLiveData<>();
 
     private CumulativeBonus cumulativeBonus = CumulativeBonus.getInstance();
+
+    private List<ValueAnimator> activeAnimators = new ArrayList<>();
+    private List<ValueAnimator> endingAnimators = new ArrayList<>();
 
     @Nullable
     @Override
@@ -65,7 +61,7 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
 
         ShipDetailsFragmentArgs args = ShipDetailsFragmentArgs.fromBundle(requireArguments());
         builtShip = args.getBuiltShip();
-        observableTier.setValue(builtShip.getTiers().get(builtShip.getCurrentTier() - 1));
+        observableTier.setValue(builtShip.getCurrentTier());
 
         fillBaseData(builtShip);
         setUpObserver();
@@ -73,13 +69,12 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         binding.fragShipDetailsComponents.setOnClickListener(v ->
                 Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToUpgradeShip(builtShip, Objects.requireNonNull(observableTier.getValue()))));
         binding.fragShipDetailsScrap.setOnClickListener(v -> {
-            Tier.Level currentLevel = Objects.requireNonNull(observableTier.getValue())
-                    .getLevels()
-                    .stream()
-                    .filter(level -> level.getLevel() == binding.fragShipDetailsLevelSeekBar.getProgress())
-                    .collect(Collectors.toList())
-                    .get(0);
-            Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToScrapShip(builtShip, currentLevel));
+            if (builtShip.getScrapRequiredOperationsLevel() == -1) {
+                Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
+            } else {
+                Tier.Level currentLevel = Objects.requireNonNull(observableTier.getValue()).getLevels().get(binding.fragShipDetailsLevelSeekBar.getProgress() - 1);
+                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToScrapShip(builtShip, currentLevel));
+            }
         });
     }
 
@@ -98,7 +93,9 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         binding.fragShipDetailsLevelSeekBar.setMax(5);
 
         //Ship can't be scrapped when it has no scrapping possibility OR when the opsLevel is not high enough
-        binding.fragShipDetailsScrap.setUsable(builtShip.getRequiredOperationsLevel() != -1 && Data.getInstance().getOperationsLevel() >= builtShip.getScrapRequiredOperationsLevel());
+        boolean usable = (builtShip.getScrapRequiredOperationsLevel() != -1 && Data.getInstance().getOperationsLevel() >= builtShip.getScrapRequiredOperationsLevel());
+        binding.fragShipDetailsScrap.setUsable(usable);
+        binding.fragShipDetailsScrap.setClickable(true);
 
         binding.fragShipDetailsLevelSeekBar.setOnSeekBarChangeListener(this);
 
@@ -116,11 +113,18 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
             binding.fragShipDetailsLevelSeekBar.setProgress(2);
             binding.fragShipDetailsLevelSeekBar.setProgress(1);
 
+            changeGradually(
+                    binding.fragShipDetailsShipInfo,
+                    binding.fragShipDetailsRepairSpeedTime,
+                    binding.fragShipDetailsAbilityValue,
+                    binding.fragShipDetailsLevel,
+                    binding.fragShipDetailsXp
+            );
+
             updateRepairCosts(tier);
         });
     }
 
-    // TODO: Show rippleColor when clicked
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         Tier.Level level = Objects.requireNonNull(observableTier.getValue()).getLevels().get(progress - 1);
@@ -187,10 +191,53 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         binding.fragShipDetailsRepairResources.setResources(sortedList);
     }
 
+    private void changeGradually(TextView... views) {
+        if (activeAnimators.size() == 0) {
+            int highlightColor = getResources().getColor(R.color.color_gold, null);
+            int duration = 1000;
+
+            for (TextView view : views) {
+                int fromColor = view.getCurrentTextColor();
+
+                ValueAnimator valueAnimatorToGold = ValueAnimator.ofInt(0, view.getText().length());
+                ValueAnimator valueAnimatorFromGold = ValueAnimator.ofInt(0, view.getText().length());
+
+                valueAnimatorToGold.setDuration(duration);
+                valueAnimatorFromGold.setDuration(duration);
+
+                valueAnimatorToGold.addUpdateListener(animation -> {
+                    SpannableString strSpan = new SpannableString(view.getText());
+                    strSpan.setSpan(new ForegroundColorSpan(highlightColor), 0, Integer.parseInt(animation.getAnimatedValue().toString()), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+                    view.setText(strSpan);
+                });
+
+                valueAnimatorFromGold.addUpdateListener(animation -> {
+                    SpannableString strSpan = new SpannableString(view.getText());
+                    strSpan.setSpan(new ForegroundColorSpan(fromColor), 0, Integer.parseInt(animation.getAnimatedValue().toString()), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+                    view.setText(strSpan);
+                });
+
+                valueAnimatorToGold.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        super.onAnimationEnd(animation);
+                        valueAnimatorFromGold.start();
+                    }
+                });
+
+                activeAnimators.add(valueAnimatorToGold);
+                endingAnimators.add(valueAnimatorFromGold);
+            }
+        }
+
+        activeAnimators.forEach(ValueAnimator::start);
+    }
+
     private class TierAdapter extends RecyclerView.Adapter<TierAdapter.CustomViewHolder> {
         private TierLevelBinding tierBinding;
 
         private LinkedList<Tier> tiers = new LinkedList<>();
+        private int selectedItem = 0;
 
         public TierAdapter() {
         }
@@ -206,11 +253,19 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
             holder.tierView.setText(String.valueOf(tiers.get(position).getTier()));
 
+            holder.tierView.setTextColor(getResources().getColor((position == selectedItem) ? R.color.color_gold : R.color.textColor_white, null));
+
             holder.itemView.setOnClickListener(v -> {
-                if (Objects.requireNonNull(observableTier.getValue()).equals(tiers.get(position))) {
-                    Toast.makeText(requireContext(), getString(R.string.currentTier_selected), Toast.LENGTH_SHORT).show();
-                } else {
+                if (!Objects.requireNonNull(observableTier.getValue()).equals(tiers.get(position))) {
+                    int temp = selectedItem;
+
+                    selectedItem = position;
+
+                    activeAnimators.forEach(ValueAnimator::cancel);
+                    endingAnimators.forEach(ValueAnimator::cancel);
                     observableTier.setValue(builtShip.getTiers().get(position));
+                    notifyItemChanged(temp);
+                    notifyItemChanged(selectedItem);
                 }
             });
         }
@@ -238,6 +293,8 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        activeAnimators.forEach(ValueAnimator::cancel);
+        endingAnimators.forEach(ValueAnimator::cancel);
         binding = null;
     }
 }

@@ -1,7 +1,6 @@
 package com.umbrella.stfctracker.Adapters;
 
 import android.app.Application;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,15 +9,11 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
 import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.R;
-import com.umbrella.stfctracker.Structures.TimeDisplay;
-import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.databinding.ListShipItemBinding;
 
 import java.util.ArrayList;
@@ -52,7 +47,7 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
 
         holder.name.setText(builtShip.getName());
         holder.shipImage.setImageDrawable(DataFunctions.decodeDrawable(application.getResources(), builtShip.getImage()));
-        holder.tier.setText(application.getResources().getString(R.string.tierNumber, builtShip.getCurrentTier()));
+        holder.tier.setText(application.getResources().getString(R.string.tierNumber, builtShip.getCurrentTierId()));
         holder.rarity.setText(builtShip.getRarity().toString());
         holder.grade.setNumStars(builtShip.getGrade().ordinal());
         holder.grade.setRating(builtShip.getGrade().ordinal());

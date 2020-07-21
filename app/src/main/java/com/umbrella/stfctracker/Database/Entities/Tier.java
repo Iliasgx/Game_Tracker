@@ -14,9 +14,9 @@ public class Tier implements Serializable {
     private int buildTime;
     private int repairTime;
     private LinkedList<Level> levels;
-    private List<Component> components;
+    private LinkedList<Component> components;
 
-    public Tier(int tier, int buildTime, int repairTime, LinkedList<Level> levels, List<Component> components) {
+    public Tier(int tier, int buildTime, int repairTime, LinkedList<Level> levels, LinkedList<Component> components) {
         this.tier = tier;
         this.buildTime = buildTime;
         this.repairTime = repairTime;
@@ -36,7 +36,7 @@ public class Tier implements Serializable {
     public LinkedList<Level> getLevels() {
         return levels;
     }
-    public List<Component> getComponents() {
+    public LinkedList<Component> getComponents() {
         return components;
     }
 
@@ -52,7 +52,7 @@ public class Tier implements Serializable {
     public void setLevels(LinkedList<Level> levels) {
         this.levels = levels;
     }
-    public void setComponents(List<Component> components) {
+    public void setComponents(LinkedList<Component> components) {
         this.components = components;
     }
 
@@ -104,9 +104,9 @@ public class Tier implements Serializable {
 
         public static class Scrap {
             private int scrapTime;
-            private List<ResourceMaterial> rewards;
+            private LinkedList<ResourceMaterial> rewards;
 
-            public Scrap(int scrapTime, List<ResourceMaterial> rewards) {
+            public Scrap(int scrapTime, LinkedList<ResourceMaterial> rewards) {
                 this.scrapTime = scrapTime;
                 this.rewards = rewards;
             }
@@ -114,14 +114,14 @@ public class Tier implements Serializable {
             public int getScrapTime() {
                 return scrapTime;
             }
-            public List<ResourceMaterial> getRewards() {
+            public LinkedList<ResourceMaterial> getRewards() {
                 return rewards;
             }
 
             public void setScrapTime(int scrapTime) {
                 this.scrapTime = scrapTime;
             }
-            public void setRewards(List<ResourceMaterial> rewards) {
+            public void setRewards(LinkedList<ResourceMaterial> rewards) {
                 this.rewards = rewards;
             }
         }
@@ -252,6 +252,19 @@ public class Tier implements Serializable {
 
             public int getImageId() {
                 return imageId;
+            }
+
+
+            @Override
+            public String toString() {
+                String[] temp = super.name().toLowerCase().split("_");
+
+                StringBuilder builder = new StringBuilder();
+                for(String psc : temp) {
+                    builder.append(psc.substring(0,1).toUpperCase()).append(psc.substring(1)).append(" ");
+                }
+
+                return builder.toString().trim();
             }
         }
     }

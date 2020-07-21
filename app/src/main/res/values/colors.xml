@@ -63,4 +63,5 @@
     <color name="ability_backgroundBorderColor">#D69C23</color>
     <color name="ability_backgroundColor">#9E412A</color>
     <color name="tickMarkTint">#238877</color>
+    <color name="color_gold">#ffd700</color>
 </resources>

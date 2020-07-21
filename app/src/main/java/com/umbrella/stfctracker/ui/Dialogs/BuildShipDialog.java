@@ -1,5 +1,7 @@
 package com.umbrella.stfctracker.ui.Dialogs;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +26,7 @@ import com.umbrella.stfctracker.databinding.DialogShipBuildBinding;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Objects;
 
 public class BuildShipDialog extends DialogFragment {
     private DialogShipBuildBinding binding;
@@ -39,6 +42,7 @@ public class BuildShipDialog extends DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = DialogShipBuildBinding.inflate(inflater, container, false);
+        Objects.requireNonNull(requireDialog().getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         return binding.getRoot();
     }
 

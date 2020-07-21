@@ -69,7 +69,7 @@
 
     <string name="add_ship_button">Add ship</string>
     <string name="rewardItem_amount">x%1$s</string>
-    <string name="scrapShipButtonText">Scrap ship</string>
+    <string name="scrapShipButtonText">Scrap</string>
     <string name="scrapShip_subtitle">[ %1$d ] %2$s</string>
     <string name="tierUp">Tier up</string>
     <string name="showRepairs">Show repair details</string>
@@ -80,14 +80,15 @@
     <string name="totalXP">%1$d XP</string>
     <string name="components">Components</string>
     <string name="shipDetails_shipInfo">%1$s - TIER %2$d</string>
+    <string name="max_level">Max level</string>
 
     <string name="ship_tierDown_confirmation_title">Tier %1$s down</string>
     <string name="ship_tierDown_confirmation_description">Are you sure you want to tier the %1$s down?</string>
     <string name="ship_tierDown_confirmation">%1$s has been tiered down.</string>
     <string name="ship_tierDown_warning">%1$s is on lowest tier.</string>
-    <string name="currentTier_selected">The current tier is already selected.</string>
     <string name="shipScrap_confirmation">%1$s is successfully scrapped.</string>
     <string name="shipScrap_notScrap_warning">%1$s can\'t be scrapped.</string>
+    <string name="shipScrap_notScrap_ops_warning">Your Operations level is not high enough to scrap the %1$s.</string>
     <string name="shipScrap_confirmation_title">Scrapping %1$s</string>
     <string name="shipScrap_confirmation_description">Are you sure you want to scrap your %1$s? This action cannot be undone.</string>
     <string name="builtShip_create_confirmation">The %1$s has successfully been build.</string>

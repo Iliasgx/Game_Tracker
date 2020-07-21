@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Toast;
 
@@ -70,7 +69,7 @@ public class ShipFragment extends Fragment {
 
         ItemPressedListener pressedListener = builtShip -> {
             if (tierDownActivated) {
-                if (builtShip.getCurrentTier() == 1) {
+                if (builtShip.getCurrentTierId() == 1) {
                     Toast.makeText(requireContext(), getString(R.string.ship_tierDown_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
                 } else {
                     AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());

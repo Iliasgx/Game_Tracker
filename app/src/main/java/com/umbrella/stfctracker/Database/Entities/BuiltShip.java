@@ -17,11 +17,11 @@ import java.util.LinkedList;
 public class BuiltShip extends Ship implements Serializable {
 
     @ColumnInfo(name = "current_tier")
-    private int currentTier;
+    private int currentTierId;
 
-    public BuiltShip(String name, Rarity rarity, Grade grade, ShipClass shipClass, Faction faction, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, int scrapRequiredOperationsLevel, LinkedList<Tier> tiers, int currentTier) {
+    public BuiltShip(String name, Rarity rarity, Grade grade, ShipClass shipClass, Faction faction, String image, int baseStrength, String shipAbility, int requiredOperationsLevel, int scrapRequiredOperationsLevel, LinkedList<Tier> tiers, int currentTierId) {
         super(name, rarity, grade, shipClass, faction, image, baseStrength, shipAbility, requiredOperationsLevel, scrapRequiredOperationsLevel, tiers);
-        this.currentTier = currentTier;
+        this.currentTierId = currentTierId;
     }
 
     @Ignore
@@ -37,14 +37,25 @@ public class BuiltShip extends Ship implements Serializable {
                 ship.getRequiredOperationsLevel(),
                 ship.getScrapRequiredOperationsLevel(),
                 ship.getTiers());
-        this.currentTier = 1;
+        this.currentTierId = 1;
     }
 
-    public int getCurrentTier() {
-        return currentTier;
+    public int getCurrentTierId() {
+        return currentTierId;
     }
 
-    public void setCurrentTier(int currentTier) {
-        this.currentTier = currentTier;
+    public void setCurrentTierId(int currentTier) {
+        this.currentTierId = currentTier;
     }
+
+    @Ignore
+    public Tier getCurrentTier() {
+        return getTiers().get(getCurrentTierId() - 1);
+    }
+
+    @Ignore
+    public Tier getNextTier() {
+        return getTiers().get(getCurrentTierId());
+    }
+
 }
