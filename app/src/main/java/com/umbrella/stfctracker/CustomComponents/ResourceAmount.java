@@ -36,7 +36,7 @@ public class ResourceAmount extends RelativeLayout {
             material = Material.values()[arr.getIndex(R.styleable.ResourceAmount_resourceType)];
 
             String mAmount = arr.getString(R.styleable.ResourceAmount_amount);
-            value = mAmount != null ? Long.parseLong(mAmount) : 0L;
+            value = (mAmount != null ? Long.parseLong(mAmount) : 0L);
         } catch (IndexOutOfBoundsException ignored) {
         } catch (Exception e) {
             e.printStackTrace();
@@ -46,10 +46,9 @@ public class ResourceAmount extends RelativeLayout {
 
         initComponents();
 
-        if (isNeeded) {
-            setValue(value);
-            setMaterial(material);
-        }
+        setNeeded(true);
+        setValue(value);
+        setMaterial(material);
     }
 
     private void initComponents() {

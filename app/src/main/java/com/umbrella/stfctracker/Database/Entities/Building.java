@@ -12,7 +12,7 @@ import java.io.Serializable;
 import java.util.LinkedList;
 
 @Entity(tableName = "building")
-public class Building implements Serializable, Comparable {
+public class Building implements Serializable, Comparable<Group> {
 
     @PrimaryKey(autoGenerate = true)
     private long id;
@@ -90,26 +90,12 @@ public class Building implements Serializable, Comparable {
 
     @Ignore
     public static Building createEmptyBuilding(Group group) {
-        return new Building(getGroupsName(group), group, 0, null, null, new LinkedList<>());
-    }
-
-    @Ignore
-    public static String getGroupsName(Group grp) {
-        String[] stringSets = grp.name().split("_");
-
-        StringBuilder builder = new StringBuilder();
-        for (String set : stringSets) {
-            if (!set.equalsIgnoreCase(stringSets[0])) builder.append(" ");
-
-            builder.append(set.substring(0,1).toUpperCase());
-            builder.append(set.substring(1).toLowerCase());
-        }
-
-        return builder.toString();
+        return new Building(group.toString(), group, 0, null, null, new LinkedList<>());
     }
 
     @Override
-    public int compareTo(Object a) {
-        return this.getGroup().compareTo(((Building)a).getGroup());
+    public int compareTo(Group a) {
+        return this.getGroup().compareTo(a);
     }
+
 }

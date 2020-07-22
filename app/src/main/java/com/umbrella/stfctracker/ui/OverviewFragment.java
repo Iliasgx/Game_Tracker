@@ -132,6 +132,7 @@ public class OverviewFragment extends Fragment {
         return new TimeDisplay(requireContext()).getTime(Long.valueOf(cumulativeBonus.applyBonus(time, bonus)).intValue());
     }
 
+    // TODO: ValueIndicator?
     private void changeResource(TextView view, Long rss, boolean isBuilding) {
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.ITALIAN);
         symbols.setGroupingSeparator(' ');

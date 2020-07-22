@@ -83,7 +83,7 @@ public class StarbaseFragment extends Fragment {
             mBuildingViewModel.setCurrentGroup(group);
             changeToOtherList(true);
             binding.fragStarbaseReturnLayout.setVisibility(View.VISIBLE);
-            binding.fragStarbaseSublistTitle.setText(Building.getGroupsName(group));
+            binding.fragStarbaseSublistTitle.setText(group.toString());
         };
 
         adapter = new StarbaseRecyclerViewAdapter(getResources(), l1, l2, l3);

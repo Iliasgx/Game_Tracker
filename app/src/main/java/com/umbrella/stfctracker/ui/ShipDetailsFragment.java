@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,6 +27,7 @@ import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.Database.Entities.Tier;
+import com.umbrella.stfctracker.Database.Models.BuiltShipViewModel;
 import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
@@ -39,6 +43,8 @@ import java.util.stream.Collectors;
 
 public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarChangeListener {
     private FragShipDetailsBinding binding;
+
+    private BuiltShipViewModel vm;
 
     private BuiltShip builtShip;
     private MutableLiveData<Tier> observableTier = new MutableLiveData<>();
@@ -63,19 +69,10 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         builtShip = args.getBuiltShip();
         observableTier.setValue(builtShip.getCurrentTier());
 
+        vm = new ViewModelProvider(this).get(BuiltShipViewModel.class);
+
         fillBaseData(builtShip);
         setUpObserver();
-
-        binding.fragShipDetailsComponents.setOnClickListener(v ->
-                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToUpgradeShip(builtShip, Objects.requireNonNull(observableTier.getValue()))));
-        binding.fragShipDetailsScrap.setOnClickListener(v -> {
-            if (builtShip.getScrapRequiredOperationsLevel() == -1) {
-                Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
-            } else {
-                Tier.Level currentLevel = Objects.requireNonNull(observableTier.getValue()).getLevels().get(binding.fragShipDetailsLevelSeekBar.getProgress() - 1);
-                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToScrapShip(builtShip, currentLevel));
-            }
-        });
     }
 
     private void fillBaseData(BuiltShip builtShip) {
@@ -105,6 +102,11 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
     }
 
     private void setUpObserver() {
+        vm.getShipById(builtShip.getId()).observe(getViewLifecycleOwner(), updatedShip -> {
+            this.builtShip = updatedShip;
+            Objects.requireNonNull(binding.fragShipDetailsTierRecyclerView.findViewHolderForAdapterPosition(updatedShip.getCurrentTierId() - 1)).itemView.performClick();
+        });
+
         observableTier.observe(getViewLifecycleOwner(), tier -> {
             binding.fragShipDetailsShipInfo.setText(getString(R.string.shipDetails_shipInfo, builtShip.getRarity().toString(), tier.getTier()));
             binding.fragShipDetailsRepairSpeedTime.setText(new TimeDisplay(requireContext())
@@ -122,6 +124,17 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
             );
 
             updateRepairCosts(tier);
+        });
+
+        binding.fragShipDetailsComponents.setOnClickListener(v ->
+                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToUpgradeShip(builtShip, Objects.requireNonNull(observableTier.getValue()).getTier())));
+        binding.fragShipDetailsScrap.setOnClickListener(v -> {
+            if (builtShip.getScrapRequiredOperationsLevel() == -1) {
+                Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
+            } else {
+                Tier.Level currentLevel = Objects.requireNonNull(observableTier.getValue()).getLevels().get(binding.fragShipDetailsLevelSeekBar.getProgress() - 1);
+                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToScrapShip(builtShip, currentLevel));
+            }
         });
     }
 
@@ -145,37 +158,31 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
     }
 
     private void updateRepairCosts(Tier tier) {
-        LinkedList<ResourceMaterial> popResources = new LinkedList<>();
+        LinkedList<ResourceMaterial> tempRss = new LinkedList<>();
 
         //The next tier if not last tier else @null
         Tier nextTier = (tier.getTier() != builtShip.getTiers().size()) ? builtShip.getTiers().get(tier.getTier()) : null;
         //Get all components of the current tier
         List<Tier.Component> activeComponents = new LinkedList<>(tier.getComponents());
 
-        //If no next tier, all repairCosts come from the current tier components.
-        if (nextTier == null) {
-            LinkedList<ResourceMaterial> finalPopResources = popResources;
-            activeComponents.forEach(component -> finalPopResources.addAll(component.getRepairCosts()));
-            popResources = finalPopResources;
-        } else {
-            //Next tier, repairCosts taken from components that are unlocked of the next tier.
-            LinkedList<ResourceMaterial> finalRss = popResources;
+        //Current tier is not last, resources should also be taken from next tier if unlocked.
+        if (nextTier != null) {
             nextTier.getComponents().forEach(component -> {
                 if (!component.isLocked()) {
-                    finalRss.addAll(component.getRepairCosts());
+                    tempRss.addAll(component.getRepairCosts());
                     activeComponents.removeIf(c -> c.getName().equals(component.getName()));
                 }
             });
-            //Items that are left are taken from the current tier.
-            activeComponents.forEach(activeComponent ->
-                finalRss.addAll(activeComponent.getRepairCosts())
-            );
-            popResources = finalRss;
         }
 
+        //If last tier or not all components of next tier are unlocked, take currentTier components into account.
+        activeComponents.forEach(activeComponent -> {
+            tempRss.addAll(activeComponent.getRepairCosts());
+    });
+
         LinkedList<ResourceMaterial> sortedList = new LinkedList<>();
-        while (!popResources.isEmpty()) {
-            ResourceMaterial mat = popResources.pop();
+        while (!tempRss.isEmpty()) {
+            ResourceMaterial mat = tempRss.pop();
 
             if (sortedList.stream().anyMatch(item -> item.getMaterial().equals(mat.getMaterial()))) {
                 ResourceMaterial src = sortedList.stream().filter(item -> item.getMaterial().equals(mat.getMaterial())).collect(Collectors.toList()).get(0);
@@ -186,7 +193,8 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         }
 
         sortedList.forEach(resourceMaterial -> resourceMaterial.setValue(cumulativeBonus
-                .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipRepairCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass()))));
+                .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipRepairCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass())))
+        );
 
         binding.fragShipDetailsRepairResources.setResources(sortedList);
     }
@@ -206,15 +214,23 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
                 valueAnimatorFromGold.setDuration(duration);
 
                 valueAnimatorToGold.addUpdateListener(animation -> {
-                    SpannableString strSpan = new SpannableString(view.getText());
-                    strSpan.setSpan(new ForegroundColorSpan(highlightColor), 0, Integer.parseInt(animation.getAnimatedValue().toString()), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-                    view.setText(strSpan);
+                    try {
+                        SpannableString strSpan = new SpannableString(view.getText());
+                        strSpan.setSpan(new ForegroundColorSpan(highlightColor), 0, Integer.parseInt(animation.getAnimatedValue().toString()), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+                        view.setText(strSpan);
+                    } catch (IndexOutOfBoundsException e) {
+                        animation.cancel();
+                    }
                 });
 
                 valueAnimatorFromGold.addUpdateListener(animation -> {
-                    SpannableString strSpan = new SpannableString(view.getText());
-                    strSpan.setSpan(new ForegroundColorSpan(fromColor), 0, Integer.parseInt(animation.getAnimatedValue().toString()), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-                    view.setText(strSpan);
+                    try {
+                        SpannableString strSpan = new SpannableString(view.getText());
+                        strSpan.setSpan(new ForegroundColorSpan(fromColor), 0, Integer.parseInt(animation.getAnimatedValue().toString()), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+                        view.setText(strSpan);
+                    } catch (IndexOutOfBoundsException e) {
+                        animation.cancel();
+                    }
                 });
 
                 valueAnimatorToGold.addListener(new AnimatorListenerAdapter() {
@@ -246,6 +262,7 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         @Override
         public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             tierBinding = TierLevelBinding.inflate(LayoutInflater.from(requireContext()), parent, false);
+            selectedItem = Objects.requireNonNull(observableTier.getValue()).getTier() - 1;
             return new CustomViewHolder(tierBinding.getRoot());
         }
 

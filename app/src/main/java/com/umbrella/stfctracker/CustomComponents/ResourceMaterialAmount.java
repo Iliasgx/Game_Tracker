@@ -135,7 +135,7 @@ public class ResourceMaterialAmount extends RelativeLayout {
 
     public void setNeeded(boolean needed) {
         isNeeded = needed;
-        setVisibility(needed ? VISIBLE : INVISIBLE);
+        setVisibility(needed ? VISIBLE : GONE);
     }
 
     public void setIsBackgroundVisible(boolean isBackgroundVisible) {

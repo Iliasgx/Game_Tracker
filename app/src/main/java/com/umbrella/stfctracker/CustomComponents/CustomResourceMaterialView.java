@@ -155,7 +155,9 @@ public class CustomResourceMaterialView extends RelativeLayout {
             item.setValue(resourceMaterial.getValue());
         });
 
-        pops.forEach(item -> item.setNeeded(false));
+        if (numOfResources == NumOfResources.LIVE_ADAPTING) {
+            pops.forEach(item -> item.setNeeded(false));
+        }
     }
 
     public void setMaterials(@Size(max = 4) LinkedList<ResourceMaterial> materials) {

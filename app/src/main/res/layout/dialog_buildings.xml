@@ -111,7 +111,7 @@
             android:clickable="false"
             tools:listitem="@layout/list_building_bonus_item" />
 
-        <RelativeLayout
+        <!--<RelativeLayout
             android:id="@+id/dialogBuildings_materialLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -203,17 +203,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="2.5dp"/>
-        </LinearLayout>
+        </LinearLayout>-->
+
+        <com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView
+            android:id="@+id/dialogBuildings_costs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/dialogBuildings_listView"
+            app:materialDisplayType="TWO"
+            tools:numOfResources="THREE"/>
 
         <com.umbrella.stfctracker.CustomComponents.CustomButton
             android:id="@+id/dialogBuildings_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_below="@id/dialogBuildings_linearLayoutAmounts"
+            android:layout_below="@id/dialogBuildings_costs"
             android:layout_marginVertical="10dp"
             android:layout_marginHorizontal="15dp"
-            android:soundEffectsEnabled="false"
+            app:borderDrawable="@drawable/round_edge"
+            app:frameDrawable="@drawable/button_ripple"
             app:title="@string/upgrade"/>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

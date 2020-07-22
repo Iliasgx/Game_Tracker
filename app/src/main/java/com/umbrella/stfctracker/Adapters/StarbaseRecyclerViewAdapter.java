@@ -63,7 +63,7 @@ public class StarbaseRecyclerViewAdapter extends RecyclerView.Adapter<StarbaseRe
 
             holder.upgrade.setVisibility(canGoNextLevel ? View.VISIBLE : View.INVISIBLE);
         } else {
-            holder.name.setText(Building.getGroupsName(building.getGroup()));
+            holder.name.setText(building.getGroup().toString());
             holder.level.setVisibility(View.GONE);
             holder.upgrade.setVisibility(View.INVISIBLE);
             holder.innerList.setVisibility(View.VISIBLE);

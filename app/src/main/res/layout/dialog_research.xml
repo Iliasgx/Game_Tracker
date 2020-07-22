@@ -189,7 +189,16 @@
                         android:padding="10dp"
                         android:background="@drawable/dialog_background_gradient">
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
+                        <com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView
+                            android:id="@+id/dialogResearch_costs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            tools:numOfResources="TWO"/>
+
+                        <!--<androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/dialogResearch_resourceLayout"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -314,17 +323,19 @@
                             android:layout_below="@id/dialogResearch_resourceLayout"
                             android:layout_alignParentEnd="true"
                             android:layout_marginStart="-3dp"
-                            android:layout_marginTop="5dp" />
+                            android:layout_marginTop="5dp" />-->
 
                         <com.umbrella.stfctracker.CustomComponents.CustomButton
                             android:id="@+id/dialogResearch_startButton"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/dialogResearch_AmountA"
-                            android:layout_alignStart="@id/dialogResearch_resourceLayout"
-                            android:layout_alignEnd="@id/dialogResearch_resourceLayout"
+                            android:layout_below="@id/dialogResearch_costs"
+                            android:layout_alignStart="@id/dialogResearch_costs"
+                            android:layout_alignEnd="@id/dialogResearch_costs"
                             android:soundEffectsEnabled="false"
                             android:layout_marginTop="10dp"
+                            app:borderDrawable="@drawable/round_edge"
+                            app:frameDrawable="@drawable/button_ripple"
                             app:title="@string/start"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>

@@ -235,6 +235,6 @@
             app:argType="com.umbrella.stfctracker.Database.Entities.BuiltShip" />
         <argument
             android:name="selectedTier"
-            app:argType="com.umbrella.stfctracker.Database.Entities.Tier" />
+            app:argType="integer" />
     </dialog>
 </navigation>

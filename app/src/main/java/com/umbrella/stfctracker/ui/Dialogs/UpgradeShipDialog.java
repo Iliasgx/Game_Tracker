@@ -19,6 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.MutableLiveData;
+import androidx.navigation.Navigation;
 
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.DatabaseClient;
@@ -42,6 +43,7 @@ public class UpgradeShipDialog extends DialogFragment {
 
     private int selectedListPos = ListView.INVALID_POSITION;
     private boolean observedTierIsLastTier;
+    private boolean isCurrentTier = true;
 
     private ComponentAdapter adapter;
 
@@ -64,12 +66,14 @@ public class UpgradeShipDialog extends DialogFragment {
         builtShip = args.getBuiltShip();
 
         //Current tier that was selected is the last one on the list of tiers. Equal to the last tier.
-        observedTierIsLastTier = (args.getSelectedTier() == builtShip.getTiers().getLast());
+        observedTierIsLastTier = (args.getSelectedTier() == builtShip.getTiers().getLast().getTier());
+
+        isCurrentTier = builtShip.getCurrentTierId() == args.getSelectedTier();
 
         //If selected tier is last one, observe the last tier, else show everything of next tier.
-        observableTier = new MutableLiveData<>(observedTierIsLastTier ? args.getSelectedTier() : builtShip.getTiers().get(args.getSelectedTier().getTier()));
+        observableTier = new MutableLiveData<>(builtShip.getTiers().get(observedTierIsLastTier ? args.getSelectedTier() - 1 : args.getSelectedTier()));
 
-        binding.dialogShipUpgradeShipName.setText(builtShip.getName());
+        binding.dialogShipUpgradeShipName.setText(getString(R.string.scrapShip_subtitle, args.getSelectedTier(), builtShip.getName()));
         adapter = new ComponentAdapter(requireContext(), new LinkedList<>());
         binding.dialogShipUpgradeList.setAdapter(adapter);
 
@@ -97,10 +101,10 @@ public class UpgradeShipDialog extends DialogFragment {
 
                 if (Objects.requireNonNull(observableTier.getValue()).getComponents().stream().anyMatch(Tier.Component::isLocked)) {
                     //If any component can still be upgraded.
-                    binding.dialogShipUpgradeUp.setUsable(component.isLocked());
+                    binding.dialogShipUpgradeUp.setUsable(component.isLocked() && isCurrentTier);
                 } else {
                     //All components upgraded. Setting button usable to tier up.
-                    binding.dialogShipUpgradeUp.setUsable(true);
+                    binding.dialogShipUpgradeUp.setUsable(isCurrentTier);
                 }
             }
         });
@@ -109,16 +113,16 @@ public class UpgradeShipDialog extends DialogFragment {
             adapter.clear();
             adapter.addAll(tier.getComponents());
 
-            boolean usable = false;
+            boolean isUsable = false;
 
             if (observedTierIsLastTier) {
                 setButton(getString(R.string.max_level), R.drawable.round_edge_light_red, R.drawable.button_ripple_red, -1);
             } else {
                 //Observing next tier of current tier, only way any upgrade may happen.
-                if (tier.getTier() - 1 == builtShip.getCurrentTierId()) {
-                    usable = (selectedListPos != -1);
+                if (isCurrentTier) {
                     //All components are unlocked. Ready to tier up.
                     if (tier.getComponents().stream().noneMatch(Tier.Component::isLocked)) {
+                        isUsable = true;
                         setButton(getString(R.string.tierUp), R.drawable.round_edge_light_red, R.drawable.button_ripple_red, tier.getBuildTime());
                     } else {
                         //Not all components are unlocked.
@@ -130,7 +134,7 @@ public class UpgradeShipDialog extends DialogFragment {
                 }
             }
             adapter.notifyDataSetChanged();
-            binding.dialogShipUpgradeUp.setUsable(usable);
+            binding.dialogShipUpgradeUp.setUsable(isUsable);
         });
 
         binding.dialogShipUpgradeUp.setOnClickListener(listener -> {
@@ -138,21 +142,30 @@ public class UpgradeShipDialog extends DialogFragment {
                 //All components are unlocked. User wants to tier up.
                 builtShip.setCurrentTierId(builtShip.getCurrentTierId() + 1);
 
-                //Return selected position back to default;
-                selectedListPos = ListView.INVALID_POSITION;
+                //Check if new tier is the last one.
+                observedTierIsLastTier = (builtShip.getCurrentTier() == builtShip.getTiers().getLast());
 
-                //Remove costs because nothing is selected anymore.
-                binding.dialogShipUpgradeCosts.setMaterials(new LinkedList<>());
-                binding.dialogShipUpgradeCosts.setResources(new LinkedList<>());
+                //Update tier in title
+                binding.dialogShipUpgradeShipName.setText(getString(R.string.scrapShip_subtitle, builtShip.getCurrentTierId(), builtShip.getName()));
+
+                //Notify ParentFragment that ship has been tiered up and should be updated.
+                //Objects.requireNonNull(Navigation.findNavController(requireParentFragment().requireView()).getPreviousBackStackEntry()).getSavedStateHandle().set("update", "true");
             } else {
                 //User wants to upgrade a component. Not all are unlocked yet.
                 builtShip.getNextTier().getComponents().get(selectedListPos).setLocked(false);
             }
-            // TODO: Tier up gets NOT usable before clicking on an item again.
+
+            //Return selected position back to default;
+            selectedListPos = ListView.INVALID_POSITION;
+
+            //Remove costs because nothing is selected anymore.
+            binding.dialogShipUpgradeCosts.setMaterials(new LinkedList<>());
+            binding.dialogShipUpgradeCosts.setResources(new LinkedList<>());
+
             DatabaseClient.dbWriteExecutor.execute(() -> {
                 DatabaseClient.getInstance(requireContext()).daoBuiltShip().update(builtShip);
-                observableTier.postValue(builtShip.getNextTier());
-                requireActivity().runOnUiThread(() -> binding.dialogShipUpgradeUp.setUsable(false));
+
+                observableTier.postValue(observedTierIsLastTier ? builtShip.getCurrentTier() : builtShip.getNextTier());
             });
         });
     }

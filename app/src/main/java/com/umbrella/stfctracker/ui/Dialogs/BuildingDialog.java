@@ -109,10 +109,9 @@ public class BuildingDialog extends DialogFragment {
     private void setUpObserver() {
         observeBuilding.observe(getViewLifecycleOwner(), building -> {
             //Get all views of @{ResourceMaterialAmount, ResourceAmount}
-            LinkedList<ResourceMaterialAmount> rma = new LinkedList<>(Arrays.asList(binding.dialogBuildingsMaterialA, binding.dialogBuildingsMaterialB));
-            LinkedList<ResourceAmount> ra = new LinkedList<>(Arrays.asList(binding.dialogBuildingsAmountA, binding.dialogBuildingsAmountB, binding.dialogBuildingsAmountC));
+            LinkedList<ResourceMaterialAmount> rma = new LinkedList<>();//Arrays.asList(binding.dialogBuildingsMaterialA, binding.dialogBuildingsMaterialB));
+            LinkedList<ResourceAmount> ra = new LinkedList<>();//Arrays.asList(binding.dialogBuildingsAmountA, binding.dialogBuildingsAmountB, binding.dialogBuildingsAmountC));
 
-            //boolean isLastOne = (building.getUnlockedLevel() == building.getLevels().size());
             boolean isLastOne = (level.getLevel() == building.getLevels().size());
 
             binding.dialogBuildingsButton.setClickable(isUpgradeable);
@@ -192,7 +191,7 @@ public class BuildingDialog extends DialogFragment {
             private int bonus;
 
             BonusItem(BonusType title, int bonus) {
-                this.title = getBonusName(title);
+                this.title = title.toString();
                 this.bonus = bonus;
             }
 
@@ -202,20 +201,6 @@ public class BuildingDialog extends DialogFragment {
 
             String getBonus() {
                 return String.valueOf(bonus);
-            }
-
-            private String getBonusName(BonusType grp) {
-                String[] stringSets = grp.name().split("_");
-
-                StringBuilder builder = new StringBuilder();
-                for (String set : stringSets) {
-                    if (!set.equalsIgnoreCase(stringSets[0])) builder.append(" ");
-
-                    builder.append(set.substring(0, 1).toUpperCase());
-                    builder.append(set.substring(1).toLowerCase());
-                }
-
-                return builder.toString();
             }
         }
 

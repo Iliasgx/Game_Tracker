@@ -254,7 +254,6 @@ public class Tier implements Serializable {
                 return imageId;
             }
 
-
             @Override
             public String toString() {
                 String[] temp = super.name().toLowerCase().split("_");
