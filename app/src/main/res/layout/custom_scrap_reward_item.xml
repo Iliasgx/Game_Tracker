@@ -66,6 +66,8 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             android:layout_marginBottom="5dp"
                             android:layout_margin="10dp"
+                            android:padding="5dp"
+                            android:scaleType="fitXY"
                             tools:ignore="ContentDescription"
                             tools:src="@drawable/gas" />
 

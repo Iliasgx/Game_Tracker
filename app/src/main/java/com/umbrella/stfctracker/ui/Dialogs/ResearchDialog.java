@@ -11,9 +11,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.MutableLiveData;
 
+import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
 import com.umbrella.stfctracker.CustomComponents.InformationLabel;
 import com.umbrella.stfctracker.CustomComponents.ResourceAmount;
 import com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount;
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.DatabaseClient;
@@ -26,6 +28,7 @@ import com.umbrella.stfctracker.Structures.TimeDisplay;
 import com.umbrella.stfctracker.databinding.DialogResearchBinding;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Objects;
 
@@ -119,10 +122,6 @@ public class ResearchDialog extends DialogFragment {
 
     private void setUpObservers() {
         observableLevel.observe(getViewLifecycleOwner(), level -> {
-            //Get all views of @{ResourceMaterialAmount, ResourceAmount}
-            LinkedList<ResourceMaterialAmount> rma = new LinkedList<>(Arrays.asList(binding.dialogResearchMaterialA, binding.dialogResearchMaterialB, binding.dialogResearchMaterialC, binding.dialogResearchMaterialD));
-            LinkedList<ResourceAmount> ra = new LinkedList<>(Arrays.asList(binding.dialogResearchAmountA, binding.dialogResearchAmountB));
-
             isUpgradeable = (research.getUnlockedLevel() != research.getLevels().size() // Not max level
                     && level.getRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel() // Seen level is accessible with current Ops level
                     && level.getLevel() - 1 == research.getUnlockedLevel()); // Looking at next level that can be upgraded
@@ -146,40 +145,15 @@ public class ResearchDialog extends DialogFragment {
             binding.dialogResearchArrowUp.setVisibility(isUpgradeable ? View.VISIBLE : View.INVISIBLE);
             binding.dialogResearchBonusLayout.setVisibility(level.getBonusA() != -1 ? View.VISIBLE : View.INVISIBLE);
 
-            //Get all materials/resources of the level.
-            LinkedList<ResourceMaterial> popMaterials = (level.getMaterials() != null ? level.getMaterials() : new LinkedList<>());
-            LinkedList<ResourceMaterial> popResources = (level.getResources() != null ? level.getResources() : new LinkedList<>());
+            //Set resources
+            HashMap<Material, Long> rss = CustomResourceMaterialView
+                    .computeResources(new LinkedList<>((level.getResources() != null) ? level.getResources() : new LinkedList<>()));
+            rss.forEach((material, value) -> rss.replace(material, cumulativeBonus
+                    .applyBonus(value, cumulativeBonus.getResearchBaseCostEfficiencyBonus())));
+            binding.dialogResearchCosts.setResources(rss);
 
-            //Set details of material.
-            popMaterials.forEach(resourceMaterial -> {
-                ResourceMaterialAmount item = rma.pop();
-
-                item.setValue(Long.valueOf(resourceMaterial.getValue()).intValue());
-                item.setRarity(resourceMaterial.getRarity());
-                item.setMaterial(resourceMaterial.getMaterial());
-                item.setGrade(resourceMaterial.getGrade());
-                item.setNeeded(true);
-            });
-
-            popResources.forEach(resourceMaterial -> {
-                ResourceAmount item = ra.pop();
-
-                item.setValue(cumulativeBonus.applyBonus(resourceMaterial.getValue(), cumulativeBonus.getResearchBaseCostEfficiencyBonus()));
-                item.setMaterial(resourceMaterial.getMaterial());
-                item.setNeeded(true);
-
-                item.setOnClickListener(view -> {
-                    InformationLabel label = new InformationLabel(requireContext());
-                    label.setValue(item.getValue());
-                    label.setLocation(view, 20, 20);
-
-                    binding.dialogResearchHolder.addView(label);
-                });
-            });
-
-            //Set all residual views to NOT needed.
-            rma.forEach(item -> item.setNeeded(false));
-            ra.forEach(item -> item.setNeeded(false));
+            //Set materials
+            binding.dialogResearchCosts.setMaterials((level.getMaterials() != null) ? level.getMaterials() : new LinkedList<>());
         });
     }
 }

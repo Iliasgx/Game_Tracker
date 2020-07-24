@@ -85,7 +85,7 @@ public class ShipFragment extends Fragment {
                     builder.create().show();
                 }
             } else {
-                Navigation.findNavController(requireView()).navigate(ShipFragmentDirections.shipsToShipDetails(builtShip));
+                Navigation.findNavController(requireView()).navigate(ShipFragmentDirections.shipsToShipDetails().setBuiltShip(builtShip));
             }
         };
 

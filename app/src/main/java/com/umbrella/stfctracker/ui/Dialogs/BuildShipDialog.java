@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
+import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
 import com.umbrella.stfctracker.CustomComponents.InformationLabel;
 import com.umbrella.stfctracker.CustomComponents.ResourceAmount;
 import com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount;
@@ -64,8 +65,8 @@ public class BuildShipDialog extends DialogFragment {
         binding.dialogShipUpgradeTierUp.setTime(firstTier.getBuildTime());
         binding.dialogShipUpgradeTierUp.setTime(cumulativeBonus.applyBonus(firstTier.getBuildTime(), cumulativeBonus.getShipConstructionSpeedBonus()));
 
-        binding.dialogShipUpgradeBuildCosts.setResources(firstTier.getComponents().get(0).getResources());
-        binding.dialogShipUpgradeBuildCosts.setMaterials(firstTier.getComponents().get(0).getMaterials());
+        binding.dialogShipUpgradeBuildCosts.setResources(CustomResourceMaterialView.computeResources(firstTier.getComponents().getFirst().getResources()));
+        binding.dialogShipUpgradeBuildCosts.setMaterials(firstTier.getComponents().getFirst().getMaterials());
     }
 
     private void setUpMainListener() {

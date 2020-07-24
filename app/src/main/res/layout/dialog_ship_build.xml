@@ -34,25 +34,26 @@
             android:layout_below="@id/dialogShipUpgrade_shipName"
             android:layout_alignParentStart="true"
             android:background="@color/dialog_background"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView
                 android:id="@+id/dialogShipUpgrade_buildCosts"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/dialogShipUpgrade_tierUp"
+                app:layout_constraintEnd_toEndOf="@id/dialogShipUpgrade_tierUp"
                 app:layout_constraintTop_toTopOf="parent"
-                app:numOfResources="TWO"/>
+                tools:numOfResources="TWO"/>
 
             <com.umbrella.stfctracker.CustomComponents.CustomButton
                 android:id="@+id/dialogShipUpgrade_tierUp"
-                android:layout_width="250dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/dialogShipUpgrade_buildCosts"
                 android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
                 app:borderDrawable="@drawable/round_edge"
                 app:frameDrawable="@drawable/button_ripple"
                 app:title="@string/build"/>

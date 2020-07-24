@@ -13,10 +13,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.MutableLiveData;
 
+import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
 import com.umbrella.stfctracker.CustomComponents.InformationLabel;
 import com.umbrella.stfctracker.CustomComponents.ResourceAmount;
 import com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount;
 import com.umbrella.stfctracker.DataTypes.Enums.BonusType;
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.DatabaseClient;
 import com.umbrella.stfctracker.Database.Entities.Building;
@@ -29,6 +31,7 @@ import com.umbrella.stfctracker.databinding.DialogBuildingsBinding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -108,10 +111,6 @@ public class BuildingDialog extends DialogFragment {
 
     private void setUpObserver() {
         observeBuilding.observe(getViewLifecycleOwner(), building -> {
-            //Get all views of @{ResourceMaterialAmount, ResourceAmount}
-            LinkedList<ResourceMaterialAmount> rma = new LinkedList<>();//Arrays.asList(binding.dialogBuildingsMaterialA, binding.dialogBuildingsMaterialB));
-            LinkedList<ResourceAmount> ra = new LinkedList<>();//Arrays.asList(binding.dialogBuildingsAmountA, binding.dialogBuildingsAmountB, binding.dialogBuildingsAmountC));
-
             boolean isLastOne = (level.getLevel() == building.getLevels().size());
 
             binding.dialogBuildingsButton.setClickable(isUpgradeable);
@@ -120,50 +119,32 @@ public class BuildingDialog extends DialogFragment {
 
             binding.dialogBuildingsButton.setVisibility(isLastOne | isSpecAccess ? View.GONE : View.VISIBLE);
 
-
             binding.dialogBuildingsLevelValue.setText(String.valueOf(level != null ? level.getLevel() : 0));
 
             binding.dialogBuildingsButton.setTime((nextLevel == null) ? 0 : cumulativeBonus.applyBonus(nextLevel.getUpgradeTime(), cumulativeBonus.getBuildSpeedBonus()));
 
-            //Get all materials/resources of the level.
-            LinkedList<ResourceMaterial> popMaterials = ((nextLevel != null && nextLevel.getMaterials() != null) ? nextLevel.getMaterials() : new LinkedList<>());
-            LinkedList<ResourceMaterial> popResources = ((nextLevel != null && nextLevel.getResources() != null) ? nextLevel.getResources() : new LinkedList<>());
-
-            //Set details of material.
-            popMaterials.forEach(resourceMaterial -> {
-                ResourceMaterialAmount item = rma.pop();
-
-                item.setValue(Long.valueOf(resourceMaterial.getValue()).intValue());
-                item.setRarity(resourceMaterial.getRarity());
-                item.setMaterial(resourceMaterial.getMaterial());
-                item.setGrade(resourceMaterial.getGrade());
-                item.setNeeded(!isLastOne);
-            });
-
-            //Set details of resources.
-            popResources.forEach(resourceMaterial -> {
-                ResourceAmount item = ra.pop();
-
-                long resVal = resourceMaterial.getValue();
-
+            if (!isLastOne) {
+                //Set resources
+                HashMap<Material, Long> resources = new HashMap<>(CustomResourceMaterialView
+                        .computeResources(new LinkedList<>(((nextLevel != null && nextLevel.getResources() != null) ? nextLevel.getResources() : new LinkedList<>())))
+                );
                 //Exception for this current building and his level because of the size of the value.
-                if (building.getName().equalsIgnoreCase("Parsteel Warehouse") && nextLevel.getLevel() == 50) resVal *= 2;
+                if (building.getName().equalsIgnoreCase("Parsteel Warehouse") && nextLevel.getLevel() == 50) {
+                    if (resources.containsKey(Material.PARSTEEL)) {
+                        Long tempValue = resources.getOrDefault(Material.PARSTEEL, 0L);
+                        resources.replace(Material.PARSTEEL, (tempValue != null ? tempValue : 0L) * 2L);
+                    }
+                }
+                //add bonus
+                resources.forEach((material, value) -> resources.replace(material, cumulativeBonus
+                        .applyBonus(value, cumulativeBonus.getBuildingCostEfficiencyBonus()))
+                );
 
-                item.setValue(cumulativeBonus.applyBonus(resVal, cumulativeBonus.getBuildingCostEfficiencyBonus()));
-                item.setMaterial(resourceMaterial.getMaterial());
-                item.setNeeded(!isLastOne);
+                binding.dialogBuildingsCosts.setResources(resources);
 
-                item.setOnClickListener(view -> {
-                    InformationLabel label = new InformationLabel(requireContext());
-                    label.setValue(item.getValue());
-                    label.setLocation(view, -15, -10);
-                    binding.dialogBuildingsCardView.addView(label);
-                });
-            });
-
-            //Set all residual views to NOT needed.
-            rma.forEach(item -> item.setNeeded(false));
-            ra.forEach(item -> item.setNeeded(false));
+                //Set materials
+                binding.dialogBuildingsCosts.setMaterials(new LinkedList<>(((nextLevel != null && nextLevel.getMaterials() != null) ? nextLevel.getMaterials() : new LinkedList<>())));
+            }
 
             //Add bonuses for the listView when they are not null (no bonus).
             List<BonusListInfo.BonusItem> bonusItems = new ArrayList<>();

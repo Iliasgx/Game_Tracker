@@ -8,19 +8,21 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
+
 import com.umbrella.stfctracker.DataTypes.Enums.Grade;
 import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
 import com.umbrella.stfctracker.R;
 
 public class ResourceMaterialAmount extends RelativeLayout {
+    private CardView resourceBorder;
     private ImageView resourceImg;
     private ImageView star1;
     private ImageView star2;
     private ImageView star3;
     private ImageView star4;
     private TextView resourceAmount;
-    private TextView resourceType;
 
     private int value;
     private Rarity rarity;
@@ -66,13 +68,13 @@ public class ResourceMaterialAmount extends RelativeLayout {
     }
 
     private void initComponents() {
+        resourceBorder = requireViewById(R.id.customResourceMaterialAmount_resourceCardView);
         resourceImg = requireViewById(R.id.customResourceMaterialAmount_ResourceImg);
-        star1 = requireViewById(R.id.customResourceMaterial_star1);
-        star2 = requireViewById(R.id.customResourceMaterial_star2);
-        star3 = requireViewById(R.id.customResourceMaterial_star3);
-        star4 = requireViewById(R.id.customResourceMaterial_star4);
+        star1 = requireViewById(R.id.customResourceMaterialAmount_star1);
+        star2 = requireViewById(R.id.customResourceMaterialAmount_star2);
+        star3 = requireViewById(R.id.customResourceMaterialAmount_star3);
+        star4 = requireViewById(R.id.customResourceMaterialAmount_star4);
         resourceAmount = requireViewById(R.id.customResourceMaterialAmount_ResourceAmount);
-        resourceType = requireViewById(R.id.customResourceMaterialAmount_ResourceAmountType);
     }
 
     public int getValue() {
@@ -96,23 +98,7 @@ public class ResourceMaterialAmount extends RelativeLayout {
     public void setRarity(Rarity rarity) {
         if (rarity == null | rarity == Rarity.NONE) return;
         this.rarity = rarity;
-
-        String type = "";
-        switch (rarity) {
-            case COMMON:
-                type = getResources().getString(R.string.short_common);
-                break;
-            case UNCOMMON:
-                type = getResources().getString(R.string.short_uncommon);
-                break;
-            case RARE:
-                type = getResources().getString(R.string.short_rare);
-                break;
-            case EPIC:
-                type = getResources().getString(R.string.short_epic);
-                break;
-        }
-        resourceType.setText(type);
+        resourceBorder.setCardBackgroundColor(getResources().getColor(rarity.getColorBorder(), getContext().getTheme()));
     }
 
     public void setMaterial(Material material) {
@@ -126,7 +112,7 @@ public class ResourceMaterialAmount extends RelativeLayout {
         if (grade == null | grade == Grade.NONE) return;
         this.grade = grade;
 
-        int nr = grade.ordinal() - 1;
+        int nr = grade.ordinal();
         star1.setVisibility(nr >= Grade.ONE.ordinal() ? VISIBLE : INVISIBLE);
         star2.setVisibility(nr >= Grade.TWO.ordinal() ? VISIBLE : INVISIBLE);
         star3.setVisibility(nr >= Grade.THREE.ordinal() ? VISIBLE : INVISIBLE);

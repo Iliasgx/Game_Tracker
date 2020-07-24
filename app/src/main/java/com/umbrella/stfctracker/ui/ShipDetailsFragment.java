@@ -23,6 +23,8 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Data.DataFunctions;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
@@ -36,6 +38,7 @@ import com.umbrella.stfctracker.databinding.FragShipDetailsBinding;
 import com.umbrella.stfctracker.databinding.TierLevelBinding;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
@@ -54,6 +57,8 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
     private List<ValueAnimator> activeAnimators = new ArrayList<>();
     private List<ValueAnimator> endingAnimators = new ArrayList<>();
 
+    private boolean isBuild;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -66,7 +71,14 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         super.onViewCreated(view, savedInstanceState);
 
         ShipDetailsFragmentArgs args = ShipDetailsFragmentArgs.fromBundle(requireArguments());
-        builtShip = args.getBuiltShip();
+
+        if (args.getBuiltShip() != null) {
+            builtShip = args.getBuiltShip();
+            isBuild = true;
+        } else if (args.getShip() != null) {
+            builtShip = new BuiltShip(args.getShip());
+            isBuild = false;
+        }
         observableTier.setValue(builtShip.getCurrentTier());
 
         vm = new ViewModelProvider(this).get(BuiltShipViewModel.class);
@@ -91,7 +103,7 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
 
         //Ship can't be scrapped when it has no scrapping possibility OR when the opsLevel is not high enough
         boolean usable = (builtShip.getScrapRequiredOperationsLevel() != -1 && Data.getInstance().getOperationsLevel() >= builtShip.getScrapRequiredOperationsLevel());
-        binding.fragShipDetailsScrap.setUsable(usable);
+        binding.fragShipDetailsScrap.setUsable(usable && isBuild);
         binding.fragShipDetailsScrap.setClickable(true);
 
         binding.fragShipDetailsLevelSeekBar.setOnSeekBarChangeListener(this);
@@ -102,10 +114,12 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
     }
 
     private void setUpObserver() {
-        vm.getShipById(builtShip.getId()).observe(getViewLifecycleOwner(), updatedShip -> {
-            this.builtShip = updatedShip;
-            Objects.requireNonNull(binding.fragShipDetailsTierRecyclerView.findViewHolderForAdapterPosition(updatedShip.getCurrentTierId() - 1)).itemView.performClick();
-        });
+        if (isBuild) {
+            vm.getShipById(builtShip.getId()).observe(getViewLifecycleOwner(), updatedShip -> {
+                this.builtShip = updatedShip;
+                Objects.requireNonNull(binding.fragShipDetailsTierRecyclerView.findViewHolderForAdapterPosition(updatedShip.getCurrentTierId() - 1)).itemView.performClick();
+            });
+        }
 
         observableTier.observe(getViewLifecycleOwner(), tier -> {
             binding.fragShipDetailsShipInfo.setText(getString(R.string.shipDetails_shipInfo, builtShip.getRarity().toString(), tier.getTier()));
@@ -127,13 +141,13 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         });
 
         binding.fragShipDetailsComponents.setOnClickListener(v ->
-                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToUpgradeShip(builtShip, Objects.requireNonNull(observableTier.getValue()).getTier())));
+                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToUpgradeShip(builtShip, Objects.requireNonNull(observableTier.getValue()).getTier(), isBuild)));
         binding.fragShipDetailsScrap.setOnClickListener(v -> {
             if (builtShip.getScrapRequiredOperationsLevel() == -1) {
                 Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
             } else {
                 Tier.Level currentLevel = Objects.requireNonNull(observableTier.getValue()).getLevels().get(binding.fragShipDetailsLevelSeekBar.getProgress() - 1);
-                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToScrapShip(builtShip, currentLevel));
+                Navigation.findNavController(requireView()).navigate(ShipDetailsFragmentDirections.shipDetailsToScrapShip(builtShip, currentLevel, isBuild));
             }
         });
     }
@@ -176,24 +190,14 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         }
 
         //If last tier or not all components of next tier are unlocked, take currentTier components into account.
-        activeComponents.forEach(activeComponent -> {
-            tempRss.addAll(activeComponent.getRepairCosts());
-    });
+        activeComponents.forEach(activeComponent ->
+            tempRss.addAll(activeComponent.getRepairCosts())
+        );
 
-        LinkedList<ResourceMaterial> sortedList = new LinkedList<>();
-        while (!tempRss.isEmpty()) {
-            ResourceMaterial mat = tempRss.pop();
+        HashMap<Material, Long> sortedList = CustomResourceMaterialView.computeResources(tempRss);
 
-            if (sortedList.stream().anyMatch(item -> item.getMaterial().equals(mat.getMaterial()))) {
-                ResourceMaterial src = sortedList.stream().filter(item -> item.getMaterial().equals(mat.getMaterial())).collect(Collectors.toList()).get(0);
-                sortedList.get(sortedList.indexOf(src)).setValue(src.getValue() + mat.getValue());
-            } else {
-                sortedList.add(mat);
-            }
-        }
-
-        sortedList.forEach(resourceMaterial -> resourceMaterial.setValue(cumulativeBonus
-                .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipRepairCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass())))
+        sortedList.forEach((material, value) -> sortedList.replace(material, cumulativeBonus
+                .applyBonus(value, cumulativeBonus.getShipRepairCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass())))
         );
 
         binding.fragShipDetailsRepairResources.setResources(sortedList);

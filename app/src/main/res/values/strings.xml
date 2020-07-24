@@ -19,6 +19,7 @@
     <string name="researchGroup_A">Combat</string>
     <string name="researchGroup_B">Station</string>
     <string name="researchGroup_C">Galaxy</string>
+    <string name="researchGroup_D">Outlaw</string>
 
     <string name="upgrade">Upgrade</string>
     <string name="start">Start</string>
@@ -42,11 +43,6 @@
     <string name="hours">%1$dh</string>
     <string name="minutes">%1$dm</string>
     <string name="seconds">%1$ds</string>
-
-    <string name="short_common">C</string>
-    <string name="short_uncommon">U</string>
-    <string name="short_rare">R</string>
-    <string name="short_epic">E</string>
 
     <string name="percentage">%1$d%%</string>
     <string name="progressString">%1$d / %2$d</string>

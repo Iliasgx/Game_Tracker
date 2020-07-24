@@ -188,6 +188,11 @@
         <action
             android:id="@+id/addShipToBuild"
             app:destination="@id/buildShipDialog" />
+        <action
+            android:id="@+id/addShipToShipDetails"
+            app:destination="@id/shipDetailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/shipDetailsFragment"
@@ -202,7 +207,14 @@
             app:destination="@id/scrapShipDialog" />
         <argument
             android:name="builtShip"
-            app:argType="com.umbrella.stfctracker.Database.Entities.BuiltShip" />
+            app:argType="com.umbrella.stfctracker.Database.Entities.BuiltShip"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="ship"
+            app:argType="com.umbrella.stfctracker.Database.Entities.Ship"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </fragment>
     <dialog
         android:id="@+id/scrapShipDialog"
@@ -215,6 +227,9 @@
         <argument
             android:name="selectedItem"
             app:argType="com.umbrella.stfctracker.Database.Entities.Tier$Level" />
+        <argument
+            android:name="isBuild"
+            app:argType="boolean" />
     </dialog>
     <dialog
         android:id="@+id/buildShipDialog"
@@ -236,5 +251,8 @@
         <argument
             android:name="selectedTier"
             app:argType="integer" />
+        <argument
+            android:name="isBuild"
+            app:argType="boolean" />
     </dialog>
 </navigation>

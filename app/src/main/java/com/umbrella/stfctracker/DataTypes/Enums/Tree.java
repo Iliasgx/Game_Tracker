@@ -1,11 +1,24 @@
 package com.umbrella.stfctracker.DataTypes.Enums;
 
+import com.umbrella.stfctracker.R;
+
 import java.io.Serializable;
 
 public enum Tree implements Serializable {
-    COMBAT,
-    STATION,
-    GALAXY;
+    COMBAT  (R.drawable.research_tree_combat),
+    STATION (R.drawable.research_tree_starbase),
+    GALAXY  (R.drawable.research_tree_galaxy),
+    OUTLAW  (R.drawable.research_tree_outlaw);
+
+    private int backgroundId;
+
+    Tree(int backgroundId) {
+        this.backgroundId = backgroundId;
+    }
+
+    public int getBackgroundId() {
+        return backgroundId;
+    }
 
     @Override
     public String toString() {

@@ -30,6 +30,7 @@ public class ResearchFragment extends Fragment implements View.OnClickListener {
         binding.researchGroupA.setOnClickListener(this);
         binding.researchGroupB.setOnClickListener(this);
         binding.researchGroupC.setOnClickListener(this);
+        binding.researchGroupD.setOnClickListener(this);
     }
 
     @Override
@@ -40,8 +41,10 @@ public class ResearchFragment extends Fragment implements View.OnClickListener {
             tree = Tree.COMBAT;
         } else if (v.equals(binding.researchGroupB)) {
             tree = Tree.STATION;
-        } else {
+        } else if (v.equals(binding.researchGroupC)) {
             tree = Tree.GALAXY;
+        } else {
+            tree = Tree.OUTLAW;
         }
 
         Navigation.findNavController(v).navigate(ResearchFragmentDirections.researchToTree(tree));

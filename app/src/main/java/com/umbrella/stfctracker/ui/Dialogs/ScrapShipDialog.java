@@ -55,7 +55,7 @@ public class ScrapShipDialog extends DialogFragment {
                 builtShip.getScrapRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel() &&
                 builtShip.getTiers().get(builtShip.getCurrentTierId()).getLevels().contains(level));
 
-        binding.dialogShipScrapScrap.setUsable(usable);
+        binding.dialogShipScrapScrap.setUsable(usable && args.getIsBuild());
         binding.dialogShipScrapScrap.setClickable(true);
 
         binding.dialogShipScrapCancel.setOnClickListener(v -> requireDialog().cancel());

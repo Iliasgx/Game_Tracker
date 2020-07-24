@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragResearchGroup_layout"
@@ -44,8 +45,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/researchGroup_B"
-        android:layout_marginHorizontal="70dp"
-        android:layout_marginTop="50dp">
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="70dp">
 
         <ImageView
             android:id="@+id/researchGroup_A_background"
@@ -96,8 +99,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/researchGroup_A"
         app:layout_constraintBottom_toTopOf="@id/researchGroup_C"
-        android:layout_marginHorizontal="70dp"
-        android:layout_marginVertical="30dp">
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="70dp">
 
         <ImageView
             android:id="@+id/researchGroup_B_background"
@@ -147,10 +151,11 @@
         app:contentPadding="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/researchGroup_B"
-        android:layout_marginHorizontal="70dp"
-        android:layout_marginBottom="50dp">
+        app:layout_constraintBottom_toTopOf="@id/researchGroup_D"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="70dp">
 
         <ImageView
             android:id="@+id/researchGroup_C_background"
@@ -183,8 +188,63 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="15dp"
+            android:padding="10dp"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/galaxy"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/researchGroup_D"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="@drawable/round_edge_border"
+        app:cardCornerRadius="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/researchGroup_C"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="70dp">
+
+        <ImageView
+            android:id="@+id/researchGroup_D_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/research_tree_outlaw"
+            tools:ignore="ContentDescription"/>
+
+        <View
+            android:id="@+id/researchGroup_D_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@color/research_treeGroups_backgroundOverColor" />
+
+        <TextView
+            android:id="@+id/researchGroup_D_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            style="@style/defaultText"
+            android:text="@string/researchGroup_D"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/researchGroup_D_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/outlaw"
             tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

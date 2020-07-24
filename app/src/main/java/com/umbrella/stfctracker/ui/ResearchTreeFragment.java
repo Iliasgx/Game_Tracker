@@ -63,7 +63,7 @@ public class ResearchTreeFragment extends Fragment {
 
         mResearchViewModel.getAllResearchLive().observe(getViewLifecycleOwner(), research -> adapter.setResearch(collectData(research)));
 
-        setBackground();
+        binding.fragResearchTreeGrid.setBackground(getResources().getDrawable(tree.getBackgroundId(), requireActivity().getTheme()));
     }
 
     private List<Research> collectData(List<Research> baseList) {
@@ -109,30 +109,7 @@ public class ResearchTreeFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        int titleId = -1;
-        switch (tree) {
-            case COMBAT: titleId = R.string.researchGroup_A;
-                break;
-            case STATION: titleId = R.string.researchGroup_B;
-                break;
-            case GALAXY: titleId = R.string.researchGroup_C;
-                break;
-        }
-        ((MainActivity)requireActivity()).setHeader(getResources().getString(titleId));
-    }
-
-    private void setBackground() {
-        int backgroundImgId = -1;
-
-        switch (tree) {
-            case COMBAT: backgroundImgId = R.drawable.research_tree_combat;
-                break;
-            case STATION: backgroundImgId = R.drawable.research_tree_starbase;
-                break;
-            case GALAXY: backgroundImgId = R.drawable.research_tree_galaxy;
-                break;
-        }
-        binding.fragResearchTreeGrid.setBackground(getResources().getDrawable(backgroundImgId, requireActivity().getTheme()));
+        ((MainActivity)requireActivity()).setHeader(tree.toString());
     }
 
     @Override

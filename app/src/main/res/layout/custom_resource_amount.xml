@@ -26,7 +26,7 @@
         android:layout_marginStart="-10dp"
         android:gravity="center"
         style="@style/defaultText"
-        android:textSize="19sp"
+        android:textSize="17sp"
         tools:text="2.3M" />
 
     <ImageView
@@ -35,6 +35,7 @@
         android:layout_height="40dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
+        android:padding="2dp"
         android:src="@drawable/parsteel"
         tools:ignore="ContentDescription" />
 </merge>

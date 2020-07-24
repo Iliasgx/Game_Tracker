@@ -35,6 +35,11 @@ public class BuiltShipRepository {
 
         builtShip.setCurrentTierId(builtShip.getCurrentTierId() - 1);
 
+        //Set components of the previous tier (what we are setting now) to locked
+        builtShip.getCurrentTier().getComponents().forEach(component -> component.setLocked(true));
+        //Set components of the tier we came from to locked. We haven't reached those components yet so we can't have unlocked them.
+        builtShip.getNextTier().getComponents().forEach(component -> component.setLocked(true));
+
         DatabaseClient.dbWriteExecutor.execute(() -> daoBuiltShip.tierDown(builtShip));
     }
 }

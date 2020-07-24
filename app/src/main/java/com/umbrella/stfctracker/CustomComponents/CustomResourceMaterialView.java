@@ -3,18 +3,31 @@ package com.umbrella.stfctracker.CustomComponents;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.Size;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
+import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.R;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Locale;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class CustomResourceMaterialView extends RelativeLayout {
     private ConstraintLayout materialLayout;
@@ -29,7 +42,7 @@ public class CustomResourceMaterialView extends RelativeLayout {
     private MaterialDisplayType materialDisplayType;
 
     private LinkedList<ResourceMaterial> materials = new LinkedList<>();
-    private LinkedList<ResourceMaterial> resources = new LinkedList<>();
+    private HashMap<Material, Long> resources = new HashMap<>();
 
     public CustomResourceMaterialView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -58,14 +71,24 @@ public class CustomResourceMaterialView extends RelativeLayout {
         setNumOfResources(numOfResources);
         setMaterialDisplayType(materialDisplayType);
 
-        resourceAmounts.forEach(item ->
+        /*resourceAmounts.forEach(item ->
                 item.setOnClickListener(view -> {
-                    InformationLabel label = new InformationLabel(getContext());
-                    label.setValue(item.getValue());
-                    label.setLocation(view, -15, -10);
-                    ((RelativeLayout)requireViewById(R.id.customResourceMaterialView_layout)).addView(label);
+                    //Remove other labels first.
+                    ((ViewGroup)this.getParent()).removeView(((ViewGroup)this.getParent()).findViewWithTag("TAGGER"));
+                    setOnClickListener(null);
+
+                    InformationLabel infoLabel = new InformationLabel(context);
+                    infoLabel.setValue(item.getValue());
+                    infoLabel.setLocation(view, +15, +10);
+                    infoLabel.setTag("TAGGER");
+                    ((ViewGroup)this.getParent()).addView(infoLabel);
+
+                    setOnClickListener(l -> {
+                        ((ViewGroup)this.getParent()).removeView(infoLabel);
+                        setOnClickListener(null);
+                    });
                 })
-        );
+        );*/
     }
 
     private void initComponents() {
@@ -142,17 +165,25 @@ public class CustomResourceMaterialView extends RelativeLayout {
         FOUR
     }
 
-    public void setResources(@Size(max = 3) LinkedList<ResourceMaterial> resources) {
-        this.resources = resources;
+    public static HashMap<Material, Long> computeResources(LinkedList<ResourceMaterial> resources) {
+        HashMap<Material, Long> temp = new HashMap<>();
+        resources.forEach(res -> {
+            Long tempVal = temp.getOrDefault(res.getMaterial(), 0L);
+            temp.put(res.getMaterial(), (tempVal == null ? 0L : tempVal) + res.getValue());
+        });
+        return temp;
+    }
 
+    public void setResources(@Size(max = 3) HashMap<Material, Long> map) {
+        this.resources = map;
         LinkedList<ResourceAmount> pops = new LinkedList<>(resourceAmounts);
 
-        resources.forEach(resourceMaterial -> {
+        map.forEach((mat, val) -> {
             ResourceAmount item = pops.pop();
 
             item.setNeeded(true);
-            item.setMaterial(resourceMaterial.getMaterial());
-            item.setValue(resourceMaterial.getValue());
+            item.setMaterial(mat);
+            item.setValue(val);
         });
 
         if (numOfResources == NumOfResources.LIVE_ADAPTING) {
