@@ -4,15 +4,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dialogBuildings_CardView"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="30dp"
-    app:cardBackgroundColor="@color/dialog_lightBackgroundMiddle">
+    app:cardBackgroundColor="@color/dialog_lightBackgroundMiddle"
+    app:cardCornerRadius="6dp">
 
     <RelativeLayout
         android:id="@+id/dialogBuildings_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="5dp">
 
         <TextView
@@ -20,8 +21,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
+            android:layout_alignEnd="@id/dialogBuildings_listView"
             android:layout_marginVertical="5dp"
             android:layout_marginHorizontal="10dp"
             android:gravity="center_horizontal"
@@ -36,14 +37,16 @@
             android:layout_height="1dp"
             android:layout_below="@id/dialogBuildings_name"
             android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@id/dialogBuildings_listView"
             android:layout_marginHorizontal="20dp"
             android:background="@color/backButtonColor"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/dialogBuildings_conLayout"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@id/dialogBuildings_listView"
             android:layout_below="@id/dialogBuildings_titleDivider"
             android:layout_margin="10dp">
 
@@ -98,8 +101,9 @@
 
         <ListView
             android:id="@+id/dialogBuildings_listView"
-            android:layout_width="match_parent"
+            android:layout_width="280dp"
             android:layout_height="130dp"
+            android:layout_alignParentStart="true"
             android:layout_below="@id/dialogBuildings_conLayout"
             android:divider="@android:drawable/divider_horizontal_dark"
             android:background="@color/dialog_background"
@@ -113,18 +117,22 @@
 
         <com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView
             android:id="@+id/dialogBuildings_costs"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@id/dialogBuildings_listView"
             android:layout_below="@id/dialogBuildings_listView"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="5dp"
             app:materialDisplayType="TWO"
             tools:numOfResources="THREE"/>
 
         <com.umbrella.stfctracker.CustomComponents.CustomButton
             android:id="@+id/dialogBuildings_button"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:layout_alignEnd="@id/dialogBuildings_listView"
             android:layout_below="@id/dialogBuildings_costs"
             android:layout_marginVertical="10dp"
             android:layout_marginHorizontal="15dp"

@@ -117,6 +117,7 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         if (isBuild) {
             vm.getShipById(builtShip.getId()).observe(getViewLifecycleOwner(), updatedShip -> {
                 this.builtShip = updatedShip;
+                // TODO: Found to get: int 'BuiltShip.getCurrentTierId()' on a null object reference after trying to scrap, maybe add when null, do nothing
                 Objects.requireNonNull(binding.fragShipDetailsTierRecyclerView.findViewHolderForAdapterPosition(updatedShip.getCurrentTierId() - 1)).itemView.performClick();
             });
         }

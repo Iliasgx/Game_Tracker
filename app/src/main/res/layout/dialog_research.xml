@@ -12,7 +12,8 @@
         android:id="@+id/dialogResearch_cardViewPopOver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/dialog_research_border">
+        app:cardBackgroundColor="@color/dialog_research_border"
+        app:cardCornerRadius="6dp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/dialogResearch_content"

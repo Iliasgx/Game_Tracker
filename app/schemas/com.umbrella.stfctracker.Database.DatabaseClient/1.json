@@ -225,7 +225,7 @@
         "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`current_tier` INTEGER NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `rarity` INTEGER, `grade` INTEGER, `ship_class` INTEGER, `faction` INTEGER, `image` TEXT, `base_strength` INTEGER NOT NULL, `ship_ability` TEXT, `required_operations_level` INTEGER NOT NULL, `scrap_required_operations_level` INTEGER NOT NULL, `tiers` TEXT)",
         "fields": [
           {
-            "fieldPath": "currentTier",
+            "fieldPath": "currentTierId",
             "columnName": "current_tier",
             "affinity": "INTEGER",
             "notNull": true

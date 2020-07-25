@@ -12,7 +12,7 @@ import java.io.Serializable;
 import java.util.LinkedList;
 
 @Entity(tableName = "building")
-public class Building implements Serializable, Comparable<Group> {
+public class Building implements Serializable, Comparable<Building> {
 
     @PrimaryKey(autoGenerate = true)
     private long id;
@@ -94,8 +94,8 @@ public class Building implements Serializable, Comparable<Group> {
     }
 
     @Override
-    public int compareTo(Group a) {
-        return this.getGroup().compareTo(a);
+    public int compareTo(Building a) {
+        return this.group.compareTo(a.getGroup());
     }
 
 }

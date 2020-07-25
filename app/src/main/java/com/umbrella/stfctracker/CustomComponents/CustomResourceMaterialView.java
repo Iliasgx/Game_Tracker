@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.annotation.Size;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -165,20 +166,24 @@ public class CustomResourceMaterialView extends RelativeLayout {
         FOUR
     }
 
-    public static HashMap<Material, Long> computeResources(LinkedList<ResourceMaterial> resources) {
+    public static HashMap<Material, Long> computeResources(@Nullable LinkedList<ResourceMaterial> resources) {
+        LinkedList<ResourceMaterial> resList = new LinkedList<>(resources != null ? resources : new LinkedList<>());
+
         HashMap<Material, Long> temp = new HashMap<>();
-        resources.forEach(res -> {
+        resList.forEach(res -> {
             Long tempVal = temp.getOrDefault(res.getMaterial(), 0L);
             temp.put(res.getMaterial(), (tempVal == null ? 0L : tempVal) + res.getValue());
         });
         return temp;
     }
 
-    public void setResources(@Size(max = 3) HashMap<Material, Long> map) {
-        this.resources = map;
+    public void setResources(@Nullable @Size(max = 3) HashMap<Material, Long> map) {
+        HashMap<Material, Long> temp = new HashMap<>(map != null ? map : new HashMap<>());
+
+        this.resources = temp;
         LinkedList<ResourceAmount> pops = new LinkedList<>(resourceAmounts);
 
-        map.forEach((mat, val) -> {
+        temp.forEach((mat, val) -> {
             ResourceAmount item = pops.pop();
 
             item.setNeeded(true);
@@ -191,12 +196,14 @@ public class CustomResourceMaterialView extends RelativeLayout {
         }
     }
 
-    public void setMaterials(@Size(max = 4) LinkedList<ResourceMaterial> materials) {
-        this.materials = materials;
+    public void setMaterials(@Nullable @Size(max = 4) LinkedList<ResourceMaterial> materials) {
+        LinkedList<ResourceMaterial> temp = new LinkedList<>(materials != null ? materials : new LinkedList<>());
+
+        this.materials = temp;
 
         LinkedList<ResourceMaterialAmount> pops = new LinkedList<>(materialAmounts);
 
-        materials.forEach(resourceMaterial -> {
+        temp.forEach(resourceMaterial -> {
             ResourceMaterialAmount item = pops.pop();
 
             boolean indexOutOfBoundsMatType = (materialDisplayType.equals(MaterialDisplayType.TWO)) && resourceMaterial.getId() > 2;
