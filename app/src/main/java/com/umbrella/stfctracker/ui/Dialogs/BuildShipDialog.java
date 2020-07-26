@@ -13,10 +13,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
 import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
-import com.umbrella.stfctracker.CustomComponents.InformationLabel;
-import com.umbrella.stfctracker.CustomComponents.ResourceAmount;
-import com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount;
-import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.DatabaseClient;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.Database.Entities.Ship;
@@ -25,8 +21,6 @@ import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.databinding.DialogShipBuildBinding;
 
-import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.Objects;
 
 public class BuildShipDialog extends DialogFragment {

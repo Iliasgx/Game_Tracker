@@ -8,6 +8,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient">
 
+    <include
+        android:id="@+id/fragShips_emptyLayout"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        layout="@layout/list_empty_ship_built" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/fragShips_grid"
         android:layout_width="match_parent"

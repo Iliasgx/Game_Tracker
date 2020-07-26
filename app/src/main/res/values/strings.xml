@@ -91,4 +91,7 @@
 
     <string name="ship_faction">Faction</string>
     <string name="ship_percentage">%1$s%%</string>
+
+    <string name="emptyBuiltShips_title">List is empty</string>
+    <string name="emptyBuiltShips_information">You haven\'t build any ships yet.\n Click on the add button to choose a new ship to build.</string>
 </resources>

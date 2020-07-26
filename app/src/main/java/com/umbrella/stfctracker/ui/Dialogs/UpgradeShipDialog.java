@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +18,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.MutableLiveData;
-import androidx.navigation.Navigation;
 
 import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
 import com.umbrella.stfctracker.DataTypes.Enums.Material;
@@ -101,7 +99,7 @@ public class UpgradeShipDialog extends DialogFragment {
                 //Set materials
                 LinkedList<ResourceMaterial> mats = new LinkedList<>(component.getMaterials());
                 mats.forEach(resourceMaterial -> resourceMaterial.setValue(cumulativeBonus
-                        .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipMaterialCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass(), resourceMaterial.getMaterial()))));
+                        .applyBonus(resourceMaterial.getValue(), cumulativeBonus.getShipMaterialCostEfficiencyBonus(builtShip.getFaction(), resourceMaterial.getMaterial()))));
                 binding.dialogShipUpgradeCosts.setMaterials(mats);
 
                 if (Objects.requireNonNull(observableTier.getValue()).getComponents().stream().anyMatch(Tier.Component::isLocked)) {

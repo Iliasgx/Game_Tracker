@@ -51,6 +51,7 @@ public final class DataResearch extends DataFunctions {
         researchCombat();
         researchStation();
         researchGalaxy();
+        researchOutlaw();
     }
 
     private void researchCombat() {
@@ -21016,5 +21017,11 @@ public final class DataResearch extends DataFunctions {
                         )
                 )
         ));
+    }
+
+    private void researchOutlaw() {
+        /*research.addAll(Arrays.asList(
+
+        ));*/
     }
 }

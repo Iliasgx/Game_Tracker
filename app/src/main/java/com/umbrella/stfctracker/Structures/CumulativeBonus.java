@@ -6,7 +6,9 @@ import androidx.annotation.NonNull;
 
 import com.umbrella.stfctracker.DataTypes.Enums.BonusType;
 import com.umbrella.stfctracker.DataTypes.Enums.Faction;
+import com.umbrella.stfctracker.DataTypes.Enums.Grade;
 import com.umbrella.stfctracker.DataTypes.Enums.Material;
+import com.umbrella.stfctracker.DataTypes.Enums.Rarity;
 import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
 
 import java.math.BigDecimal;
@@ -80,13 +82,28 @@ public class CumulativeBonus {
                 getValue(BonusType.SPEED_RESEARCH);
     }
 
-    public int getBuildingCostEfficiencyBonus() {
-        return getValue(BonusType.BUILDING_COST_EFFICIENCY_RSS);
+    public int getBuildingCostEfficiencyBonus(Material material) {
+        switch (material) {
+            case PARSTEEL:
+            case TRITANIUM:
+            case DILITHIUM: return getValue(BonusType.BUILDING_COST_EFFICIENCY_RSS);
+            case GAS:       return getValue(BonusType.OUTLAW_COST_EFFICIENCY_STATION_GAS);
+            case ORE:       return getValue(BonusType.OUTLAW_COST_EFFICIENCY_STATION_ORE);
+            case CRYSTAL:   return getValue(BonusType.OUTLAW_COST_EFFICIENCY_STATION_CRYSTAL);
+            default:        return 0;
+        }
     }
 
-    public int getResearchBaseCostEfficiencyBonus() {
-        return getValue(BonusType.RESEARCH_COST_EFFICIENCY) +
-                getValue(BonusType.RESEARCH_COST_EFFICIENCY_RSS);
+    public int getResearchBaseCostEfficiencyBonus(Material material) {
+        switch (material) {
+            case PARSTEEL:
+            case TRITANIUM:
+            case DILITHIUM: return getValue(BonusType.RESEARCH_COST_EFFICIENCY) + getValue(BonusType.RESEARCH_COST_EFFICIENCY_RSS);
+            case GAS:       return getValue(BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_GAS);
+            case ORE:       return getValue(BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_ORE);
+            case CRYSTAL:   return getValue(BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_CRYSTAL);
+            default:        return 0;
+        }
     }
 
     public int getParsteelGenerationBonus() {
@@ -165,7 +182,7 @@ public class CumulativeBonus {
     }
 
     public int getShipScrapSpeedBonus() {
-        return getValue(BonusType.SHIP_SCRAPPING_SPEED);
+        return getValue(BonusType.SHIP_SCRAPPING_SPEED) + getValue(BonusType.OUTLAW_SCRAP_SPEED);
     }
 
     public int getShipRepairSpeedBonus(Faction faction, ShipClass shipClass) {
@@ -196,10 +213,12 @@ public class CumulativeBonus {
         return temp;
     }
 
-    public int getShipRepairCostEfficiencyBonus(Faction faction, ShipClass shipClass) {
+    public int getShipRepairCostEfficiencyBonus(Faction faction, ShipClass shipClass, Grade grade) {
         int temp = 0;
 
-        temp += getValue(BonusType.BASE_REPAIR_COST_EFFICIENCY) + getValue(BonusType.REPAIR_COST_EFFICIENCY);
+        temp += getValue(BonusType.BASE_REPAIR_COST_EFFICIENCY) +
+                getValue(BonusType.REPAIR_COST_EFFICIENCY) +
+                getValue(BonusType.OUTLAW_SHIP_REPAIR_COST_EFFICIENCY);
 
         switch (faction) {
             case FEDERATION: temp += getValue(BonusType.FEDERATION_COST_EFFICIENCY_REPAIR);
@@ -211,6 +230,8 @@ public class CumulativeBonus {
         }
 
         if (shipClass.equals(ShipClass.SURVEY)) temp += getValue(BonusType.SURVEY_REPAIR_COST_EFFICIENCY);
+
+        if (grade.equals(Grade.FOUR)) temp += getValue(BonusType.OUTLAW_SHIP_REPAIR_COST_EFFICIENCY_G4_SHIPS);
 
         return temp;
     }
@@ -228,43 +249,44 @@ public class CumulativeBonus {
         }
 
         switch (material) {
-            case TRITANIUM: temp += getValue(BonusType.TRITANIUM_COST_EFFICIENCY_COMPONENTS);
+            case TRITANIUM: temp += getValue(BonusType.TRITANIUM_COST_EFFICIENCY_COMPONENTS) + getValue(BonusType.OUTLAW_COST_EFFICIENCY_SHIP_TRITANIUM);
                 break;
-            case DILITHIUM: temp += getValue(BonusType.DILITHIUM_COST_EFFICIENCY_COMPONENTS);
+            case DILITHIUM: temp += getValue(BonusType.DILITHIUM_COST_EFFICIENCY_COMPONENTS) + getValue(BonusType.OUTLAW_COST_EFFICIENCY_SHIP_DILITHIUM);
                 break;
         }
 
         return temp;
     }
 
-    public int getShipMaterialCostEfficiencyBonus(Faction faction, ShipClass shipClass, Material material) {
+    public int getShipMaterialCostEfficiencyBonus(Faction faction, Material material) {
         int temp = 0;
+
+        //Add when adding plutonium (optional): OUTLAW_COMMON_PLUTONIUM_COST_EFFICIENCY, OUTLAW_UNCOMMON_PLUTONIUM_COST_EFFICIENCY, OUTLAW_RARE_PLUTONIUM_COST_EFFICIENCY
+        //Add when adding special materials for the Stella (optional): OUTLAW_COST_EFFICIENCY_UNIQUE_MATERIALS_STELLA
 
         switch (material) {
             case GAS:
-                temp += getValue(BonusType.COST_EFFICIENCY_GAS);
+                temp += getValue(BonusType.COST_EFFICIENCY_GAS) + getValue(BonusType.OUTLAW_COST_EFFICIENCY_SHIP_MATERIALS);
                 if (faction.equals(Faction.FEDERATION)) temp += getValue(BonusType.COST_EFFICIENCY_GAS_FEDERATION);
                 break;
             case ORE:
-                temp += getValue(BonusType.COST_EFFICIENCY_ORE);
+                temp += getValue(BonusType.COST_EFFICIENCY_ORE) + getValue(BonusType.OUTLAW_COST_EFFICIENCY_SHIP_MATERIALS);
                 if (faction.equals(Faction.ROMULAN)) temp += getValue(BonusType.COST_EFFICIENCY_ORE_ROMULANS);
                 break;
             case CRYSTAL:
-                temp += getValue(BonusType.COST_EFFICIENCY_CRYSTAL);
+                temp += getValue(BonusType.COST_EFFICIENCY_CRYSTAL) + getValue(BonusType.OUTLAW_COST_EFFICIENCY_SHIP_MATERIALS);
                 if (faction.equals(Faction.KLINGON)) temp += getValue(BonusType.COST_EFFICIENCY_CRYSTAL_KLINGONS);
                 break;
             case EXPLORER_PARTS:
+                temp += getValue(BonusType.OUTLAW_COST_EFFICIENCY_EXPLORER_PARTS) + getValue(BonusType.COST_EFFICIENCY_PARTS_EXPLORERS);
+                break;
             case BATTLESHIP_PARTS:
+                temp += getValue(BonusType.OUTLAW_COST_EFFICIENCY_BATTLESHIP_PARTS) + getValue(BonusType.COST_EFFICIENCY_PARTS_BATTLESHIPS);
+                break;
             case INTERCEPTOR_PARTS:
+                temp += getValue(BonusType.OUTLAW_COST_EFFICIENCY_INTERCEPTOR_PARTS) + getValue(BonusType.COST_EFFICIENCY_PARTS_INTERCEPTORS);
+                break;
             case SURVEY_PARTS:
-                switch (shipClass) {
-                    case BATTLESHIP: temp += getValue(BonusType.COST_EFFICIENCY_PARTS_BATTLESHIPS);
-                        break;
-                    case EXPLORER: temp += getValue(BonusType.COST_EFFICIENCY_PARTS_EXPLORERS);
-                        break;
-                    case INTERCEPTOR: temp += getValue(BonusType.COST_EFFICIENCY_PARTS_INTERCEPTORS);
-                        break;
-                }
                 break;
         }
 
@@ -275,10 +297,17 @@ public class CumulativeBonus {
         return getValue(BonusType.WARP_RANGE);
     }
 
-    public int getShipWarpSpeedBonus(ShipClass shipClass) {
+    public int getShipWarpSpeedBonus(String name, ShipClass shipClass, boolean isEmpty) {
         int temp = 0;
 
-        temp += getValue(BonusType.WARP_SPEED);
+        temp += getValue(BonusType.WARP_SPEED) + getValue(BonusType.OUTLAW_WARP_SPEED) + getValue(BonusType.OUTLAW_WARP_SPEED_II);
+
+        switch (name) {
+            case "Botany Bay": temp += getValue(BonusType.OUTLAW_WARP_SPEED_BOTANY_BAY);
+                break;
+            case "Stella": temp += getValue(BonusType.OUTLAW_WARP_SPEED_STELLA);
+                break;
+        }
 
         switch (shipClass) {
             case BATTLESHIP: temp += getValue(BonusType.WARP_SPEED_BATTLESHIPS);
@@ -291,13 +320,28 @@ public class CumulativeBonus {
                 break;
         }
 
+        if (isEmpty) temp += getValue(BonusType.OUTLAW_WARP_SPEED_EMPTY);
+
         return temp;
     }
 
-    public int getProtectedCargoBonus(ShipClass shipClass) {
-        if (shipClass.equals(ShipClass.SURVEY)) {
-            return getValue(BonusType.PROTECTED_CARGO_SURVEYS);
-        } else return 0;
+    public int getShipImpulseSpeedBonus(String name, Grade grade) {
+        int temp = 0;
+
+        if (name.equals("Botany Bay")) temp += getValue(BonusType.OUTLAW_IMPULSE_SPEED_BOTANY_BAY);
+
+        if (grade.equals(Grade.FOUR)) temp += getValue(BonusType.OUTLAW_IMPULSE_SPEED_G4_SHIPS);
+
+        return temp;
+    }
+
+    public int getProtectedCargoBonus(String name, ShipClass shipClass) {
+        int temp = 0;
+
+        if (name.equals("Botany Bay")) temp += getValue(BonusType.OUTLAW_PROTECTED_CARGO_BOTANY_BAY);
+        if (shipClass.equals(ShipClass.SURVEY)) temp += getValue(BonusType.PROTECTED_CARGO_SURVEYS);
+
+        return temp;
     }
     //endregion
 

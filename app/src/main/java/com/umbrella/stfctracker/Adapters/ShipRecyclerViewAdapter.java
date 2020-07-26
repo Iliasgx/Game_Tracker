@@ -68,7 +68,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         holder.faction.setText(ship.getFaction().toString());
         holder.itemView.setLongClickable(true);
         holder.buildFrame.setVisibility(View.VISIBLE);
-        holder.buildTime.setTime(cumulativeBonus.applyBonus(ship.getTiers().get(0).getBuildTime(), cumulativeBonus.getShipConstructionSpeedBonus()));
+        holder.buildTime.setTime(cumulativeBonus.applyBonus(ship.getTiers().get(0).getBuildTime(), cumulativeBonus.getShipTierUpBonus()));
         holder.buildTime.setUsable(canBuild);
         holder.buildTime.setClickable(true);
 

@@ -20,6 +20,8 @@ import com.umbrella.stfctracker.Database.Models.BuiltShipViewModel;
 import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.databinding.FragShipsBinding;
 
+import java.io.Serializable;
+
 import static com.umbrella.stfctracker.Adapters.BuiltShipRecyclerViewAdapter.*;
 
 public class ShipFragment extends Fragment {
@@ -117,8 +119,10 @@ public class ShipFragment extends Fragment {
     }
 
     private void setUpLiveData() {
-        mViewModel.getAllBuiltShipsLive().observe(getViewLifecycleOwner(), builtShips ->
-                mAdapter.setBuiltShips(builtShips));
+        mViewModel.getAllBuiltShipsLive().observe(getViewLifecycleOwner(), builtShips -> {
+                mAdapter.setBuiltShips(builtShips);
+                binding.fragShipsEmptyLayout.getRoot().setVisibility(builtShips.isEmpty() ? View.VISIBLE : View.GONE);
+        });
     }
 
     private void rotateFAB(View FAB, float degrees) {

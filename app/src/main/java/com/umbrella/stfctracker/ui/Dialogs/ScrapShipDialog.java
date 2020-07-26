@@ -51,21 +51,20 @@ public class ScrapShipDialog extends DialogFragment {
         binding.dialogShipScrapSubtitle.setText(getString(R.string.scrapShip_subtitle, level.getLevel(), builtShip.getName()));
         binding.dialogShipScrapScrap.setTime(cumulativeBonus.applyBonus(level.getScrapInfo().getScrapTime(), cumulativeBonus.getShipScrapSpeedBonus()));
 
-        boolean usable = (builtShip.getScrapRequiredOperationsLevel() != -1 &&
-                builtShip.getScrapRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel() &&
-                builtShip.getTiers().get(builtShip.getCurrentTierId()).getLevels().contains(level));
+        boolean usable = (builtShip.getScrapRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel() && args.getIsBuild());
 
-        binding.dialogShipScrapScrap.setUsable(usable && args.getIsBuild());
+        binding.dialogShipScrapScrap.setUsable(usable);
         binding.dialogShipScrapScrap.setClickable(true);
 
         binding.dialogShipScrapCancel.setOnClickListener(v -> requireDialog().cancel());
         binding.dialogShipScrapScrap.setOnClickListener(v -> {
-            if (Data.getInstance().getOperationsLevel() < builtShip.getScrapRequiredOperationsLevel()) {
-                Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_ops_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
-            } else {
-                new BuiltShipRepository(requireActivity().getApplication()).scrap(builtShip);
-                Toast.makeText(requireContext(), getString(R.string.shipScrap_confirmation, builtShip.getName()), Toast.LENGTH_SHORT).show();
-                dismiss();
+            if (args.getIsBuild()) {
+                if (Data.getInstance().getOperationsLevel() < builtShip.getScrapRequiredOperationsLevel()) {
+                    Toast.makeText(requireContext(), getString(R.string.shipScrap_notScrap_ops_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
+                } else {
+                    new BuiltShipRepository(requireActivity().getApplication()).scrap(builtShip);
+                    dismiss();
+                }
             }
         });
 

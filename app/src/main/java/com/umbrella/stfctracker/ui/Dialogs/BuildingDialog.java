@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +17,7 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
 import com.umbrella.stfctracker.DataTypes.Enums.Material;
+import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.DatabaseClient;
 import com.umbrella.stfctracker.Database.Entities.Building;
 import com.umbrella.stfctracker.Database.Entities.Level;
@@ -28,6 +28,7 @@ import com.umbrella.stfctracker.databinding.DialogBuildingsBinding;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
@@ -115,12 +116,18 @@ public class BuildingDialog extends DialogFragment {
 
                 //Apply bonus for resources
                 resources.forEach(((material, val) -> resources.replace(material, cumulativeBonus
-                        .applyBonus(val, cumulativeBonus.getBuildingCostEfficiencyBonus()))
+                        .applyBonus(val, cumulativeBonus.getBuildingCostEfficiencyBonus(material)))
                 ));
                 binding.dialogBuildingsCosts.setResources(resources);
 
-                //Set materials (materials for buildings don't have any bonuses)
-                binding.dialogBuildingsCosts.setMaterials(nextLevel.getMaterials());
+                //Set materials
+                LinkedList<ResourceMaterial> materials = new LinkedList<>(nextLevel.getMaterials());
+
+                materials.forEach(material -> material.setValue(cumulativeBonus
+                        .applyBonus(material.getValue(), cumulativeBonus.getBuildingCostEfficiencyBonus(material.getMaterial())))
+                );
+
+                binding.dialogBuildingsCosts.setMaterials(materials);
             }
 
             if(building.getUnlockedLevel() != 0) {

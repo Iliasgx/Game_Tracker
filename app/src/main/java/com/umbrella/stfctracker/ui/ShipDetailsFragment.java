@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
@@ -42,7 +40,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarChangeListener {
     private FragShipDetailsBinding binding;
@@ -117,8 +114,12 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         if (isBuild) {
             vm.getShipById(builtShip.getId()).observe(getViewLifecycleOwner(), updatedShip -> {
                 this.builtShip = updatedShip;
-                // TODO: Found to get: int 'BuiltShip.getCurrentTierId()' on a null object reference after trying to scrap, maybe add when null, do nothing
-                Objects.requireNonNull(binding.fragShipDetailsTierRecyclerView.findViewHolderForAdapterPosition(updatedShip.getCurrentTierId() - 1)).itemView.performClick();
+                if (updatedShip != null) {
+                    Objects.requireNonNull(binding.fragShipDetailsTierRecyclerView.findViewHolderForAdapterPosition(updatedShip.getCurrentTierId() - 1)).itemView.performClick();
+                } else {
+                    Toast.makeText(requireContext(), getString(R.string.shipScrap_confirmation, builtShip.getName()), Toast.LENGTH_SHORT).show();
+                    Navigation.findNavController(requireView()).navigateUp();
+                }
             });
         }
 
@@ -198,7 +199,7 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         HashMap<Material, Long> sortedList = CustomResourceMaterialView.computeResources(tempRss);
 
         sortedList.forEach((material, value) -> sortedList.replace(material, cumulativeBonus
-                .applyBonus(value, cumulativeBonus.getShipRepairCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass())))
+                .applyBonus(value, cumulativeBonus.getShipRepairCostEfficiencyBonus(builtShip.getFaction(), builtShip.getShipClass(), builtShip.getGrade())))
         );
 
         binding.fragShipDetailsRepairResources.setResources(sortedList);

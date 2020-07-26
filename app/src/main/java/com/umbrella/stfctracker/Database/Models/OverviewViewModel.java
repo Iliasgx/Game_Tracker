@@ -12,6 +12,7 @@ import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Entities.Building;
 import com.umbrella.stfctracker.Database.Entities.Level;
 import com.umbrella.stfctracker.Database.Entities.Research;
+import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
 
 import java.util.ArrayList;
@@ -77,7 +78,7 @@ public class OverviewViewModel extends AndroidViewModel {
         return new MutableLiveData<>(getResource(researchList, material));
     }
 
-    public LiveData<List<ResourceMaterial>> getAllMaterials() {
+    public LiveData<LinkedList<ResourceMaterial>> getAllMaterials() {
         return new MutableLiveData<>(getMaterials());
     }
 
@@ -142,8 +143,10 @@ public class OverviewViewModel extends AndroidViewModel {
         return value.get();
     }
 
-    private List<ResourceMaterial> getMaterials() {
-        List<ResourceMaterial> materialList = new LinkedList<>();
+    private LinkedList<ResourceMaterial> getMaterials() {
+        CumulativeBonus cumul = CumulativeBonus.getInstance();
+
+        LinkedList<ResourceMaterial> fullList = new LinkedList<>();
 
         buildingList.forEach(building ->
             building.getLevels().stream()
@@ -152,7 +155,7 @@ public class OverviewViewModel extends AndroidViewModel {
                 .forEach(level -> {
                     if (level.getMaterials() == null) return;
                     level.getMaterials().forEach(mat -> {
-                        ResourceMaterial m =  materialList.stream()
+                        ResourceMaterial m =  fullList.stream()
                                                 .filter(item ->
                                                         (item.getMaterial() == mat.getMaterial()) &&
                                                         (item.getRarity() == mat.getRarity()) &&
@@ -160,15 +163,19 @@ public class OverviewViewModel extends AndroidViewModel {
                                                 ).findFirst().orElse(null);
 
                         if (m == null) {
-                            materialList.add(mat);
+                            fullList.add(mat);
                         } else {
-                            ResourceMaterial newMat = materialList.get(materialList.indexOf(m));
+                            ResourceMaterial newMat = fullList.get(fullList.indexOf(m));
                             newMat.setValue(newMat.getValue() + mat.getValue());
-                            materialList.set(materialList.indexOf(m), newMat);
+                            fullList.set(fullList.indexOf(m), newMat);
                         }
                     });
                 })
         );
+
+        //Set bonuses for building materials.
+        fullList.forEach(resourceMaterial -> resourceMaterial.setValue(cumul.applyBonus(resourceMaterial.getValue(), cumul.getBuildingCostEfficiencyBonus(resourceMaterial.getMaterial()))));
+        final LinkedList<ResourceMaterial> firstList = new LinkedList<>(fullList);
 
         researchList.forEach(research ->
                 research.getLevels().stream()
@@ -177,7 +184,7 @@ public class OverviewViewModel extends AndroidViewModel {
                         .forEach(level -> {
                             if (level.getMaterials() == null) return;
                             level.getMaterials().forEach(mat -> {
-                                ResourceMaterial m =  materialList.stream()
+                                ResourceMaterial m =  fullList.stream()
                                         .filter(item ->
                                                 (item.getMaterial() == mat.getMaterial()) &&
                                                         (item.getRarity() == mat.getRarity()) &&
@@ -185,21 +192,35 @@ public class OverviewViewModel extends AndroidViewModel {
                                         ).findFirst().orElse(null);
 
                                 if (m == null) {
-                                    materialList.add(mat);
+                                    fullList.add(mat);
                                 } else {
-                                    ResourceMaterial newMat = materialList.get(materialList.indexOf(m));
+                                    ResourceMaterial newMat = fullList.get(fullList.indexOf(m));
                                     newMat.setValue(newMat.getValue() + mat.getValue());
-                                    materialList.set(materialList.indexOf(m), newMat);
+                                    fullList.set(fullList.indexOf(m), newMat);
                                 }
                             });
                         })
         );
 
-        return materialList.stream()
+        //Find research materials totals without buildings and apply bonus.
+        fullList.forEach(resourceMaterial -> {
+            ResourceMaterial firstListItem = firstList.stream().filter(mat ->
+                    mat.getMaterial() == resourceMaterial.getMaterial() &&
+                    mat.getGrade() == resourceMaterial.getGrade() &&
+                    mat.getRarity() == resourceMaterial.getRarity()).collect(Collectors.toList()).get(0);
+
+            long tempValue = resourceMaterial.getValue();
+            //Item already existed in buildings
+            if (firstListItem != null) tempValue -= firstListItem.getValue();
+
+            resourceMaterial.setValue(cumul.applyBonus(tempValue, cumul.getResearchBaseCostEfficiencyBonus(resourceMaterial.getMaterial())));
+        });
+
+        return fullList.stream()
                 .sorted(Comparator
                         .comparing(ResourceMaterial::getGrade)
                         .thenComparing(ResourceMaterial::getMaterial)
                         .thenComparing(ResourceMaterial::getRarity))
-                .collect(Collectors.toList());
+                .collect(Collectors.toCollection(LinkedList::new));
     }
 }

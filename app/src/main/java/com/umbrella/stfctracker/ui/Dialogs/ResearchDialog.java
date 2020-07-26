@@ -12,9 +12,6 @@ import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.MutableLiveData;
 
 import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
-import com.umbrella.stfctracker.CustomComponents.InformationLabel;
-import com.umbrella.stfctracker.CustomComponents.ResourceAmount;
-import com.umbrella.stfctracker.CustomComponents.ResourceMaterialAmount;
 import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
 import com.umbrella.stfctracker.Database.Data.DataFunctions;
@@ -24,10 +21,8 @@ import com.umbrella.stfctracker.Database.Entities.Research;
 import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
-import com.umbrella.stfctracker.Structures.TimeDisplay;
 import com.umbrella.stfctracker.databinding.DialogResearchBinding;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Objects;
@@ -149,11 +144,15 @@ public class ResearchDialog extends DialogFragment {
             HashMap<Material, Long> rss = CustomResourceMaterialView
                     .computeResources(new LinkedList<>((level.getResources() != null) ? level.getResources() : new LinkedList<>()));
             rss.forEach((material, value) -> rss.replace(material, cumulativeBonus
-                    .applyBonus(value, cumulativeBonus.getResearchBaseCostEfficiencyBonus())));
+                    .applyBonus(value, cumulativeBonus.getResearchBaseCostEfficiencyBonus(material))));
             binding.dialogResearchCosts.setResources(rss);
 
+
             //Set materials
-            binding.dialogResearchCosts.setMaterials((level.getMaterials() != null) ? level.getMaterials() : new LinkedList<>());
+           LinkedList<ResourceMaterial> materials = new LinkedList<>(level.getMaterials());
+           materials.forEach(material -> material.setValue(cumulativeBonus.applyBonus(material.getValue(), cumulativeBonus.getResearchBaseCostEfficiencyBonus(material.getMaterial()))));
+
+            binding.dialogResearchCosts.setMaterials(materials);
         });
     }
 }

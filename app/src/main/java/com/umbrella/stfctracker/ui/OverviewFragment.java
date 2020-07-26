@@ -92,27 +92,27 @@ public class OverviewFragment extends Fragment {
 
             //Requirements
             model.getBuildingResource(Material.PARSTEEL).observe(getViewLifecycleOwner(), rss ->
-                    changeResource(binding.fragOverviewCostBuildingResourceAValue, rss, true)
+                    changeResource(binding.fragOverviewCostBuildingResourceAValue, Material.PARSTEEL, rss, true)
             );
 
             model.getBuildingResource(Material.TRITANIUM).observe(getViewLifecycleOwner(), rss ->
-                    changeResource(binding.fragOverviewCostBuildingResourceBValue, rss, true)
+                    changeResource(binding.fragOverviewCostBuildingResourceBValue, Material.TRITANIUM, rss, true)
             );
 
             model.getBuildingResource(Material.DILITHIUM).observe(getViewLifecycleOwner(), rss ->
-                    changeResource(binding.fragOverviewCostBuildingResourceCValue, rss, true)
+                    changeResource(binding.fragOverviewCostBuildingResourceCValue, Material.DILITHIUM, rss, true)
             );
 
             model.getResearchResource(Material.PARSTEEL).observe(getViewLifecycleOwner(), rss ->
-                    changeResource(binding.fragOverviewCostResearchResourceAValue, rss, false)
+                    changeResource(binding.fragOverviewCostResearchResourceAValue, Material.PARSTEEL, rss, false)
             );
 
             model.getResearchResource(Material.TRITANIUM).observe(getViewLifecycleOwner(), rss ->
-                    changeResource(binding.fragOverviewCostResearchResourceBValue, rss, false)
+                    changeResource(binding.fragOverviewCostResearchResourceBValue, Material.TRITANIUM, rss, false)
             );
 
             model.getResearchResource(Material.DILITHIUM).observe(getViewLifecycleOwner(), rss ->
-                    changeResource(binding.fragOverviewCostResearchResourceCValue, rss, false)
+                    changeResource(binding.fragOverviewCostResearchResourceCValue, Material.DILITHIUM, rss, false)
             );
 
             //GridView Materials
@@ -133,12 +133,12 @@ public class OverviewFragment extends Fragment {
     }
 
     // TODO: ValueIndicator?
-    private void changeResource(TextView view, Long rss, boolean isBuilding) {
+    private void changeResource(TextView view, Material material, Long rss, boolean isBuilding) {
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.ITALIAN);
         symbols.setGroupingSeparator(' ');
         DecimalFormat pattern = new DecimalFormat("#,###", symbols);
 
-        int bonus = (isBuilding ? cumulativeBonus.getBuildingCostEfficiencyBonus() : cumulativeBonus.getResearchBaseCostEfficiencyBonus());
+        int bonus = (isBuilding ? cumulativeBonus.getBuildingCostEfficiencyBonus(material) : cumulativeBonus.getResearchBaseCostEfficiencyBonus(material));
 
         try { view.setText(pattern.format(cumulativeBonus.applyBonus(rss, bonus)));
         } catch (Exception ignored) {}
@@ -169,7 +169,7 @@ public class OverviewFragment extends Fragment {
     private class MaterialAdapter extends BaseAdapter {
         private ListCustomResourceItemBinding bindingMaterials;
 
-        private List<ResourceMaterial> materials = new LinkedList<>();
+        private LinkedList<ResourceMaterial> materials = new LinkedList<>();
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
@@ -187,7 +187,7 @@ public class OverviewFragment extends Fragment {
             return bindingMaterials.getRoot();
         }
 
-        void setMaterials(List<ResourceMaterial> materials) {
+        void setMaterials(LinkedList<ResourceMaterial> materials) {
             this.materials = materials;
             notifyDataSetChanged();
         }

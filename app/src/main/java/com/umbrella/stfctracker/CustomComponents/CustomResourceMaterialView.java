@@ -166,8 +166,8 @@ public class CustomResourceMaterialView extends RelativeLayout {
         FOUR
     }
 
-    public static HashMap<Material, Long> computeResources(@Nullable LinkedList<ResourceMaterial> resources) {
-        LinkedList<ResourceMaterial> resList = new LinkedList<>(resources != null ? resources : new LinkedList<>());
+    public static HashMap<Material, Long> computeResources(@Nullable LinkedList<ResourceMaterial> values) {
+        LinkedList<ResourceMaterial> resList = new LinkedList<>(values != null ? values : new LinkedList<>());
 
         HashMap<Material, Long> temp = new HashMap<>();
         resList.forEach(res -> {
