@@ -21672,7 +21672,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_plutoniumBarteringI),
                         str(R.string.researchDescription_plutoniumBarteringI),
-                        img(R.drawable.plutonium_bartering_i),
+                        img(R.drawable.plutonium_bartering),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COMMON_PLUTONIUM_COST_EFFICIENCY,
                         0,
@@ -24199,6 +24199,4784 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 3340L),
                                                 new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2500L)
                                         )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_rogueHulls),
+                        str(R.string.researchDescription_rogueHulls),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_HHP,
+                        0,
+                        3,
+                        14,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        485_040,
+                                        27,
+                                        25,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 367_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 220_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 530L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 90L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        978_540,
+                                        32,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 3_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 286L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 50L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        1_449_420,
+                                        33,
+                                        35,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 4_650_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_790_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 334L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 62L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        1_937_880,
+                                        34,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 7_460_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 4_470_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 382L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 69L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        2_600_040,
+                                        35,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 11_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 6_670_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 430L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 87L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        3_499_500,
+                                        36,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 16_600_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 9_950_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 477L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 80L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        3_483_960,
+                                        37,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 24_450_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 14_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 525L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 90L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        5_965_920,
+                                        38,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 38_650_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 23_200_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 544L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 100L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        8_058_720,
+                                        39,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 65_800_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 573L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 150L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        14_125_380,
+                                        40,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 104_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 62_350_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3340L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3120L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_craftyEngineering),
+                        str(R.string.researchDescription_craftyEngineering),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_SHP_STELLA_ECLIPSE_ENEMIES,
+                        0,
+                        1,
+                        15,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        72_780,
+                                        27,
+                                        2500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 55_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        86_640,
+                                        28,
+                                        5000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 84_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        97_440,
+                                        29,
+                                        10_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 130_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        111_180,
+                                        30,
+                                        15_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 201_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        142_560,
+                                        31,
+                                        22_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        171_120,
+                                        31,
+                                        30_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 367_740L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        217_440,
+                                        33,
+                                        40_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 695_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        260_880,
+                                        33,
+                                        50_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 836_190L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        390_000,
+                                        35,
+                                        62_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        522_600,
+                                        37,
+                                        75_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        11,
+                                        1_208_820,
+                                        39,
+                                        87_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        12,
+                                        2_018_400,
+                                        41,
+                                        100_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        13,
+                                        4_400_820,
+                                        43,
+                                        110_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        14,
+                                        7_663_560,
+                                        45,
+                                        120_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        15,
+                                        13_333_260,
+                                        47,
+                                        130_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_stellaWarpDrive),
+                        str(R.string.researchDescription_stellaWarpDrive),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_WARP_SPEED_STELLA,
+                        0,
+                        3,
+                        15,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        72_780,
+                                        27,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 55_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        86_640,
+                                        28,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 84_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        97_440,
+                                        29,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 130_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        142_560,
+                                        31,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        146_760,
+                                        32,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 449_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        290_700,
+                                        34,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_120_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        524_940,
+                                        36,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        894_900,
+                                        38,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 5_800_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        2_118_840,
+                                        40,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 15_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        3_152_640,
+                                        42,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 33_700_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_apexChopShop),
+                        str(R.string.researchDescription_apexChopShop),
+                        img(R.drawable.apex_chop_shop),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_SCRAP_SPEED,
+                        0,
+                        1,
+                        16,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        5,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        978_540,
+                                        32,
+                                        8,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        1_449_420,
+                                        33,
+                                        11,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        1_937_880,
+                                        34,
+                                        14,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        2_600_040,
+                                        35,
+                                        17,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        3_499_500,
+                                        35,
+                                        20,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        3_483_960,
+                                        35,
+                                        23,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        5_965_920,
+                                        35,
+                                        26,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        8_059_720,
+                                        35,
+                                        29,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        14_125_380,
+                                        35,
+                                        32,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        11,
+                                        13_456_140,
+                                        35,
+                                        35,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        12,
+                                        21_017_460,
+                                        35,
+                                        38,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        13,
+                                        29_338_800,
+                                        35,
+                                        41,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        14,
+                                        38_934_120,
+                                        35,
+                                        45,
+                                        null,
+                                        null
+                                ),
+                                new Level(
+                                        15,
+                                        51_090_420,
+                                        35,
+                                        50,
+                                        null,
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_eclipseDefenses),
+                        str(R.string.researchDescription_eclipseDefenses),
+                        img(R.drawable.eclipse_defenses),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_MITIGATION_ECLIPSE_ENEMIES,
+                        0,
+                        2,
+                        16,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1500L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        978_540,
+                                        32,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 1_200_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 3_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        1_449_420,
+                                        33,
+                                        160,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 1_860_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        1_937_880,
+                                        34,
+                                        210,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        2_600_040,
+                                        35,
+                                        280,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 4_440_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        3_499_500,
+                                        36,
+                                        360,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        3_483_960,
+                                        37,
+                                        440,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 9_770_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        5_965_920,
+                                        38,
+                                        520,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 15_450_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        8_058_720,
+                                        39,
+                                        600,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 26_350_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        14_125_380,
+                                        40,
+                                        700,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 41_600_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_primeStellaEfficiency),
+                        str(R.string.researchDescription_primeStellaEfficiency),
+                        img(R.drawable.prime_stella_efficiency),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_COST_EFFICIENCY_UNIQUE_MATERIALS_STELLA,
+                        0,
+                        3,
+                        16,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        2_376_360,
+                                        31,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 102_200_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1000L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_stellaDefenses),
+                        str(R.string.researchDescription_stellaDefenses),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_MITIGATION_STELLA_ECLIPSE_ENEMIES,
+                        0,
+                        1,
+                        17,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        142_560,
+                                        31,
+                                        1500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        171_120,
+                                        31,
+                                        3000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 367_740L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        217_440,
+                                        33,
+                                        6000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 695_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        260_880,
+                                        33,
+                                        10_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 836_190L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        390_000,
+                                        35,
+                                        15_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        468_000,
+                                        35,
+                                        25_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_999_800L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        522_600,
+                                        37,
+                                        40_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        627_120,
+                                        37,
+                                        55_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 4_398_300L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        1_208_820,
+                                        39,
+                                        70_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        1_450_560,
+                                        39,
+                                        85_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 11_846_250L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        11,
+                                        2_018_400,
+                                        41,
+                                        100_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        12,
+                                        4_400_820,
+                                        43,
+                                        112_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        13,
+                                        7_663_560,
+                                        45,
+                                        125_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        14,
+                                        13_333_260,
+                                        47,
+                                        137_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        15,
+                                        22_584_540,
+                                        49,
+                                        150_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 598_500_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_plutoniumBarteringIII),
+                        str(R.string.researchDescription_plutoniumBarteringIII),
+                        img(R.drawable.plutonium_bartering),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_RARE_PLUTONIUM_COST_EFFICIENCY,
+                        0,
+                        2,
+                        17,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        285_180,
+                                        31,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 5_560_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 615_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1220L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        293_580,
+                                        32,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 8_150_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1630L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        434_820,
+                                        33,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 12_650_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 1_390_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2030L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        581_340,
+                                        34,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 20_300_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_240_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2750L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 330L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        780_000,
+                                        35,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 30_200_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 3_330_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 370L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_stellaPiercing),
+                        str(R.string.researchDescription_stellaPiercing),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_PIERCING_STATS_STELLA_ECLIPSE_ENEMIES,
+                        0,
+                        3,
+                        17,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        142_560,
+                                        31,
+                                        2500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        171_120,
+                                        31,
+                                        5000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 367_740L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        217_440,
+                                        33,
+                                        7500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 695_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        260_880,
+                                        33,
+                                        10_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 836_190L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        390_000,
+                                        35,
+                                        15_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        468_000,
+                                        35,
+                                        22_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_990_800L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        522_600,
+                                        37,
+                                        30_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        627_120,
+                                        37,
+                                        37_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 4_398_300L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        1_208_820,
+                                        39,
+                                        45_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        1_450_560,
+                                        39,
+                                        52_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 11_846_250L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        11,
+                                        2_018_400,
+                                        41,
+                                        60_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        12,
+                                        4_400_820,
+                                        43,
+                                        67_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        13,
+                                        7_663_560,
+                                        45,
+                                        75_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        14,
+                                        13_333_260,
+                                        47,
+                                        82_500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        15,
+                                        22_584_540,
+                                        49,
+                                        90_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 598_500_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_eclipseWeakpoints),
+                        str(R.string.researchDescription_eclipseWeakpoints),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_CRITICAL_DAMAGE_ECLIPSE_ENEMIES,
+                        0,
+                        1,
+                        18,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 1500L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        1_937_880,
+                                        34,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        3_499_500,
+                                        36,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        5_965_920,
+                                        38,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 15_450_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        14_125_380,
+                                        40,
+                                        25,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 41_600_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_eclipseTargeting),
+                        str(R.string.researchDescription_eclipseTargeting),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_CRITICAL_CHANCE_ECLIPSE_ENEMIES,
+                        0,
+                        3,
+                        18,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        1,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 1500L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        1_937_880,
+                                        34,
+                                        2,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        3_499_500,
+                                        36,
+                                        3,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        5_965_920,
+                                        38,
+                                        4,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 14_450_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        14_125_380,
+                                        40,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 41_600_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_strategicExploits),
+                        str(R.string.researchDescription_strategicExploits),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_CRITICAL_DAMAGE_DEFENSE_PLATFORMS,
+                        0,
+                        1,
+                        19,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 610L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 80L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        2_600_040,
+                                        35,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1220L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 140L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        3_483_960,
+                                        37,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1620L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 170L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        8_058_720,
+                                        39,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 268_500_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 240L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.THREE, 50L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        13_456_140,
+                                        41,
+                                        25,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1140L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 220L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_gasBuildingEfficiency),
+                        str(R.string.researchDescription_gasBuildingEfficiency),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_COST_EFFICIENCY_STATION_GAS,
+                        0,
+                        2,
+                        19,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        3,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1700L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        2_600_040,
+                                        35,
+                                        6,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 3390L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        3_483_960,
+                                        37,
+                                        9,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2400L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 620L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        8_058_720,
+                                        39,
+                                        12,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 268_500_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2880L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 680L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        13_456_140,
+                                        41,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 3360L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3170L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        21_017_460,
+                                        42,
+                                        18,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 916_800_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 8400L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4070L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        29_338_800,
+                                        43,
+                                        21,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 7200L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4520L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        38_934_120,
+                                        44,
+                                        24,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2760L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1240L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        51_090_420,
+                                        45,
+                                        27,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3060L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1300L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        68_900_340,
+                                        46,
+                                        30,
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 4_028_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 987_300_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3240L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1360L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_stationTargeting),
+                        str(R.string.researchDescription_stationTargeting),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_CRITICAL_CHANCE_DEFENSE_PLATFORMS,
+                        0,
+                        3,
+                        19,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        1,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 610L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 250L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        2_600_040,
+                                        35,
+                                        2,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1220L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 450L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        3_483_960,
+                                        37,
+                                        3,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1620L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 170L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        8_058_720,
+                                        39,
+                                        4,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 268_500_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 243L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.THREE, 48L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        13_456_140,
+                                        41,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1135L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 222L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_kineticGuerillaWarfare),
+                        str(R.string.researchDescription_kineticGuerillaWarfare),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_KINETIC_DAMAGE_STELLA_ECLIPSE_ENEMIES,
+                        0,
+                        1,
+                        20,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        142_560,
+                                        31,
+                                        10_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        146_760,
+                                        32,
+                                        16_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 449_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        176_160,
+                                        32,
+                                        22_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 539_370L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        290_700,
+                                        34,
+                                        28_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_120_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        348_840,
+                                        34,
+                                        34_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_341_900L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        524_940,
+                                        36,
+                                        40_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        629_940,
+                                        36,
+                                        46_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_985_300L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        894_900,
+                                        38,
+                                        52_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 5_800_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        1_073_880,
+                                        38,
+                                        58_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 6_955_200L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        2_118_840,
+                                        40,
+                                        64_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 15_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        11,
+                                        2_542_560,
+                                        40,
+                                        70_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 18_711_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        12,
+                                        3_152_640,
+                                        42,
+                                        76_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 33_700_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        13,
+                                        3_783_120,
+                                        42,
+                                        84_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 40_446_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        14,
+                                        5_840_100,
+                                        44,
+                                        92_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 74_500_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        15,
+                                        10_335_060,
+                                        46,
+                                        100_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 148_100_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_gasResearchEfficiency),
+                        str(R.string.researchDescription_gasResearchEfficiency),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_GAS,
+                        0,
+                        2,
+                        20,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1700L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        3_499_500,
+                                        36,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 67_650_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 3150L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 570L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        5_965_920,
+                                        38,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 3780L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 650L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        14_125_380,
+                                        40,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 3150L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2830L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        13_456_140,
+                                        41,
+                                        25,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 5040L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3170L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        21_017_460,
+                                        42,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 916_800_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 12_600L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4070L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        29_338_800,
+                                        43,
+                                        35,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 10_800L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4520L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        38_934_120,
+                                        44,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 14_400L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5200L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        51_090_420,
+                                        45,
+                                        45,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4590L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1300L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        88_888_440,
+                                        47,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 5_957_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 1_460_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_energyGuerillaWarfare),
+                        str(R.string.researchDescription_energyGuerillaWarfare),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_ENERGY_DAMAGE_STELLA_ECLIPSE_ENEMIES,
+                        0,
+                        3,
+                        20,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        142_560,
+                                        31,
+                                        10_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        146_760,
+                                        32,
+                                        16_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 449_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        176_160,
+                                        32,
+                                        22_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 539_370L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        290_700,
+                                        34,
+                                        28_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_120_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        348_840,
+                                        34,
+                                        34_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_341_900L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        524_940,
+                                        36,
+                                        40_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        620_940,
+                                        36,
+                                        46_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_985_300L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        894_900,
+                                        38,
+                                        52_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 5_800_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        1_073_880,
+                                        38,
+                                        58_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 6_955_200L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        2_118_840,
+                                        40,
+                                        64_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 15_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        11,
+                                        2_542_560,
+                                        40,
+                                        70_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 18_711_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        12,
+                                        3_152_640,
+                                        42,
+                                        76_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 33_700_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        13,
+                                        3_783_120,
+                                        42,
+                                        84_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 40_446_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        14,
+                                        5_840_100,
+                                        44,
+                                        92_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 74_500_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        15,
+                                        10_335_060,
+                                        46,
+                                        100_000,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 148_100_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_highwayRobbery),
+                        str(R.string.researchDescription_highwayRobbery),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_LOOT_STELLA_ECLIPSE_ENEMIES,
+                        0,
+                        1,
+                        21,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        142_560,
+                                        31,
+                                        150,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        146_760,
+                                        32,
+                                        175,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 449_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        217_440,
+                                        33,
+                                        200,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 695_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        260_880,
+                                        33,
+                                        225,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 836_190L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        390_000,
+                                        35,
+                                        250,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        468_000,
+                                        35,
+                                        275,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_999_800L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        522_600,
+                                        37,
+                                        300,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        627_120,
+                                        37,
+                                        325,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 4_398_300L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        1_208_820,
+                                        39,
+                                        350,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        1_450_560,
+                                        39,
+                                        375,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 11_846_250L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        11,
+                                        2_018_400,
+                                        41,
+                                        400,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        12,
+                                        4_400_820,
+                                        43,
+                                        425,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        13,
+                                        7_663_560,
+                                        45,
+                                        450,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        14,
+                                        13_333_260,
+                                        47,
+                                        475,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        15,
+                                        22_584_540,
+                                        49,
+                                        500,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 598_500_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_shipComponentEfficiency),
+                        str(R.string.researchDescription_shipComponentEfficiency),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_COST_EFFICIENCY_SHIP_MATERIALS,
+                        0,
+                        3,
+                        21,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        950_580,
+                                        31,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        1_449_420,
+                                        33,
+                                        6,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 18_950_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        2_600_040,
+                                        35,
+                                        7,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        3_483_960,
+                                        37,
+                                        8,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        8_058_720,
+                                        39,
+                                        9,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 268_500_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        13_456_140,
+                                        41,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        29_338_800,
+                                        43,
+                                        11,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        51_090_420,
+                                        45,
+                                        12,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        88_888_440,
+                                        47,
+                                        13,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 5_957_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 1_460_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        150_563_760,
+                                        49,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 16_279_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 3_990_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_apexRogueNotoriety),
+                        str(R.string.researchDescription_apexRogueNotoriety),
+                        img(R.drawable.apex_rogue_notoriety),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_OUTPUTS_ROGUE_REP_BUNDLES,
+                        0,
+                        1,
+                        22,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        2_600_040,
+                                        35,
+                                        35,
+                                        null,
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_rogueTactics),
+                        str(R.string.researchDescription_rogueTactics),
+                        img(R.drawable.rogue_tactics),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_DAMAGE_ECLIPSE_ENEMIES,
+                        0,
+                        2,
+                        22,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        2_600_040,
+                                        35,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 4_440_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 3600L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        3_120_060,
+                                        35,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 4_440_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 13_332_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 4000L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        3_499_500,
+                                        36,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        4_199_400,
+                                        36,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 19_902_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        3_483_960,
+                                        37,
+                                        110,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 9_770_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        4_180_800,
+                                        37,
+                                        140,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 9_770_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 29_322_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        5_965_920,
+                                        38,
+                                        170,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 15_450_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        7_159_140,
+                                        38,
+                                        210,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 15_450_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 46_368_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        8_058_720,
+                                        39,
+                                        250,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 26_350_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        14_125_380,
+                                        40,
+                                        300,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 41_600_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_primeRogueCreditYield),
+                        str(R.string.researchDescription_primeRogueCreditYield),
+                        img(R.drawable.prime_rogue_credit_yield),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_OUTPUTS_ROGUE_CREDIT_BUNDLES,
+                        0,
+                        3,
+                        22,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        6_500_100,
+                                        35,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 222_200_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1000L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_mercilessOutlaw),
+                        str(R.string.researchDescription_mercilessOutlaw),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_CRITICAL_DAMAGE_STELLA_ECLIPSE_ENEMIES,
+                        0,
+                        1,
+                        23,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        390_000,
+                                        35,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        524_940,
+                                        36,
+                                        23,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        522_600,
+                                        37,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        1_208_820,
+                                        39,
+                                        35,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        2_018_400,
+                                        41,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        2_422_080,
+                                        41,
+                                        45,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 27_135_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        4_400_820,
+                                        43,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        5_280_960,
+                                        43,
+                                        55,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 58_680_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        7_663_560,
+                                        45,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        13_333_260,
+                                        47,
+                                        65,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_enhancedWeaponry),
+                        str(R.string.researchDescription_enhancedWeaponry),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_DAMAGE_PVP,
+                        0,
+                        2,
+                        23,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        5_200_080,
+                                        35,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 12_200_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 60L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        6_999_060,
+                                        36,
+                                        25,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 18_250_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 420L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 70L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        6_967_980,
+                                        37,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 26_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 460L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 70L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        11_931_900,
+                                        38,
+                                        35,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 42_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 480L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 80L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        16_117_440,
+                                        39,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 72_400_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 500L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 120L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        28_250_820,
+                                        40,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 114_300_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2920L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2050L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        26_912_280,
+                                        41,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 165_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 4670L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2300L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        42_034_980,
+                                        42,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 247_200_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3010L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 820L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        58_677_600,
+                                        43,
+                                        85,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 358_600_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3340L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 860L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        77_868_300,
+                                        44,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 546_200_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3840L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 900L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_stellaTargeting),
+                        str(R.string.researchDescription_stellaTargeting),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_CRITICAL_CHANCE_STELLA_ECLIPSE_ENEMIES,
+                        0,
+                        3,
+                        23,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        390_000,
+                                        35,
+                                        3,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        2,
+                                        524_940,
+                                        36,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        3,
+                                        894_900,
+                                        38,
+                                        7,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 5_800_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        4,
+                                        2_118_840,
+                                        40,
+                                        8,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 15_600_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        5,
+                                        2_542_560,
+                                        40,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 18_711_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        6,
+                                        3_152_640,
+                                        42,
+                                        11,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 33_700_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        7,
+                                        3_783_120,
+                                        42,
+                                        12,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 40_446_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        8,
+                                        5_840_100,
+                                        44,
+                                        13,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 74_500_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        9,
+                                        7_008_120,
+                                        44,
+                                        14,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 89_370_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        10_335_060,
+                                        46,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 148_100_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_armadaDefense),
+                        str(R.string.researchDescription_armadaDefense),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_ARMOR_ARMADA_TARGETS,
+                        0,
+                        1,
+                        24,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        3_900_060,
+                                        35,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 16_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 300L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        5_226_000,
+                                        37,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 36_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2580L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 370L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        8_948_940,
+                                        38,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 57_950_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 2710L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 380L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        12_088_080,
+                                        39,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 98_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 390L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 100L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        21_188_100,
+                                        40,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 155_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 2260L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1660L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        20_184_180,
+                                        41,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 226_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3620L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1860L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        31_526_220,
+                                        42,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 337_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 9040L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2400L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        44_008_200,
+                                        43,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 489_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2580L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 700L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        58_401_240,
+                                        44,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 744_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2970L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 730L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        76_635_600,
+                                        45,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_062_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3290L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 770L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_oreResearch),
+                        str(R.string.researchDescription_oreResearch),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_ORE,
+                        0,
+                        2,
+                        24,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        2_600_040,
+                                        35,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 3390L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        5_965_920,
+                                        38,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 4750L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        8_058_720,
+                                        39,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 268_500_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 4320L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 680L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        14_125_380,
+                                        40,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3150L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2830L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        13_456_140,
+                                        41,
+                                        25,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5040L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3170L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        21_017_460,
+                                        42,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 916_800_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3240L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1130L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        29_338_800,
+                                        43,
+                                        35,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3600L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1190L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        38_934_120,
+                                        44,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4140L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1240L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        51_090_420,
+                                        45,
+                                        45,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4590L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1300L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        68_900_340,
+                                        46,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 4_028_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 987_300_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4860L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1360L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_armadaArmorPiercing),
+                        str(R.string.researchDescription_armadaArmorPiercing),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_ARMOR_PIERCING_ARMADA_TARGETS,
+                        0,
+                        3,
+                        24,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        3_900_060,
+                                        35,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 16_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 300L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        5_226_000,
+                                        37,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 36_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2580L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 370L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        8_948_940,
+                                        38,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 57_950_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2710L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 380L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        12_088_080,
+                                        39,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 98_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 390L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 100L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        21_188_100,
+                                        40,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 155_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2260L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1660L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        20_184_180,
+                                        41,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 226_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3620L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1860L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        31_526_220,
+                                        42,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 337_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2330L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 670L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        44_008_200,
+                                        43,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 489_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2580L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 700L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        58_401_240,
+                                        44,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 744_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2970L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 730L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        76_635_600,
+                                        45,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_062_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3290L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 770L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_armadaEvasion),
+                        str(R.string.researchDescription_armadaEvasion),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_DODGE_ARMADA_TARGETS,
+                        0,
+                        1,
+                        25,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        3_900_060,
+                                        35,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 16_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 300L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        8_948_940,
+                                        38,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 57_950_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2710L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 380L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        12_088_080,
+                                        39,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 98_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 390L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.THREE, 100L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        21_188_100,
+                                        40,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 155_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2260L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1660L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        20_184_180,
+                                        41,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 226_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3620L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 1860L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        31_526_220,
+                                        42,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 337_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 9040L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2400L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        44_008_200,
+                                        43,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 489_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 7750L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2660L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        58_401_240,
+                                        44,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 744_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2970L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 730L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        76_635_600,
+                                        45,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_062_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3290L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 770L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        103_350_540,
+                                        46,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_481_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3490L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 800L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_oreBuildingEfficiency),
+                        str(R.string.researchDescription_oreBuildingEfficiency),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_COST_EFFICIENCY_STATION_ORE,
+                        0,
+                        2,
+                        25,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        2_600_040,
+                                        35,
+                                        3,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 3390L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        5_965_920,
+                                        38,
+                                        6,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 4750L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        8_058_720,
+                                        39,
+                                        9,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 268_500_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 4320L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 680L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        14_125_380,
+                                        40,
+                                        12,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3150L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2830L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        13_456_140,
+                                        41,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 5040L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3170L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        21_017_460,
+                                        42,
+                                        18,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 916_800_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 12_600L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4070L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        29_338_800,
+                                        43,
+                                        21,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 10_800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4520L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        38_934_120,
+                                        44,
+                                        24,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4140L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1240L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        51_090_420,
+                                        45,
+                                        27,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4590L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1300L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        68_900_340,
+                                        46,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 4_028_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 987_300_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4860L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 1360L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_armadaAccuracy),
+                        str(R.string.researchDescription_armadaAccuracy),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_ACCURACY_ARMADA_TARGETS,
+                        0,
+                        3,
+                        25,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        3_900_060,
+                                        35,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 16_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 300L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        8_948_940,
+                                        38,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 57_950_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 2710L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 380L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        12_088_080,
+                                        39,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 98_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 390L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.THREE, 100L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        21_188_100,
+                                        40,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 155_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 2260L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1660L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        20_184_180,
+                                        41,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 226_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 3620L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1860L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        31_526_220,
+                                        42,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 337_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 9040L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2400L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        44_008_200,
+                                        43,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 489_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 7750L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2660L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        58_401_240,
+                                        44,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 744_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2970L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 730L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        76_635_600,
+                                        45,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_062_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3290L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 770L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        103_350_540,
+                                        46,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_481_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3490L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 800L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_immovableObject),
+                        str(R.string.researchDescription_immovableObject),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_SHIELD_DEFLECTION_ARMADA_TARGETS,
+                        0,
+                        1,
+                        26,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        3_900_060,
+                                        35,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 16_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.THREE, 1940L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 300L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        12_088_080,
+                                        39,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 98_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.THREE, 390L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.THREE, 100L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        21_188_100,
+                                        40,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 155_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 2260L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1660L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        20_184_180,
+                                        41,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 226_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 3620L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 1860L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        31_526_220,
+                                        42,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 337_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2330L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 670L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        44_008_200,
+                                        43,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 489_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2580L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 700L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        58_401_240,
+                                        44,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 744_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2970L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 730L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        76_635_600,
+                                        45,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_062_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3290L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 770L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        103_350_540,
+                                        46,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_481_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3490L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 800L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        133_332_660,
+                                        47,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_190_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4010L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 900L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_g4ShipRepairs),
+                        str(R.string.researchDescription_g4ShipRepairs),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_SHIP_REPAIR_COST_EFFICIENCY_G4_SHIPS,
+                        0,
+                        2,
+                        26,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        12_088_080,
+                                        39,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 268_500_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 79_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.THREE, 2880L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.THREE, 600L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        21_188_100,
+                                        40,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 124_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 2100L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2500L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        20_184_180,
+                                        41,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 180_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 3360L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2800L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        31_526_220,
+                                        42,
+                                        25,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 916_800_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 269_600_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 8400L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3600L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        44_008_200,
+                                        43,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 391_200_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 7200L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4000L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        58_401_240,
+                                        44,
+                                        35,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 595_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 9600L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4600L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        76_635_600,
+                                        45,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 948_600_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3060L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1150L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        103_350_540,
+                                        46,
+                                        45,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 4_028_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 1_185_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3240L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1200L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        133_332_660,
+                                        47,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 5_957_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 1_752_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3720),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1350L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        170_541_360,
+                                        48,
+                                        75,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 9_621_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_830_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4080L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1500L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_armadaShieldPiercing),
+                        str(R.string.researchDescription_armadaShieldPiercing),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_SHIELD_PENETRATION_ARMADA_TARGETS,
+                        0,
+                        3,
+                        26,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        3_900_060,
+                                        35,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 16_650_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 300L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        12_088_080,
+                                        39,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 98_700_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.THREE, 390L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.THREE, 100L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        21_188_100,
+                                        40,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 155_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 2260L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1660L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        20_184_180,
+                                        41,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 226_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 3620L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 1860L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        31_526_220,
+                                        42,
+                                        50,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 337_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 9040L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2400L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        44_008_200,
+                                        43,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 489_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 7750L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 2660L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        58_401_240,
+                                        44,
+                                        70,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 744_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 10_340L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3060L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        76_635_600,
+                                        45,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_062_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3290L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 770L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        103_350_540,
+                                        46,
+                                        90,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_481_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3490L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 800L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        133_332_660,
+                                        47,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_190_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 4010L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 900L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_muddsMudd),
+                        str(R.string.researchDescription_muddsMudd),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.NONE,
+                        0,
+                        1,
+                        27,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        35_313_540,
+                                        40,
+                                        -1,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 259_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 3000L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_outOfTheDarkness),
+                        str(R.string.researchDescription_outOfTheDarkness),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.NONE,
+                        0,
+                        3,
+                        27,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        3_313_540,
+                                        40,
+                                        -1,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 259_900_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 3000L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_sneakyBackhander),
+                        str(R.string.researchDescription_sneakyBackhander),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_UNLOCK_WEEKLY_INDEP_CREDIT_ROGUE_BUNDLES,
+                        0,
+                        1,
+                        28,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        26_912_280,
+                                        41,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 301_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 5600L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 2800L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        58_677_600,
+                                        43,
+                                        130,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 652_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 4000L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        102_180_780,
+                                        45,
+                                        165,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_416_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 18_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5100L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        177_776_880,
+                                        47,
+                                        205,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_920_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6200L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1350L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        301_127_460,
+                                        49,
+                                        250,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 7_980_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7200L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 1700L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_g4Impulse),
+                        str(R.string.researchDescription_g4Impulse),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_IMPULSE_SPEED_G4_SHIPS,
+                        0,
+                        2,
+                        28,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        31_526_220,
+                                        42,
+                                        3,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 337_100_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2160L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1100L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        44_008_200,
+                                        43,
+                                        5,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 489_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2400L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1160L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        58_401_240,
+                                        44,
+                                        8,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 744_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 2760L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1210L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        76_635_600,
+                                        45,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_062_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3060L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1270L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        103_350_540,
+                                        46,
+                                        13,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_481_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3240L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1320L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        133_332_660,
+                                        47,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_190_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3720L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1490L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        159_999_240,
+                                        47,
+                                        18,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 2_628_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 3720L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1490L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        170_541_360,
+                                        48,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 3_537_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4080L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1650L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        204_649_620,
+                                        48,
+                                        23,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 4_244_400_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4080L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1650L)
+                                        )
+                                ),
+                                new Level(
+                                        10,
+                                        225_845_580,
+                                        49,
+                                        25,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 5_985_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4320L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.RARE, Grade.FOUR, 1870L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_getawayPilotsII),
+                        str(R.string.researchDescription_getawayPilotsII),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_WARP_SPEED_II,
+                        0,
+                        3,
+                        28,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        13_456_140,
+                                        41,
+                                        15,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 150_800_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 5260L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        29_338_800,
+                                        43,
+                                        30,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 326_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 11_270L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        51_090_420,
+                                        45,
+                                        45,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 708_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 20_000L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 4790L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        88_888_440,
+                                        47,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 1_460_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 23_330L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 5820L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        150_563_760,
+                                        49,
+                                        75,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.DILITHIUM, 3_990_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.GAS, Rarity.COMMON, Grade.FOUR, 26_670L),
+                                                new ResourceMaterial(2, Material.GAS, Rarity.UNCOMMON, Grade.FOUR, 6760L)
+                                        )
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_dilithiumUpgrades),
+                        str(R.string.researchDescription_dilithiumUpgrades),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_COST_EFFICIENCY_SHIP_DILITHIUM,
+                        0,
+                        1,
+                        29,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        46_942_080,
+                                        43,
+                                        4,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 13_200L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        62_294_640,
+                                        44,
+                                        8,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 17_600L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        81_744_660,
+                                        45,
+                                        12,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 19_800L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        110_240_520,
+                                        46,
+                                        16,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 4_028_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 987_300_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 5940L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        142_221_540,
+                                        47,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 5_957_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 1_460_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 12_600L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 6820L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        181_910_760,
+                                        48,
+                                        24,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 9_621_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_358_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 13_200L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7480L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        240_901_980,
+                                        49,
+                                        28,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 16_279_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 3_990_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.COMMON, Grade.FOUR, 14_400L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7920L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        303_237_540,
+                                        50,
+                                        32,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 28_917_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 7_088_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.CRYSTAL, Rarity.UNCOMMON, Grade.FOUR, 7800L),
+                                                new ResourceMaterial(2, Material.CRYSTAL, Rarity.RARE, Grade.FOUR, 2860L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        369_866_760,
+                                        51,
+                                        36,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 44_018_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 10_789_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        476_141_100,
+                                        52,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 67_473_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 16_538_000_000L)
+                                        ),
+                                        null
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_tritaniumUpgrades),
+                        str(R.string.researchDescription_tritaniumUpgrades),
+                        img(-1),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_COST_EFFICIENCY_SHIP_TRITANIUM,
+                        0,
+                        3,
+                        29,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        46_942_080,
+                                        43,
+                                        2,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 13_200L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        62_294_640,
+                                        44,
+                                        4,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 17_600L)
+                                        )
+                                ),
+                                new Level(
+                                        3,
+                                        81_744_660,
+                                        45,
+                                        6,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 19_800L)
+                                        )
+                                ),
+                                new Level(
+                                        4,
+                                        110_240_520,
+                                        46,
+                                        8,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 4_028_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 987_300_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 12_000L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 5940L)
+                                        )
+                                ),
+                                new Level(
+                                        5,
+                                        142_221_540,
+                                        47,
+                                        10,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 5_957_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 1_460_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 12_600L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 6820L)
+                                        )
+                                ),
+                                new Level(
+                                        6,
+                                        181_910_760,
+                                        48,
+                                        12,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 9_621_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 2_358_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 13_200L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 7480L)
+                                        )
+                                ),
+                                new Level(
+                                        7,
+                                        240_901_980,
+                                        49,
+                                        14,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 16_279_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 3_990_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.FOUR, 14_400L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 7920L)
+                                        )
+                                ),
+                                new Level(
+                                        8,
+                                        303_237_540,
+                                        50,
+                                        16,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 28_917_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 7_088_000_000L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.UNCOMMON, Grade.FOUR, 7800L),
+                                                new ResourceMaterial(2, Material.ORE, Rarity.RARE, Grade.FOUR, 2860L)
+                                        )
+                                ),
+                                new Level(
+                                        9,
+                                        369_866_760,
+                                        51,
+                                        18,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 44_018_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 10_789_000_000L)
+                                        ),
+                                        null
+                                ),
+                                new Level(
+                                        10,
+                                        476_141_100,
+                                        52,
+                                        20,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.PARSTEEL, 67_473_000_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 16_538_000_000L)
+                                        ),
+                                        null
                                 )
                         )
                 )
