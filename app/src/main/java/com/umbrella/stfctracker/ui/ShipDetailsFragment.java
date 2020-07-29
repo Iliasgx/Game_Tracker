@@ -24,7 +24,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
 import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
-import com.umbrella.stfctracker.Database.Data.DataFunctions;
+import com.umbrella.stfctracker.Database.Data.FunctionsDB;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.Database.Entities.Tier;
 import com.umbrella.stfctracker.Database.Models.BuiltShipViewModel;
@@ -88,7 +88,7 @@ public class ShipDetailsFragment extends Fragment implements SeekBar.OnSeekBarCh
         binding.fragShipDetailsShipName.setText(builtShip.getName());
         binding.fragShipDetailsStars.setNumStars(builtShip.getGrade().ordinal());
         binding.fragShipDetailsStars.setRating(builtShip.getGrade().ordinal());
-        binding.fragShipDetailsImg.setImageDrawable(DataFunctions.decodeDrawable(getResources(), builtShip.getImage()));
+        binding.fragShipDetailsImg.setImageDrawable(FunctionsDB.decodeDrawable(getResources(), builtShip.getImage()));
         binding.fragShipDetailsClassImg.setImageDrawable(getResources().getDrawable(builtShip.getShipClass().getImageId(), null));
         binding.fragShipDetailsAbilityName.setText(builtShip.getShipAbility());
         binding.fragShipDetailsTitleLayout.setBackgroundColor(getResources().getColor(builtShip.getRarity().getColorInner(), null));

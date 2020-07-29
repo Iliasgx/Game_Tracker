@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public final class DataResearch extends DataFunctions {
+public final class DataResearch extends FunctionsDB {
     private static DataResearch mInstance;
 
     private List<Research> research = new ArrayList<>();
@@ -74,7 +74,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 5L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -85,7 +85,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 100L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 15L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -96,7 +96,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 25L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -107,7 +107,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 50L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -118,7 +118,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 400L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 90L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -129,7 +129,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 650L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -140,7 +140,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -151,7 +151,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1950L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1170L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -162,7 +162,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 3925L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2350L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -198,7 +198,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -208,7 +208,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 50L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -218,7 +218,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 105L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -228,7 +228,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 195L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -238,7 +238,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -261,7 +261,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 80L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 25L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -284,7 +284,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 20L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -295,7 +295,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 40L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 20L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -306,7 +306,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 120L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 70L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -317,7 +317,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 160L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 120L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -328,7 +328,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 260L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 335L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -350,7 +350,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 35_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -373,7 +373,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 100L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 10L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -384,7 +384,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 30L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -395,7 +395,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 60L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -406,7 +406,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -417,7 +417,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 365L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -428,7 +428,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1360L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 820L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -439,7 +439,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2650L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1600L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -450,7 +450,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 5700L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3425L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -461,7 +461,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -498,7 +498,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 120L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 35L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -509,7 +509,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 180L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -520,7 +520,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -531,7 +531,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 390L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 335L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -542,7 +542,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 820L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1090L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -565,7 +565,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 120L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 35L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -576,7 +576,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 180L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -587,7 +587,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -598,7 +598,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 390L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 335L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -609,7 +609,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 820L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1090L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -632,7 +632,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 120L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 35L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -643,7 +643,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 180L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -654,7 +654,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -665,7 +665,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 390L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 335L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -676,7 +676,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 820L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1090L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -698,7 +698,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 225L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -745,7 +745,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -792,7 +792,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 260L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 420L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -803,7 +803,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 320L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 610L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -814,7 +814,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 540L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1360L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -825,7 +825,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 780L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1950L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -836,7 +836,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1575L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3925L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -847,7 +847,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5700L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -858,7 +858,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 5300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -869,7 +869,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 8800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -891,7 +891,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 630L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -901,7 +901,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 19_800L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -924,7 +924,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 320L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -935,7 +935,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 400L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 830L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -946,7 +946,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 780L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -957,7 +957,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1060L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2375L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -968,7 +968,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -979,7 +979,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 3650L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -990,7 +990,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 8800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -1001,7 +1001,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_900L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 31_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -1024,7 +1024,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 320L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -1035,7 +1035,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 400L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 830L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1046,7 +1046,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 780L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1057,7 +1057,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1060L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2375L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1068,7 +1068,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1079,7 +1079,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 3650L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1090,7 +1090,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 8800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -1101,7 +1101,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_900L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 31_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -1124,7 +1124,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 320L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -1135,7 +1135,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 400L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 830L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1146,7 +1146,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 780L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1157,7 +1157,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1060L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2375L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1168,7 +1168,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1179,7 +1179,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2650L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1190,7 +1190,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 8800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -1201,7 +1201,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_900L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 31_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -1224,7 +1224,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1280L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1825L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -1247,7 +1247,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -1258,7 +1258,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1360L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 820L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1269,7 +1269,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2650L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1600L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1280,7 +1280,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 3925L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2350L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1291,7 +1291,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 9200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1302,7 +1302,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1313,7 +1313,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 34_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -1324,7 +1324,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 58_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -1346,7 +1346,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1775L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -1356,7 +1356,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1366,7 +1366,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 5100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1376,7 +1376,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7400L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1386,7 +1386,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 17_100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1396,7 +1396,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 28_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1406,7 +1406,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 75_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -1416,7 +1416,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 121_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -1439,7 +1439,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -1450,7 +1450,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1360L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 820L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1461,7 +1461,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2650L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1600L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1472,7 +1472,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 3925L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2350L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1483,7 +1483,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 9200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1494,7 +1494,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1505,7 +1505,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 34_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -1516,7 +1516,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 58_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -1539,7 +1539,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2175L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -1573,7 +1573,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3450L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1583,7 +1583,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7400L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1593,7 +1593,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1603,7 +1603,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 28_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1613,7 +1613,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 45_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1672,7 +1672,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3450L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1682,7 +1682,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7400L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1692,7 +1692,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1702,7 +1702,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 28_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1712,7 +1712,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 45_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1773,7 +1773,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2350L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3150L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1784,7 +1784,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 5500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1795,7 +1795,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 7900L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 10_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1806,7 +1806,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 28_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1817,7 +1817,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 34_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 46_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1828,7 +1828,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 91_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 121_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -1878,7 +1878,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2350L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3150L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1889,7 +1889,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 5500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -1900,7 +1900,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 7900L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 10_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -1911,7 +1911,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 28_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -1922,7 +1922,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 34_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 46_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -1933,7 +1933,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 91_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 121_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -1983,7 +1983,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2350L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3150L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -1994,7 +1994,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 5500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -2005,7 +2005,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 7900L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 10_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -2016,7 +2016,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 28_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -2027,7 +2027,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 34_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 46_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -2038,7 +2038,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 91_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 121_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -2086,7 +2086,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7400L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -2096,7 +2096,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 17_100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -2106,7 +2106,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 28_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -2116,7 +2116,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 75_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -2126,7 +2126,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 121_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -2136,7 +2136,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 314_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -2183,7 +2183,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7400L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -2193,7 +2193,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 17_100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -2203,7 +2203,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 28_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -2213,7 +2213,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 75_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -2285,7 +2285,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7400L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -2295,7 +2295,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 17_100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -2305,7 +2305,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 28_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -2315,7 +2315,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 75_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -2425,7 +2425,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -2472,7 +2472,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -2483,7 +2483,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 22_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -2494,7 +2494,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 93_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 55_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -2505,7 +2505,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 152_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 91_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -2516,7 +2516,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 560_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 336_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -2527,7 +2527,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 865_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 519_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -2538,7 +2538,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_790_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -2549,7 +2549,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 7_460_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_470_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -2575,7 +2575,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 65_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -2597,7 +2597,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 17_100L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -2607,7 +2607,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 28_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -2617,7 +2617,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 75_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -2640,7 +2640,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 477_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -2650,7 +2650,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 730_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -2660,7 +2660,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -2670,7 +2670,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 6_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -2680,7 +2680,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 31_750_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -2717,7 +2717,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -2728,7 +2728,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 22_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -2739,7 +2739,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 34_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -2750,7 +2750,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 58_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -2761,7 +2761,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 241_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 145_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -2772,7 +2772,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 367_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 220_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -2783,7 +2783,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_040_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_230_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -2794,7 +2794,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 3_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -2805,7 +2805,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 16_600_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -2843,7 +2843,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 17_700L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -2854,7 +2854,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 21_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 28_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -2865,7 +2865,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM,34_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 46_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -2876,7 +2876,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 55_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 74_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -2887,7 +2887,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 220_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 294_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -2898,7 +2898,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 336_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM,448_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -2909,7 +2909,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -2920,7 +2920,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_790_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_720_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -2931,7 +2931,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 14_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_550_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -2969,7 +2969,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 8800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -2980,7 +2980,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 13_900L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -2991,7 +2991,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -3002,7 +3002,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 61_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 152_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -3013,7 +3013,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 224_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 560_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -3024,7 +3024,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 346_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -3035,7 +3035,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_860_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -3046,7 +3046,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -3072,7 +3072,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 26_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -3133,7 +3133,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 58_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -3144,7 +3144,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 241_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 145_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -3155,7 +3155,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 367_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 220_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -3166,7 +3166,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_340_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 805_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -3177,7 +3177,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_040_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_230_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -3188,7 +3188,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 7_460_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_470_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -3199,7 +3199,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 11_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -3225,7 +3225,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 65_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -3259,7 +3259,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 75_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -3281,7 +3281,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 314_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -3291,7 +3291,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_120_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -3301,7 +3301,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_740_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -3311,7 +3311,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 6_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -3321,7 +3321,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_690_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -3331,7 +3331,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 31_750_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -3446,7 +3446,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 3_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -3457,7 +3457,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_790_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -3468,7 +3468,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 16_600_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -3520,7 +3520,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 55_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 74_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -3531,7 +3531,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 91_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 121_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -3542,7 +3542,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 145_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 193_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -3553,7 +3553,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 519_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 690_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -3564,7 +3564,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 805_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_070_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -3575,7 +3575,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_790_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_720_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -3586,7 +3586,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_470_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_960_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -3653,7 +3653,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -3664,7 +3664,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 96_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -3675,7 +3675,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 147_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -3686,7 +3686,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 536_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -3697,7 +3697,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -3708,7 +3708,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -3719,7 +3719,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_440_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -3745,7 +3745,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 26_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -3864,7 +3864,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_790_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -3875,7 +3875,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 11_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -3886,7 +3886,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 16_600_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -3912,7 +3912,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 65_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -3947,7 +3947,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 197_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -3957,7 +3957,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 477_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -3967,7 +3967,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 730_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -3977,7 +3977,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_660_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -3987,7 +3987,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -3997,7 +3997,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_690_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -4007,7 +4007,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 14_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -4017,7 +4017,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 31_750_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -4123,7 +4123,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_040_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_230_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -4134,7 +4134,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_790_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -4145,7 +4145,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 7_460_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_470_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -4156,7 +4156,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 16_600_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -4264,7 +4264,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -4275,7 +4275,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_470_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_960_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -4286,7 +4286,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 6_670_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_890_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -4297,7 +4297,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 14_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_550_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -4404,7 +4404,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_860_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -4415,7 +4415,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_440_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_1100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -4426,7 +4426,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -4452,7 +4452,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 26_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -4487,7 +4487,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -4497,7 +4497,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 560_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -4507,7 +4507,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -4517,7 +4517,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -4527,7 +4527,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -4537,7 +4537,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -4547,7 +4547,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -4557,7 +4557,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -4649,7 +4649,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_690_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -4687,7 +4687,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 50_250_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -4790,7 +4790,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_690_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -4828,7 +4828,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 50_250_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -4931,7 +4931,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_690_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -4969,7 +4969,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 50_250_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -5139,7 +5139,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15_104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -5161,7 +5161,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 98_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -5212,7 +5212,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_070_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -5238,7 +5238,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 5_960_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -5362,7 +5362,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_070_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -5388,7 +5388,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 5_960_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -5512,7 +5512,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_070_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -5538,7 +5538,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 5_960_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -6350,7 +6350,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 460L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 30L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -6361,7 +6361,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 770L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 80L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -6372,7 +6372,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2050L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -6383,7 +6383,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 4300L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 840L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -6394,7 +6394,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 6200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1210L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -6447,7 +6447,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 134_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 26_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -6556,7 +6556,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 205L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 15L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -6567,7 +6567,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 325L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 45L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -6578,7 +6578,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 540L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 90L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -6589,7 +6589,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 820L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -6600,7 +6600,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1140L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -6623,7 +6623,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 305L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 20L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -6634,7 +6634,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 26_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -6700,7 +6700,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 305L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 25L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -6711,7 +6711,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 490L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 60L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -6722,7 +6722,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 820L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 115L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -6733,7 +6733,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1725L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 315L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -6744,7 +6744,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2475L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 455L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -6767,7 +6767,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 325L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 48L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -6778,7 +6778,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 540L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 90L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -6789,7 +6789,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 820L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -6800,7 +6800,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1650L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 365L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -6811,7 +6811,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2525L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -6833,7 +6833,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -6856,7 +6856,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 490L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 60L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -6867,7 +6867,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 820L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 115L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -6878,7 +6878,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1220L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 190L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -6889,7 +6889,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2475L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 455L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -6900,7 +6900,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3775L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 690L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -6922,7 +6922,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 225L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -6932,7 +6932,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 375L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -6942,7 +6942,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 630L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -6952,7 +6952,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1390L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -6962,7 +6962,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2050L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -6972,7 +6972,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 5900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -6995,7 +6995,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 19_800L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -7005,7 +7005,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 52_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -7109,7 +7109,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 360L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -7131,7 +7131,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -7141,7 +7141,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -7151,7 +7151,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1210L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -7161,7 +7161,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1850L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -7171,7 +7171,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3925L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -7194,7 +7194,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1360L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -7241,7 +7241,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2050L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -7288,7 +7288,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 820L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -7299,7 +7299,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1140L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -7310,7 +7310,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2525L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 550L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -7321,7 +7321,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3700L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 820L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -7332,7 +7332,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 7200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1600L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -7343,7 +7343,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 10_700L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2350L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -7354,7 +7354,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 25_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -7365,7 +7365,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 35_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -7388,7 +7388,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1220L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 190)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -7399,7 +7399,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1725L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 315L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -7410,7 +7410,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3775L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 690L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -7421,7 +7421,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1020L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -7432,7 +7432,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 10_800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -7443,7 +7443,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 16_100L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2950L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -7454,7 +7454,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -7465,7 +7465,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 53_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -7487,7 +7487,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 590L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -7497,7 +7497,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 850L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -7507,7 +7507,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -7517,7 +7517,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -7527,7 +7527,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 5500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -7537,7 +7537,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 8000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -7547,7 +7547,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 18_400L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -7557,7 +7557,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 31_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -7580,7 +7580,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2475L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 610L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -7591,7 +7591,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3775L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 920L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -7602,7 +7602,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1950L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -7613,7 +7613,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 10_800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2650L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -7624,7 +7624,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 23_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5700L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -7635,7 +7635,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -7646,7 +7646,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -7657,7 +7657,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 142_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -7680,7 +7680,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 4125L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1210L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -7759,7 +7759,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1525L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -7769,7 +7769,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -7818,7 +7818,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 55_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -7961,7 +7961,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 920L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -7972,7 +7972,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 7400L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1360L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -7983,7 +7983,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 14_400L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2650L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -7994,7 +7994,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 21_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3925L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -8005,7 +8005,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 49_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -8016,7 +8016,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 71_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -8027,7 +8027,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 189_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -8038,7 +8038,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 316_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 58_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -8085,7 +8085,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1360L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -8096,7 +8096,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1950L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -8107,7 +8107,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 16_100L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3925L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -8118,7 +8118,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 23_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5700L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -8129,7 +8129,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 53_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -8140,7 +8140,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -8151,7 +8151,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 237_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 58_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -8162,7 +8162,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 380_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -8185,7 +8185,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 9200L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2725L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -8208,7 +8208,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 10_600L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1950L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -8219,7 +8219,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 14_400L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2650L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -8230,7 +8230,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 31_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5700L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -8241,7 +8241,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 49_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -8252,7 +8252,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 120_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -8263,7 +8263,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 189_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -8274,7 +8274,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 506_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -8285,7 +8285,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 825_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 152_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -8333,7 +8333,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1950L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -8344,7 +8344,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 10_800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2650L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -8355,7 +8355,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 23_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5700L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -8366,7 +8366,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -8377,7 +8377,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -8388,7 +8388,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 142_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -8399,7 +8399,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 380_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -8410,7 +8410,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 620_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 152_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -8433,7 +8433,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 10_800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2650L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -8444,7 +8444,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 16_100L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3925L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -8455,7 +8455,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -8466,7 +8466,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 53_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -8477,7 +8477,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 142_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -8488,7 +8488,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 237_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 58_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -8499,7 +8499,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 620_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 152_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -8561,7 +8561,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 10_800L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2650L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -8572,7 +8572,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 16_100L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3925L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -8583,7 +8583,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -8594,7 +8594,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 53_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -8605,7 +8605,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 142_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -8616,7 +8616,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 237_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 58_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -8627,7 +8627,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 620_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 152_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -8638,7 +8638,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 985_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -8674,7 +8674,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 31_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5700L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -8685,7 +8685,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 71_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -8696,7 +8696,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 120_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -8707,7 +8707,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 316_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 58_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -8718,7 +8718,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 506_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -8729,7 +8729,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_310_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -8740,7 +8740,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -8802,7 +8802,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 23_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5700L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -8813,7 +8813,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 53_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 13_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -8824,7 +8824,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -8835,7 +8835,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 237_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 58_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -8846,7 +8846,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 380_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -8857,7 +8857,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 985_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -8868,7 +8868,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_500_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -8905,7 +8905,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 225_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 44_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -9088,7 +9088,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 168_683_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 33_075_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -9111,7 +9111,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 89_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 26_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -9157,7 +9157,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 33_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -9167,7 +9167,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 87_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -9271,7 +9271,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 96_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -9321,7 +9321,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 17_719_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -9331,7 +9331,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 36_914_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -9378,7 +9378,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -9389,7 +9389,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 142_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -9455,7 +9455,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -9523,7 +9523,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -9546,7 +9546,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 22_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -9557,7 +9557,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 142_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 34_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -9623,7 +9623,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -9858,7 +9858,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -9921,7 +9921,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -9931,7 +9931,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 560_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -9941,7 +9941,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -9951,7 +9951,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -9961,7 +9961,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -9971,7 +9971,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -9981,7 +9981,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -9991,7 +9991,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -10040,7 +10040,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -10050,7 +10050,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 560_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -10060,7 +10060,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -10070,7 +10070,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -10080,7 +10080,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -10090,7 +10090,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -10100,7 +10100,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -10110,7 +10110,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -10159,7 +10159,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -10169,7 +10169,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 560_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -10179,7 +10179,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -10189,7 +10189,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -10199,7 +10199,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -10209,7 +10209,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -10219,7 +10219,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -10229,7 +10229,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -10278,7 +10278,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -10288,7 +10288,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -10298,7 +10298,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -10308,7 +10308,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -10318,7 +10318,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -10328,7 +10328,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -10338,7 +10338,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -10348,7 +10348,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -10397,7 +10397,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -10407,7 +10407,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -10417,7 +10417,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -10427,7 +10427,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -10437,7 +10437,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -10447,7 +10447,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -10457,7 +10457,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -10467,7 +10467,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -10516,7 +10516,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -10526,7 +10526,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -10536,7 +10536,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -10546,7 +10546,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -10556,7 +10556,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -10566,7 +10566,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -10576,7 +10576,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -10586,7 +10586,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -10663,7 +10663,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 805_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -10674,7 +10674,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_150_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -10685,7 +10685,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 12_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_790_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -10696,7 +10696,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -10707,7 +10707,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 45_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -10718,7 +10718,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 105_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 23_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -10729,7 +10729,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 179_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -10740,7 +10740,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 410_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 90_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -10751,7 +10751,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 611_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 134_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -10788,7 +10788,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 805_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -10799,7 +10799,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_150_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -10810,7 +10810,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 12_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_790_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -10821,7 +10821,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -10832,7 +10832,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 45_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -10843,7 +10843,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 105_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 23_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -10854,7 +10854,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 179_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -10865,7 +10865,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 410_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 90_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -10876,7 +10876,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 611_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 134_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -10913,7 +10913,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 805_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -10924,7 +10924,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_150_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -10935,7 +10935,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 12_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_790_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -10946,7 +10946,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -10957,7 +10957,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 45_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -10968,7 +10968,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 105_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 23_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -10979,7 +10979,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 179_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -10990,7 +10990,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 410_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 90_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -11001,7 +11001,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 611_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 134_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -11039,7 +11039,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 4_170_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 815_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -11050,7 +11050,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 9_480_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_860_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -11061,7 +11061,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 15_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_980_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -11072,7 +11072,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 33_850_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_630_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -11083,7 +11083,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 49_850_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_770_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -11094,7 +11094,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 134_300_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 26_350_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -11105,7 +11105,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 212_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 41_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -11116,7 +11116,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 458_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 89_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -11127,7 +11127,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 665_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 130_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -11165,7 +11165,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 4_170_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 815_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -11176,7 +11176,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 9_480_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_860_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -11187,7 +11187,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 15_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_980_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -11198,7 +11198,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 33_850_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_630_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -11209,7 +11209,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 49_850_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_770_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -11220,7 +11220,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 134_300_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 26_350_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -11231,7 +11231,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 212_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 41_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -11242,7 +11242,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 458_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 89_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -11253,7 +11253,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 665_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 130_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -11291,7 +11291,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 4_170_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 815_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -11302,7 +11302,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 9_480_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_860_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -11313,7 +11313,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 15_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_980_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -11324,7 +11324,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 33_850_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 6_630_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -11335,7 +11335,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 49_850_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 9_770_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -11346,7 +11346,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 134_300_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 26_350_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -11357,7 +11357,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 212_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 41_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -11368,7 +11368,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 458_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 89_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -11379,7 +11379,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 665_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 130_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -11417,7 +11417,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 12_250_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_250_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -11428,7 +11428,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_590_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -11439,7 +11439,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -11450,7 +11450,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 18_350_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -11461,7 +11461,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 29_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -11472,7 +11472,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 77_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -11483,7 +11483,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 113_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -11494,7 +11494,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 244_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -11505,7 +11505,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 372_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -11543,7 +11543,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 12_250_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_250_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -11554,7 +11554,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_590_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -11565,7 +11565,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -11576,7 +11576,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 18_350_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -11587,7 +11587,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 29_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -11598,7 +11598,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 77_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -11609,7 +11609,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 113_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -11620,7 +11620,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 244_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -11631,7 +11631,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 372_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -11669,7 +11669,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 12_250_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_250_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -11680,7 +11680,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 5_590_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -11691,7 +11691,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -11702,7 +11702,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 18_350_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -11713,7 +11713,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 29_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -11724,7 +11724,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 77_950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -11735,7 +11735,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 113_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -11746,7 +11746,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 244_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -11757,7 +11757,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_026_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 372_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -11795,7 +11795,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 25_250_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -11806,7 +11806,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 60_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -11817,7 +11817,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -11828,7 +11828,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 210_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -11839,7 +11839,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 358_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -11850,7 +11850,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 820_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -11861,7 +11861,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_222_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -11872,7 +11872,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_701_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -11883,7 +11883,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3_852_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -11921,7 +11921,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 25_250_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -11932,7 +11932,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 60_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -11943,7 +11943,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -11954,7 +11954,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 210_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -11965,7 +11965,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 358_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -11976,7 +11976,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 820_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -11987,7 +11987,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_222_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -11998,7 +11998,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_701_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -12009,7 +12009,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3_852_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -12047,7 +12047,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 25_250_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -12058,7 +12058,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 60_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -12069,7 +12069,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 90_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -12080,7 +12080,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 210_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -12091,7 +12091,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 358_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -12102,7 +12102,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 820_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -12113,7 +12113,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_222_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -12124,7 +12124,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_701_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 496_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -12135,7 +12135,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3_852_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -12171,7 +12171,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 10_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -12181,7 +12181,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 23_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -12191,7 +12191,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 34_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -12215,7 +12215,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 145_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -12239,7 +12239,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 456_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -12263,7 +12263,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_382_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -12790,7 +12790,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -12946,7 +12946,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -13102,7 +13102,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 8_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -13346,7 +13346,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 44_018_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_578_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -13357,7 +13357,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 60_244_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 29_531_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -13498,7 +13498,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 44_018_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_578_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -13509,7 +13509,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 60_244_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 29_531_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -13650,7 +13650,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 44_018_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 21_578_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -13661,7 +13661,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 60_244_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 29_531_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 )
@@ -13738,7 +13738,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -13748,7 +13748,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -13882,7 +13882,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 167_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -13918,7 +13918,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 615_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -14075,7 +14075,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 58_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -14085,7 +14085,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -14095,7 +14095,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 152_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -14105,7 +14105,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 241_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -14115,7 +14115,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -14138,7 +14138,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -14148,7 +14148,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -14158,7 +14158,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -14168,7 +14168,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -14178,7 +14178,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -14188,7 +14188,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -14436,7 +14436,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 58_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -14446,7 +14446,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 93_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -14456,7 +14456,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 152_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -14478,7 +14478,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -14488,7 +14488,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 560_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -14498,7 +14498,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -14509,7 +14509,7 @@ public final class DataResearch extends DataFunctions {
 
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -14519,7 +14519,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -14529,7 +14529,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -14539,7 +14539,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -14549,7 +14549,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -14559,7 +14559,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -14794,7 +14794,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 64_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -14804,7 +14804,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 102_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -14814,7 +14814,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 167_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -14824,7 +14824,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 265_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -14834,7 +14834,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 404_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -14844,7 +14844,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 615_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -14854,7 +14854,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 950_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -14864,7 +14864,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_480_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -14874,7 +14874,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_250_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -14884,7 +14884,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_300_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -14894,7 +14894,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 8_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -14904,7 +14904,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 18_250_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -14914,7 +14914,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 42_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -14924,7 +14924,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 114_300_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -14997,7 +14997,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 338_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -15019,7 +15019,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 785_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -15029,7 +15029,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_210_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -15128,7 +15128,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 169_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -15162,7 +15162,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 605_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -15172,7 +15172,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 940_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -15182,7 +15182,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_430_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -15216,7 +15216,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 74_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -15349,7 +15349,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 74_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -15482,7 +15482,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 74_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -15615,7 +15615,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 182_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -15637,7 +15637,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 441_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -15737,7 +15737,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5_470_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -15748,7 +15748,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -15759,7 +15759,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 12_250_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -15873,7 +15873,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5_470_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -15925,7 +15925,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -15997,7 +15997,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_880_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -16007,7 +16007,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_860_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -16017,7 +16017,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -16027,7 +16027,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 6_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -16037,7 +16037,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 10_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -16047,7 +16047,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15_550_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -16069,7 +16069,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 91_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -16141,7 +16141,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -16151,7 +16151,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_790_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -16174,7 +16174,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 6_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -16210,7 +16210,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_500_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 367_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -16221,7 +16221,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_290_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 560_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -16232,7 +16232,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 3_530_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -16243,7 +16243,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5_470_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -16254,7 +16254,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -16265,7 +16265,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 12_250_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -16276,7 +16276,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 18_950_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -16287,7 +16287,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -16298,7 +16298,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -16344,7 +16344,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_210_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -16416,7 +16416,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_210_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -16488,7 +16488,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_210_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -16548,7 +16548,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -16558,7 +16558,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -16568,7 +16568,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -16578,7 +16578,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -16588,7 +16588,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -16598,7 +16598,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -16608,7 +16608,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -16618,7 +16618,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -16628,7 +16628,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -16686,7 +16686,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -16696,7 +16696,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -16706,7 +16706,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -16716,7 +16716,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -16726,7 +16726,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -16736,7 +16736,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -16746,7 +16746,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -16756,7 +16756,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -16766,7 +16766,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -16800,7 +16800,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -16810,7 +16810,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -16820,7 +16820,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -16830,7 +16830,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -16840,7 +16840,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -16850,7 +16850,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -16860,7 +16860,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -16870,7 +16870,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -16880,7 +16880,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -16938,7 +16938,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -16948,7 +16948,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -16958,7 +16958,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -16968,7 +16968,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -16978,7 +16978,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -16988,7 +16988,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -16998,7 +16998,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -17008,7 +17008,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -17018,7 +17018,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -17094,7 +17094,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 20_300_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_240_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -17105,7 +17105,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -17129,7 +17129,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 66_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -17140,7 +17140,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 105_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -17151,7 +17151,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 179_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_750_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -17227,7 +17227,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 20_300_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_240_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -17238,7 +17238,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -17262,7 +17262,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 66_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -17273,7 +17273,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 105_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -17284,7 +17284,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 179_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_750_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -17360,7 +17360,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 20_300_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_240_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -17371,7 +17371,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 30_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -17395,7 +17395,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 66_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_330_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -17406,7 +17406,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 105_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -17417,7 +17417,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 179_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_750_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -17549,7 +17549,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 65_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -17717,7 +17717,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 65_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 39_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -18325,7 +18325,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 67_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -18336,7 +18336,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -18347,7 +18347,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -18371,7 +18371,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -18395,7 +18395,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 916_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -18457,7 +18457,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 67_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -18468,7 +18468,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -18479,7 +18479,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -18503,7 +18503,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -18527,7 +18527,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 916_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -18589,7 +18589,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 67_650_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -18600,7 +18600,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -18611,7 +18611,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 157_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -18635,7 +18635,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 424_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -18659,7 +18659,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 916_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 224_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -18695,7 +18695,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -18772,7 +18772,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -18797,7 +18797,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 9_770_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -18823,7 +18823,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 26_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -18847,7 +18847,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 60_300_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -18872,7 +18872,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 130_400_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -21024,7 +21024,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_outlawMechanics),
                         str(R.string.researchDescription_outlawMechanics),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_SHIP_REPAIR_COST_EFFICIENCY,
                         0,
@@ -21040,7 +21040,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -21250,7 +21250,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_apexGetawayPilots),
                         str(R.string.researchDescription_apexGetawayPilots),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_WARP_SPEED,
                         0,
@@ -21262,127 +21262,127 @@ public final class DataResearch extends DataFunctions {
                                         204_900,
                                         22,
                                         30,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
                                         246_180,
                                         23,
                                         35,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
                                         318_720,
                                         24,
                                         40,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
                                         291_240,
                                         25,
                                         45,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
                                         418_020,
                                         26,
                                         50,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
                                         485_040,
                                         27,
                                         55,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
                                         577_800,
                                         28,
                                         60,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
                                         649_620,
                                         29,
                                         65,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
                                         741_000,
                                         30,
                                         70,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
                                         950_580,
                                         31,
                                         75,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
                                         978_540,
                                         32,
                                         80,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
                                         1_449_420,
                                         33,
                                         85,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
                                         1_937_880,
                                         34,
                                         90,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
                                         2_600_040,
                                         35,
                                         95,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
                                         3_499_500,
                                         36,
                                         100,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_fightingDirty),
                         str(R.string.researchDescription_fightingDirty),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_FLAT_PIERCING_STATS_STATION_COMBAT_FIRST_ROUND,
                         0,
@@ -21750,7 +21750,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_bolsteredHulls),
                         str(R.string.researchDescription_bolsteredHulls),
-                        img(-1),
+                        img(R.drawable.bolstered_hulls),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_HHP_DEFENSE_PLATFORMS,
                         0,
@@ -21928,7 +21928,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 23_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 23_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -21939,7 +21939,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 37_250L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 37_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -21950,7 +21950,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 61_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 61_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -21961,7 +21961,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 96_500L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 96_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -21972,7 +21972,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 147_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 147_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -21983,7 +21983,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 224_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 224_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -21994,7 +21994,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 346_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 346_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -22005,7 +22005,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 536_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 536_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -22016,7 +22016,131 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 815_000L)
                                         ),
-                                        null
+                                        setEmpty()
+                                )
+                        )
+                ),
+                new Research(
+                        str(R.string.researchTitle_augmentedHull),
+                        str(R.string.researchDescription_augmentedHull),
+                        img(R.drawable.augmented_hull),
+                        Tree.OUTLAW,
+                        BonusType.OUTLAW_HHP_BOTANY_BAY,
+                        0,
+                        3,
+                        4,
+                        addLevels(
+                                new Level(
+                                        1,
+                                        204_900,
+                                        22,
+                                        40,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 13_900L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 13_900L)
+                                        ),
+                                        addMaterials(
+                                                new ResourceMaterial(1, Material.ORE, Rarity.COMMON, Grade.THREE, 400L)
+                                        )
+                                ),
+                                new Level(
+                                        2,
+                                        246_180,
+                                        23,
+                                        60,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 23_250L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 23_250L)
+                                        ),
+                                        setEmpty()
+                                ),
+                                new Level(
+                                        3,
+                                        318_720,
+                                        24,
+                                        80,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 37_250L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 37_250L)
+                                        ),
+                                        setEmpty()
+                                ),
+                                new Level(
+                                        4,
+                                        291_240,
+                                        25,
+                                        100,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 61_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 61_000L)
+                                        ),
+                                        setEmpty()
+                                ),
+                                new Level(
+                                        5,
+                                        418_020,
+                                        26,
+                                        120,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 96_500L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 96_500L)
+                                        ),
+                                        setEmpty()
+                                ),
+                                new Level(
+                                        6,
+                                        485_040,
+                                        27,
+                                        150,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 147_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 147_000L)
+                                        ),
+                                        setEmpty()
+                                ),
+                                new Level(
+                                        7,
+                                        577_800,
+                                        28,
+                                        180,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 224_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 224_000L)
+                                        ),
+                                        setEmpty()
+                                ),
+                                new Level(
+                                        8,
+                                        649_620,
+                                        29,
+                                        210,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 346_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 346_000L)
+                                        ),
+                                        setEmpty()
+                                ),
+                                new Level(
+                                        9,
+                                        741_000,
+                                        30,
+                                        250,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 536_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 536_000L)
+                                        ),
+                                        setEmpty()
+                                ),
+                                new Level(
+                                        10,
+                                        950_580,
+                                        31,
+                                        300,
+                                        addResources(
+                                                new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
+                                                new ResourceMaterial(2, Material.DILITHIUM, 815_000L)
+                                        ),
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -22052,7 +22176,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 55_750L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 46_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -22063,7 +22187,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 91_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 76_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -22074,7 +22198,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 145_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 120_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -22085,7 +22209,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 220_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 183_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -22096,7 +22220,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 336_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 280_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -22107,7 +22231,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 519_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 433_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -22118,7 +22242,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 805_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -22129,7 +22253,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_230_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_020_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -22140,7 +22264,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_800_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -22675,7 +22799,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_augmented_impulse),
                         str(R.string.researchDescription_augmented_impulse),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_IMPULSE_SPEED_BOTANY_BAY,
                         0,
@@ -22702,7 +22826,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 336_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -22712,7 +22836,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 519_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -22722,7 +22846,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 805_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -22732,14 +22856,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_230_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_primeAugmentFavor),
                         str(R.string.researchDescription_primeAugmentFavor),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_OUTPUTS_AUGMENT_REP_BUNDLES,
                         0,
@@ -22763,7 +22887,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_augmentedWarp),
                         str(R.string.researchDescription_augmentedWarp),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_WARP_SPEED_BOTANY_BAY,
                         0,
@@ -22790,7 +22914,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 224_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -22800,7 +22924,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 346_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -22810,7 +22934,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 536_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -22820,14 +22944,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 815_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_stellaResearch),
                         str(R.string.researchDescription_stellaResearch),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_STELLA_BONUS_SHOTS_ECLIPSE_ENEMIES,
                         0,
@@ -22852,7 +22976,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_anarchistWeaponry),
                         str(R.string.researchDescription_anarchistWeaponry),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_PIERCING_STATS_ECLIPSE_ENEMIES,
                         0,
@@ -22881,7 +23005,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 224_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 560_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -22892,7 +23016,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 346_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 865_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -22903,7 +23027,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 536_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_340_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -22914,7 +23038,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 815_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -22925,7 +23049,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -22936,7 +23060,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_860_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -22947,7 +23071,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -22958,7 +23082,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_440_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -22969,14 +23093,14 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_stellaHull),
                         str(R.string.researchDescription_stellaHull),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_HHP_STELLA,
                         0,
@@ -22991,7 +23115,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 36_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -23001,7 +23125,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 44_064L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -23011,7 +23135,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 56_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -23021,7 +23145,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 67_230L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -23031,7 +23155,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 134_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -23041,7 +23165,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 160_920L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -23051,7 +23175,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 300_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -23061,7 +23185,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 359_580L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -23071,7 +23195,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 745_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -23081,7 +23205,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_660_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -23091,7 +23215,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_860_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -23101,7 +23225,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 10_400_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -23111,7 +23235,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 22_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -23121,7 +23245,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 49_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -23131,14 +23255,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 98_750_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_stellaWeaponry),
                         str(R.string.researchDescription_stellaWeaponry),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_STELLA_DAMAGE_ECLIPSE_ENEMIES,
                         0,
@@ -23153,7 +23277,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 36_750L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -23163,7 +23287,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 44_064L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -23173,7 +23297,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 56_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -23183,7 +23307,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 67_230L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -23193,7 +23317,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 86_500L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -23203,7 +23327,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 103_812L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -23213,7 +23337,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 134_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -23223,7 +23347,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 160_920L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -23233,7 +23357,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 204_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -23243,7 +23367,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 465_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -23253,7 +23377,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_110_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -23263,7 +23387,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_440_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -23273,7 +23397,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 6_580_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -23283,7 +23407,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -23293,14 +23417,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 32_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_hideoutDefenses),
                         str(R.string.researchDescription_hideoutDefenses),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_MITIGATION_DEFENSE_PLATFORMS,
                         0,
@@ -23451,7 +23575,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_crystalResearchEfficiency),
                         str(R.string.researchDescription_crystalResearchEfficiency),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_CRYSTAL,
                         0,
@@ -23601,7 +23725,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_hideoutWeaponry),
                         str(R.string.researchDescription_hideoutWeaponry),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_DAMAGE_DEFENSE_PLATFORMS,
                         0,
@@ -23752,7 +23876,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_assimilatedCreditYield),
                         str(R.string.researchDescription_assimilatedCreditYield),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_OUTPUTS_INDEP_CREDIT_BORG_BUNDLES,
                         0,
@@ -23828,7 +23952,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_crystalBuildingEfficiency),
                         str(R.string.researchDescription_crystalBuildingEfficiency),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_STATION_CRYSTAL,
                         0,
@@ -23969,14 +24093,14 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5_957_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_460_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_augmentedCreditYield),
                         str(R.string.researchDescription_augmentedCreditYield),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_OUTPUTS_INDEP_CREDIT_AUGMENT_BUNDLES,
                         0,
@@ -24053,7 +24177,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_rogueShields),
                         str(R.string.researchDescription_rogueShields),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_SHP,
                         0,
@@ -24205,7 +24329,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_rogueHulls),
                         str(R.string.researchDescription_rogueHulls),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_HHP,
                         0,
@@ -24357,7 +24481,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_craftyEngineering),
                         str(R.string.researchDescription_craftyEngineering),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_SHP_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -24372,7 +24496,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 55_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -24382,7 +24506,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 84_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -24392,7 +24516,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 130_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -24402,7 +24526,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 201_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -24412,7 +24536,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -24422,7 +24546,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_740L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -24432,7 +24556,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 695_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -24442,7 +24566,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 836_190L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -24452,7 +24576,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -24462,7 +24586,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -24472,7 +24596,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -24482,7 +24606,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -24492,7 +24616,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -24502,7 +24626,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -24512,14 +24636,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_stellaWarpDrive),
                         str(R.string.researchDescription_stellaWarpDrive),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_WARP_SPEED_STELLA,
                         0,
@@ -24534,7 +24658,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 55_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -24544,7 +24668,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 84_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -24554,7 +24678,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 130_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -24564,7 +24688,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -24574,7 +24698,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 449_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -24584,7 +24708,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_120_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -24594,7 +24718,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -24604,7 +24728,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 5_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -24614,7 +24738,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -24624,7 +24748,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 33_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -24643,120 +24767,120 @@ public final class DataResearch extends DataFunctions {
                                         950_580,
                                         31,
                                         5,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
                                         978_540,
                                         32,
                                         8,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
                                         1_449_420,
                                         33,
                                         11,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
                                         1_937_880,
                                         34,
                                         14,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
                                         2_600_040,
                                         35,
                                         17,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
                                         3_499_500,
                                         35,
                                         20,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
                                         3_483_960,
                                         35,
                                         23,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
                                         5_965_920,
                                         35,
                                         26,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
                                         8_059_720,
                                         35,
                                         29,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
                                         14_125_380,
                                         35,
                                         32,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
                                         13_456_140,
                                         35,
                                         35,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
                                         21_017_460,
                                         35,
                                         38,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
                                         29_338_800,
                                         35,
                                         41,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
                                         38_934_120,
                                         35,
                                         45,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
                                         51_090_420,
                                         35,
                                         50,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -24792,7 +24916,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_200_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -24803,7 +24927,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 1_860_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -24814,7 +24938,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -24825,7 +24949,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 4_440_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -24836,7 +24960,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -24847,7 +24971,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 9_770_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -24858,7 +24982,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 15_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -24869,7 +24993,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 26_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -24880,7 +25004,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 41_600_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -24911,7 +25035,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_stellaDefenses),
                         str(R.string.researchDescription_stellaDefenses),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_MITIGATION_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -24926,7 +25050,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -24936,7 +25060,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_740L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -24946,7 +25070,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 695_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -24956,7 +25080,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 836_190L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -24966,7 +25090,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -24976,7 +25100,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_999_800L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -24986,7 +25110,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -24996,7 +25120,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_398_300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -25006,7 +25130,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -25016,7 +25140,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_846_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -25026,7 +25150,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -25036,7 +25160,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -25046,7 +25170,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -25056,7 +25180,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -25066,7 +25190,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 598_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -25151,7 +25275,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_stellaPiercing),
                         str(R.string.researchDescription_stellaPiercing),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_PIERCING_STATS_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -25166,7 +25290,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -25176,7 +25300,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 367_740L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -25186,7 +25310,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 695_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -25196,7 +25320,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 836_190L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -25206,7 +25330,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -25216,7 +25340,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_990_800L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -25226,7 +25350,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -25236,7 +25360,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_398_300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -25246,7 +25370,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -25256,7 +25380,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_846_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -25266,7 +25390,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -25276,7 +25400,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -25286,7 +25410,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -25296,7 +25420,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -25306,14 +25430,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 598_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_eclipseWeakpoints),
                         str(R.string.researchDescription_eclipseWeakpoints),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_CRITICAL_DAMAGE_ECLIPSE_ENEMIES,
                         0,
@@ -25342,7 +25466,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -25353,7 +25477,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -25364,7 +25488,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 15_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -25375,14 +25499,14 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 41_600_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_eclipseTargeting),
                         str(R.string.researchDescription_eclipseTargeting),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_CRITICAL_CHANCE_ECLIPSE_ENEMIES,
                         0,
@@ -25411,7 +25535,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 2_980_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 7_460_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -25422,7 +25546,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -25433,7 +25557,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 14_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -25444,14 +25568,14 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 41_600_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_strategicExploits),
                         str(R.string.researchDescription_strategicExploits),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_CRITICAL_DAMAGE_DEFENSE_PLATFORMS,
                         0,
@@ -25533,7 +25657,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_gasBuildingEfficiency),
                         str(R.string.researchDescription_gasBuildingEfficiency),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_STATION_GAS,
                         0,
@@ -25683,7 +25807,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_stationTargeting),
                         str(R.string.researchDescription_stationTargeting),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_CRITICAL_CHANCE_DEFENSE_PLATFORMS,
                         0,
@@ -25765,7 +25889,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_kineticGuerillaWarfare),
                         str(R.string.researchDescription_kineticGuerillaWarfare),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_KINETIC_DAMAGE_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -25780,7 +25904,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -25790,7 +25914,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 449_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -25800,7 +25924,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 539_370L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -25810,7 +25934,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_120_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -25820,7 +25944,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_341_900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -25830,7 +25954,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -25840,7 +25964,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_985_300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -25850,7 +25974,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 5_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -25860,7 +25984,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 6_955_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -25870,7 +25994,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -25880,7 +26004,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 18_711_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -25890,7 +26014,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 33_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -25900,7 +26024,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 40_446_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -25910,7 +26034,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 74_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -25920,14 +26044,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 148_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_gasResearchEfficiency),
                         str(R.string.researchDescription_gasResearchEfficiency),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_GAS,
                         0,
@@ -26068,14 +26192,14 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5_957_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_460_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_energyGuerillaWarfare),
                         str(R.string.researchDescription_energyGuerillaWarfare),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_ENERGY_DAMAGE_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -26090,7 +26214,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -26100,7 +26224,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 449_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -26110,7 +26234,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 539_370L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -26120,7 +26244,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_120_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -26130,7 +26254,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_341_900L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -26140,7 +26264,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -26150,7 +26274,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_985_300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -26160,7 +26284,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 5_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -26170,7 +26294,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 6_955_200L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -26180,7 +26304,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -26190,7 +26314,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 18_711_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -26200,7 +26324,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 33_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -26210,7 +26334,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 40_446_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -26220,7 +26344,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 74_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -26230,14 +26354,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 148_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_highwayRobbery),
                         str(R.string.researchDescription_highwayRobbery),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_LOOT_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -26252,7 +26376,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 306_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -26262,7 +26386,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 449_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -26272,7 +26396,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 695_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -26282,7 +26406,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 836_190L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -26292,7 +26416,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -26302,7 +26426,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_999_800L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -26312,7 +26436,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -26322,7 +26446,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 4_398_300L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -26332,7 +26456,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -26342,7 +26466,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 11_846_250L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         11,
@@ -26352,7 +26476,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         12,
@@ -26362,7 +26486,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         13,
@@ -26372,7 +26496,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         14,
@@ -26382,7 +26506,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         15,
@@ -26392,14 +26516,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 598_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_shipComponentEfficiency),
                         str(R.string.researchDescription_shipComponentEfficiency),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_SHIP_MATERIALS,
                         0,
@@ -26415,7 +26539,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 8_340_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 2_040_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -26426,7 +26550,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 18_950_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 4_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -26437,7 +26561,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 45_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 11_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -26448,7 +26572,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 99_700_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -26459,7 +26583,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 268_500_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -26470,7 +26594,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 615_100_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 150_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -26481,7 +26605,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 1_330_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 326_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -26492,7 +26616,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 2_889_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 708_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -26503,7 +26627,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 5_957_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 1_460_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -26514,7 +26638,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 16_279_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 3_990_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -26533,8 +26657,8 @@ public final class DataResearch extends DataFunctions {
                                         2_600_040,
                                         35,
                                         35,
-                                        null,
-                                        null
+                                        setEmpty(),
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -26583,7 +26707,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -26594,7 +26718,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 6_630_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 19_902_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -26605,7 +26729,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 9_770_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 24_450_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -26616,7 +26740,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 9_770_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 29_322_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -26627,7 +26751,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 15_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 38_650_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -26638,7 +26762,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 15_450_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 46_368_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -26649,7 +26773,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 26_350_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 65_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -26660,7 +26784,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.TRITANIUM, 41_600_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 104_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
@@ -26691,7 +26815,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_mercilessOutlaw),
                         str(R.string.researchDescription_mercilessOutlaw),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_CRITICAL_DAMAGE_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -26706,7 +26830,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -26716,7 +26840,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -26726,7 +26850,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 3_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -26736,7 +26860,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 9_870_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -26746,7 +26870,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 22_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -26756,7 +26880,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 27_135_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -26766,7 +26890,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 48_900_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -26776,7 +26900,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 58_680_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -26786,7 +26910,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 106_200_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -26796,14 +26920,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 219_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_enhancedWeaponry),
                         str(R.string.researchDescription_enhancedWeaponry),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_DAMAGE_PVP,
                         0,
@@ -26944,7 +27068,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_stellaTargeting),
                         str(R.string.researchDescription_stellaTargeting),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_CRITICAL_CHANCE_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -26959,7 +27083,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 1_670_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         2,
@@ -26969,7 +27093,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 2_490_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         3,
@@ -26979,7 +27103,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 5_800_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         4,
@@ -26989,7 +27113,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 15_600_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         5,
@@ -26999,7 +27123,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 18_711_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         6,
@@ -27009,7 +27133,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 33_700_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         7,
@@ -27019,7 +27143,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 40_446_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         8,
@@ -27029,7 +27153,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 74_500_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         9,
@@ -27039,7 +27163,7 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 89_370_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -27049,14 +27173,14 @@ public final class DataResearch extends DataFunctions {
                                         addResources(
                                                 new ResourceMaterial(1, Material.DILITHIUM, 148_100_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_armadaDefense),
                         str(R.string.researchDescription_armadaDefense),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_ARMOR_ARMADA_TARGETS,
                         0,
@@ -27197,7 +27321,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_oreResearch),
                         str(R.string.researchDescription_oreResearch),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_ORE,
                         0,
@@ -27347,7 +27471,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_armadaArmorPiercing),
                         str(R.string.researchDescription_armadaArmorPiercing),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_ARMOR_PIERCING_ARMADA_TARGETS,
                         0,
@@ -27488,7 +27612,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_armadaEvasion),
                         str(R.string.researchDescription_armadaEvasion),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_DODGE_ARMADA_TARGETS,
                         0,
@@ -27629,7 +27753,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_oreBuildingEfficiency),
                         str(R.string.researchDescription_oreBuildingEfficiency),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_STATION_ORE,
                         0,
@@ -27779,7 +27903,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_armadaAccuracy),
                         str(R.string.researchDescription_armadaAccuracy),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_ACCURACY_ARMADA_TARGETS,
                         0,
@@ -27920,7 +28044,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_immovableObject),
                         str(R.string.researchDescription_immovableObject),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_SHIELD_DEFLECTION_ARMADA_TARGETS,
                         0,
@@ -28062,7 +28186,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_g4ShipRepairs),
                         str(R.string.researchDescription_g4ShipRepairs),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_SHIP_REPAIR_COST_EFFICIENCY_G4_SHIPS,
                         0,
@@ -28214,7 +28338,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_armadaShieldPiercing),
                         str(R.string.researchDescription_armadaShieldPiercing),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_SHIELD_PENETRATION_ARMADA_TARGETS,
                         0,
@@ -28355,7 +28479,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_muddsMudd),
                         str(R.string.researchDescription_muddsMudd),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.NONE,
                         0,
@@ -28379,7 +28503,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_outOfTheDarkness),
                         str(R.string.researchDescription_outOfTheDarkness),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.NONE,
                         0,
@@ -28403,7 +28527,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_sneakyBackhander),
                         str(R.string.researchDescription_sneakyBackhander),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_UNLOCK_WEEKLY_INDEP_CREDIT_ROGUE_BUNDLES,
                         0,
@@ -28480,7 +28604,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_g4Impulse),
                         str(R.string.researchDescription_g4Impulse),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_IMPULSE_SPEED_G4_SHIPS,
                         0,
@@ -28622,7 +28746,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_getawayPilotsII),
                         str(R.string.researchDescription_getawayPilotsII),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_WARP_SPEED_II,
                         0,
@@ -28697,7 +28821,7 @@ public final class DataResearch extends DataFunctions {
                 new Research(
                         str(R.string.researchTitle_dilithiumUpgrades),
                         str(R.string.researchDescription_dilithiumUpgrades),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_SHIP_DILITHIUM,
                         0,
@@ -28822,7 +28946,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 44_018_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 10_789_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -28833,14 +28957,14 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 67_473_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_538_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 ),
                 new Research(
                         str(R.string.researchTitle_tritaniumUpgrades),
                         str(R.string.researchDescription_tritaniumUpgrades),
-                        img(-1),
+                        img(R.drawable.building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_SHIP_TRITANIUM,
                         0,
@@ -28965,7 +29089,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 44_018_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 10_789_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 ),
                                 new Level(
                                         10,
@@ -28976,7 +29100,7 @@ public final class DataResearch extends DataFunctions {
                                                 new ResourceMaterial(1, Material.PARSTEEL, 67_473_000_000L),
                                                 new ResourceMaterial(2, Material.DILITHIUM, 16_538_000_000L)
                                         ),
-                                        null
+                                        setEmpty()
                                 )
                         )
                 )

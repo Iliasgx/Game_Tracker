@@ -1,7 +1,6 @@
 package com.umbrella.stfctracker.Adapters;
 
 import android.app.Application;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,14 +13,10 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.umbrella.stfctracker.CustomComponents.CustomButton;
-import com.umbrella.stfctracker.DataTypes.Enums.ShipClass;
-import com.umbrella.stfctracker.Database.Data.DataFunctions;
+import com.umbrella.stfctracker.Database.Data.FunctionsDB;
 import com.umbrella.stfctracker.Database.Entities.Ship;
-import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
-import com.umbrella.stfctracker.Structures.TimeDisplay;
-import com.umbrella.stfctracker.Structures.ValueIndicator;
 import com.umbrella.stfctracker.databinding.ListShipItemBinding;
 
 import java.util.ArrayList;
@@ -59,7 +54,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         boolean canBuild = ship.getRequiredOperationsLevel() <= Data.getInstance().getOperationsLevel();
 
         holder.name.setText(ship.getName());
-        holder.shipImage.setImageDrawable(DataFunctions.decodeDrawable(application.getResources(), ship.getImage()));
+        holder.shipImage.setImageDrawable(FunctionsDB.decodeDrawable(application.getResources(), ship.getImage()));
         holder.tier.setVisibility(View.INVISIBLE);
         holder.rarity.setText(ship.getRarity().toString());
         holder.grade.setNumStars(ship.getGrade().ordinal());

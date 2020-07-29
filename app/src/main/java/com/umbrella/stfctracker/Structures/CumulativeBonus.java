@@ -16,6 +16,7 @@ import java.math.RoundingMode;
 import java.util.HashMap;
 import java.util.Map;
 
+// Check if CumulativeBonus is a percentage or a value. (Extra)
 public class CumulativeBonus {
     private static final CumulativeBonus mInstance = new CumulativeBonus();
     private Map<String, Integer> map = new HashMap<>();
@@ -47,7 +48,6 @@ public class CumulativeBonus {
         return new BigDecimal(baseValue).divide(new BigDecimal(Float.toString(1f + (totalBonus / 100f))), RoundingMode.HALF_DOWN).longValue();
     }
 
-    //Uses @{long applyBonus() }
     public int applyBonus(int baseValue, int totalBonus) {
         return Long.valueOf(applyBonus(Integer.valueOf(baseValue).longValue(), totalBonus)).intValue();
     }

@@ -14,7 +14,7 @@ import androidx.lifecycle.MutableLiveData;
 import com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView;
 import com.umbrella.stfctracker.DataTypes.Enums.Material;
 import com.umbrella.stfctracker.DataTypes.ResourceMaterial;
-import com.umbrella.stfctracker.Database.Data.DataFunctions;
+import com.umbrella.stfctracker.Database.Data.FunctionsDB;
 import com.umbrella.stfctracker.Database.DatabaseClient;
 import com.umbrella.stfctracker.Database.Entities.Level;
 import com.umbrella.stfctracker.Database.Entities.Research;
@@ -87,7 +87,7 @@ public class ResearchDialog extends DialogFragment {
 
     private void fillBaseData(Research research) {
         binding.dialogResearchTitleName.setText(research.getName());
-        binding.dialogResearchImg.setImageDrawable(DataFunctions.decodeDrawable(getResources(), research.getImage()));
+        binding.dialogResearchImg.setImageDrawable(FunctionsDB.decodeDrawable(getResources(), research.getImage()));
         binding.dialogResearchInfo.setText(research.getDescription());
 
         binding.dialogResearchCloseButton.setOnClickListener(listener -> dismiss());

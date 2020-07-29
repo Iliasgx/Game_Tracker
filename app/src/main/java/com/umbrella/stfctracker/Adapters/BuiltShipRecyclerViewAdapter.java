@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.umbrella.stfctracker.Database.Data.DataFunctions;
+import com.umbrella.stfctracker.Database.Data.FunctionsDB;
 import com.umbrella.stfctracker.Database.Entities.BuiltShip;
 import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.databinding.ListShipItemBinding;
@@ -46,7 +46,7 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
         BuiltShip builtShip = builtShips.get(position);
 
         holder.name.setText(builtShip.getName());
-        holder.shipImage.setImageDrawable(DataFunctions.decodeDrawable(application.getResources(), builtShip.getImage()));
+        holder.shipImage.setImageDrawable(FunctionsDB.decodeDrawable(application.getResources(), builtShip.getImage()));
         holder.tier.setText(application.getResources().getString(R.string.tierNumber, builtShip.getCurrentTierId()));
         holder.rarity.setText(builtShip.getRarity().toString());
         holder.grade.setNumStars(builtShip.getGrade().ordinal());

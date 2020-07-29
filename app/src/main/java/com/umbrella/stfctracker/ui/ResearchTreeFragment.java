@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.umbrella.stfctracker.CustomComponents.ResearchItem;
 import com.umbrella.stfctracker.DataTypes.Enums.Tree;
-import com.umbrella.stfctracker.Database.Data.DataFunctions;
+import com.umbrella.stfctracker.Database.Data.FunctionsDB;
 import com.umbrella.stfctracker.Database.Entities.Research;
 import com.umbrella.stfctracker.Database.Models.ResearchViewModel;
 import com.umbrella.stfctracker.MainActivity;
@@ -154,7 +154,7 @@ public class ResearchTreeFragment extends Fragment {
             if (!isEmpty) {
                 holder.item.fromDatabase(
                         research.getName(),
-                        DataFunctions.decodeDrawable(getResources(), research.getImage()),
+                        FunctionsDB.decodeDrawable(getResources(), research.getImage()),
                         research.getUnlockedLevel(),
                         research.getLevels().size(),
                         research.getLevels().stream()
