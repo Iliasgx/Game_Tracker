@@ -6,7 +6,7 @@
     android:id="@+id/fragShipDetails_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dialog_background">
+    android:background="@color/empty_backgroundBorder">
 
     <ImageView
         android:id="@+id/fragShipDetails_backgroundImg"
@@ -94,12 +94,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/fragShipDetails_titleCardView"
-        android:layout_above="@id/fragShipDetails_levelCardView"
+        android:layout_above="@id/fragShipDetails_baseInfo"
         android:layout_marginTop="-10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="-10dp"
         android:paddingHorizontal="5dp"
         android:scaleType="fitCenter"
         android:src="@drawable/ship"
+        android:transitionName="shipDetails_image"
         tools:ignore="ContentDescription"/>
 
     <RelativeLayout
@@ -122,6 +123,7 @@
             android:layout_marginTop="3dp"
             android:scaleType="fitXY"
             android:src="@drawable/shipclass_battleship"
+            android:transitionName="shipDetails_class"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -144,6 +146,7 @@
             android:layout_marginBottom="5dp"
             style="@style/defaultText"
             android:textSize="18sp"
+            android:transitionName="shipDetails_faction"
             tools:text="Federation" />
 
        <!-- <TextView
@@ -230,7 +233,7 @@
         android:id="@+id/fragShipDetails_ability_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/fragShipDetails_repairLayout"
+        android:layout_above="@id/fragShipDetails_repairBackground"
         android:paddingHorizontal="10dp"
         android:paddingVertical="5dp"
         android:layout_marginHorizontal="50dp"
@@ -276,72 +279,71 @@
             tools:text="32%"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <RelativeLayout
-        android:id="@+id/fragShipDetails_repairLayout"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragShipDetails_repairBackground"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_above="@id/fragShipDetails_buttonLayout"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginVertical="10dp"
-        android:background="@color/dialog_background">
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/dialog_lightBackgroundMiddle"
+        app:cardCornerRadius="10dp"
+        android:alpha="0.6">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/fragShipDetails_repairBackground"
+        <RelativeLayout
+            android:id="@+id/fragShipDetails_repairLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            app:cardBackgroundColor="@color/button_blue_backgroundMiddle"
-            app:cardCornerRadius="10dp"
-            android:alpha="0.3"/>
+            android:background="@android:color/transparent">
 
-        <TextView
-            android:id="@+id/fragShipDetails_repairSpeed_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/fragShipDetails_repairSpeed_time"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:gravity="center_horizontal"
-            style="@style/defaultText"
-            android:textSize="14sp"
-            android:text="@string/repairSpeed"/>
+            <TextView
+                android:id="@+id/fragShipDetails_repairSpeed_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/fragShipDetails_repairSpeed_time"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                style="@style/defaultText"
+                android:textSize="14sp"
+                android:text="@string/repairSpeed"/>
 
-        <TextView
-            android:id="@+id/fragShipDetails_repairSpeed_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/fragShipDetails_repairCost_title"
-            android:layout_marginBottom="10dp"
-            android:gravity="center_horizontal"
-            style="@style/defaultText"
-            android:textColor="@color/textColor_yellow"
-            android:textSize="18sp"
-            tools:text="7h 5m"/>
+            <TextView
+                android:id="@+id/fragShipDetails_repairSpeed_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/fragShipDetails_repairCost_title"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                style="@style/defaultText"
+                android:textColor="@color/textColor_yellow"
+                android:textSize="18sp"
+                tools:text="7h 5m"/>
 
-        <TextView
-            android:id="@+id/fragShipDetails_repairCost_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/fragShipDetails_repairResources"
-            android:gravity="center_horizontal"
-            style="@style/defaultText"
-            android:textSize="14sp"
-            android:text="@string/repairCosts"/>
+            <TextView
+                android:id="@+id/fragShipDetails_repairCost_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/fragShipDetails_repairResources"
+                android:gravity="center_horizontal"
+                style="@style/defaultText"
+                android:textSize="14sp"
+                android:text="@string/repairCosts"/>
 
-        <com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView
-            android:id="@+id/fragShipDetails_repairResources"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:paddingBottom="5dp"
-            app:showMaterials="false"
-            app:numOfResources="LIVE_ADAPTING"
-            tools:numOfResources="TWO"/>
-    </RelativeLayout>
+            <com.umbrella.stfctracker.CustomComponents.CustomResourceMaterialView
+                android:id="@+id/fragShipDetails_repairResources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp"
+                app:showMaterials="false"
+                app:numOfResources="LIVE_ADAPTING"
+                tools:numOfResources="TWO"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragShipDetails_buttonLayout"

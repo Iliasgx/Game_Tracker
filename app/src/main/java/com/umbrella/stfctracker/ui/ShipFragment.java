@@ -1,10 +1,12 @@
 package com.umbrella.stfctracker.ui;
 
 import android.app.AlertDialog;
+import android.app.SharedElementCallback;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Toast;
 
@@ -14,6 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.FragmentNavigator;
 
 import com.umbrella.stfctracker.Adapters.BuiltShipRecyclerViewAdapter;
 import com.umbrella.stfctracker.Database.Models.BuiltShipViewModel;
@@ -21,6 +24,8 @@ import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.databinding.FragShipsBinding;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Objects;
 
 import static com.umbrella.stfctracker.Adapters.BuiltShipRecyclerViewAdapter.*;
 
@@ -69,7 +74,7 @@ public class ShipFragment extends Fragment {
     private void setUpRecyclerView() {
         mViewModel = new ViewModelProvider(this).get(BuiltShipViewModel.class);
 
-        ItemPressedListener pressedListener = builtShip -> {
+        ItemPressedListener pressedListener = (builtShip, objectHashMap) -> {
             if (tierDownActivated) {
                 if (builtShip.getCurrentTierId() == 1) {
                     Toast.makeText(requireContext(), getString(R.string.ship_tierDown_warning, builtShip.getName()), Toast.LENGTH_SHORT).show();
@@ -87,7 +92,18 @@ public class ShipFragment extends Fragment {
                     builder.create().show();
                 }
             } else {
-                Navigation.findNavController(requireView()).navigate(ShipFragmentDirections.shipsToShipDetails().setBuiltShip(builtShip));
+                FragmentNavigator.Extras.Builder extras = new FragmentNavigator.Extras.Builder();
+                extras.addSharedElement(Objects.requireNonNull(objectHashMap.get("img")), "shipDetails_image");
+                extras.addSharedElement(Objects.requireNonNull(objectHashMap.get("class")), "shipDetails_class");
+                extras.addSharedElement(Objects.requireNonNull(objectHashMap.get("faction")), "shipDetails_faction");
+
+                ViewTreeObserver obs = binding.fragShipsGrid.getViewTreeObserver();
+                obs.addOnPreDrawListener(() -> {
+                    startPostponedEnterTransition();
+                    return true;
+                });
+
+                Navigation.findNavController(requireView()).navigate(ShipFragmentDirections.shipsToShipDetails().setBuiltShip(builtShip), extras.build());
             }
         };
 

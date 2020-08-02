@@ -5,6 +5,9 @@ import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.GridLayoutAnimationController;
+import android.view.animation.LayoutAnimationController;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
@@ -12,6 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.umbrella.stfctracker.Adapters.StarbaseRecyclerViewAdapter;
@@ -20,7 +24,10 @@ import com.umbrella.stfctracker.Adapters.StarbaseRecyclerViewAdapter.ItemUpgrade
 import com.umbrella.stfctracker.Adapters.StarbaseRecyclerViewAdapter.ToSubListClickListener;
 import com.umbrella.stfctracker.Database.Entities.Building;
 import com.umbrella.stfctracker.Database.Models.BuildingViewModel;
+import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.databinding.FragStarbaseBinding;
+
+import java.util.Objects;
 
 public class StarbaseFragment extends Fragment {
     private FragStarbaseBinding binding;
@@ -95,9 +102,10 @@ public class StarbaseFragment extends Fragment {
     }
 
     private void changeToOtherList(boolean isSubList) {
-        mBuildingViewModel.getAllBuildingsLive().observe(getViewLifecycleOwner(), buildings ->
-            adapter.setBuildings(isSubList ? mBuildingViewModel.collectBuildingsByGroup(buildings) : mBuildingViewModel.collectAllBuildings(buildings), isSubList)
-        );
+        mBuildingViewModel.getAllBuildingsLive().observe(getViewLifecycleOwner(), buildings -> {
+            adapter.setBuildings(isSubList ? mBuildingViewModel.collectBuildingsByGroup(buildings) : mBuildingViewModel.collectAllBuildings(buildings), isSubList);
+            binding.fragStarbaseRecyclerView.scheduleLayoutAnimation();
+        });
     }
 
     private void onReturnToMainList() {

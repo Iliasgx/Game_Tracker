@@ -193,6 +193,8 @@ public class CustomResourceMaterialView extends RelativeLayout {
 
         if (numOfResources == NumOfResources.LIVE_ADAPTING) {
             pops.forEach(item -> item.setNeeded(false));
+        } else {
+            pops.forEach(item -> item.setNeeded(false, true));
         }
     }
 

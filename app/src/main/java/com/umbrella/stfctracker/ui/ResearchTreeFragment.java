@@ -6,6 +6,8 @@ import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -58,10 +60,15 @@ public class ResearchTreeFragment extends Fragment {
         mResearchViewModel = new ViewModelProvider(this).get(ResearchViewModel.class);
         mResearchViewModel.initData(tree);
 
+        final LayoutAnimationController controller = AnimationUtils.loadLayoutAnimation(requireContext(), R.anim.layout_research_pop_up);
+        binding.fragResearchTreeGrid.setLayoutAnimation(controller);
         binding.fragResearchTreeGrid.setAdapter(adapter);
         binding.fragResearchTreeGrid.setHasFixedSize(true);
 
-        mResearchViewModel.getAllResearchLive().observe(getViewLifecycleOwner(), research -> adapter.setResearch(collectData(research)));
+        mResearchViewModel.getAllResearchLive().observe(getViewLifecycleOwner(), research -> {
+            adapter.setResearch(collectData(research));
+            binding.fragResearchTreeGrid.scheduleLayoutAnimation();
+        });
 
         binding.fragResearchTreeGrid.setBackground(getResources().getDrawable(tree.getBackgroundId(), requireActivity().getTheme()));
     }

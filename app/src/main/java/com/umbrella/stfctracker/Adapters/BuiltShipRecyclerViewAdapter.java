@@ -9,6 +9,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.umbrella.stfctracker.Database.Data.FunctionsDB;
@@ -17,6 +18,7 @@ import com.umbrella.stfctracker.R;
 import com.umbrella.stfctracker.databinding.ListShipItemBinding;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShipRecyclerViewAdapter.CustomViewHolder> {
@@ -55,7 +57,17 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
         holder.faction.setText(builtShip.getFaction().toString());
         holder.itemView.setLongClickable(true);
 
-        holder.itemView.setOnClickListener(v -> itemPressedListener.onClick(builtShip));
+        //Added for the transitions between fragments. Names must be unique.
+        ViewCompat.setTransitionName(holder.shipImage, builtShip.getName() + "@" + position);
+        ViewCompat.setTransitionName(holder.shipClassImage, builtShip.getShipClass() + "@" + position);
+        ViewCompat.setTransitionName(holder.faction, builtShip.getFaction() + "@" + position);
+
+        HashMap<String, View> transitionObjects = new HashMap<>();
+        transitionObjects.put("img", holder.shipImage);
+        transitionObjects.put("class", holder.shipClassImage);
+        transitionObjects.put("faction", holder.faction);
+
+        holder.itemView.setOnClickListener(v -> itemPressedListener.onClick(builtShip, transitionObjects));
         holder.itemView.setOnLongClickListener(v -> {
             itemScrapListener.onLongClick(builtShip);
             return true;
@@ -79,7 +91,7 @@ public class BuiltShipRecyclerViewAdapter extends RecyclerView.Adapter<BuiltShip
      * 2. Used to identify a ship that needs to tier down. Activation depends on main class.
      */
     public interface ItemPressedListener {
-        void onClick(BuiltShip builtShip);
+        void onClick(BuiltShip builtShip, HashMap<String, View> transitionsObj);
     }
 
     /**

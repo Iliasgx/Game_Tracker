@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.umbrella.stfctracker.CustomComponents.CustomButton;
@@ -20,6 +21,7 @@ import com.umbrella.stfctracker.Structures.Data;
 import com.umbrella.stfctracker.databinding.ListShipItemBinding;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerViewAdapter.CustomViewHolder> {
@@ -67,11 +69,21 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
         holder.buildTime.setUsable(canBuild);
         holder.buildTime.setClickable(true);
 
+        //Added for the transitions between fragments. Names must be unique.
+        ViewCompat.setTransitionName(holder.shipImage, ship.getName() + "@" + position);
+        ViewCompat.setTransitionName(holder.shipClassImage, ship.getShipClass() + "@" + position);
+        ViewCompat.setTransitionName(holder.faction, ship.getFaction() + "@" + position);
+
+        HashMap<String, View> transitionObjects = new HashMap<>();
+        transitionObjects.put("img", holder.shipImage);
+        transitionObjects.put("class", holder.shipClassImage);
+        transitionObjects.put("faction", holder.faction);
+
         holder.buildTime.setOnClickListener(v -> {
             if (canBuild) itemBuildListener.onBuildClick(ship);
         });
 
-        holder.itemView.setOnClickListener(v -> itemInfoListener.onShipClick(ship));
+        holder.itemView.setOnClickListener(v -> itemInfoListener.onShipClick(ship, transitionObjects));
     }
 
     @Override
@@ -95,7 +107,7 @@ public class ShipRecyclerViewAdapter extends RecyclerView.Adapter<ShipRecyclerVi
      * Used to view ship details before building.
      */
     public interface ItemInfoListener {
-        void onShipClick(Ship ship);
+        void onShipClick(Ship ship, HashMap<String, View> transitionObj);
     }
 
     class CustomViewHolder extends RecyclerView.ViewHolder {

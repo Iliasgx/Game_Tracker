@@ -81,4 +81,10 @@ public class ResourceAmount extends RelativeLayout {
         isNeeded = needed;
         setVisibility(isNeeded ? VISIBLE : GONE);
     }
+
+    //Same as @setNeeded(boolean needed) but customize if item should be gone or invisible.
+    public void setNeeded(boolean needed, boolean staysVisible) {
+        isNeeded = needed;
+        setVisibility(needed ? VISIBLE : (staysVisible ? INVISIBLE : GONE));
+    }
 }

@@ -56,10 +56,10 @@
         android:id="@+id/fragStarbase_RecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipChildren="false"
-        android:scrollbars="none"
         android:layout_below="@id/fragStarbase_returnLayout"
         android:paddingVertical="5dp"
+        android:clipChildren="false"
+        android:scrollbars="none"
         tools:itemCount="8"
         tools:listitem="@layout/list_building_item" />
 </RelativeLayout>

@@ -48,7 +48,7 @@
             android:scrollbars="none"
             android:background="@color/dialog_background"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:spanCount="3"
+            app:spanCount="4"
             tools:listitem="@layout/custom_scrap_reward_item"
             tools:itemCount="10"
             tools:layout_height="300dp"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+ <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
@@ -13,7 +13,6 @@
         <action
             android:id="@+id/homeToStarbase"
             app:destination="@id/starbaseFragment"
-            app:enterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out">
             <argument
                 android:name="hasChanged"
@@ -32,18 +31,13 @@
         <action
             android:id="@+id/homeToResearch"
             app:destination="@id/researchFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@anim/nav_default_exit_anim"
             app:popExitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/homeToOfficers"
-            app:destination="@id/officerFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:popExitAnim="@android:anim/fade_out" />
+            app:destination="@id/officerFragment" />
         <action
             android:id="@+id/homeToShips"
             app:destination="@id/shipFragment"
-            app:enterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
@@ -63,13 +57,10 @@
         <action
             android:id="@+id/starbaseToBuildingLevels"
             app:destination="@id/buildingLevelFragment"
-            app:enterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/starbaseToBuildingDialog"
-            app:destination="@id/buildingDialog"
-            app:enterAnim="@anim/fragment_open_enter"
-            app:popExitAnim="@anim/fragment_open_exit">
+            app:destination="@id/buildingDialog">
             <argument
                 android:name="accesLevel"
                 android:defaultValue="-1" />
@@ -82,9 +73,7 @@
         tools:layout="@layout/frag_research_group">
         <action
             android:id="@+id/researchToTree"
-            app:destination="@id/researchTreeFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:popExitAnim="@android:anim/fade_out" />
+            app:destination="@id/researchTreeFragment" />
     </fragment>
     <fragment
         android:id="@+id/officerFragment"
@@ -99,9 +88,7 @@
         tools:layout="@layout/frag_research_tree">
         <action
             android:id="@+id/researchTreeToResearchDialog"
-            app:destination="@id/researchDialog"
-            app:enterAnim="@anim/fragment_open_enter"
-            app:popExitAnim="@anim/fragment_open_exit" />
+            app:destination="@id/researchDialog" />
         <argument
             android:name="tree"
             app:argType="com.umbrella.stfctracker.DataTypes.Enums.Tree" />
@@ -112,9 +99,7 @@
         tools:layout="@layout/frag_level_overview">
         <action
             android:id="@+id/buildingLevelsToBuildingDialog"
-            app:destination="@id/buildingDialog"
-            app:enterAnim="@anim/fragment_open_enter"
-            app:popExitAnim="@anim/fragment_open_exit" />
+            app:destination="@id/buildingDialog" />
         <argument
             android:name="building"
             app:argType="com.umbrella.stfctracker.Database.Entities.Building" />
@@ -155,9 +140,8 @@
     <action
         android:id="@+id/globalOverview"
         app:destination="@id/overviewFragment"
+        app:enterAnim="@anim/overview_slide_in"
         app:launchSingleTop="true"
-        app:popEnterAnim="@android:anim/slide_out_right"
-        app:popExitAnim="@android:anim/slide_in_left"
         app:popUpTo="@id/overviewFragment" />
     <action
         android:id="@+id/globalUnknown"
@@ -172,12 +156,10 @@
         <action
             android:id="@+id/shipsToAddShip"
             app:destination="@id/shipChooseDialog"
-            app:enterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/shipsToShipDetails"
             app:destination="@id/shipDetailsFragment"
-            app:enterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
@@ -191,7 +173,6 @@
         <action
             android:id="@+id/addShipToShipDetails"
             app:destination="@id/shipDetailsFragment"
-            app:enterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
