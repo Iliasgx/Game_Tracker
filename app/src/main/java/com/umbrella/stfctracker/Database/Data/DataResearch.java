@@ -22799,7 +22799,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_augmented_impulse),
                         str(R.string.researchDescription_augmented_impulse),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.augmented_impulse),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_IMPULSE_SPEED_BOTANY_BAY,
                         0,
@@ -22887,7 +22887,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_augmentedWarp),
                         str(R.string.researchDescription_augmentedWarp),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.augmented_warp),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_WARP_SPEED_BOTANY_BAY,
                         0,
@@ -22951,7 +22951,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_stellaResearch),
                         str(R.string.researchDescription_stellaResearch),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.stella_research),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_STELLA_BONUS_SHOTS_ECLIPSE_ENEMIES,
                         0,
@@ -22976,7 +22976,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_anarchistWeaponry),
                         str(R.string.researchDescription_anarchistWeaponry),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.anarchist_weaponry),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_PIERCING_STATS_ECLIPSE_ENEMIES,
                         0,
@@ -23575,7 +23575,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_crystalResearchEfficiency),
                         str(R.string.researchDescription_crystalResearchEfficiency),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.crystal_research_building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_CRYSTAL,
                         0,
@@ -23725,7 +23725,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_hideoutWeaponry),
                         str(R.string.researchDescription_hideoutWeaponry),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.hideout_weaponry),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_DAMAGE_DEFENSE_PLATFORMS,
                         0,
@@ -23876,7 +23876,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_assimilatedCreditYield),
                         str(R.string.researchDescription_assimilatedCreditYield),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.assimilated_credit_yield),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_OUTPUTS_INDEP_CREDIT_BORG_BUNDLES,
                         0,
@@ -23952,7 +23952,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_crystalBuildingEfficiency),
                         str(R.string.researchDescription_crystalBuildingEfficiency),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.crystal_research_building_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_STATION_CRYSTAL,
                         0,
@@ -24100,7 +24100,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_augmentedCreditYield),
                         str(R.string.researchDescription_augmentedCreditYield),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.augmented_credit_yield),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_OUTPUTS_INDEP_CREDIT_AUGMENT_BUNDLES,
                         0,
@@ -24177,7 +24177,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_rogueShields),
                         str(R.string.researchDescription_rogueShields),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.rogue_shields),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_SHP,
                         0,
@@ -24329,7 +24329,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_rogueHulls),
                         str(R.string.researchDescription_rogueHulls),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.rogue_hulls),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_HHP,
                         0,
@@ -24481,7 +24481,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_craftyEngineering),
                         str(R.string.researchDescription_craftyEngineering),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.crafty_engineering),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_SHP_STELLA_ECLIPSE_ENEMIES,
                         0,
@@ -25506,7 +25506,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_eclipseTargeting),
                         str(R.string.researchDescription_eclipseTargeting),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.eclipse_targeting),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_CRITICAL_CHANCE_ECLIPSE_ENEMIES,
                         0,
@@ -25575,7 +25575,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_strategicExploits),
                         str(R.string.researchDescription_strategicExploits),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.strategic_exploits),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_CRITICAL_DAMAGE_DEFENSE_PLATFORMS,
                         0,
@@ -26051,7 +26051,7 @@ public final class DataResearch extends FunctionsDB {
                 new Research(
                         str(R.string.researchTitle_gasResearchEfficiency),
                         str(R.string.researchDescription_gasResearchEfficiency),
-                        img(R.drawable.building_efficiency),
+                        img(R.drawable.gas_research_efficiency),
                         Tree.OUTLAW,
                         BonusType.OUTLAW_COST_EFFICIENCY_RESEARCH_GAS,
                         0,

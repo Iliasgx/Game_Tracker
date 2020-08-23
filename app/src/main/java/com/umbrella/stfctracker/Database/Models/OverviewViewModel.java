@@ -1,6 +1,7 @@
 package com.umbrella.stfctracker.Database.Models;
 
 import android.app.Application;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -206,8 +207,8 @@ public class OverviewViewModel extends AndroidViewModel {
         fullList.forEach(resourceMaterial -> {
             ResourceMaterial firstListItem = firstList.stream().filter(mat ->
                     mat.getMaterial() == resourceMaterial.getMaterial() &&
-                    mat.getGrade() == resourceMaterial.getGrade() &&
-                    mat.getRarity() == resourceMaterial.getRarity()).collect(Collectors.toList()).get(0);
+                            mat.getGrade() == resourceMaterial.getGrade() &&
+                            mat.getRarity() == resourceMaterial.getRarity()).findFirst().orElse(null);
 
             long tempValue = resourceMaterial.getValue();
             //Item already existed in buildings

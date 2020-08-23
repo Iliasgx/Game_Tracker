@@ -21,6 +21,7 @@ import com.umbrella.stfctracker.Database.Entities.Level;
 import com.umbrella.stfctracker.Database.Entities.Research;
 import com.umbrella.stfctracker.Structures.CumulativeBonus;
 import com.umbrella.stfctracker.Structures.Data;
+import com.umbrella.stfctracker.Structures.DataSaver;
 import com.umbrella.stfctracker.databinding.ActivityMainBinding;
 
 import java.util.HashMap;
@@ -108,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         CumulativeBonus.getInstance().init(map);
+
+        DataSaver.getInstance().setActivity(this);
     }
 
     private void safePreferences() {

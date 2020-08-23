@@ -26,5 +26,6 @@ public class Data {
 
     public void setOperationsLevel(int operationsLevel) {
         this.operationsLevel = operationsLevel;
+        DataSaver.getInstance().saveData("Operations", operationsLevel);
     }
 }

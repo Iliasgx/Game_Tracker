@@ -42,6 +42,7 @@ public class CumulativeBonus {
 
     public void setValue(@NonNull BonusType bonusType, Integer newValue) {
         map.put(bonusType.name(), newValue);
+        DataSaver.getInstance().saveData(bonusType.name(), newValue);
     }
 
     public long applyBonus(long baseValue, int totalBonus) {
